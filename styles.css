@@ -303,6 +303,38 @@ img { max-width: 100%; display: block; }
 }
 .hero-demo-col { display: flex; justify-content: center; }
 
+/* Stacked screenshot composition — front image fully visible, back image peeks ~25% bottom-right */
+.screenshot-stack {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 100 / 52.5;
+}
+.screenshot-stack img {
+  position: absolute;
+  width: 96%;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+.screenshot-stack .ss-stack-back {
+  bottom: 0; right: 0;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+  opacity: 0.92;
+  filter: brightness(0.85) saturate(0.9);
+  z-index: 1;
+}
+.screenshot-stack .ss-stack-front {
+  top: 0; left: 0;
+  border: 1px solid rgba(34, 211, 238, 0.25);
+  box-shadow:
+    0 30px 70px rgba(0, 0, 0, 0.6),
+    0 0 60px rgba(34, 211, 238, 0.18);
+  z-index: 2;
+}
+.screenshot-stack .demo-badge { z-index: 3; }
+
 /* Phone mockup for hero — screenshot by default, click to load video */
 .phone-mockup {
   position: relative;
@@ -435,55 +467,6 @@ img { max-width: 100%; display: block; }
   display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center;
 }
 @media (max-width: 720px) { .feature-bento .feature-bento-inner { grid-template-columns: 1fr; } }
-.feature-bento-visual {
-  position: relative;
-  aspect-ratio: 16 / 10;
-  border-radius: 14px;
-  background: linear-gradient(135deg, #0a0d1a, #060912);
-  border: 1px solid rgba(34, 211, 238, 0.2);
-  overflow: hidden;
-  display: flex; align-items: center; justify-content: center;
-  padding: 14px;
-}
-.feature-bento-visual .bento-flow {
-  display: flex; align-items: center; gap: 10px; width: 100%;
-  font-family: 'Space Grotesk', sans-serif; font-size: 11px;
-}
-.bento-screenshot, .bento-table {
-  flex: 1; border-radius: 8px;
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,0.02);
-  padding: 8px;
-  min-height: 130px;
-  display: flex; flex-direction: column; gap: 6px;
-  position: relative;
-}
-.bento-screenshot { transform: rotate(-2deg); }
-.bento-table { transform: rotate(1.5deg); }
-.bento-label {
-  font-size: 9px; text-transform: uppercase; letter-spacing: 0.1em;
-  color: var(--text-mute); font-weight: 600;
-}
-.bento-row {
-  display: flex; justify-content: space-between; gap: 8px;
-  font-size: 10px; color: var(--text-dim);
-  padding: 3px 0; border-bottom: 1px solid rgba(255,255,255,0.04);
-}
-.bento-row:last-child { border-bottom: 0; }
-.bento-row .place { color: var(--accent); font-weight: 700; }
-.bento-arrow {
-  display: flex; align-items: center; justify-content: center;
-  width: 28px; height: 28px;
-  border-radius: 50%; background: var(--accent); color: #001016;
-  font-size: 14px; font-weight: 700;
-  box-shadow: 0 0 20px var(--accent-glow);
-  flex-shrink: 0;
-  animation: bento-pulse 2.4s ease-in-out infinite;
-}
-@keyframes bento-pulse {
-  0%, 100% { transform: scale(1); box-shadow: 0 0 20px var(--accent-glow); }
-  50% { transform: scale(1.08); box-shadow: 0 0 30px rgba(34,211,238,0.6); }
-}
 /* Glassmorphic secondary feature cards */
 .feature-glass {
   background: rgba(255, 255, 255, 0.025);
