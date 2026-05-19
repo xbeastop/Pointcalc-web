@@ -183,6 +183,46 @@ img { max-width: 100%; display: block; }
 .store-badge:hover { transform: translateY(-2px); }
 .store-badge img { height: 50px; width: auto; }
 
+/* Hero social-proof chips (App Store / Play Store / Downloads) */
+.hero-proof {
+  margin-top: 22px;
+  display: flex; flex-wrap: wrap; gap: 10px;
+}
+.proof-chip {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+}
+.proof-chip:hover {
+  border-color: rgba(34, 211, 238, 0.35);
+  background: rgba(34, 211, 238, 0.05);
+  transform: translateY(-1px);
+}
+.proof-icon { color: var(--text-dim); flex-shrink: 0; }
+.proof-text { display: flex; flex-direction: column; line-height: 1.1; }
+.proof-value {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: 15px;
+  color: var(--text); letter-spacing: -0.01em;
+}
+.proof-star { color: var(--accent); margin-left: 3px; font-size: 13px; }
+.proof-label {
+  font-size: 10.5px; color: var(--text-mute);
+  text-transform: uppercase; letter-spacing: 0.08em;
+  font-weight: 600; margin-top: 3px;
+}
+@media (max-width: 520px) {
+  .hero-proof { gap: 8px; }
+  .proof-chip { padding: 8px 12px; gap: 8px; flex: 1 1 calc(50% - 4px); min-width: 0; }
+  .proof-chip:last-child { flex: 1 1 100%; }
+  .proof-value { font-size: 14px; }
+  .proof-label { font-size: 10px; }
+  .proof-icon { width: 16px; height: 16px; }
+}
+
 /* Cards — premium easing + mouse-tracked subtle glow */
 .card {
   background: var(--bg-card);
