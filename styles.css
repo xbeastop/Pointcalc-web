@@ -575,7 +575,7 @@ img { max-width: 100%; display: block; }
   background:
     linear-gradient(180deg, rgba(34,211,238,0.08), transparent) padding-box,
     linear-gradient(to bottom, rgba(34, 211, 238, 0.5), rgba(34, 211, 238, 0.05)) border-box;
-  box-shadow: 0 16px 60px var(--accent-glow);
+  box-shadow: 0 12px 36px rgba(34, 211, 238, 0.18);
 }
 .price-tag {
   position: absolute; top: -12px; right: 24px;
