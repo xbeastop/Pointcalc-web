@@ -1,0 +1,44 @@
+# PointCalc
+
+> PointCalc is an AI-powered tournament toolkit for BGMI, PUBG Mobile and Free Fire organizers. Upload lobby and result screenshots — the app extracts placements and kills with AI, then auto-generates the points table, warhead, top fraggers (MVP), slot list, team poster and certificates. Available on iOS and Android with 100K+ downloads.
+
+## About
+
+- **Name:** PointCalc (also "Pointcalc | Point Table Maker")
+- **Platforms:** Android (Google Play), iOS (App Store)
+- **Supported games:** BGMI, PUBG Mobile, Free Fire
+- **Flagship feature:** AI screenshot extraction — placements and kills are read directly from lobby/result screens
+- **Outputs generated:** Points table, warhead, top fraggers (MVP), slot list, team poster, tournament certificates
+- **Founder:** Amal Manoj (public handle: xbeastop), Kerala, India — solo indie developer
+- **Founded:** September 2021
+- **Pricing:** Free tier available; Premium from ₹69/month; Premium + AI from ₹350/month (INR)
+- **Ratings:** 4.9★ on App Store, 4.4★ on Google Play, 559+ total reviews
+
+## Key pages
+
+- [Home](https://pointcalc.in/): Product overview, hero demo, pricing, founder story
+- [Features](https://pointcalc.in/features/): Full feature breakdown — AI extraction, points tables, top fraggers, slot lists, posters, certificates, custom point systems
+- [Designs](https://pointcalc.in/designs/): Gallery of broadcast-grade templates (points tables, top fragger cards, team posters, certificates, slot lists)
+- [FAQ](https://pointcalc.in/faq/): Supported games, AI accuracy, pricing, custom branding, offline use, founder background
+
+## Contact
+
+- **Email:** pointcalcdev@gmail.com
+- **WhatsApp (founder):** https://wa.me/917907642676
+- **Instagram (brand):** https://www.instagram.com/pointcalc_ig/
+- **Instagram (founder):** https://www.instagram.com/xbeastop/
+
+## Download
+
+- **App Store:** https://apps.apple.com/in/app/pointcalc-custom-pt-maker/id6747952141
+- **Google Play:** https://play.google.com/store/apps/details?id=com.pointcalc.global
+
+## Use cases
+
+PointCalc is built specifically for esports tournament/scrim organizers running custom BGMI, PUBG Mobile or Free Fire events. It replaces manual point calculation in spreadsheets and result-graphic editing in Photoshop. Common use cases:
+
+- Daily scrim point tables published after every match
+- Tournament finals — winner posters, top fragger of the day, MVP awards, certificates
+- Slot list / lobby graphics for the start of a tournament day
+- Bulk match processing for multi-day events (Premium + AI tier)
+- Custom-branded designs for orgs and content creators
