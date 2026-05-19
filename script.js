@@ -69,6 +69,57 @@
   });
 })();
 
+// Count-up animation for .stat-value when the proof section enters the viewport
+(function () {
+  const values = document.querySelectorAll('.stat-value[data-to]');
+  if (!values.length) return;
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const formatNum = (n, decimals) =>
+    decimals > 0 ? n.toFixed(decimals) : Math.round(n).toString();
+
+  const setInitial = (el) => {
+    const decimals = parseInt(el.dataset.decimals || '0', 10);
+    el.textContent = formatNum(0, decimals) + (el.dataset.suffix || '');
+  };
+
+  const animate = (el) => {
+    const to = parseFloat(el.dataset.to);
+    const decimals = parseInt(el.dataset.decimals || '0', 10);
+    const suffix = el.dataset.suffix || '';
+    const duration = 1500;
+    const start = performance.now();
+    const tick = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+      el.textContent = formatNum(to * eased, decimals) + suffix;
+      if (progress < 1) requestAnimationFrame(tick);
+      else el.textContent = formatNum(to, decimals) + suffix;
+    };
+    requestAnimationFrame(tick);
+  };
+
+  if (reduceMotion || !('IntersectionObserver' in window)) return;
+
+  values.forEach(setInitial);
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !entry.target.dataset.animated) {
+          entry.target.dataset.animated = '1';
+          animate(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
+
+  values.forEach((el) => observer.observe(el));
+})();
+
 // Lightbox for design tiles + gallery
 (function () {
   const lightbox = document.getElementById('lightbox');
