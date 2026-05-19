@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a0a0f">
+
+<title>Features — PointCalc | AI Tournament Toolkit for BGMI, PUBG & Free Fire</title>
+<meta name="description" content="Every PointCalc feature: AI extraction from lobby + result screenshots, auto-generated point tables, top fraggers, MVPs, warhead stats, slot lists, custom designs and custom point systems. Built for BGMI, PUBG Mobile and Free Fire organizers.">
+<link rel="canonical" href="https://pointcalc.in/features/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pointcalc.in/features/">
+<meta property="og:title" content="Features — PointCalc">
+<meta property="og:description" content="AI screenshot extraction, daily point tables, slot lists, posters and more. Built for BGMI, PUBG Mobile & Free Fire organizers.">
+<meta property="og:image" content="https://pointcalc.in/screenshot.webp">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Features — PointCalc">
+<meta name="twitter:description" content="AI screenshot extraction and the full tournament toolkit.">
+<meta name="twitter:image" content="https://pointcalc.in/screenshot.webp">
+
+<link rel="icon" type="image/png" href="/icon.png">
+<link rel="apple-touch-icon" href="/icon.png">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pointcalc.in/" },
+    { "@type": "ListItem", "position": 2, "name": "Features", "item": "https://pointcalc.in/features/" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav class="nav-pc">
+  <div class="container-pc nav-inner">
+    <a href="/" class="nav-brand">
+      <img src="/icon.png" alt="PointCalc">
+      <span>PointCalc</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="/features/" style="color: var(--accent);">Features</a>
+      <a href="/designs/">Designs</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/#download" class="nav-cta">Download</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- Page hero -->
+<section class="section bg-grid bg-noise" style="padding: 80px 0 60px;">
+  <div class="container-pc center">
+    <span class="pill" style="margin-bottom: 20px;">Features</span>
+    <h1 style="font-family: 'Space Grotesk'; font-size: clamp(36px, 5vw, 60px); margin: 0 0 16px; line-height: 1.1;">
+      Everything you need to run a <span style="background: linear-gradient(120deg, #67e8f9, #22d3ee, #a855f7); -webkit-background-clip: text; background-clip: text; color: transparent;">tournament</span>.
+    </h1>
+    <p style="color: var(--text-dim); font-size: 19px; max-width: 700px; margin: 0 auto; line-height: 1.55;">
+      Built for BGMI, PUBG Mobile and Free Fire organizers. Every section below is a feature you can use today — no spreadsheet, no Photoshop, no copy-pasting from screenshots.
+    </p>
+  </div>
+</section>
+
+<!-- Feature: AI Extraction (flagship) -->
+<section class="section">
+  <div class="container-pc">
+    <div class="hero-grid">
+      <div>
+        <span class="pill" style="margin-bottom: 18px;">⚡ AI Powered</span>
+        <h2 style="font-size: clamp(28px, 4vw, 42px); margin: 0 0 16px;">Upload a screenshot. Get a finished table.</h2>
+        <p class="text-dim" style="font-size: 17px; line-height: 1.65; margin: 0 0 20px;">
+          PointCalc's AI reads BGMI, PUBG Mobile and Free Fire lobby and result screens directly. Placements and kills are extracted automatically — and from that, PointCalc generates your full point table, top fraggers, MVPs and warhead stats. Review, edit, publish — all inside the app.
+        </p>
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; color: var(--text-dim);">
+          <li>✓ Lobby screenshots → team names, slot order & player IDs</li>
+          <li>✓ Result screenshots → placements & kills per team</li>
+          <li>✓ Auto-derived: point table, top fraggers, MVPs, warheads</li>
+          <li>✓ Bulk match processing on the Premium + AI tier</li>
+          <li>✓ Manual override on any value — you stay in control</li>
+        </ul>
+      </div>
+      <div>
+        <div class="screenshot-stack">
+          <span class="demo-badge"><span class="dot"></span> AI</span>
+          <img class="ss-stack-back" src="/in_game_2.JPG" alt="Free Fire result screenshot" loading="lazy">
+          <img class="ss-stack-front" src="/in_game_1.jpg" alt="BGMI result screenshot" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature: Point Tables -->
+<section class="section" style="background: var(--bg-elev);">
+  <div class="container-pc">
+    <div class="hero-grid" style="grid-template-columns: 1fr 1.05fr;">
+      <div>
+        <div class="demo-frame" style="aspect-ratio: 4/5;">
+          <img class="demo-poster" src="/poster1.webp" alt="Sample point table">
+        </div>
+      </div>
+      <div>
+        <span class="pill" style="margin-bottom: 18px;">Point Tables</span>
+        <h2 style="font-size: clamp(28px, 4vw, 42px); margin: 0 0 16px;">Live standings, published in seconds.</h2>
+        <p class="text-dim" style="font-size: 17px; line-height: 1.65; margin: 0 0 20px;">
+          Generate a fresh point table after every match. Define your own rules — placement points, kill points, tiebreakers, bonus multipliers — and PointCalc keeps the math consistent across all your matches.
+        </p>
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; color: var(--text-dim);">
+          <li>✓ Custom point system per tournament</li>
+          <li>✓ Daily and overall standings</li>
+          <li>✓ Tiebreakers handled automatically</li>
+          <li>✓ Export-ready images in your brand colors</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- More features grid -->
+<section class="section">
+  <div class="container-pc">
+    <div class="section-head">
+      <span class="pill">More features</span>
+      <h2>Everything else organizers ask for</h2>
+    </div>
+    <div class="features-grid">
+      <div class="card card-glow feature">
+        <div class="icon-wrap"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"/><path d="M5 21a7 7 0 0114 0"/></svg></div>
+        <h3>Top fragger, MVP & warhead</h3>
+        <p>Generated automatically from your uploaded match data — no extra screenshots required. Auto-rank by kills, damage or your own metric. Share creator-grade stat cards.</p>
+      </div>
+      <div class="card card-glow feature">
+        <div class="icon-wrap"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 5h18M3 12h18M3 19h18"/></svg></div>
+        <h3>Slot lists</h3>
+        <p>Create a tournament, add teams, players and logos in-app — PointCalc lays out a broadcast-ready slot list automatically.</p>
+      </div>
+      <div class="card card-glow feature">
+        <div class="icon-wrap"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 4h16v12H4z"/><path d="M8 20l4-4 4 4"/></svg></div>
+        <h3>Posters & certificates</h3>
+        <p>Free templates plus premium designs. Team posters, winner certificates, knockout brackets — everything you publish post-match.</p>
+      </div>
+      <div class="card card-glow feature">
+        <div class="icon-wrap"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <h3>Match history</h3>
+        <p>Every match, every player stat — searchable and exportable. Bring up last season's numbers without digging through screenshots.</p>
+      </div>
+      <div class="card card-glow feature">
+        <div class="icon-wrap"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="9" cy="9" r="4"/><circle cx="17" cy="15" r="3"/></svg></div>
+        <h3>Multi-admin collaboration</h3>
+        <p>Share tournament data with co-admins. Split the workload during long event days — everyone sees the same numbers in real time.</p>
+      </div>
+      <div class="card card-glow feature">
+        <div class="icon-wrap"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+        <h3>Priority support</h3>
+        <p>Real humans, fast responses — repeatedly called out as world-class in Play Store reviews. Premium tiers get priority.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-bottom">
+  <div class="container-pc">
+    <h2>Try it on your next match</h2>
+    <p>Free to download. Premium and AI tiers unlock when you're ready.</p>
+    <div class="store-badges">
+      <a class="store-badge" href="https://apps.apple.com/in/app/pointcalc-custom-pt-maker/id6747952141"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1752019200" alt="App Store"></a>
+      <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.pointcalc.global"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play"></a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-pc">
+  <div class="container-pc">
+    <div class="footer-grid">
+      <div>
+        <a href="/" class="nav-brand" style="margin-bottom: 14px;">
+          <img src="/icon.png" alt="PointCalc" style="width: 30px; height: 30px; border-radius: 8px;">
+          <span>PointCalc</span>
+        </a>
+        <p style="font-size: 14px; line-height: 1.6; max-width: 320px;">
+          AI-powered tournament toolkit for BGMI, PUBG Mobile & Free Fire organizers. Made in India by xbeastop.
+        </p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="/features/">Features</a></li>
+          <li><a href="/designs/">Designs</a></li>
+          <li><a href="/#pricing">Pricing</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Download</h4>
+        <ul>
+          <li><a href="https://apps.apple.com/in/app/pointcalc-custom-pt-maker/id6747952141">App Store</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.pointcalc.global">Google Play</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/pointcalc_ig/">Instagram</a></li>
+          <li><a href="mailto:pointcalcdev@gmail.com">Email</a></li>
+          <li><a href="https://www.privacypolicygenerator.info/live.php?token=dT76sKbReRQSO2aaTlArBd3SzIBxEfio">Privacy</a></li>
+          <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 PointCalc. All rights reserved.</span>
+      <span>Built by <a href="/#founder" style="color: var(--accent);">xbeastop</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/script.js" defer></script>
+</body>
+</html>
