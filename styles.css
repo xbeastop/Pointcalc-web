@@ -320,6 +320,9 @@ img { max-width: 100%; display: block; }
   line-height: 1.65;
 }
 .hero-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 60px; align-items: center; }
+@media (min-width: 969px) {
+  .hero-grid-flip { grid-template-columns: 1fr 1.05fr; }
+}
 .hero-demo-row { margin-top: 22px; display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
 @media (max-width: 968px) {
   .hero-grid { grid-template-columns: 1fr; gap: 48px; }
@@ -378,6 +381,32 @@ img { max-width: 100%; display: block; }
   z-index: 2;
 }
 .screenshot-stack .demo-badge { z-index: 3; }
+
+/* Mobile: drop absolute stacking — go vertical so both screenshots stay readable */
+@media (max-width: 720px) {
+  .screenshot-stack {
+    aspect-ratio: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+  }
+  .screenshot-stack img {
+    position: relative;
+    width: 100%;
+    top: auto; left: auto; right: auto; bottom: auto;
+  }
+  .screenshot-stack .ss-stack-front { order: 1; }
+  .screenshot-stack .ss-stack-back {
+    order: 2;
+    width: 86%;
+    align-self: flex-end;
+    /* Negative margin in % is relative to the container's width. Back image
+       height ≈ 86% × 7/16 ≈ 37.6% of container width, so -19% hides ~half. */
+    margin-top: -19%;
+    opacity: 0.85;
+  }
+}
 
 /* Phone mockup for hero — screenshot by default, click to load video */
 .phone-mockup {
