@@ -34,13 +34,14 @@
   });
 })();
 
-// Hero demo: replace screenshot with YouTube iframe on click, morph frame to 9:16
+// Hero demo: clicking the watch-demo pill swaps the phone screenshot for an iframe and morphs the mockup to 9:16
 (function () {
   const btn = document.getElementById('playDemoBtn');
   const screen = document.getElementById('heroDemoScreen');
   if (!btn || !screen) return;
-  btn.addEventListener('click', () => {
-    const mockup = btn.closest('.phone-mockup');
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const mockup = document.querySelector('.phone-mockup');
     if (mockup) mockup.classList.add('video-mode');
     const iframe = document.createElement('iframe');
     iframe.src = 'https://www.youtube-nocookie.com/embed/nR0OaI_TheI?autoplay=1&mute=1&loop=1&playlist=nR0OaI_TheI&modestbranding=1&playsinline=1&rel=0';
@@ -49,6 +50,22 @@
     iframe.allowFullscreen = true;
     iframe.referrerPolicy = 'strict-origin-when-cross-origin';
     screen.replaceChildren(iframe);
+    btn.style.display = 'none';
+  });
+})();
+
+// Mouse-tracked radial glow on every .card — sets CSS vars consumed by ::before
+(function () {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const cards = document.querySelectorAll('.card');
+  cards.forEach((card) => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      card.style.setProperty('--mx', x + '%');
+      card.style.setProperty('--my', y + '%');
+    });
   });
 })();
 

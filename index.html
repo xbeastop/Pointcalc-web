@@ -132,7 +132,15 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
           </a>
         </div>
-        <div style="margin-top: 28px; display: flex; gap: 24px; flex-wrap: wrap; align-items: center; color: var(--text-dim); font-size: 14px;">
+        <div style="margin-top: 22px; display: flex; gap: 14px; flex-wrap: wrap; align-items: center;">
+          <button class="btn-watch-demo" id="playDemoBtn" aria-label="Watch the AI demo video">
+            <span class="play-dot">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+            Watch AI Demo
+          </button>
+        </div>
+        <div style="margin-top: 22px; display: flex; gap: 24px; flex-wrap: wrap; align-items: center; color: var(--text-dim); font-size: 14px;">
           <span>⭐ 4.9 on App Store</span>
           <span style="opacity: 0.4;">•</span>
           <span>⭐ 4.4 on Google Play</span>
@@ -146,12 +154,6 @@
           <div class="phone-notch"></div>
           <div class="phone-screen" id="heroDemoScreen">
             <img src="screenshot.webp" alt="PointCalc app — AI point table maker for BGMI, PUBG and Free Fire">
-            <button class="play-overlay" id="playDemoBtn" aria-label="Watch the AI demo video">
-              <span class="play-button">
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-              </span>
-              <span class="play-label">Watch AI Demo</span>
-            </button>
           </div>
         </div>
       </div>
@@ -221,47 +223,63 @@
     </div>
 
     <div class="features-grid">
-      <div class="card card-glow feature">
-        <div class="icon-wrap">
-          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 7l9 6 9-6"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg>
+      <div class="card card-glow feature feature-bento">
+        <div class="feature-bento-inner">
+          <div>
+            <div class="icon-wrap">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 7l9 6 9-6"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg>
+            </div>
+            <h3 style="font-size: 24px;">AI screenshot extraction</h3>
+            <p>Drop a BGMI, PUBG Mobile or Free Fire result screen. Placements and kills are read automatically — point tables, top fraggers, MVPs and warhead stats all generate from the same uploads.</p>
+          </div>
+          <div class="feature-bento-visual" aria-hidden="true">
+            <div class="bento-flow">
+              <div class="bento-screenshot">
+                <span class="bento-label">Result screen</span>
+                <div class="bento-row"><span>#1 TEAM SOUL</span><span>9 kills</span></div>
+                <div class="bento-row"><span>#2 GODLIKE</span><span>6 kills</span></div>
+                <div class="bento-row"><span>#3 TSM</span><span>5 kills</span></div>
+                <div class="bento-row"><span>#4 ENIGMA</span><span>3 kills</span></div>
+              </div>
+              <div class="bento-arrow">→</div>
+              <div class="bento-table">
+                <span class="bento-label">Point table</span>
+                <div class="bento-row"><span class="place">1</span><span>SOUL · 24</span></div>
+                <div class="bento-row"><span class="place">2</span><span>GODLIKE · 18</span></div>
+                <div class="bento-row"><span class="place">3</span><span>TSM · 15</span></div>
+                <div class="bento-row"><span class="place">4</span><span>ENIGMA · 11</span></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <h3>AI screenshot extraction</h3>
-        <p>Upload lobby and result screens — placements and kills read automatically. Point tables, top fraggers, MVPs and warhead stats are generated from the same uploads.</p>
       </div>
-      <div class="card card-glow feature">
+      <div class="card card-glow feature feature-glass">
         <div class="icon-wrap">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
         </div>
         <h3>Daily point tables</h3>
-        <p>Generate live standings as matches happen. Publish a fresh table after every game without breaking format.</p>
+        <p>Live standings after every match. Publish a fresh table without breaking format.</p>
       </div>
-      <div class="card card-glow feature">
+      <div class="card card-glow feature feature-glass">
         <div class="icon-wrap">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"/><path d="M5 21a7 7 0 0114 0"/></svg>
         </div>
         <h3>Top fragger, MVP & warhead</h3>
-        <p>Auto-generated from your match data — no extra uploads. Players are ranked by kills, damage or your own metric. Share creator-grade stat cards in your colors.</p>
+        <p>Auto-ranked from match data. Creator-grade stat cards in your colors.</p>
       </div>
-      <div class="card card-glow feature">
+      <div class="card card-glow feature feature-glass">
         <div class="icon-wrap">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 5h18M3 12h18M3 19h18"/></svg>
         </div>
         <h3>Slot list manager</h3>
-        <p>Drag-and-drop slot lists, team logos and player images. Publish lobby graphics that look like a real broadcast.</p>
+        <p>Drag-and-drop slot lists with team logos. Broadcast-grade lobby graphics.</p>
       </div>
-      <div class="card card-glow feature">
+      <div class="card card-glow feature feature-glass">
         <div class="icon-wrap">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 4h16v12H4z"/><path d="M8 20l4-4 4 4"/></svg>
         </div>
         <h3>Posters & certificates</h3>
-        <p>Free templates plus premium designs. Custom themes for your org — no Photoshop or external editor required.</p>
-      </div>
-      <div class="card card-glow feature">
-        <div class="icon-wrap">
-          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2v20M5 9l7-7 7 7"/></svg>
-        </div>
-        <h3>Custom point system</h3>
-        <p>Define your own rules — placement points, kill points, bonus multipliers. The app adapts to your tournament format.</p>
+        <p>Free + premium templates. Custom rules, placement and kill multipliers — no Photoshop.</p>
       </div>
     </div>
 
