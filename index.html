@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0a0a0f">
 
-<title>PointCalc — AI Point Table Maker for BGMI, PUBG & Free Fire Tournaments</title>
-<meta name="description" content="Drop your lobby and result screenshots — PointCalc generates the points table, warhead, top fraggers (MVP), slot list, team poster and certificates in seconds. AI tournament toolkit for BGMI, PUBG Mobile & Free Fire. 100K+ downloads.">
+<title>PointCalc — AI Point Table Maker for BGMI, PUBG & Free Fire</title>
+<meta name="description" content="AI tournament toolkit for BGMI, PUBG & Free Fire. Drop screenshots — get the points table, warhead, top fraggers, slot list and certificates in seconds.">
 <link rel="canonical" href="https://pointcalc.in/">
 
 <!-- Open Graph -->
@@ -26,12 +26,17 @@
 <link rel="icon" type="image/png" href="/icon.png">
 <link rel="apple-touch-icon" href="/icon.png">
 
-<!-- Tailwind utility classes used sparingly alongside our own CSS -->
-<script src="https://cdn.tailwindcss.com"></script>
-
-<!-- Fonts -->
+<!-- DNS prefetch + preconnect for third-party assets -->
+<link rel="dns-prefetch" href="https://toolbox.marketingtools.apple.com">
+<link rel="dns-prefetch" href="https://upload.wikimedia.org">
+<link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Tailwind utility classes used sparingly alongside our own CSS -->
+<script src="https://cdn.tailwindcss.com" async></script>
+
+<!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="/styles.css">
@@ -81,9 +86,56 @@
   "name": "PointCalc",
   "url": "https://pointcalc.in/",
   "logo": "https://pointcalc.in/icon.png",
+  "foundingDate": "2021-09",
+  "founder": {
+    "@type": "Person",
+    "name": "Amal Manoj",
+    "alternateName": "xbeastop"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "email": "pointcalcdev@gmail.com",
+    "availableLanguage": ["English"]
+  },
   "sameAs": [
     "https://www.instagram.com/pointcalc_ig/"
   ]
+}
+</script>
+
+<!-- JSON-LD: WebSite + SearchAction (for sitelinks search box & AI grounding) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "PointCalc",
+  "url": "https://pointcalc.in/",
+  "publisher": { "@type": "Organization", "name": "PointCalc" },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://pointcalc.in/faq/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<!-- JSON-LD: Person (founder, E-E-A-T) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Amal Manoj",
+  "alternateName": "xbeastop",
+  "jobTitle": "Founder & Developer, PointCalc",
+  "worksFor": { "@type": "Organization", "name": "PointCalc" },
+  "url": "https://pointcalc.in/#founder",
+  "image": "https://pointcalc.in/profile.JPG",
+  "sameAs": [
+    "https://www.instagram.com/xbeastop/",
+    "https://www.instagram.com/pointcalc_ig/"
+  ],
+  "description": "Indie Android developer from Kerala, India. Started PointCalc in September 2021 as a PUBG player tired of manual point calculation and Photoshop work after every match. Now an Android developer at Wrench Solutions, Kochi."
 }
 </script>
 </head>
@@ -169,7 +221,7 @@
         <div class="phone-mockup">
           <div class="phone-notch"></div>
           <div class="phone-screen" id="heroDemoScreen">
-            <img src="screenshot.webp" alt="PointCalc app — AI point table maker for BGMI, PUBG and Free Fire">
+            <img src="screenshot.webp" alt="PointCalc app — AI point table maker for BGMI, PUBG and Free Fire" width="1320" height="2868">
           </div>
         </div>
       </div>
@@ -249,8 +301,8 @@
             <p>Drop BGMI, PUBG Mobile or Free Fire lobby and result screens. Placements and kills are read automatically — points table, warhead, top fraggers (MVP), slot list, team poster and certificates all generate from the same uploads.</p>
           </div>
           <div class="screenshot-stack" aria-hidden="true">
-            <img class="ss-stack-back" src="/in_game_2.JPG" alt="" loading="lazy">
-            <img class="ss-stack-front" src="/in_game_1.jpg" alt="" loading="lazy">
+            <img class="ss-stack-back" src="/in_game_2.JPG" alt="" loading="lazy" width="1608" height="720">
+            <img class="ss-stack-front" src="/in_game_1.jpg" alt="" loading="lazy" width="800" height="370">
           </div>
         </div>
       </div>
@@ -378,16 +430,16 @@
     </div>
     <div class="designs-grid">
       <div class="design-tile gallery-trigger" data-src="/poster1.webp">
-        <img src="/poster1.webp" alt="PointCalc design template 1" loading="lazy">
+        <img src="/poster1.webp" alt="PointCalc design template — point table layout 1" loading="lazy" width="1080" height="1350">
       </div>
       <div class="design-tile gallery-trigger" data-src="/poster2.webp">
-        <img src="/poster2.webp" alt="PointCalc design template 2" loading="lazy">
+        <img src="/poster2.webp" alt="PointCalc design template — point table layout 2" loading="lazy" width="2160" height="2700">
       </div>
       <div class="design-tile gallery-trigger" data-src="/poster3.webp">
-        <img src="/poster3.webp" alt="PointCalc design template 3" loading="lazy">
+        <img src="/poster3.webp" alt="PointCalc design template — point table layout 3" loading="lazy" width="2160" height="2700">
       </div>
       <div class="design-tile gallery-trigger" data-src="/poster4.webp">
-        <img src="/poster4.webp" alt="PointCalc design template 4" loading="lazy">
+        <img src="/poster4.webp" alt="PointCalc design template — slot list layout" loading="lazy" width="1920" height="1080">
       </div>
     </div>
     <div class="center mt-lg">
@@ -497,7 +549,7 @@
     </div>
     <div class="founder">
       <div class="founder-avatar">
-        <img src="/profile.JPG" alt="Amal Manoj (xbeastop)" loading="lazy">
+        <img src="/profile.JPG" alt="Amal Manoj (xbeastop) — PointCalc founder" loading="lazy" width="3024" height="4032">
       </div>
       <div>
         <h3>xbeastop</h3>
