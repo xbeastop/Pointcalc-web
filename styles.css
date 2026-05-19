@@ -320,9 +320,13 @@ img { max-width: 100%; display: block; }
   line-height: 1.65;
 }
 .hero-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 60px; align-items: center; }
+.hero-demo-row { margin-top: 22px; display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
 @media (max-width: 968px) {
   .hero-grid { grid-template-columns: 1fr; gap: 48px; }
   .hero { padding: 56px 0 72px; }
+  .hero .store-badges,
+  .hero .hero-proof,
+  .hero .hero-demo-row { justify-content: center; }
 }
 
 /* Demo container (video) */
@@ -489,6 +493,22 @@ img { max-width: 100%; display: block; }
 }
 .game-badge img { width: 28px; height: 28px; border-radius: 6px; }
 .game-badge:hover { border-color: var(--accent); color: var(--accent); }
+@media (max-width: 520px) {
+  .games-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .game-badge {
+    flex-direction: column;
+    padding: 14px 8px;
+    gap: 8px;
+    font-size: 13px;
+    text-align: center;
+    justify-content: center;
+  }
+  .game-badge img { width: 32px; height: 32px; }
+}
 
 /* Features grid — asymmetric bento layout (AI feature spans 2 cols) */
 .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
