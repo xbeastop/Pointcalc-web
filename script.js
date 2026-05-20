@@ -1,10 +1,28 @@
-// Mobile nav toggle
+// Mobile nav — full-screen overlay with body scroll lock, ESC + link-click close
 (function () {
   const toggle = document.getElementById('navToggle');
   const links = document.getElementById('navLinks');
-  if (toggle && links) {
-    toggle.addEventListener('click', () => links.classList.toggle('open'));
-  }
+  if (!toggle || !links) return;
+
+  const setOpen = (open) => {
+    links.classList.toggle('open', open);
+    document.body.classList.toggle('nav-open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  };
+
+  toggle.setAttribute('aria-expanded', 'false');
+  toggle.setAttribute('aria-controls', 'navLinks');
+
+  toggle.addEventListener('click', () => setOpen(!links.classList.contains('open')));
+
+  links.addEventListener('click', (e) => {
+    if (e.target.closest('a')) setOpen(false);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && links.classList.contains('open')) setOpen(false);
+  });
 })();
 
 // Pricing period toggle
@@ -79,9 +97,10 @@
   const formatNum = (n, decimals) =>
     decimals > 0 ? n.toFixed(decimals) : Math.round(n).toString();
 
-  const setInitial = (el) => {
+  const setFinal = (el) => {
+    const to = parseFloat(el.dataset.to);
     const decimals = parseInt(el.dataset.decimals || '0', 10);
-    el.textContent = formatNum(0, decimals) + (el.dataset.suffix || '');
+    el.textContent = formatNum(to, decimals) + (el.dataset.suffix || '');
   };
 
   const animate = (el) => {
@@ -100,9 +119,17 @@
     requestAnimationFrame(tick);
   };
 
-  if (reduceMotion || !('IntersectionObserver' in window)) return;
+  // No IntersectionObserver or reduced motion → show the final values, never zero.
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    values.forEach(setFinal);
+    return;
+  }
 
-  values.forEach(setInitial);
+  // Stash final and reset to 0; if obs hasn't fired within 2s of load, give up and show final.
+  values.forEach((el) => {
+    const decimals = parseInt(el.dataset.decimals || '0', 10);
+    el.textContent = formatNum(0, decimals) + (el.dataset.suffix || '');
+  });
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -114,10 +141,25 @@
         }
       });
     },
-    { threshold: 0.4 }
+    { threshold: 0.35 }
   );
 
   values.forEach((el) => observer.observe(el));
+
+  // Safety net: if a counter is still un-animated 2.5s after page load
+  // (prerender, screenshot scrape, tall layout above the fold etc.),
+  // pop in the final value instead of leaving a zero on screen.
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      values.forEach((el) => {
+        if (!el.dataset.animated) {
+          el.dataset.animated = '1';
+          setFinal(el);
+          observer.unobserve(el);
+        }
+      });
+    }, 2500);
+  });
 })();
 
 // Lightbox for design tiles + gallery
