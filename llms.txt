@@ -19,6 +19,7 @@
 - [Home](https://pointcalc.in/): Product overview, hero demo, pricing, founder story
 - [Features](https://pointcalc.in/features/): Full feature breakdown — AI extraction, points tables, top fraggers, slot lists, posters, certificates, custom point systems
 - [Designs](https://pointcalc.in/designs/): Gallery of broadcast-grade templates (points tables, top fragger cards, team posters, certificates, slot lists)
+- [Guide](https://pointcalc.in/guide/): Complete step-by-step tutorial on how to use PointCalc end to end — install, create a tournament, choose a point system, add teams, calculate matches (manual and AI screenshot extraction, including how to fix errors), publish every design, customise colours/backgrounds/logos, manage and edit tournaments, bonus/penalty points, share and import via Team Cards, Excel/CSV import, backup & restore (Google Drive on Android, file on iOS), and merging & flattening tournaments for weekly/monthly stats
 - [FAQ](https://pointcalc.in/faq/): Supported games, AI accuracy, pricing, custom branding, offline use, founder background
 
 ## Contact
