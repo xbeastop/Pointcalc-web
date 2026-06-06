@@ -709,3 +709,41 @@ footer { border-top: 1px solid var(--line); background: var(--bg-2); padding: 70
   .qpc { width: 116px; height: 158px; top: 16px; }
   .qmeta h4 { font-size: 1.25rem; }
 }
+
+/* ============================================================
+   LANGUAGE SWITCHER (globe dropdown in nav) — shared LTR/RTL
+   ============================================================ */
+.lang { position: relative; margin-left: 4px; }
+.lang-btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--ink-2); background: var(--panel); border: 1px solid var(--line-2);
+  padding: 9px 13px; border-radius: 999px; cursor: pointer; line-height: 1;
+  transition: border-color .15s, color .15s;
+}
+.lang-btn:hover { color: var(--ink); border-color: var(--acid); }
+.lang-btn svg { width: 15px; height: 15px; flex-shrink: 0; }
+.lang-btn .lang-caret { width: 9px; height: 9px; opacity: 0.7; transition: transform .2s; }
+.lang.open .lang-btn .lang-caret { transform: rotate(180deg); }
+.lang-menu {
+  position: absolute; top: calc(100% + 8px); inset-inline-end: 0; min-width: 168px; z-index: 120;
+  background: var(--panel); border: 1px solid var(--line-2); border-radius: 12px; padding: 6px;
+  display: none; flex-direction: column; gap: 2px;
+  box-shadow: 0 24px 50px -22px rgba(0,0,0,0.85);
+}
+.lang.open .lang-menu { display: flex; }
+.lang-menu a {
+  display: flex; align-items: center; justify-content: space-between; gap: 14px;
+  font-family: var(--sans); font-size: 0.92rem; letter-spacing: 0; text-transform: none;
+  color: var(--ink-2); padding: 10px 12px; border-radius: 8px; transition: background .15s, color .15s;
+}
+.lang-menu a:hover { background: var(--panel-2); color: var(--ink); }
+.lang-menu a .ln-native { font-weight: 600; }
+.lang-menu a .ln-code { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); }
+.lang-menu a.on { color: var(--acid); }
+.lang-menu a.on .ln-code { color: var(--acid); }
+/* keep the switcher visible on mobile next to the burger */
+@media (max-width: 940px) {
+  .lang { margin-inline-start: auto; }
+  .nav.open .lang { margin-inline-start: 0; }
+}

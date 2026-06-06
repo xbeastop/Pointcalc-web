@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "en": { "title": "Tournament Design Templates · PointCalc", "desc": "Browse PointCalc designs: BGMI, PUBG & Free Fire points tables, top fragger cards, team posters and tournament certificates. Pick a template, brand it, publish." },
+    "ar": { "title": "قوالب تصاميم البطولات · PointCalc", "desc": "تصفّح تصاميم PointCalc: جداول نقاط وبطاقات أبرز اللاعبين وبوسترات الفرق وشهادات البطولات لـ BGMI و PUBG و Free Fire. اختر قالبًا وأضِف هويتك وانشُر." },
+    "tr": { "title": "Turnuva Tasarım Şablonları · PointCalc", "desc": "PointCalc tasarımlarına göz at: BGMI, PUBG ve Free Fire puan tabloları, en iyi fragçı kartları, takım posterleri ve turnuva sertifikaları. Bir şablon seç, markala, yayınla." }
+  },
+  "assets": [
+    ["src=\"templates-data.js\"", "src=\"https://pointcalc.in/designs/templates-data.js\""],
+    ["const ALL = (window.TEMPLATES || []).slice();", "const ALL = (window.TEMPLATES || []).slice().map(function(t){return Object.assign({},t,{s:'https://pointcalc.in/designs/'+t.s});});"]
+  ],
+  "pairs": [
+    { "en": "Designs", "ar": "التصاميم", "tr": "Tasarımlar" },
+    { "en": "Templates that look <span class=\"em\">broadcast-ready.</span>", "ar": "قوالب تبدو <span class=\"em\">جاهزة للبثّ.</span>", "tr": "Yayına hazır <span class=\"em\">görünen şablonlar.</span>" },
+    { "en": "Every template built into PointCalc — points tables, team posters, top-fragger cards, warhead boards, slot lists and certificates. Pick one, drop in your branding and match data, ship in seconds. Browse the full library below.", "ar": "كل قالب مدمج في PointCalc — جداول نقاط وبوسترات فرق وبطاقات أبرز اللاعبين ولوحات أقوى الفرق وقوائم خانات وشهادات. اختر واحدًا، وأضِف هويتك وبيانات مباراتك، وانشُر في ثوانٍ. تصفّح المكتبة الكاملة أدناه.", "tr": "PointCalc'e yerleşik her şablon — puan tabloları, takım posterleri, en iyi fragçı kartları, Warhead panoları, slot listeleri ve sertifikalar. Birini seç, markanı ve maç verilerini ekle, saniyeler içinde yayınla. Tüm kütüphaneye aşağıdan göz at." },
+    { "en": "190+ templates · BGMI · PUBG Mobile · Free Fire", "ar": "أكثر من 190 قالبًا · BGMI · PUBG Mobile · Free Fire", "tr": "190+ şablon · BGMI · PUBG Mobile · Free Fire" },
+    { "en": "Quick Look · Premium Themes", "ar": "نظرة سريعة · ثيمات مدفوعة", "tr": "Hızlı Bakış · <span lang=\"en\">Premium</span> Temalar" },
+    { "en": "Cohesive design sets — tap to flip through every piece", "ar": "مجموعات تصميم متناسقة — انقر لتصفّح كل قطعة", "tr": "Uyumlu tasarım setleri — her parçayı görmek için dokun" },
+    { "en": ">All</button>", "ar": ">الكل</button>", "tr": ">Tümü</button>" },
+    { "en": ">Free</button>", "ar": ">مجاني</button>", "tr": ">Ücretsiz</button>" },
+    { "en": "data-tier=\"1\">Premium</button>", "ar": "data-tier=\"1\">Premium</button>", "tr": "data-tier=\"1\"><span lang=\"en\">Premium</span></button>" },
+    { "en": "Points Table", "ar": "جدول النقاط", "tr": "Puan Tablosu" },
+    { "en": "Top Fraggers", "ar": "أبرز اللاعبين", "tr": "En İyi Fragçılar" },
+    { "en": "Slot List", "ar": "قائمة الخانات", "tr": "Slot Listesi" },
+    { "en": "Team Poster", "ar": "بوستر الفريق", "tr": "Takım Posteri" },
+    { "en": "Certificate", "ar": "الشهادات", "tr": "Sertifikalar" },
+    { "en": "Warhead", "ar": "أقوى الفرق", "tr": "Warhead" },
+    { "en": " designs · Premium", "ar": " تصميمًا · Premium", "tr": " tasarım · <span lang=\"en\">Premium</span>" },
+    { "en": "View all ", "ar": "عرض الكل ", "tr": "Tümünü gör " },
+    { "en": "'Browsing <b>' + total + '</b> ' + tierWord + 'template' + (total === 1 ? '' : 's') + ' across <b>' + cats + '</b> categories'", "ar": "'تصفّح <b>' + total + '</b> ' + tierWord + 'قالب عبر <b>' + cats + '</b> فئة'", "tr": "'<b>' + total + '</b> ' + tierWord + 'şablon, <b>' + cats + '</b> kategoride'" },
+    { "en": "'Showing <b>' + list.length + '</b> ' + tierWord + CATLABEL[curCat] + ' template' + (list.length === 1 ? '' : 's')", "ar": "'عرض <b>' + list.length + '</b> ' + tierWord + CATLABEL[curCat] + ' قالب'", "tr": "'<b>' + list.length + '</b> ' + tierWord + CATLABEL[curCat] + ' şablon'" },
+    { "en": "'premium '", "ar": "''", "tr": "''" },
+    { "en": "'free '", "ar": "''", "tr": "''" },
+    { "en": "Premium — <a href=\"' + APP_DL", "ar": "Premium — <a href=\"' + APP_DL", "tr": "<span lang=\"en\">Premium</span> — <a href=\"' + APP_DL" },
+    { "en": "unlock in the app", "ar": "افتحه في التطبيق", "tr": "uygulamada aç" },
+    { "en": "Free — included in PointCalc", "ar": "مجاني — مضمّن في PointCalc", "tr": "Ücretsiz — <span lang=\"en\">PointCalc</span>'e dahil" },
+    { "en": " template'", "ar": " قالب'", "tr": " şablon'" },
+    { "en": " template\" />", "ar": " قالب\" />", "tr": " şablon\" />" },
+    { "en": "aria-label=\"Close\"", "ar": "aria-label=\"إغلاق\"", "tr": "aria-label=\"Kapat\"" },
+    { "en": "aria-label=\"Previous\"", "ar": "aria-label=\"السابق\"", "tr": "aria-label=\"Önceki\"" },
+    { "en": "aria-label=\"Next\"", "ar": "aria-label=\"التالي\"", "tr": "aria-label=\"Sonraki\"" },
+    { "en": "No templates match this filter.", "ar": "لا توجد قوالب تطابق هذا الفلتر.", "tr": "Bu filtreye uyan şablon yok." },
+    { "en": "Need something bespoke?", "ar": "تريد شيئًا مخصّصًا؟", "tr": "Özel bir şey mi lazım?" },
+    { "en": "Adjust colors, swap the background and add unlimited logos in-app — or reach out and we'll build an entirely custom design for your org.", "ar": "اضبط الألوان وبدّل الخلفية وأضِف شعارات بلا حدود داخل التطبيق — أو تواصل معنا وسنصمّم تصميمًا مخصّصًا بالكامل لمنظّمتك.", "tr": "Renkleri ayarla, arka planı değiştir ve uygulama içinde sınırsız logo ekle — ya da bize ulaş, organizasyonun için tamamen özel bir tasarım yapalım." },
+    { "en": "WhatsApp us", "ar": "راسلنا على WhatsApp", "tr": "WhatsApp'tan yaz" },
+    { "en": "Make your match day<br />look the part", "ar": "اجعل يوم مباراتك<br />يبدو بالمستوى", "tr": "Maç gününü<br />hak ettiği gibi göster" },
+    { "en": "Free to download on iOS and Android. Premium templates unlock when you're ready.", "ar": "مجاني للتنزيل على iOS و Android. تُفتح القوالب المدفوعة عندما تكون مستعدًا.", "tr": "iOS ve Android'de indirmesi ücretsiz. Premium şablonlar hazır olduğunda açılır." },
+    { "en": "Download on the App Store", "ar": "حمّله من App Store", "tr": "App Store'dan indir" },
+    { "en": "Get it on Google Play", "ar": "احصل عليه من Google Play", "tr": "Google Play'den edin" }
+  ]
+}

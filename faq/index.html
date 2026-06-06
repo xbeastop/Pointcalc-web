@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,11 +10,11 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://pointcalc.in/faq/">
 <meta property="og:title" content="PointCalc FAQ — BGMI, PUBG & Free Fire Tournament App">
-<meta property="og:description" content="What is PointCalc? Which games does it support? How does the AI work? Pricing, custom branding and how the app works — all answered here.">
+<meta property="og:description" content="Answers about PointCalc — supported games (BGMI, PUBG Mobile, Free Fire), AI screenshot extraction, pricing, custom branding, and how the app works.">
 <meta property="og:image" content="https://pointcalc.in/screenshot.webp">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="PointCalc FAQ — BGMI, PUBG & Free Fire Tournament App">
-<meta name="twitter:description" content="Supported games, AI screenshot extraction, pricing, custom branding — every common PointCalc question, answered.">
+<meta name="twitter:description" content="Answers about PointCalc — supported games (BGMI, PUBG Mobile, Free Fire), AI screenshot extraction, pricing, custom branding, and how the app works.">
 <meta name="twitter:image" content="https://pointcalc.in/screenshot.webp">
 <link rel="icon" type="image/png" href="../icon.png">
 <link rel="apple-touch-icon" href="../icon.png">
@@ -168,21 +168,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../styles.css" />
+<link rel="alternate" hreflang="en" href="https://pointcalc.in/faq/">
+<link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/faq/">
+<link rel="alternate" hreflang="tr" href="https://pointcalc.in/tr/faq/">
+<link rel="alternate" hreflang="x-default" href="https://pointcalc.in/faq/">
 </head>
 <body>
 
 <!-- NAV -->
 <nav class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="../index.html"><img src="https://pointcalc.in/icon.png" alt="PointCalc" />PointCalc</a>
+    <a class="brand" lang="en" href="../index.html"><img src="https://pointcalc.in/icon.png" alt="PointCalc" />PointCalc</a>
     <div class="nav-links">
-      <a href="../features/index.html">Features</a>
-      <a href="../designs/index.html">Designs</a>
-      <a href="../guide/index.html">Guide</a>
-      <a href="../index.html#pricing">Pricing</a>
-      <a href="../faq/index.html" style="color:var(--ink)">FAQ</a>
+      <a href="../features/index.html">Features</a><a href="../designs/index.html">Designs</a><a href="../guide/index.html">Guide</a><a href="../index.html#pricing">Pricing</a><a href="../faq/index.html" style="color:var(--ink)">FAQ</a>
     </div>
     <a class="btn btn-acid nav-cta" href="../index.html#download">Download</a>
+    <div class="lang" id="langSwitch">
+        <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-label="Language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18"/></svg><span>EN</span><svg class="lang-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="lang-menu" role="menu"><a class="ln on" href="../faq/index.html" lang="en" hreflang="en"><span class="ln-native">English</span><span class="ln-code">EN</span></a><a class="ln" href="../ar/faq/index.html" lang="ar" hreflang="ar" dir="rtl"><span class="ln-native">العربية</span><span class="ln-code">AR</span></a><a class="ln" href="../tr/faq/index.html" lang="tr" hreflang="tr"><span class="ln-native">Türkçe</span><span class="ln-code">TR</span></a></div>
+      </div>
     <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -288,7 +292,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-col">
-        <div class="foot-brand"><img src="https://pointcalc.in/icon.png" alt="" />PointCalc</div>
+        <div class="foot-brand" lang="en"><img src="https://pointcalc.in/icon.png" alt="" />PointCalc</div>
         <p>AI-powered tournament toolkit for BGMI, PUBG Mobile &amp; Free Fire organizers. Made in India by xbeastop.</p>
       </div>
       <div class="foot-col">
@@ -321,6 +325,16 @@
   });
   const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.12 });
   document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+</script>
+<script>
+  // language switcher dropdown
+  (function(){
+    var ls=document.getElementById('langSwitch'),lb=document.getElementById('langBtn');
+    if(!ls||!lb)return;
+    lb.addEventListener('click',function(e){e.stopPropagation();var o=ls.classList.toggle('open');lb.setAttribute('aria-expanded',o?'true':'false');});
+    document.addEventListener('click',function(e){if(!ls.contains(e.target)){ls.classList.remove('open');lb.setAttribute('aria-expanded','false');}});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'){ls.classList.remove('open');lb.setAttribute('aria-expanded','false');}});
+  })();
 </script>
 </body>
 </html>

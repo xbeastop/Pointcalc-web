@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PointCalc — صانع جدول نقاط بالذكاء الاصطناعي لـ BGMI و PUBG و Free Fire</title>
+<meta name="theme-color" content="#0a0a0f">
+<meta name="description" content="حقيبة أدوات بطولات بالذكاء الاصطناعي لـ BGMI و PUBG و Free Fire. أسقِط اللقطات — واحصل على جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات والشهادات في ثوانٍ.">
+<link rel="canonical" href="https://pointcalc.in/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pointcalc.in/">
+<meta property="og:title" content="PointCalc — صانع جدول نقاط بالذكاء الاصطناعي لـ BGMI و PUBG و Free Fire">
+<meta property="og:description" content="حقيبة أدوات بطولات بالذكاء الاصطناعي لـ BGMI و PUBG و Free Fire. أسقِط اللقطات — واحصل على جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات والشهادات في ثوانٍ.">
+<meta property="og:image" content="https://pointcalc.in/screenshot.webp">
+<meta property="og:site_name" content="PointCalc">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PointCalc — صانع جدول نقاط بالذكاء الاصطناعي لـ BGMI و PUBG و Free Fire">
+<meta name="twitter:description" content="حقيبة أدوات بطولات بالذكاء الاصطناعي لـ BGMI و PUBG و Free Fire. أسقِط اللقطات — واحصل على جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات والشهادات في ثوانٍ.">
+<meta name="twitter:image" content="https://pointcalc.in/screenshot.webp">
+<link rel="icon" type="image/png" href="../icon.png">
+<link rel="apple-touch-icon" href="../icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "PointCalc",
+  "alternateName": "Pointcalc | Point Table Maker",
+  "operatingSystem": "ANDROID, IOS",
+  "applicationCategory": "UtilitiesApplication",
+  "description": "AI-powered tournament toolkit. Upload BGMI, PUBG Mobile or Free Fire lobby and result screenshots — PointCalc reads placements and kills, then auto-generates the points table, warhead, top fraggers (MVP), slot list, team poster and certificates.",
+  "url": "https://pointcalc.in/",
+  "image": "https://pointcalc.in/screenshot.webp",
+  "downloadUrl": [
+    "https://apps.apple.com/in/app/pointcalc-custom-pt-maker/id6747952141",
+    "https://play.google.com/store/apps/details?id=com.pointcalc.global"
+  ],
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "INR",
+    "lowPrice": "0",
+    "highPrice": "3500",
+    "offerCount": "9"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "ratingCount": "559",
+    "bestRating": "5"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "xbeastop",
+    "alternateName": "Amal Manoj"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "PointCalc",
+  "url": "https://pointcalc.in/",
+  "logo": "https://pointcalc.in/icon.png",
+  "foundingDate": "2021-09",
+  "founder": {
+    "@type": "Person",
+    "name": "Amal Manoj",
+    "alternateName": "xbeastop"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "email": "pointcalcdev@gmail.com",
+    "availableLanguage": ["English"]
+  },
+  "sameAs": [
+    "https://www.instagram.com/pointcalc_ig/"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "PointCalc",
+  "url": "https://pointcalc.in/",
+  "publisher": { "@type": "Organization", "name": "PointCalc" },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://pointcalc.in/faq/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Amal Manoj",
+  "alternateName": "xbeastop",
+  "jobTitle": "Founder & Developer, PointCalc",
+  "worksFor": { "@type": "Organization", "name": "PointCalc" },
+  "url": "https://pointcalc.in/#founder",
+  "image": "https://pointcalc.in/profile.JPG",
+  "sameAs": [
+    "https://www.instagram.com/xbeastop/",
+    "https://www.instagram.com/pointcalc_ig/"
+  ],
+  "description": "Indie Android developer from Kerala, India. Started PointCalc in September 2021 as a PUBG player tired of manual point calculation and Photoshop work after every match. Now an Android developer at Wrench Solutions, Kochi."
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../styles.css" />
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../rtl.css" />
+<link rel="alternate" hreflang="en" href="https://pointcalc.in/">
+<link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/">
+<link rel="alternate" hreflang="tr" href="https://pointcalc.in/tr/">
+<link rel="alternate" hreflang="x-default" href="https://pointcalc.in/">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" lang="en" href="#top"><img src="https://pointcalc.in/icon.png" alt="PointCalc" />PointCalc</a>
+    <div class="nav-links">
+      <a href="#how">كيف يعمل</a><a href="features/index.html">المزايا</a><a href="designs/index.html">التصاميم</a><a href="guide/index.html">الدليل</a><a href="#pricing">الأسعار</a><a href="faq/index.html">الأسئلة الشائعة</a>
+    </div>
+    <a class="btn btn-acid nav-cta" href="#download">تحميل</a>
+    <div class="lang" id="langSwitch">
+        <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-label="Language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18"/></svg><span>AR</span><svg class="lang-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="lang-menu" role="menu"><a class="ln" href="../index.html" lang="en" hreflang="en"><span class="ln-native">English</span><span class="ln-code">EN</span></a><a class="ln on" href="../ar/index.html" lang="ar" hreflang="ar" dir="rtl"><span class="ln-native">العربية</span><span class="ln-code">AR</span></a><a class="ln" href="../tr/index.html" lang="tr" hreflang="tr"><span class="ln-native">Türkçe</span><span class="ln-code">TR</span></a></div>
+      </div>
+    <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="badge reveal"><span class="dot"></span>جديد · استخراج البيانات من اللقطات بالذكاء الاصطناعي</span>
+      <h1 class="reveal">أسقِط اللقطات.<br /><span class="em">واحصل على</span><br /><span class="stroke">الحقيبة كاملة.</span></h1>
+      <p class="hero-sub reveal">حقيبة أدوات البطولات بالذكاء الاصطناعي لمنظّمي BGMI و PUBG Mobile و Free Fire. ارفع لقطات اللوبي والنتائج — تُقرأ المراكز والقتلات تلقائيًا، ثم يُنشئ PointCalc جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات والبوسترات والشهادات نيابةً عنك.</p>
+      <div class="hero-actions reveal">
+        <div class="store-badges">
+          <a href="https://apps.apple.com/in/app/pointcalc-custom-pt-maker/id6747952141"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1752019200" alt="حمّله من App Store" /></a>
+          <a href="https://play.google.com/store/apps/details?id=com.pointcalc.global"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="احصل عليه من Google Play" /></a>
+        </div>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="st"><b>4.9<span class="star">★</span></b><span>App Store</span></div>
+        <div class="st"><b>4.4<span class="star">★</span></b><span>Google Play</span></div>
+        <div class="st"><b>100K+</b><span>تنزيلات</span></div>
+        <div class="st"><b>559+</b><span>تقييمات</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="glow"></div>
+      <div class="poster p1"><img src="https://pointcalc.in/poster1.webp" alt="تصميم جدول النقاط" /></div>
+      <div class="poster p2"><img src="https://pointcalc.in/poster2.webp" alt="تصميم أقوى الفرق" /></div>
+      <div class="poster p3"><img src="https://pointcalc.in/poster3.webp" alt="تصميم قائمة الخانات" /></div>
+      <div class="hero-chip c1"><span class="dot" style="width:6px;height:6px;border-radius:50%;background:var(--acid);display:inline-block"></span>الذكاء الاصطناعي يقرأ اللقطات…</div>
+      <div class="hero-chip c2">✓ تم إنشاء الحقيبة · 0:03</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GAMES STRIP ============ -->
+<div class="strip" aria-label="الألعاب المدعومة">
+  <div class="strip-row" id="strip">
+    <span class="item"><img src="https://pointcalc.in/icon.png" alt="" />BGMI</span><span class="sep">/</span>
+    <span class="item"><img src="https://pointcalc.in/icon.png" alt="" />PUBG Mobile</span><span class="sep">/</span>
+    <span class="item"><img src="https://pointcalc.in/icon.png" alt="" />Free Fire</span><span class="sep">/</span>
+    <span class="item">جدول النقاط</span><span class="sep">/</span>
+    <span class="item">أقوى الفرق</span><span class="sep">/</span>
+    <span class="item">أبرز اللاعبين</span><span class="sep">/</span>
+    <span class="item">قائمة الخانات</span><span class="sep">/</span>
+    <span class="item">الشهادات</span><span class="sep">/</span>
+  </div>
+</div>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="pad" id="how">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">كيف يعمل</span>
+      <h2>ثلاث نقرات إلى حقيبة جاهزة للنشر</h2>
+      <p>بلا جداول بيانات. بلا نسخ ولصق من اللقطات. بلا فوتوشوب. يتولّى PointCalc السلسلة كاملة — من اللقطات الخام إلى حقيبة بطولة جاهزة بجودة البث.</p>
+    </div>
+    <div class="steps">
+      <span class="flow f1" aria-hidden="true">→</span>
+      <span class="flow f2" aria-hidden="true">→</span>
+      <div class="step s1 reveal">
+        <span class="bar"></span>
+        <div class="step-head">
+          <span class="step-badge">1</span>
+          <svg class="step-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V4"/><path d="m7 9 5-5 5 5"/><path d="M5 20h14"/></svg>
+        </div>
+        <span class="step-kick">الخطوة 01</span>
+        <h3>ارفع لقطاتك</h3>
+        <p>أسقِط لقطات اللوبي والنتائج من BGMI أو PUBG Mobile أو Free Fire. هذا هو المُدخل الوحيد الذي يحتاجه PointCalc — دعم لعدة ألعاب جاهز فورًا.</p>
+      </div>
+      <div class="step s2 reveal">
+        <span class="bar"></span>
+        <div class="step-head">
+          <span class="step-badge">2</span>
+          <svg class="step-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V6a2 2 0 0 1 2-2h2"/><path d="M16 4h2a2 2 0 0 1 2 2v2"/><path d="M20 16v2a2 2 0 0 1-2 2h-2"/><path d="M8 20H6a2 2 0 0 1-2-2v-2"/><path d="M4 12h16"/></svg>
+        </div>
+        <span class="step-kick">الخطوة 02</span>
+        <h3>الذكاء الاصطناعي يستخرج البيانات</h3>
+        <p>تُقرأ المراكز والقتلات مباشرةً من اللقطات. يستخلص PointCalc الصورة كاملة — جدول النقاط وأقوى الفرق وأبرز اللاعبين. عدّل أي قيمة عند الحاجة.</p>
+      </div>
+      <div class="step s3 reveal">
+        <span class="bar"></span>
+        <div class="step-head">
+          <span class="step-badge">3</span>
+          <svg class="step-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4Z"/></svg>
+        </div>
+        <span class="step-kick">الخطوة 03</span>
+        <h3>انشُر التصميم</h3>
+        <p>اختر قالبًا، أضِف هويتك، صدّر. جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات وبوسترات الفرق والشهادات — كلها مدمجة.</p>
+      </div>
+    </div>
+    <p class="how-more reveal">هل تريد الشرح الكامل؟ <a href="guide/index.html">اقرأ الدليل خطوة بخطوة →</a></p>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="pad" id="features" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">المزايا</span>
+      <h2>حقيبة أدواتك المتكاملة للبطولات</h2>
+      <p>كل ما تحتاجه لإدارة سكريم أو دوري أو بطولة — دون التنقّل بين خمسة تطبيقات مختلفة.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat big reveal">
+        <div class="copy">
+          <span class="tag">الميزة الأبرز</span>
+          <h3>استخراج البيانات من اللقطات بالذكاء الاصطناعي</h3>
+          <p>أسقِط لقطات اللوبي والنتائج من BGMI أو PUBG Mobile أو Free Fire. تُقرأ المراكز والقتلات تلقائيًا — يُنشأ جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات والبوسترات والشهادات من الملفات نفسها.</p>
+        </div>
+        <div class="feat-shots">
+          <img src="https://pointcalc.in/in_game_2.JPG" alt="لقطة نتائج داخل اللعبة" />
+          <img src="https://pointcalc.in/in_game_1.jpg" alt="لقطة لوبي داخل اللعبة" />
+        </div>
+      </div>
+      <div class="feat small a-blue reveal"><span class="tag">مباشر</span><h3>جداول نقاط يومية</h3><p>ترتيب مباشر بعد كل مباراة. انشُر جدول نقاط جديدًا ولوحة صدارة لأقوى الفرق دون كسر التنسيق.</p>
+        <div class="ministand" aria-hidden="true">
+          <div class="ms-row lead"><span class="ms-rank">1</span><span class="ms-team" style="width:96%"></span><span class="ms-pts">128</span></div>
+          <div class="ms-row"><span class="ms-rank">2</span><span class="ms-team" style="width:82%"></span><span class="ms-pts">114</span></div>
+          <div class="ms-row"><span class="ms-rank">3</span><span class="ms-team" style="width:68%"></span><span class="ms-pts">97</span></div>
+          <div class="ms-row"><span class="ms-rank">4</span><span class="ms-team" style="width:54%"></span><span class="ms-pts">83</span></div>
+        </div>
+      </div>
+      <div class="feat third a-heat reveal"><span class="tag">بطاقات إحصائية</span><h3>أبرز اللاعبين وأقوى الفرق</h3><p>ترتيب تلقائي من بيانات المباراة — أفضل لاعب في كل لوبي، يظهر كبطاقات إحصائية بجودة المحترفين وبألوانك.</p></div>
+      <div class="feat third reveal"><span class="tag">بثّ</span><h3>قائمة الخانات وبوسترات الفرق</h3><p>أضِف فرقك ولاعبيك وشعاراتك — يحوّلها PointCalc إلى قائمة خانات بجودة البث وبوسترات لكل فريق.</p></div>
+      <div class="feat third a-gold reveal"><span class="tag">بلا فوتوشوب</span><h3>شهادات الفائزين</h3><p>قوالب شهادات مجانية ومدفوعة. قواعد مخصّصة ومضاعِفات للمراكز والقتلات — تُولَّد آليًا لا تُصمَّم يدويًا.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS BAND ============ -->
+<section class="band">
+  <div class="wrap">
+    <div class="st reveal"><b>100K+</b><span>تنزيلات</span></div>
+    <div class="st reveal"><b>4.9★</b><span>تقييم App Store</span></div>
+    <div class="st reveal"><b>4.4★</b><span>تقييم Play Store</span></div>
+    <div class="st reveal"><b>559+</b><span>إجمالي التقييمات</span></div>
+  </div>
+</section>
+
+<!-- ============ DESIGNS ============ -->
+<section class="pad" id="designs">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">التصاميم</span>
+      <h2>قوالب تبدو جاهزة للبثّ</h2>
+      <p>توقّف عن قضاء الساعات في فوتوشوب. اختر قالبًا، أضِف هويتك، وانشُر.</p>
+    </div>
+    <div class="gallery">
+      <div class="g reveal"><img src="https://pointcalc.in/poster1.webp" alt="تخطيط جدول النقاط 1" /><span class="lbl">جدول النقاط</span></div>
+      <div class="g reveal"><img src="https://pointcalc.in/poster2.webp" alt="تخطيط جدول النقاط 2" /><span class="lbl">أقوى الفرق</span></div>
+      <div class="g reveal"><img src="https://pointcalc.in/poster3.webp" alt="تخطيط جدول النقاط 3" /><span class="lbl">أبرز اللاعبين</span></div>
+      <div class="g reveal"><img src="https://pointcalc.in/poster4.webp" alt="تخطيط قائمة الخانات" /><span class="lbl">قائمة الخانات</span></div>
+    </div>
+    <div class="designs-more reveal">
+      <a class="btn btn-acid" href="designs/index.html">تصفّح أكثر من 190 قالبًا →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="pad" id="pricing" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="kicker center">الأسعار</span>
+      <h2>ابدأ مجانًا. ارتقِ عندما تتوسّع.</h2>
+      <p>PointCalc مجاني للأبد. افتح التصاميم المدفوعة أو أضِف استخراج اللقطات بالذكاء الاصطناعي متى كنت مستعدًا.</p>
+      <div class="price-toggle" id="priceToggle">
+        <button data-i="0">أسبوعي</button>
+        <button data-i="1" class="on">شهري</button>
+        <button data-i="2">ربع سنوي</button>
+        <button data-i="3">سنوي</button>
+      </div>
+    </div>
+    <div class="price-grid">
+      <div class="plan reveal">
+        <span class="pname">Premium</span>
+        <div class="pprice"><span data-price="premium">₹69</span> <span class="per" data-per="">/شهر</span></div>
+        <ul>
+          <li><span class="ck">+</span>جداول نقاط وأقوى الفرق وبوسترات بلا حدود</li>
+          <li><span class="ck">+</span>قوالب التصميم المدفوعة</li>
+          <li><span class="ck">+</span>قائمة الخانات وأبرز اللاعبين والشهادات</li>
+          <li><span class="ck">+</span>إدخال البيانات يدويًا</li>
+          <li><span class="ck">+</span>دعم عملاء ذو أولوية</li>
+        </ul>
+        <a class="btn btn-ghost" href="#download">احصل على Premium</a>
+      </div>
+      <div class="plan feature reveal">
+        <span class="ribbon">مدعوم بالذكاء الاصطناعي</span>
+        <span class="pname">Premium + AI</span>
+        <div class="pprice"><span data-price="ai">₹350</span> <span class="per" data-per="">/شهر</span></div>
+        <ul>
+          <li><span class="ck">+</span>كل ما في Premium</li>
+          <li><span class="ck">+</span><b>استخراج اللقطات بالذكاء الاصطناعي</b> — تحليل تلقائي لنتائج BGMI و PUBG و FF</li>
+          <li><span class="ck">+</span>جدول نقاط وأقوى الفرق وأبرز اللاعبين مُولّدة تلقائيًا</li>
+          <li><span class="ck">+</span>معالجة مباريات بالجملة</li>
+          <li><span class="ck">+</span>وصول مبكر لميزات الذكاء الاصطناعي الجديدة</li>
+        </ul>
+        <a class="btn btn-acid" href="#download">احصل على Premium + AI</a>
+      </div>
+    </div>
+    <p class="price-note">باقة مجانية بالميزات الأساسية. الأسعار معروضة بالروبية الهندية (INR)؛ تُحوَّل عند الدفع.</p>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="pad" id="reviews" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">موثوق من المنظّمين</span>
+      <h2>ماذا يقول المنظّمون</h2>
+      <p>تنزيلات حقيقية وتقييمات حقيقية وشهادات حقيقية من Play Store و App Store.</p>
+    </div>
+    <div class="quotes">
+      <div class="quote q1 reveal">
+        <span class="qmark">“</span>
+        <span class="stars">★★★★★</span>
+        <p>«بلا شك أحد أفضل التطبيقات التي استخدمتها. الواجهة نظيفة وسلسة واحترافية جدًا. دعم العملاء سريع ومفيد وعالمي المستوى حقًا.»</p>
+        <div class="who"><span class="av">B</span><div><b>Babul Behera</b><span>تقييم على Google Play</span></div></div>
+      </div>
+      <div class="quote q2 reveal">
+        <span class="qmark">“</span>
+        <span class="stars">★★★★★</span>
+        <p>«سهل الاستخدام وأيضًا أفضل دعم لاستيراد التصاميم. كل ما أحتاجه لإدارة السكريمات في مكان واحد — يوفّر عليّ ساعات بعد كل يوم مباريات.»</p>
+        <div class="who"><span class="av">S</span><div><b>Sakeena Basheer</b><span>تقييم على Google Play</span></div></div>
+      </div>
+      <div class="quote q3 reveal">
+        <span class="qmark">“</span>
+        <span class="stars">★★★★★</span>
+        <p>«تطبيق مفيد جدًا للفرق التي تنظّم البطولات أو السكريمات. سريع التعلّم والنتائج تبدو احترافية. أنصح به بشدّة لأي مجتمع يقيم فعاليات.»</p>
+        <div class="who"><span class="av">A</span><div><b>Adhi (Gamer FF)</b><span>تقييم على Google Play</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOUNDER ============ -->
+<section class="founder pad" id="founder">
+  <div class="wrap founder-grid">
+    <div class="founder-img reveal">
+      <img src="https://pointcalc.in/profile.JPG" alt="أمل مانوج (xbeastop)، مؤسّس PointCalc" />
+      <span class="tagchip">صُنع في كيرالا 🇮🇳</span>
+    </div>
+    <div class="reveal">
+      <span class="kicker">من تطوير مطوّر مستقل</span>
+      <h2>تعرّف على xbeastop</h2>
+      <p class="lead">مطوّر واحد يبني حقيبة الأدوات التي احتاجها فعلاً مجتمع الرياضات الإلكترونية في الهند.</p>
+      <p>بدأت PointCalc في سبتمبر 2021. كنت لاعب PUBG أنظّم سكريمات مع الأصدقاء، وأسوأ جزء في يوم البطولة لم يكن المباريات قط — بل ما بعدها. ساعات من حساب النقاط يدويًا، ثم ساعات أخرى في فوتوشوب لتجميع رسوميات النتائج.</p>
+      <div class="more" id="founderMore">
+        <p>كنت طالب BCA لا أعرف سوى لغة C آنذاك. شاهدت درسًا عن أندرويد مدّته 14 ساعة، وبدأت البناء في اليوم التالي، وكان لديّ نموذج عملي خلال أسبوع. حينها اتّضحت الفكرة: بدلًا من بناء نسخة لكل منظّمة، أطلق تطبيقًا واحدًا يستطيع أي منظّم تخصيصه.</p>
+        <p>هذه الأيام أعمل مطوّر أندرويد في Wrench Solutions بكوتشي نهارًا، وما زال PointCalc مشروعي الجانبي — الآن بأكثر من 100 ألف تنزيل، مع استخراج اللقطات بالذكاء الاصطناعي ونسخة iOS.</p>
+      </div>
+      <button class="toggle" id="founderToggle">اقرأ المزيد +</button>
+      <div class="socials">
+        <a class="btn btn-ghost" href="https://www.instagram.com/xbeastop/">Instagram</a>
+        <a class="btn btn-ghost" href="https://wa.me/917907642676">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ الأسئلة الشائعة ============ -->
+<section class="pad" id="faq">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="kicker center">الأسئلة الشائعة</span>
+      <h2>أسئلة شائعة</h2>
+    </div>
+    <div class="faq-list" id="faqList">
+      <div class="faq-item open">
+        <button class="faq-q">ما الألعاب التي يدعمها PointCalc؟<span class="ic">+</span></button>
+        <div class="faq-a"><p>يدعم PointCalc لعبة BGMI و PUBG Mobile و Free Fire — أكبر ثلاثة عناوين باتل رويال في مجتمع البطولات. ترفع لقطات اللوبي والنتائج؛ ويُنشئ PointCalc جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات وبوسترات الفرق والشهادات من تلك البيانات.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">كيف يعمل استخراج البيانات من اللقطات بالذكاء الاصطناعي؟<span class="ic">+</span></button>
+        <div class="faq-a"><p>ارفع لقطات اللوبي والنتائج من مباراة. يقرأ الذكاء الاصطناعي في PointCalc المراكز والقتلات وإحصاءات اللاعبين مباشرةً من الصور ويملأ كل شيء تلقائيًا. يمكنك مراجعة أي قيمة وتعديلها قبل النشر — وتبقى الدقة عالية عبر معظم تخطيطات شاشات النتائج.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">هل PointCalc مجاني؟<span class="ic">+</span></button>
+        <div class="faq-a"><p>نعم — التطبيق مجاني للتنزيل وتعمل الميزات الأساسية دون اشتراك. تتوفّر القوالب المدفوعة واستخراج اللقطات بالذكاء الاصطناعي ضمن باقات مدفوعة اختيارية، تبدأ من ₹29 أسبوعيًا لـ Premium و ₹150 أسبوعيًا لـ Premium + AI.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">هل يمكنني تخصيص التصاميم بهويتي الخاصة؟<span class="ic">+</span></button>
+        <div class="faq-a"><p>نعم. يمكنك ضبط الألوان وتبديل صورة الخلفية وإضافة أي عدد تريده من الشعارات المخصّصة. وللحصول على تصميم مخصّص بالكامل، تواصل عبر WhatsApp أو Instagram وسنصمّمه لك.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="pad cta" id="download">
+  <div class="wrap">
+    <div class="cta-card reveal">
+      <h2>أدِر بطولتك القادمة<br />مع PointCalc</h2>
+      <p>مجاني للتنزيل على iOS و Android. انضم إلى أكثر من 100 ألف منظّم ومستضيف سكريم وصانع محتوى.</p>
+      <div class="store-badges">
+        <a href="https://apps.apple.com/in/app/pointcalc-custom-pt-maker/id6747952141"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1752019200" alt="حمّله من App Store" /></a>
+        <a href="https://play.google.com/store/apps/details?id=com.pointcalc.global"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="احصل عليه من Google Play" /></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <div class="foot-brand" lang="en"><img src="https://pointcalc.in/icon.png" alt="" />PointCalc</div>
+        <p>حقيبة أدوات بطولات مدعومة بالذكاء الاصطناعي لمنظّمي BGMI و PUBG Mobile و Free Fire. صُنع في الهند بواسطة xbeastop.</p>
+      </div>
+      <div class="foot-col">
+        <h4>المنتج</h4>
+        <ul><li><a href="features/index.html">المزايا</a></li><li><a href="designs/index.html">التصاميم</a></li><li><a href="guide/index.html">الدليل</a></li><li><a href="#pricing">الأسعار</a></li><li><a href="faq/index.html">الأسئلة الشائعة</a></li></ul>
+      </div>
+      <div class="foot-col">
+        <h4>تحميل</h4>
+        <ul><li><a href="https://apps.apple.com/in/app/pointcalc-custom-pt-maker/id6747952141">App Store</a></li><li><a href="https://play.google.com/store/apps/details?id=com.pointcalc.global">Google Play</a></li></ul>
+      </div>
+      <div class="foot-col">
+        <h4>تواصل</h4>
+        <ul><li><a href="https://www.instagram.com/pointcalc_ig/">Instagram</a></li><li><a href="mailto:pointcalcdev@gmail.com">البريد الإلكتروني</a></li><li><a href="privacy/index.html">الخصوصية</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 PointCalc. جميع الحقوق محفوظة.</span>
+      <span>بُني بواسطة <a href="#founder">xbeastop</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // nav shadow on scroll
+  const nav = document.getElementById('nav');
+  addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 12));
+
+  // mobile nav toggle
+  document.getElementById('burger').addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+
+  // pricing toggle
+  const PRICES = {
+    premium: ['₹29', '₹69', '₹179', '₹599'],
+    ai:      ['₹150', '₹350', '₹899', '₹2999'],
+    per:     ['/أسبوع', '/شهر', '/ربع', '/سنة']
+  };
+  const toggle = document.getElementById('priceToggle');
+  toggle.addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    const i = +b.dataset.i;
+    toggle.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b));
+    document.querySelector('[data-price="premium"]').textContent = PRICES.premium[i];
+    document.querySelector('[data-price="ai"]').textContent = PRICES.ai[i];
+    document.querySelectorAll('[data-per]').forEach(el => el.textContent = PRICES.per[i]);
+  });
+
+  // founder read more
+  const fm = document.getElementById('founderMore'), ft = document.getElementById('founderToggle');
+  ft.addEventListener('click', () => {
+    fm.classList.toggle('open');
+    ft.textContent = fm.classList.contains('open') ? 'إظهار أقل −' : 'اقرأ المزيد +';
+  });
+
+  // faq
+  document.getElementById('faqList').addEventListener('click', e => {
+    const q = e.target.closest('.faq-q'); if (!q) return;
+    q.parentElement.classList.toggle('open');
+  });
+
+  // duplicate marquee row for seamless loop
+  const strip = document.getElementById('strip');
+  strip.innerHTML += strip.innerHTML;
+
+  // reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach((el, i) => {
+    el.style.transitionDelay = (Math.min(i % 4, 3) * 60) + 'ms';
+    io.observe(el);
+  });
+</script>
+<script>
+  // language switcher dropdown
+  (function(){
+    var ls=document.getElementById('langSwitch'),lb=document.getElementById('langBtn');
+    if(!ls||!lb)return;
+    lb.addEventListener('click',function(e){e.stopPropagation();var o=ls.classList.toggle('open');lb.setAttribute('aria-expanded',o?'true':'false');});
+    document.addEventListener('click',function(e){if(!ls.contains(e.target)){ls.classList.remove('open');lb.setAttribute('aria-expanded','false');}});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'){ls.classList.remove('open');lb.setAttribute('aria-expanded','false');}});
+  })();
+</script>
+</body>
+</html>

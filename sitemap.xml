@@ -1,39 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://pointcalc.in/</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pointcalc.in/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pointcalc.in/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pointcalc.in/"/>
+  </url>
+  <url>
+    <loc>https://pointcalc.in/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pointcalc.in/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pointcalc.in/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pointcalc.in/"/>
+  </url>
+  <url>
+    <loc>https://pointcalc.in/tr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pointcalc.in/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pointcalc.in/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pointcalc.in/"/>
   </url>
   <url>
     <loc>https://pointcalc.in/features/</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pointcalc.in/features/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/features/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pointcalc.in/tr/features/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pointcalc.in/features/"/>
+  </url>
+  <url>
+    <loc>https://pointcalc.in/ar/features/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pointcalc.in/features/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/features/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pointcalc.in/tr/features/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pointcalc.in/features/"/>
+  </url>
+  <url>
+    <loc>https://pointcalc.in/tr/features/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pointcalc.in/features/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/features/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pointcalc.in/tr/features/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pointcalc.in/features/"/>
   </url>
   <url>
     <loc>https://pointcalc.in/designs/</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pointcalc.in/designs/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/designs/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pointcalc.in/tr/designs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pointcalc.in/designs/"/>
+  </url>
+  <url>
+    <loc>https://pointcalc.in/ar/designs/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pointcalc.in/designs/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/designs/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pointcalc.in/tr/designs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pointcalc.in/designs/"/>
+  </url>
+  <url>
+    <loc>https://pointcalc.in/tr/designs/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pointcalc.in/designs/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/designs/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pointcalc.in/tr/designs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pointcalc.in/designs/"/>
   </url>
   <url>
     <loc>https://pointcalc.in/guide/</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pointcalc.in/guide/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pointcalc.in/tr/guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pointcalc.in/guide/"/>
+  </url>
+  <url>
+    <loc>https://pointcalc.in/ar/guide/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pointcalc.in/guide/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pointcalc.in/tr/guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pointcalc.in/guide/"/>
+  </url>
+  <url>
+    <loc>https://pointcalc.in/tr/guide/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pointcalc.in/guide/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pointcalc.in/tr/guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pointcalc.in/guide/"/>
   </url>
   <url>
     <loc>https://pointcalc.in/faq/</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pointcalc.in/faq/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/faq/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pointcalc.in/tr/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pointcalc.in/faq/"/>
+  </url>
+  <url>
+    <loc>https://pointcalc.in/ar/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pointcalc.in/faq/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/faq/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pointcalc.in/tr/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pointcalc.in/faq/"/>
+  </url>
+  <url>
+    <loc>https://pointcalc.in/tr/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pointcalc.in/faq/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/faq/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pointcalc.in/tr/faq/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pointcalc.in/faq/"/>
   </url>
   <url>
     <loc>https://pointcalc.in/privacy/</loc>
-    <lastmod>2026-05-24</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pointcalc.in/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pointcalc.in/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pointcalc.in/privacy/"/>
+  </url>
+  <url>
+    <loc>https://pointcalc.in/ar/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pointcalc.in/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pointcalc.in/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pointcalc.in/privacy/"/>
+  </url>
+  <url>
+    <loc>https://pointcalc.in/tr/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pointcalc.in/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://pointcalc.in/tr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pointcalc.in/privacy/"/>
   </url>
 </urlset>

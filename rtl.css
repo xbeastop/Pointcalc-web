@@ -1,0 +1,73 @@
+/* ============================================================
+   PointCalc — Arabic / RTL overrides
+   Loaded AFTER styles.css only on Arabic (dir="rtl") pages.
+   - Mirrors directional layout
+   - Swaps display/body fonts to an Arabic family (Cairo)
+   - Neutralises letter-spacing (it breaks Arabic letter joining)
+   ============================================================ */
+
+/* Arabic type system — Anton/Hanken/JetBrains have no Arabic glyphs */
+html[dir="rtl"] {
+  --display: "Cairo", "Tajawal", system-ui, sans-serif;
+  --sans:    "Cairo", "Tajawal", system-ui, sans-serif;
+  --mono:    "Cairo", "Tajawal", ui-monospace, monospace;
+}
+
+/* letter-spacing destroys Arabic shaping — turn it off everywhere */
+html[dir="rtl"] body,
+html[dir="rtl"] body * { letter-spacing: normal !important; }
+
+/* Arabic headings need a touch more leading than the Latin display face */
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3 { line-height: 1.15; font-weight: 700; }
+html[dir="rtl"] .hero h1 { line-height: 1.12; }
+html[dir="rtl"] .step h3,
+html[dir="rtl"] .feat h3,
+html[dir="rtl"] .faq-q { font-weight: 700; }
+
+/* ---- nav ---- */
+html[dir="rtl"] .nav-links { margin-left: 0; margin-right: auto; }
+html[dir="rtl"] .nav-cta { margin-left: 0; margin-right: 8px; }
+html[dir="rtl"] .nav-burger { margin-left: 0; margin-right: 8px; }
+
+/* ---- kicker / tag accent lines flip automatically via flex, fine ---- */
+
+/* ---- steps connector arrows point the other way ---- */
+html[dir="rtl"] .steps .flow { transform: translate(50%, -50%) scaleX(-1); }
+html[dir="rtl"] .steps .flow.f1 { left: auto; right: calc(33.333% + 3.5px); }
+html[dir="rtl"] .steps .flow.f2 { left: auto; right: calc(66.666% - 3.5px); }
+html[dir="rtl"] .tut-spine .arrow { transform: scaleX(-1); }
+
+/* ---- step accent bar grows from the right ---- */
+html[dir="rtl"] .step .bar { left: auto; right: 0; }
+
+/* ---- faq ---- */
+html[dir="rtl"] .faq-q { text-align: right; }
+
+/* ---- hero sub / section copy follow text start automatically (dir) ---- */
+
+/* ---- legal / privacy lists ---- */
+html[dir="rtl"] .legal ul li { padding-left: 0; padding-right: 24px; }
+html[dir="rtl"] .legal ul li::before { left: auto; right: 4px; }
+html[dir="rtl"] .legal a { text-underline-offset: 3px; }
+html[dir="rtl"] .toc ol { padding-left: 0; padding-right: 20px; }
+
+/* ---- guide tutorial rail border side ---- */
+html[dir="rtl"] .tut-rail a { border-left: 0; border-right: 2px solid var(--line); }
+html[dir="rtl"] .tut-rail a.active { border-right-color: var(--acid); }
+html[dir="rtl"] .tut-sub::before { /* accent line via flex gap, fine */ }
+
+/* ---- language menu aligns to the (visual) start ---- */
+html[dir="rtl"] .lang-menu { inset-inline-end: 0; }
+
+/* ---- store badges / chips / flex rows all reflow correctly via dir ---- */
+
+/* ---- designs lightbox arrows: keep ‹ prev on the right in RTL feel natural;
+        leave default — they are fixed-position and direction-neutral ---- */
+
+/* numbers, prices, latin brand tokens stay LTR inside RTL text */
+html[dir="rtl"] .pprice,
+html[dir="rtl"] .hero-stats .st b,
+html[dir="rtl"] .band .st b,
+html[dir="rtl"] .stat-value { direction: ltr; unicode-bidi: isolate; }

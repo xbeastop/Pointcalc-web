@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>كيفية استخدام PointCalc — دليل كامل لـ BGMI و PUBG و Free Fire</title>
+<meta name="theme-color" content="#0a0a0f">
+<meta name="description" content="شرح PointCalc خطوة بخطوة: أنشئ بطولة، واحسب المباريات يدويًا أو باستخراج اللقطات بالذكاء الاصطناعي، وانشُر جداول النقاط وأقوى الفرق وأبرز اللاعبين وقوائم الخانات والبوسترات والشهادات — إضافةً إلى التعديل وبطاقات الفرق والنسخ الاحتياطي والدمج.">
+<link rel="canonical" href="https://pointcalc.in/guide/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://pointcalc.in/guide/">
+<meta property="og:title" content="كيفية استخدام PointCalc — دليل كامل لـ BGMI و PUBG و Free Fire">
+<meta property="og:description" content="شرح PointCalc خطوة بخطوة: أنشئ بطولة، واحسب المباريات يدويًا أو باستخراج اللقطات بالذكاء الاصطناعي، وانشُر جداول النقاط وأقوى الفرق وأبرز اللاعبين وقوائم الخانات والبوسترات والشهادات — إضافةً إلى التعديل وبطاقات الفرق والنسخ الاحتياطي والدمج.">
+<meta property="og:image" content="https://pointcalc.in/screenshot.webp">
+<meta property="og:site_name" content="PointCalc">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="كيفية استخدام PointCalc — دليل كامل لـ BGMI و PUBG و Free Fire">
+<meta name="twitter:description" content="شرح PointCalc خطوة بخطوة: أنشئ بطولة، واحسب المباريات يدويًا أو باستخراج اللقطات بالذكاء الاصطناعي، وانشُر جداول النقاط وأقوى الفرق وأبرز اللاعبين وقوائم الخانات والبوسترات والشهادات — إضافةً إلى التعديل وبطاقات الفرق والنسخ الاحتياطي والدمج.">
+<meta name="twitter:image" content="https://pointcalc.in/screenshot.webp">
+<link rel="icon" type="image/png" href="../../icon.png">
+<link rel="apple-touch-icon" href="../../icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pointcalc.in/" },
+    { "@type": "ListItem", "position": 2, "name": "Guide", "item": "https://pointcalc.in/guide/" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to use PointCalc",
+  "description": "The complete guide to PointCalc — create tournaments, calculate matches with AI screenshot extraction, and publish every design. For BGMI, PUBG Mobile & Free Fire organizers.",
+  "image": "https://pointcalc.in/screenshot.webp",
+  "totalTime": "PT5M",
+  "step": [
+    { "@type": "HowToStep", "name": "إنشاء بطولة", "text": "Name your tournament, choose a point system, and add your teams.", "url": "https://pointcalc.in/guide/#chap-2" },
+    { "@type": "HowToStep", "name": "Calculate each match", "text": "Enter results by hand or let PointCalc AI read your lobby and result screenshots to extract placements and kills.", "url": "https://pointcalc.in/guide/#chap-3" },
+    { "@type": "HowToStep", "name": "نشر تصاميمك", "text": "Download the points table, warheads, top fraggers, slot list, team poster and certificates.", "url": "https://pointcalc.in/guide/#chap-4" }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../../styles.css" />
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../../rtl.css" />
+<style>
+.tut-hero{position:relative;overflow:hidden;padding:clamp(56px,7vw,104px) 0 clamp(36px,4vw,56px);border-bottom:1px solid var(--line)}
+.tut-hero .glow{position:absolute;inset:-30% -10% auto auto;width:55%;height:120%;background:radial-gradient(circle,var(--acid-dim),transparent 68%);filter:blur(20px);z-index:0;pointer-events:none}
+.tut-hero .wrap{position:relative;z-index:1}
+.tut-hero h1{font-size:clamp(2.8rem,7.4vw,6rem);line-height:.98;margin-top:18px;max-width:18ch}
+.tut-hero h1 .em{color:var(--acid)}
+.tut-hero p{color:var(--ink-2);font-size:1.18rem;max-width:60ch;margin-top:22px}
+.tut-layout{display:grid;grid-template-columns:248px 1fr;gap:60px;align-items:start;padding-top:56px;padding-bottom:100px}
+.tut-rail{position:sticky;top:96px;display:flex;flex-direction:column;gap:2px}
+.tut-rail .rl-head{font-family:var(--mono);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);padding:0 12px 12px}
+.tut-rail a{font-family:var(--mono);font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);padding:10px 12px;border-left:2px solid var(--line);transition:color .15s,border-color .15s;display:flex;gap:10px;align-items:baseline}
+.tut-rail a:hover{color:var(--ink)}
+.tut-rail a.active{color:var(--acid);border-left-color:var(--acid)}
+.tut-rail a .rnum{color:var(--ink-3);font-size:.68rem}
+.tut-rail a.active .rnum{color:var(--acid)}
+.tut-chapter{padding:40px 0 4px;border-top:1px solid var(--line);scroll-margin-top:88px}
+.tut-chapter:first-child{border-top:0;padding-top:8px}
+.tut-chapter-head{margin-bottom:6px}
+.tut-chapter-head .cnum{font-family:var(--display);font-size:clamp(2.6rem,6vw,4rem);color:transparent;-webkit-text-stroke:1.5px var(--line-2);line-height:1;margin-bottom:6px}
+.tut-chapter-head .kicker{margin-top:4px}
+.tut-chapter-head h2{font-size:clamp(2rem,4.4vw,3.4rem);margin:14px 0 14px;line-height:.96}
+.tut-chapter-head p{color:var(--ink-2);max-width:62ch;font-size:1.1rem}
+.tut-sub{font-family:var(--mono);font-weight:500;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--acid);margin:42px 0 4px;display:flex;align-items:center;gap:.7em}
+.tut-sub::before{content:"";width:18px;height:1px;background:var(--acid);display:inline-block}
+.tut-step{display:grid;grid-template-columns:1fr 248px;gap:44px;align-items:start;padding:34px 0;border-bottom:1px solid var(--line)}
+.tut-step.noimg{grid-template-columns:1fr}
+.tut-step .stxt h3{font-family:var(--sans);font-weight:700;text-transform:none;letter-spacing:-.01em;font-size:1.42rem;line-height:1.2;margin-bottom:11px}
+.tut-step .stxt>p{color:var(--ink-2);font-size:1.05rem}
+.tut-shot{justify-self:end}
+.tut-shot img{width:248px;border-radius:22px;border:1px solid var(--line-2);box-shadow:0 36px 70px -34px rgba(0,0,0,.9);background:#000}
+.callout{margin-top:14px;padding:13px 16px;border-radius:13px;border:1px solid}
+.callout .cl-body{font-size:.98rem;line-height:1.55;color:var(--ink)}
+.callout .cl-tag{display:block;font-family:var(--mono);font-size:.6rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:4px}
+.callout.tip{background:var(--acid-dim);border-color:color-mix(in srgb,var(--acid) 36%,transparent)}
+.callout.tip .cl-tag{color:var(--acid)}
+.callout.note{background:var(--heat-dim);border-color:color-mix(in srgb,var(--heat) 38%,transparent)}
+.callout.note .cl-tag{color:var(--heat)}
+.callout.model{background:rgba(118,158,255,.10);border-color:rgba(118,158,255,.34)}
+.callout.model .cl-tag{color:#9db4ff}
+.paste-list{display:block;font-family:var(--mono);font-size:.84rem;color:var(--ink);background:#0a0a0f;border:1px solid var(--line);border-radius:9px;padding:11px 13px;margin-top:9px;white-space:pre-line;line-height:1.7}
+.cl-img{margin-top:10px;max-width:340px;width:100%;border-radius:10px;border:1px solid var(--line-2)}
+.tut-spine{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin:8px 0 4px}
+.tut-spine .sp{font-family:var(--display);text-transform:uppercase;font-size:1.5rem;letter-spacing:.02em;border:1px solid var(--line-2);border-radius:14px;padding:16px 26px;color:var(--ink);background:var(--panel)}
+.tut-spine .sp .n{font-family:var(--mono);font-size:.58rem;letter-spacing:.14em;color:var(--acid);display:block;margin-bottom:3px}
+.tut-spine .arrow{color:var(--acid);font-size:1.5rem}
+.tut-spine-note{color:var(--ink-2);max-width:60ch;margin-top:20px}
+@media (max-width:940px){
+ .tut-layout{grid-template-columns:1fr;gap:0;padding-top:8px}
+ .tut-rail{display:none}
+ .tut-step{grid-template-columns:1fr;gap:22px}
+ .tut-shot{justify-self:start;order:-1}
+ .tut-shot img{width:min(260px,72%)}
+}
+.copy-link{background:none;border:0;cursor:pointer;color:var(--ink-3);padding:3px;display:inline-flex;align-items:center;justify-content:center;border-radius:7px;transition:color .15s,background .15s,opacity .15s;line-height:0;vertical-align:middle}
+.copy-link:hover{color:var(--acid);background:var(--acid-dim)}
+.copy-link.copied{color:var(--acid)}
+.copy-link svg{width:15px;height:15px;display:block}
+.tut-chapter-head h2 .copy-link{margin-left:.4em}
+.tut-chapter-head h2 .copy-link svg{width:20px;height:20px}
+.tut-sub .copy-link{opacity:.4;margin-left:.15em}
+.tut-sub:hover .copy-link,.tut-sub .copy-link:hover{opacity:1}
+.tut-sub{scroll-margin-top:96px}
+.copy-toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(12px);background:var(--acid);color:#0d0716;font-family:var(--mono);font-size:.74rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:10px 18px;border-radius:999px;box-shadow:0 16px 40px -14px var(--acid);opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:300}
+.copy-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+</style>
+<link rel="alternate" hreflang="en" href="https://pointcalc.in/guide/">
+<link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/guide/">
+<link rel="alternate" hreflang="tr" href="https://pointcalc.in/tr/guide/">
+<link rel="alternate" hreflang="x-default" href="https://pointcalc.in/guide/">
+</head>
+<body>
+<nav class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" lang="en" href="../index.html"><img src="https://pointcalc.in/icon.png" alt="PointCalc" />PointCalc</a>
+    <div class="nav-links">
+      <a href="../features/index.html">المزايا</a><a href="../designs/index.html">التصاميم</a><a href="../guide/index.html" style="color:var(--ink)">الدليل</a><a href="../index.html#pricing">الأسعار</a><a href="../faq/index.html">الأسئلة الشائعة</a>
+    </div>
+    <a class="btn btn-acid nav-cta" href="../index.html#download">تحميل</a>
+    <div class="lang" id="langSwitch">
+        <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-label="Language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18"/></svg><span>AR</span><svg class="lang-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="lang-menu" role="menu"><a class="ln" href="../../guide/index.html" lang="en" hreflang="en"><span class="ln-native">English</span><span class="ln-code">EN</span></a><a class="ln on" href="../../ar/guide/index.html" lang="ar" hreflang="ar" dir="rtl"><span class="ln-native">العربية</span><span class="ln-code">AR</span></a><a class="ln" href="../../tr/guide/index.html" lang="tr" hreflang="tr"><span class="ln-native">Türkçe</span><span class="ln-code">TR</span></a></div>
+      </div>
+    <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<section class="tut-hero"><div class="glow"></div><div class="wrap">
+<span class="kicker">الدليل الكامل</span>
+<h1>كيفية استخدام <span class="em">PointCalc</span>، من البداية إلى النهاية.</h1>
+<p>كل ما يستطيع التطبيق فعله — من إنشاء أول بطولة لك إلى الحساب بلقطات الذكاء الاصطناعي والتصاميم والنسخ الاحتياطي وإحصاءات الموسم. اتبعه من الأعلى للأسفل، أو انتقل إلى فصل.</p>
+</div></section>
+<div class="wrap tut-layout">
+<aside class="tut-rail"><div class="rl-head">الفصول</div><a href="#chap-0" data-chap="chap-0"><span class="rnum">00</span>كيف يعمل PointCalc</a><a href="#chap-1" data-chap="chap-1"><span class="rnum">01</span>التثبيت والإعداد</a><a href="#chap-2" data-chap="chap-2"><span class="rnum">02</span>إنشاء بطولة</a><a href="#chap-3" data-chap="chap-3"><span class="rnum">03</span>حساب مباراة</a><a href="#chap-4" data-chap="chap-4"><span class="rnum">04</span>نشر تصاميمك</a><a href="#chap-5" data-chap="chap-5"><span class="rnum">05</span>تعديل بطولة قائمة</a><a href="#chap-6" data-chap="chap-6"><span class="rnum">06</span>المشاركة والاستيراد</a><a href="#chap-7" data-chap="chap-7"><span class="rnum">07</span>النسخ الاحتياطي لبياناتك</a><a href="#chap-8" data-chap="chap-8"><span class="rnum">08</span>الدمج والتسطيح</a></aside>
+<div class="tut-main"><section class="tut-chapter" id="chap-0"><div class="tut-chapter-head reveal"><div class="cnum">00</div><span class="kicker">كيف يعمل</span><h2>كيف يعمل PointCalc</h2><p>يحوّل PointCalc لقطات مبارياتك ونتائجها إلى رسوميات جاهزة للبثّ. مهما كان ما تصنعه، فالخطوات الثلاث نفسها دائمًا.</p></div><div class="tut-spine"><div class="sp"><span class="n">الخطوة 1</span>إنشاء</div><span class="arrow">→</span><div class="sp"><span class="n">الخطوة 2</span>حساب</div><span class="arrow">→</span><div class="sp"><span class="n">الخطوة 3</span>نشر</div></div><p class="tut-spine-note">كل تصميم — جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات والبوستر والشهادة — يتحدّث تلقائيًا من آخر حساب لك.</p><div class="tut-step reveal"><div class="stxt"><h3>كل شيء يبدأ من الشاشة الرئيسية</h3><p>عندما تفتح PointCalc تصل إلى هنا. كل بطولة تنشئها مدرجة، ولكل منها أزرار بنقرة واحدة لحساب مباراة ولكل تصميم. يضمّ صف الإجراءات السريعة في الأعلى اختصارات بطاقات الفرق والاستيراد والدمج.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/13.jpeg" alt="كل شيء يبدأ من الشاشة الرئيسية" loading="lazy"/></div></div></section><section class="tut-chapter" id="chap-1"><div class="tut-chapter-head reveal"><div class="cnum">01</div><span class="kicker">ابدأ</span><h2>التثبيت والإعداد</h2><p>إعداد لمرة واحدة ليكون كل تصميم جاهزًا للاستخدام.</p></div><div class="tut-step reveal"><div class="stxt"><h3>ثبّت التطبيق ودع التصاميم تُنزّل</h3><p>في أول مرة تفتح فيها التطبيق ينزّل حزمة تصاميمه. على Android قد ترى رسالة سريعة «تنزيل ملفات إضافية»؛ وعلى iPhone يبدأ من تلقاء نفسه.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/01.jpeg" alt="ثبّت التطبيق ودع التصاميم تُنزّل" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>انتظر حتى ينتهي شريط التنزيل</h3><p>سترى شريط «جارٍ تنزيل التصاميم» على الشاشة الرئيسية — يبدو نفسه على Android و iPhone. دعه ينتهي وتصبح مجموعة التصاميم الكاملة جاهزة.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/58-odr-progress.jpeg" alt="انتظر حتى ينتهي شريط التنزيل" loading="lazy"/></div></div></section><section class="tut-chapter" id="chap-2"><div class="tut-chapter-head reveal"><div class="cnum">02</div><span class="kicker">الخطوة الأولى</span><h2>إنشاء بطولة</h2><p>جهّز فعاليتك ونظام تنقيطك وفرقك.</p></div><div class="tut-step reveal"><div class="stxt"><h3>ابدأ بطولة جديدة</h3><p>اكتب اسمًا واضغط GO. فعّل Round Robin إذا كان هذا نظامك.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/04.jpeg" alt="ابدأ بطولة جديدة" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>…أو انسخ فرق الأسبوع الماضي</h3><p>بدلًا من البدء فارغًا، مرّر لأسفل واختر بطولة سابقة لنسخ فرقها إلى بطولة جديدة.</p><div class="callout tip"><div class="cl-body"><span class="cl-tag">نصيحة</span>عند النسخ، ينقل PointCalc كل فريق (مع تصفير النقاط) ويرتّبهم من الأقل إجمالًا إلى الأعلى. لذا تجلس الفرق التي لم تتأهّل الأسبوع الماضي في الأعلى تمامًا — احذف تلك القليلة ويتبقّى لك الفرق المتأهّلة. مثالي للدوريات الأسبوعية حيث يتأهّل، مثلًا، أفضل 15 من 24.</div></div></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/19.jpeg" alt="…أو انسخ فرق الأسبوع الماضي" loading="lazy"/></div></div><h3 class="tut-sub">اضبط نظام تنقيطك</h3><div class="tut-step reveal"><div class="stxt"><h3>اختر نظام نقاط</h3><p>اختر نظامًا جاهزًا (BGMI أو Free Fire) أو حدّد نقاط القتل والمراكز الخاصة بك.</p><div class="callout tip"><div class="cl-body"><span class="cl-tag">نصيحة</span>غيّر أي رقم ويظهر زر «Save preset». احفظه مرة واحدة ويظهر نظامك المخصّص ضمن «More» في كل مرة تنشئ فيها بطولة.</div></div></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/05.jpeg" alt="اختر نظام نقاط" loading="lazy"/></div></div><h3 class="tut-sub">أضِف فرقك</h3><div class="tut-step reveal"><div class="stxt"><h3>أضِف كل فريق</h3><p>لكل فريق أضِف اسمًا — الشعار ورقم الخانة والوسوم واللاعبون اختيارية — اضغط Add Team، وكرّر. عند إضافة الجميع، اضغط Create Tourney. يعرض العدّاد كم فريقًا أضفت حتى الآن.</p><div class="callout tip"><div class="cl-body"><span class="cl-tag">نصيحة</span>في عجلة من أمرك؟ اكتب أو الصق اسم فريق واحد في كل سطر داخل خانة الفريق، وينشئ PointCalc فريقًا من كل سطر:<span class="paste-list">Maniac Esports
+Team xOp
+Pointcalc Esports</span></div></div><div class="callout tip"><div class="cl-body"><span class="cl-tag">نصيحة</span>الوسوم مجرد طريقة للعثور على فريق أسرع لاحقًا. عند حساب مباراة يمكنك البحث عن فريق باسمه أو اسم أي لاعب أو رقم خانته أو وسم أعطيته إياه.</div></div></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/07.jpeg" alt="أضِف كل فريق" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>تحقّق من قائمة فرقك</h3><p>تعرض علامة التبويب Entered كل من أضفته. اضغط أيقونة السلّة بجوار فريق لإزالته.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/08.jpeg" alt="تحقّق من قائمة فرقك" loading="lazy"/></div></div></section><section class="tut-chapter" id="chap-3"><div class="tut-chapter-head reveal"><div class="cnum">03</div><span class="kicker">الخطوة الثانية</span><h2>حساب مباراة</h2><p>بعد كل مباراة تضيف نتائجها. افعل ذلك يدويًا، أو دع PointCalc AI يقرأ لقطاتك نيابةً عنك.</p></div><h3 class="tut-sub">يدويًا</h3><div class="tut-step reveal"><div class="stxt"><h3>افتح الحساب واختر فريقًا</h3><p>في شاشة الحساب تختار فريقًا أولًا — فيملأ ذلك الحقول أدناه لتُدخل نتيجته.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/15.jpeg" alt="افتح الحساب واختر فريقًا" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>اعثر على فريق بسرعة</h3><p>ابحث باسم الفريق أو رقم الخانة أو اسم أي لاعب أو وسم، ثم اضغط الاقتراح الأعلى لاختياره.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/16.jpeg" alt="اعثر على فريق بسرعة" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>حدّد رقم المباراة والمضاعِف</h3><p>قبل أن تبدأ، حدّد رقم المباراة. أضِف مضاعِفًا إذا كانت هذه المباراة تُحتسب أكثر (نهائي ×2 مثلًا)، واختر كيف يُملأ المركز أثناء تقدّمك.</p><div class="callout tip"><div class="cl-body"><span class="cl-tag">نصيحة</span>يملأ التناقص التلقائي الجدول من المركز الأخير صعودًا — مفيد للتحديث المباشر بينما المباراة ما زالت جارية.</div></div></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/14.jpeg" alt="حدّد رقم المباراة والمضاعِف" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>أبقِ لقطة النتائج أمامك</h3><p>يمكنك إسقاط لقطة نتائج المباراة في المعاينة وتكبيرها هنا مباشرةً — دون التنقّل بين معرضك و PointCalc أثناء كتابة القتلات والمركز.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/17.jpeg" alt="أبقِ لقطة النتائج أمامك" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>راجِع ما أدخلته</h3><p>تسرد علامة التبويب Entered مركز كل فريق وقتلاته ومجموعه للمباراة. اترك القتلات أو المركز فارغًا لفريق لم يسجّل شيئًا، واضغط مطوّلًا على صف لإزالته.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/18.jpeg" alt="راجِع ما أدخلته" loading="lazy"/></div></div><h3 class="tut-sub">باستخدام PointCalc AI</h3><div class="tut-step reveal"><div class="stxt"><h3>ارفع لقطاتك</h3><p>نوعان: لقطات اللوبي (تُلتقط بينما الجميع ما زالوا أحياء) ولقطات النتائج (دون أي طبقات على الشاشة). ثم اضغط «Upload all screenshots».</p><div class="callout tip"><div class="cl-body"><span class="cl-tag">نصيحة</span>أبقِ اللقطات واضحة وغير مقصوصة، دون طبقات، واضبط لغة اللعبة على الإنجليزية. يعمل PointCalc AI لـ BGMI و PUBG و Free Fire.</div></div></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/62-ai-initial.jpeg" alt="ارفع لقطاتك" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>دع PointCalc يقرأها</h3><p>بعد الرفع، سترى كل خانة التقطها. اضغط «Update» على أي خانة للتحقّق مما وجده أو تصحيحه.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/51.jpeg" alt="دع PointCalc يقرأها" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>صحّح رقم خانة</h3><p>إذا خرجت خانة لوبي خاطئة، اضغط عليها وحدّد رقم الخانة الصحيح.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/53.jpeg" alt="صحّح رقم خانة" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>صحّح قتلات فريق</h3><p>اضغط على فريق لتصحيح إجمالي قتلاته إذا بدا العدد خاطئًا.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/54.jpeg" alt="صحّح قتلات فريق" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>أضِف قتلات اللاعبين (لأبرز اللاعبين)</h3><p>افتح فريقًا لإدخال قتلات كل لاعب — هذا ما يشغّل تصاميم أبرز اللاعبين و MVP. في المرة الأولى تضيف اسم كل لاعب وقتلاته؛ بعد ذلك تُملأ تلقائيًا، ويمكنك تصحيح أي شيء بمقارنته باللقطة.</p><div class="callout note"><div class="cl-body"><span class="cl-tag">ملاحظة</span>إذا تخطّيت هذا، يحفظ PointCalc نقاط الفريق على أي حال — لكن لن تكون لديك إحصاءات لاعبين فردية.</div></div></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/52.jpeg" alt="أضِف قتلات اللاعبين (لأبرز اللاعبين)" loading="lazy"/></div></div><h3 class="tut-sub">إذا لم يتطابق شيء</h3><div class="tut-step reveal"><div class="stxt"><h3>«لم يُعثر على فريق»</h3><p>بين الحين والآخر يعجز الذكاء الاصطناعي عن مطابقة لقطة بفريق. لا تقلق — اضغط العلامة واختر الفريق الصحيح من غير المعيّنين في قائمة خاناتك. وإن لم يكن ذلك الفريق في اللقطة أصلًا، تُدرج أرقام الخانات غير المعيّنة مع أسماء فرقها أيضًا.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/55.jpeg" alt="«لم يُعثر على فريق»" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>اختر الخانة المطابقة</h3><p>اختر الخانة التي يتطابق لاعبوها مع اللقطة، أو حدّد الخانة يدويًا.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/56.jpeg" alt="اختر الخانة المطابقة" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>«فريق مفقود»</h3><p>إذا لم يكن لخانة فريق على الإطلاق، سترى «فريق مفقود». اضغط عليها لإضافة ذلك الفريق للخانة.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/59-ai-missing-team.jpeg" alt="«فريق مفقود»" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>أضِف الفريق المفقود</h3><p>يفتح النموذج ورقم الخانة مملوء مسبقًا — سمِّ الفريق (أضِف لاعبين إن أردت) واضغط Add. يطابقه PointCalc ويتابع.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/60-ai-add-team.jpeg" alt="أضِف الفريق المفقود" loading="lazy"/></div></div></section><section class="tut-chapter" id="chap-4"><div class="tut-chapter-head reveal"><div class="cnum">04</div><span class="kicker">الخطوة الثالثة</span><h2>نشر تصاميمك</h2><p>بمجرد حساب مباراة، يتحدّث كل تصميم بالأرقام الجديدة. إليك كل تصميم — وكيفية إعادة تنسيقه.</p></div><div class="tut-step reveal"><div class="stxt"><h3>جدول النقاط</h3><p>ترتيبك. تصفّح المظاهر المدفوعة والمجانية والمخصّصة، ثم نزّل.</p><div class="callout tip"><div class="cl-body"><span class="cl-tag">نصيحة</span>بدّل بين الترتيب الإجمالي ومباراة واحدة عبر الشرائح أسفل المعاينة:<img class="cl-img" src="https://pointcalc.in/tutorial-assets/raw/28-chips.jpeg" alt=""/></div></div></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/27.jpeg" alt="جدول النقاط" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>أقوى الفرق</h3><p>منصّة الفرق المتصدّرة — الأول والثاني والثالث.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/34.jpeg" alt="أقوى الفرق" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>أبرز اللاعبين</h3><p>أفضل اللاعبين الأفراد حسب القتلات.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/35.jpeg" alt="أبرز اللاعبين" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>بوستر الفريق</h3><p>شعار واسم كل فريق مشارك في صورة واحدة — رائعة للمشاركة قبل يوم المباراة.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/43.jpeg" alt="بوستر الفريق" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>قائمة الخانات</h3><p>كل فريق مشارك بجوار رقم خانته.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/44.jpeg" alt="قائمة الخانات" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>الشهادة</h3><p>شهادة للفائزين المتصدّرين — عادةً أفضل 3 أو أفضل 5، حسب التصميم.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/45.jpeg" alt="الشهادة" loading="lazy"/></div></div><h3 class="tut-sub">أعد تنسيق أي تصميم</h3><div class="tut-step reveal"><div class="stxt"><h3>اللون والخلفية وشعار اللعبة</h3><p>يحمل كل تصميم نفس عناصر التحكّم السريعة في الأعلى. يتيح لك «Game logo» تبديل هوية اللعبة من قائمة «Choose any».</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/46.jpeg" alt="اللون والخلفية وشعار اللعبة" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>أعد تلوينه</h3><p>حرّك Hue و Saturation و Brightness و Contrast حتى يناسب علامتك، ثم Apply.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/32.jpeg" alt="أعد تلوينه" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>غيّر الخلفية</h3><p>نزّل الصورة الأساسية، وعدّلها كما تشاء، وارفعها مرة أخرى كنسخة بديلة. فقط حافظ على المقاس نفسه ليبقى كل شيء متراصفًا.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/33.jpeg" alt="غيّر الخلفية" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>كبّر وأضِف الشعارات</h3><p>انقر نقرًا مزدوجًا أو اقرص أي تصميم للتكبير. يمكنك أيضًا إضافة ما تريد من الصور فوقه عبر «Add Logos».</p><div class="callout tip"><div class="cl-body"><span class="cl-tag">نصيحة</span>يستخدم المنظّمون هذا لإضافة شعارات الرعاة والشركاء.</div></div></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/38.jpeg" alt="كبّر وأضِف الشعارات" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>ضع شعاراتك</h3><p>اسحب كل شعار إلى المكان الذي تريده على التصميم، ثم اضغط علامة الصح للتأكيد.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/39.jpeg" alt="ضع شعاراتك" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>اكسر التعادل — بالقتلات أو بالمركز</h3><p>عندما يتعادل فريقان في النقاط، قرّر ما إذا كانت قتلاتهما أو مركزهما يحسم من يحتل المرتبة الأعلى.</p><div class="callout tip"><div class="cl-body"><span class="cl-tag">نصيحة</span>شرح كاسر التعادل: عندما ينهي فريقان بنفس النقاط، يقرّر PointCalc من يحتل المرتبة الأعلى باستخدام هذا الإعداد الواحد. افتراضيًا يكسر التعادل بالمركز (الموضع) — بدّله إلى Kills هنا إذا كنت تفضّل أن يتقدّم الفريق صاحب القتلات الأكثر. هذا أكثر سؤال يطرحه المنظّمون.</div></div></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/31.jpeg" alt="Break ties your way" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>خيارات أخرى</h3><p>توجد هنا بعض الإضافات — أضِف فريقًا، أو عدّل تفاصيل الفعالية، أو اضبط تفضيل الترتيب، أو أزِل نقاط مباراة، أو غيّر شعار اللعبة.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/29.jpeg" alt="خيارات أخرى" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>عدّل تفاصيل فعاليتك</h3><p>حدّد شعار الفعالية واسمها واسم المنظّم والاسم الفرعي وحساباتك على التواصل — تظهر هذه على كل تصميم.</p><div class="callout tip"><div class="cl-body"><span class="cl-tag">نصيحة</span>يمكنك أيضًا فتح هذا بمجرد الضغط على صورة التصميم.</div></div></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/63-event-details.jpeg" alt="عدّل تفاصيل فعاليتك" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>بدّل رسوم الشخصيات (أبرز اللاعبين)</h3><p>يستخدم تصميم أبرز اللاعبين شخصيات PUBG/BGMI افتراضيًا. بدّل إلى Free Fire هنا وسيبقى كذلك.</p><div class="callout tip"><div class="cl-body"><span class="cl-tag">نصيحة</span>يوجد المفتاح في قائمة النقاط الثلاث:<img class="cl-img" src="https://pointcalc.in/tutorial-assets/raw/37-pref.jpeg" alt=""/></div></div></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/37.jpeg" alt="بدّل رسوم الشخصيات (أبرز اللاعبين)" loading="lazy"/></div></div><h3 class="tut-sub">تعديلات سريعة على تصميم</h3><div class="tut-step reveal"><div class="stxt"><h3>أعد التسمية أو الشعار، لهذا الرسم فقط</h3><p>داخل تصميم يمكنك إعادة تسمية فريق أو تبديل شعاره لتلك الصورة فقط.</p><div class="callout model"><div class="cl-body"><span class="cl-tag">معلومة مفيدة</span>هذا تعديل مؤقّت — لا يغيّر بطولتك المحفوظة. الطريقة الدائمة في الفصل التالي.</div></div></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/47.jpeg" alt="أعد التسمية أو الشعار، لهذا الرسم فقط" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>…أو عدّل أرقام شهادة</h3><p>على الشهادة يمكنك أيضًا ضبط القتلات والنقاط المعروضة، لهذا الرسم فقط أيضًا.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/48.jpeg" alt="…أو عدّل أرقام شهادة" loading="lazy"/></div></div></section><section class="tut-chapter" id="chap-5"><div class="tut-chapter-head reveal"><div class="cnum">05</div><span class="kicker">إدارة</span><h2>تعديل بطولة قائمة</h2><p>هل تريد إصلاح شيء لاحقًا؟ كل شيء قابل للتعديل.</p></div><div class="tut-step reveal"><div class="stxt"><h3>قائمة التعديل</h3><p>من بطولة يمكنك تغيير نظام النقاط، أو إضافة فريق، أو إعادة تسميتها، أو حذف نقاط مباراة، أو حذف كل شيء.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/20.jpeg" alt="قائمة التعديل" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>تعديل فريق — التعديل الحقيقي</h3><p>هذا هو محرّر الفريق الكامل: غيّر اسمه وشعاره وخانته، وأضِف نقاط مكافأة أو عقوبة، وعدّل أي مباراة.</p><div class="callout model"><div class="cl-body"><span class="cl-tag">معلومة مفيدة</span>التغييرات هنا تُحفظ نهائيًا وتظهر في كل مكان — هذا هو الفرق عن التعديلات السريعة المؤقّتة التي تجريها على تصميم.</div></div></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/22.jpeg" alt="تعديل فريق — التعديل الحقيقي" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>نقاط المكافأة والعقوبة</h3><p>كافئ فريقًا أو اخصم منه في مباراة محدّدة، مع سبب. تفعل ذلك من محرّر الفريق — لا أثناء الحساب.</p><div class="callout tip"><div class="cl-body"><span class="cl-tag">نصيحة</span>الأخضر مكافأة، والأحمر عقوبة.</div></div></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/21.jpeg" alt="نقاط المكافأة والعقوبة" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>تعديل مباراة واحدة</h3><p>افتح أي مباراة سابقة لتصحيح مركزها وقتلاتها ونتائج كل لاعب.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/23.jpeg" alt="تعديل مباراة واحدة" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>تعديل اللاعبين</h3><p>اطّلع على كل مباراة للفريق، وأضِف لاعبيه أو غيّرهم.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/24.jpeg" alt="تعديل اللاعبين" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>تعديل لاعب واحد</h3><p>غيّر اسم لاعب وصورته وقتلاته لكل مباراة.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/25.jpeg" alt="تعديل لاعب واحد" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>إزالة نقاط مباراة</h3><p>أزِل نقاط مباراة واحدة — أو امسحها كلها — دون حذف البطولة.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/30.jpeg" alt="إزالة نقاط مباراة" loading="lazy"/></div></div></section><section class="tut-chapter" id="chap-6"><div class="tut-chapter-head reveal"><div class="cnum">06</div><span class="kicker">مشاركة</span><h2>المشاركة والاستيراد</h2><p>انقل البطولات والفرق بين الأشخاص والأجهزة.</p></div><div class="tut-step reveal"><div class="stxt"><h3>إجراءات أخرى</h3><p>The “…” button opens backup &amp; restore, importing a custom design, and building a tournament from a spreadsheet.</p><div class="callout tip"><div class="cl-body"><span class="cl-tag">نصيحة</span>استيراد تصاميمك المخصّصة هو أحد أكثر ميزات PointCalc محبوبية.</div></div></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/40.jpeg" alt="إجراءات أخرى" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>ابنِ من جدول بيانات</h3><p>نزّل القالب، والصق بياناتك فيه، واستورده مرة أخرى — مفيد لقوائم الفرق الكبيرة.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/42.jpeg" alt="ابنِ من جدول بيانات" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>بطاقات الفرق — مثل نموذج تسجيل</h3><p>بطاقة الفريق هي نسخة PointCalc من نموذج التسجيل. يملأ اللاعب فريقه وتشكيلته في التطبيق ويرسل لك الملف عبر WhatsApp أو Discord؛ تفتحه في PointCalc وتستورده. وهي أيضًا طريقة أنيقة لتقسيم عمل الإعداد بين منظّميك.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/49.jpeg" alt="بطاقات الفرق — مثل نموذج تسجيل" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>استورد بطاقة فريق</h3><p>عند استيراد واحدة، اختر إلى أي بطولة تذهب وأي خانة تأخذ.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/50.jpeg" alt="استورد بطاقة فريق" loading="lazy"/></div></div></section><section class="tut-chapter" id="chap-7"><div class="tut-chapter-head reveal"><div class="cnum">07</div><span class="kicker">الأمان</span><h2>النسخ الاحتياطي لبياناتك</h2><p>حافظ على أمان بطولاتك وانقلها إلى هاتف جديد.</p></div><div class="tut-step reveal"><div class="stxt"><h3>على Android — Google Drive</h3><p>ينسخ PointCalc احتياطيًا إلى Google Drive تلقائيًا (يوميًا، عبر Wi-Fi) أو كلما ضغطت «Back up now». استعد أي نسخة احتياطية سابقة من القائمة.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/61-android-backup.jpeg" alt="على Android — Google Drive" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>على iPhone — ملف نسخ احتياطي</h3><p>صدّر ملف نسخ احتياطي وشاركه عبر Drive أو iCloud أو AirDrop، ثم استورده على الجهاز الآخر. تعمل طريقة الملف هذه على Android أيضًا.</p></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/41.jpeg" alt="على iPhone — ملف نسخ احتياطي" loading="lazy"/></div></div></section><section class="tut-chapter" id="chap-8"><div class="tut-chapter-head reveal"><div class="cnum">08</div><span class="kicker">متقدّم</span><h2>الدمج والتسطيح</h2><p>لإحصاءات تمتدّ على مدى الموسم عبر عدة بطولات.</p></div><div class="tut-step reveal"><div class="stxt"><h3>دمج البطولات</h3><p>ادمج بطولتين أو أكثر في ترتيب أسبوعي أو شهري واحد. يجمع نقاط الفرق التي تظهر في أكثر من واحدة.</p><div class="callout tip"><div class="cl-body"><span class="cl-tag">نصيحة</span>يوجّه «Optimize storage» كل شعارات الفرق واللاعبين إلى نسخة مشتركة واحدة، موفّرًا مساحة على هاتفك.</div></div><div class="callout model"><div class="cl-body"><span class="cl-tag">معلومة مفيدة</span>الدمج هو عرض مباشر للبطولات الأساسية — عدّل إحداها وتتحدّث الإحصاءات المدمجة أيضًا.</div></div></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/26.jpeg" alt="دمج البطولات" loading="lazy"/></div></div><div class="tut-step reveal"><div class="stxt"><h3>سطّح للتعديل بحرّية</h3><p>إذا كنت تفضّل أن تقف بطولة مدمجة (أو أي بطولة) بمفردها، سطّحها. تصبح بطولة منفصلة يمكنك تعديلها إحصاءً بإحصاء — المباريات ونقاط المراكز ونقاط القتل وهكذا.</p><div class="callout note"><div class="cl-body"><span class="cl-tag">ملاحظة</span>المقابل: بعد التسطيح لم يعد بإمكانك إضافة نقاط مكافأة أو تغيير نظام النقاط.</div></div></div><div class="tut-shot"><img src="https://pointcalc.in/tutorial-assets/raw/57-flatten.jpeg" alt="سطّح للتعديل بحرّية" loading="lazy"/></div></div></section></div>
+</div>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <div class="foot-brand" lang="en"><img src="https://pointcalc.in/icon.png" alt="" />PointCalc</div>
+        <p>حقيبة أدوات بطولات مدعومة بالذكاء الاصطناعي لمنظّمي BGMI و PUBG Mobile و Free Fire. صُنع في الهند بواسطة xbeastop.</p>
+      </div>
+      <div class="foot-col">
+        <h4>المنتج</h4>
+        <ul><li><a href="../features/index.html">المزايا</a></li><li><a href="../designs/index.html">التصاميم</a></li><li><a href="../guide/index.html">الدليل</a></li><li><a href="../index.html#pricing">الأسعار</a></li><li><a href="../faq/index.html">الأسئلة الشائعة</a></li></ul>
+      </div>
+      <div class="foot-col">
+        <h4>تحميل</h4>
+        <ul><li><a href="https://apps.apple.com/in/app/pointcalc-custom-pt-maker/id6747952141">App Store</a></li><li><a href="https://play.google.com/store/apps/details?id=com.pointcalc.global">Google Play</a></li></ul>
+      </div>
+      <div class="foot-col">
+        <h4>تواصل</h4>
+        <ul><li><a href="https://www.instagram.com/pointcalc_ig/">Instagram</a></li><li><a href="mailto:pointcalcdev@gmail.com">البريد الإلكتروني</a></li><li><a href="../privacy/index.html">الخصوصية</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 PointCalc. جميع الحقوق محفوظة.</span>
+      <span>بُني بواسطة <a href="../index.html#founder">xbeastop</a></span>
+    </div>
+  </div>
+</footer>
+<script>
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>12));
+document.getElementById('burger').addEventListener('click',()=>nav.classList.toggle('open'));
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const links=[...document.querySelectorAll('.tut-rail a')];
+const spy=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.toggle('active',l.dataset.chap===e.target.id));}});},{rootMargin:'-40% 0px -55% 0px'});
+document.querySelectorAll('.tut-chapter').forEach(s=>spy.observe(s));
+
+/* ---- copyable section links ---- */
+(function(){
+  const COPY='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>';
+  const CHECK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
+  const slug=t=>t.toLowerCase().replace(/[’'"]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'');
+  function btn(id){const b=document.createElement('button');b.type='button';b.className='copy-link';b.dataset.id=id;b.title='انسخ رابط هذا القسم';b.setAttribute('aria-label','انسخ رابط هذا القسم');b.innerHTML=COPY;return b;}
+  // chapter titles (sections already have ids)
+  document.querySelectorAll('.tut-chapter').forEach(sec=>{const h2=sec.querySelector('.tut-chapter-head h2');if(h2&&sec.id)h2.appendChild(btn(sec.id));});
+  // subsection labels -> give them ids
+  document.querySelectorAll('.tut-sub').forEach(sub=>{
+    let base=sub.id||slug(sub.textContent)||'section',id=base,k=1;
+    while(document.getElementById(id))id=base+'-'+(++k);
+    sub.id=id;sub.appendChild(btn(id));
+  });
+  let toastEl;
+  function toast(msg){
+    if(!toastEl){toastEl=document.createElement('div');toastEl.className='copy-toast';document.body.appendChild(toastEl);}
+    toastEl.textContent=msg;toastEl.classList.add('show');
+    clearTimeout(toast._t);toast._t=setTimeout(()=>toastEl.classList.remove('show'),1500);
+  }
+  function flash(b){b.classList.add('copied');b.innerHTML=CHECK;toast('تم نسخ الرابط');setTimeout(()=>{b.classList.remove('copied');b.innerHTML=COPY;},1400);}
+  function copy(id,b){
+    const url=location.origin+location.pathname+'#'+id;
+    if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(url).then(()=>flash(b)).catch(()=>fallback(url,b));}
+    else fallback(url,b);
+    if(history.replaceState)history.replaceState(null,'','#'+id);
+  }
+  function fallback(url,b){const t=document.createElement('textarea');t.value=url;t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();try{document.execCommand('copy');}catch(e){}t.remove();flash(b);}
+  document.addEventListener('click',e=>{const b=e.target.closest('.copy-link');if(!b)return;e.preventDefault();copy(b.dataset.id,b);});
+  // deep-link to a subsection on load (ids are added after native hash handling)
+  if(location.hash){const el=document.getElementById(location.hash.slice(1));if(el)setTimeout(()=>window.scrollTo({top:el.getBoundingClientRect().top+window.pageYOffset-96}),60);}
+})();
+</script>
+<script>
+  // language switcher dropdown
+  (function(){
+    var ls=document.getElementById('langSwitch'),lb=document.getElementById('langBtn');
+    if(!ls||!lb)return;
+    lb.addEventListener('click',function(e){e.stopPropagation();var o=ls.classList.toggle('open');lb.setAttribute('aria-expanded',o?'true':'false');});
+    document.addEventListener('click',function(e){if(!ls.contains(e.target)){ls.classList.remove('open');lb.setAttribute('aria-expanded','false');}});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'){ls.classList.remove('open');lb.setAttribute('aria-expanded','false');}});
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "en": {
+    "nav": { "how": "How it works", "features": "Features", "designs": "Designs", "guide": "Guide", "pricing": "Pricing", "faq": "FAQ", "download": "Download" },
+    "footer": {
+      "tagline": "AI-powered tournament toolkit for BGMI, PUBG Mobile &amp; Free Fire organizers. Made in India by xbeastop.",
+      "product": "Product", "download": "Download", "connect": "Connect",
+      "links": { "features": "Features", "designs": "Designs", "guide": "Guide", "pricing": "Pricing", "faq": "FAQ", "appstore": "App Store", "googleplay": "Google Play", "instagram": "Instagram", "email": "Email", "privacy": "Privacy" },
+      "rights": "© 2026 PointCalc. All rights reserved.",
+      "builtby": "Built by"
+    }
+  },
+  "ar": {
+    "nav": { "how": "كيف يعمل", "features": "المزايا", "designs": "التصاميم", "guide": "الدليل", "pricing": "الأسعار", "faq": "الأسئلة الشائعة", "download": "تحميل" },
+    "footer": {
+      "tagline": "حقيبة أدوات بطولات مدعومة بالذكاء الاصطناعي لمنظّمي BGMI و PUBG Mobile و Free Fire. صُنع في الهند بواسطة xbeastop.",
+      "product": "المنتج", "download": "تحميل", "connect": "تواصل",
+      "links": { "features": "المزايا", "designs": "التصاميم", "guide": "الدليل", "pricing": "الأسعار", "faq": "الأسئلة الشائعة", "appstore": "App Store", "googleplay": "Google Play", "instagram": "Instagram", "email": "البريد الإلكتروني", "privacy": "الخصوصية" },
+      "rights": "© 2026 PointCalc. جميع الحقوق محفوظة.",
+      "builtby": "بُني بواسطة"
+    }
+  },
+  "tr": {
+    "nav": { "how": "Nasıl çalışır", "features": "Özellikler", "designs": "Tasarımlar", "guide": "Rehber", "pricing": "Fiyatlar", "faq": "SSS", "download": "İndir" },
+    "footer": {
+      "tagline": "BGMI, PUBG Mobile ve Free Fire organizatörleri için yapay zekâ destekli turnuva araç seti. xbeastop tarafından Hindistan'da yapıldı.",
+      "product": "Ürün", "download": "İndir", "connect": "Bağlan",
+      "links": { "features": "Özellikler", "designs": "Tasarımlar", "guide": "Rehber", "pricing": "Fiyatlar", "faq": "SSS", "appstore": "App Store", "googleplay": "Google Play", "instagram": "Instagram", "email": "E-posta", "privacy": "Gizlilik" },
+      "rights": "© 2026 PointCalc. Tüm hakları saklıdır.",
+      "builtby": "Yapımcı:"
+    }
+  }
+}
