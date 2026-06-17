@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+<script>document.documentElement.classList.add('js');try{if(localStorage.getItem('pc-theme')==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}</script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Tournament Design Templates · PointCalc</title>
-<meta name="theme-color" content="#0a0a0f">
+<meta name="theme-color" content="#08080b">
 <meta name="description" content="Browse PointCalc designs: BGMI, PUBG & Free Fire points tables, top fragger cards, team posters and tournament certificates. Pick a template, brand it, publish.">
 <link rel="canonical" href="https://pointcalc.in/designs/">
 <meta property="og:type" content="website">
@@ -38,31 +39,53 @@
 <link rel="alternate" hreflang="x-default" href="https://pointcalc.in/designs/">
 </head>
 <body>
+<a class="skip-link" href="#pc-main">Skip to content</a>
 
 <!-- NAV -->
 <nav class="nav" id="nav">
   <div class="wrap nav-inner">
     <a class="brand" lang="en" href="../index.html"><img src="https://pointcalc.in/icon.png" alt="PointCalc" />PointCalc</a>
     <div class="nav-links">
-      <a href="../features/index.html">Features</a><a href="../designs/index.html" style="color:var(--ink)">Designs</a><a href="../guide/index.html">Guide</a><a href="../index.html#pricing">Pricing</a><a href="../faq/index.html">FAQ</a>
-    </div>
+      <a href="../features/index.html">Features</a><a class="on" href="../designs/index.html">Designs</a><a href="../guide/index.html">Guide</a><a href="../index.html#pricing">Pricing</a><a href="../faq/index.html">FAQ</a>
     <a class="btn btn-acid nav-cta" href="../index.html#download">Download</a>
+    </div>
     <div class="lang" id="langSwitch">
         <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-label="Language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18"/></svg><span>EN</span><svg class="lang-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
         <div class="lang-menu" role="menu"><a class="ln on" href="../designs/index.html" lang="en" hreflang="en"><span class="ln-native">English</span><span class="ln-code">EN</span></a><a class="ln" href="../ar/designs/index.html" lang="ar" hreflang="ar" dir="rtl"><span class="ln-native">العربية</span><span class="ln-code">AR</span></a><a class="ln" href="../tr/designs/index.html" lang="tr" hreflang="tr"><span class="ln-native">Türkçe</span><span class="ln-code">TR</span></a></div>
       </div>
-    <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle light/dark theme"><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></button>
+    <button class="nav-burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </nav>
+<span id="pc-main" tabindex="-1"></span>
 
-<!-- PAGE HERO -->
-<section class="page-hero">
-  <div class="glow"></div>
-  <div class="wrap">
-    <span class="kicker">Designs</span>
+<!-- PAGE HERO — wall of designs -->
+<section class="page-hero dhero">
+  <div class="dhero-wall" aria-hidden="true">
+    <div class="dwall-row">
+      <div class="dwall-track">
+        <img src="templates/premium/tables/table_jordan_november.webp" alt="" loading="lazy" /><img src="templates/premium/warheads/warhead_snax_jan_2026.webp" alt="" loading="lazy" /><img src="templates/premium/fraggers/fraggers_snax_jan_2026.webp" alt="" loading="lazy" /><img src="templates/premium/tables/table_snax_blue_february.webp" alt="" loading="lazy" /><img src="templates/premium/slotlist/slotlist_jordan_november.webp" alt="" loading="lazy" /><img src="templates/premium/certificate/certificate_snax_jan_2026.webp" alt="" loading="lazy" /><img src="templates/premium/teamPoster/poster_jordan_november.webp" alt="" loading="lazy" /><img src="templates/premium/warheads/warhead_jordan_november.webp" alt="" loading="lazy" />
+      </div>
+    </div>
+    <div class="dwall-row rev">
+      <div class="dwall-track">
+        <img src="templates/premium/teamPoster/poster_snax_jan_2026.webp" alt="" loading="lazy" /><img src="templates/premium/tables/table_snax_jan_2026.webp" alt="" loading="lazy" /><img src="templates/premium/fraggers/fraggers_jordan_november.webp" alt="" loading="lazy" /><img src="templates/premium/slotlist/slotlist_snax_jan_2026.webp" alt="" loading="lazy" /><img src="templates/premium/certificate/certificate_jordan_november.webp" alt="" loading="lazy" /><img src="templates/free/tables/table_free_sep_2025.webp" alt="" loading="lazy" /><img src="templates/premium/tables/table_snax_blue_february.webp" alt="" loading="lazy" /><img src="templates/premium/teamPoster/poster_jordan_november.webp" alt="" loading="lazy" />
+      </div>
+    </div>
+    <div class="dwall-row">
+      <div class="dwall-track">
+        <img src="templates/premium/fraggers/fraggers_snax_jan_2026.webp" alt="" loading="lazy" /><img src="templates/premium/certificate/certificate_snax_jan_2026.webp" alt="" loading="lazy" /><img src="templates/premium/tables/table_jordan_november.webp" alt="" loading="lazy" /><img src="templates/premium/warheads/warhead_jordan_november.webp" alt="" loading="lazy" /><img src="templates/premium/teamPoster/poster_snax_jan_2026.webp" alt="" loading="lazy" /><img src="templates/premium/slotlist/slotlist_jordan_november.webp" alt="" loading="lazy" /><img src="templates/premium/warheads/warhead_snax_jan_2026.webp" alt="" loading="lazy" /><img src="templates/premium/tables/table_snax_jan_2026.webp" alt="" loading="lazy" />
+      </div>
+    </div>
+  </div>
+  <div class="dhero-veil" aria-hidden="true"></div>
+  <div class="wrap dhero-content">
+    <span class="kicker">The template vault</span>
     <h1>Templates that look <span class="em">broadcast-ready.</span></h1>
-    <p>Every template built into PointCalc — points tables, team posters, top-fragger cards, warhead boards, slot lists and certificates. Pick one, drop in your branding and match data, ship in seconds. Browse the full library below.</p>
-    <span class="eff">190+ templates · BGMI · PUBG Mobile · Free Fire</span>
+    <p>Every template built into PointCalc — points tables, team posters, top-fragger cards, warhead boards, slot lists and certificates. Pick one, drop in your branding and match data, ship in seconds.</p>
+    <div class="dhero-stats">
+      <span><b>190+</b> templates</span><i>/</i><span><b>6</b> categories</span><i>/</i><span><b>3</b> games</span><i>/</i><span><b>New</b> drops monthly</span>
+    </div>
   </div>
 </section>
 
@@ -136,7 +159,7 @@
 </section>
 
 <!-- LIGHTBOX -->
-<div class="lb" id="lb" aria-hidden="true" role="dialog">
+<div class="lb" id="lb" aria-hidden="true" role="dialog" aria-modal="true">
   <button class="lb-close" id="lbClose" aria-label="Close">×</button>
   <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous">‹</button>
   <button class="lb-btn lb-next" id="lbNext" aria-label="Next">›</button>
@@ -180,7 +203,7 @@
 <script>
   const nav = document.getElementById('nav');
   addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 12));
-  document.getElementById('burger').addEventListener('click', () => nav.classList.toggle('open'));
+  document.getElementById('burger').addEventListener('click', function () { var open = nav.classList.toggle('open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); });
 
   const APP_DL = '../index.html#download';
   const GEM = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 3h12l3.5 6L12 22 2.5 9 6 3Zm.7 2L4.7 8.4h4.1L9.9 5H6.7Zm5.3 0-1.1 3.4h3.2L13 5h-1Zm3.3 0-1.1 3.4h4.1L16.3 5H15.3ZM4.9 10.4 11 19.2v-8.8H4.9Zm8.1 0v8.8l6.1-8.8H13Z"/></svg>';
@@ -274,8 +297,9 @@
         '<span class="qpc b' + i + '"><img loading="lazy" decoding="async" src="' + t.s + '" alt="" /></span>'
       ).join('');
       return '<div class="qcard" role="button" tabindex="0" data-g="' + gi + '">' +
-        '<span class="qdeck">' + layers + '</span>' +
-        '<span class="qmeta"><h4>' + g.label + '</h4><p>' + g.items.length + ' designs · Premium</p></span>' +
+        '<span class="qdeck">' + layers + '<span class="qglow" aria-hidden="true"></span></span>' +
+        '<span class="qmeta"><h4>' + g.label + '</h4><p>' + g.items.length + ' designs · <span class="qprem">' + GEM + 'Premium</span></p></span>' +
+        '<span class="qopen">Open theme →</span>' +
       '</div>';
     }).join('');
   }
@@ -299,10 +323,15 @@
       const head = document.createElement('div');
       head.className = 'shelf-head';
       head.innerHTML =
-        '<h3>' + CATLABEL[cat] + '<span class="scount">' + list.length + '</span></h3>' +
+        '<h3>' + CATLABEL[cat] + '<span class="scount">/ ' + list.length + '</span></h3>' +
+        '<span class="hl" aria-hidden="true"></span>' +
+        '<span class="shelf-nav"><button class="snav" type="button" data-dir="-1" aria-label="Scroll back">←</button><button class="snav" type="button" data-dir="1" aria-label="Scroll forward">→</button></span>' +
         '<button class="shelf-viewall" data-cat="' + cat + '">View all ' + list.length + ' \u2192</button>';
       shelf.appendChild(head);
-      shelf.appendChild(row);
+      const clip = document.createElement('div');
+      clip.className = 'shelf-clip';
+      clip.appendChild(row);
+      shelf.appendChild(clip);
       shelvesEl.appendChild(shelf);
     });
     return { cats, total };
@@ -357,6 +386,12 @@
 
   // shelf interactions: view-all + card clicks
   shelvesEl.addEventListener('click', e => {
+    const sn = e.target.closest('.snav');
+    if (sn) {
+      const r = sn.closest('.shelf').querySelector('.shelf-row');
+      r.scrollBy({ left: Number(sn.dataset.dir) * r.clientWidth * 0.8, behavior: 'smooth' });
+      return;
+    }
     const va = e.target.closest('.shelf-viewall');
     if (va) {
       const cat = va.dataset.cat;
@@ -421,9 +456,11 @@
   }
   function openLb(list, i) {
     view = list; buildStrip(); showAt(i);
+    lb._ret = document.activeElement;
     lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false'); document.body.style.overflow = 'hidden';
+    document.getElementById('lbClose').focus();
   }
-  function closeLb() { lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); document.body.style.overflow = ''; lbImg.removeAttribute('src'); }
+  function closeLb() { lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); document.body.style.overflow = ''; lbImg.removeAttribute('src'); if (lb._ret && lb._ret.focus) lb._ret.focus(); }
 
   lbStrip.addEventListener('click', e => {
     const th = e.target.closest('.lb-thumb'); if (!th) return;
@@ -449,6 +486,7 @@
 
   buildSpotlight();
   render();
+  document.querySelectorAll('.dwall-track').forEach(t => { t.innerHTML += t.innerHTML; });
 
   const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.12 });
   document.querySelectorAll('.reveal').forEach((el, i) => { el.style.transitionDelay = (Math.min(i % 4, 3) * 60) + 'ms'; io.observe(el); });
@@ -461,6 +499,26 @@
     lb.addEventListener('click',function(e){e.stopPropagation();var o=ls.classList.toggle('open');lb.setAttribute('aria-expanded',o?'true':'false');});
     document.addEventListener('click',function(e){if(!ls.contains(e.target)){ls.classList.remove('open');lb.setAttribute('aria-expanded','false');}});
     document.addEventListener('keydown',function(e){if(e.key==='Escape'){ls.classList.remove('open');lb.setAttribute('aria-expanded','false');}});
+  })();
+</script>
+<script>
+  // theme toggle (dark default / light)
+  (function(){
+    var btn = document.getElementById('themeBtn'); if (!btn) return;
+    var meta = document.querySelector('meta[name="theme-color"]');
+    function sync(){
+      var light = document.documentElement.getAttribute('data-theme') === 'light';
+      if (meta) meta.setAttribute('content', light ? '#faf6f5' : '#08080b');
+      btn.setAttribute('aria-pressed', light ? 'true' : 'false');
+    }
+    btn.addEventListener('click', function(){
+      var r = document.documentElement;
+      var light = r.getAttribute('data-theme') === 'light';
+      if (light) { r.removeAttribute('data-theme'); } else { r.setAttribute('data-theme', 'light'); }
+      try { localStorage.setItem('pc-theme', light ? 'dark' : 'light'); } catch (e) {}
+      sync();
+    });
+    sync();
   })();
 </script>
 </body>

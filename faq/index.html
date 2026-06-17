@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+<script>document.documentElement.classList.add('js');try{if(localStorage.getItem('pc-theme')==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}</script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>PointCalc FAQ — BGMI, PUBG & Free Fire Tournament App</title>
-<meta name="theme-color" content="#0a0a0f">
+<meta name="theme-color" content="#08080b">
 <meta name="description" content="Answers about PointCalc — supported games (BGMI, PUBG Mobile, Free Fire), AI screenshot extraction, pricing, custom branding, and how the app works.">
 <link rel="canonical" href="https://pointcalc.in/faq/">
 <meta property="og:type" content="website">
@@ -174,22 +175,25 @@
 <link rel="alternate" hreflang="x-default" href="https://pointcalc.in/faq/">
 </head>
 <body>
+<a class="skip-link" href="#pc-main">Skip to content</a>
 
 <!-- NAV -->
 <nav class="nav" id="nav">
   <div class="wrap nav-inner">
     <a class="brand" lang="en" href="../index.html"><img src="https://pointcalc.in/icon.png" alt="PointCalc" />PointCalc</a>
     <div class="nav-links">
-      <a href="../features/index.html">Features</a><a href="../designs/index.html">Designs</a><a href="../guide/index.html">Guide</a><a href="../index.html#pricing">Pricing</a><a href="../faq/index.html" style="color:var(--ink)">FAQ</a>
-    </div>
+      <a href="../features/index.html">Features</a><a href="../designs/index.html">Designs</a><a href="../guide/index.html">Guide</a><a href="../index.html#pricing">Pricing</a><a class="on" href="../faq/index.html">FAQ</a>
     <a class="btn btn-acid nav-cta" href="../index.html#download">Download</a>
+    </div>
     <div class="lang" id="langSwitch">
         <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-label="Language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18"/></svg><span>EN</span><svg class="lang-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
         <div class="lang-menu" role="menu"><a class="ln on" href="../faq/index.html" lang="en" hreflang="en"><span class="ln-native">English</span><span class="ln-code">EN</span></a><a class="ln" href="../ar/faq/index.html" lang="ar" hreflang="ar" dir="rtl"><span class="ln-native">العربية</span><span class="ln-code">AR</span></a><a class="ln" href="../tr/faq/index.html" lang="tr" hreflang="tr"><span class="ln-native">Türkçe</span><span class="ln-code">TR</span></a></div>
       </div>
-    <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle light/dark theme"><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></button>
+    <button class="nav-burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </nav>
+<span id="pc-main" tabindex="-1"></span>
 
 <!-- PAGE HERO -->
 <section class="page-hero">
@@ -207,7 +211,7 @@
     <div class="faq-list" id="faqList">
       <div class="faq-item open">
         <button class="faq-q">What is PointCalc?<span class="ic">+</span></button>
-        <div class="faq-a"><p>PointCalc is an AI-powered tournament toolkit for esports organizers. Built for BGMI, PUBG Mobile and Free Fire, it reads lobby and result screenshots to auto-extract placements and kills — then generates publish-ready point tables, top fragger cards, MVP and warhead stats, team posters, slot lists and certificates. Available on iOS and Android, with 100K+ downloads.</p></div>
+        <div class="faq-a"><p>PointCalc is an AI-powered tournament toolkit for esports organizers. Built for BGMI, PUBG Mobile and Free Fire, it reads lobby and result screenshots to auto-extract placements and kills — then generates publish-ready point tables, top fragger cards, MVP and warhead stats, team posters, slot lists and certificates. Available on iOS and Android, with 150K+ downloads.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Which games does PointCalc support?<span class="ic">+</span></button>
@@ -318,7 +322,7 @@
 <script>
   const nav = document.getElementById('nav');
   addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 12));
-  document.getElementById('burger').addEventListener('click', () => nav.classList.toggle('open'));
+  document.getElementById('burger').addEventListener('click', function () { var open = nav.classList.toggle('open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); });
   document.getElementById('faqList').addEventListener('click', e => {
     const q = e.target.closest('.faq-q'); if (!q) return;
     q.parentElement.classList.toggle('open');
@@ -334,6 +338,26 @@
     lb.addEventListener('click',function(e){e.stopPropagation();var o=ls.classList.toggle('open');lb.setAttribute('aria-expanded',o?'true':'false');});
     document.addEventListener('click',function(e){if(!ls.contains(e.target)){ls.classList.remove('open');lb.setAttribute('aria-expanded','false');}});
     document.addEventListener('keydown',function(e){if(e.key==='Escape'){ls.classList.remove('open');lb.setAttribute('aria-expanded','false');}});
+  })();
+</script>
+<script>
+  // theme toggle (dark default / light)
+  (function(){
+    var btn = document.getElementById('themeBtn'); if (!btn) return;
+    var meta = document.querySelector('meta[name="theme-color"]');
+    function sync(){
+      var light = document.documentElement.getAttribute('data-theme') === 'light';
+      if (meta) meta.setAttribute('content', light ? '#faf6f5' : '#08080b');
+      btn.setAttribute('aria-pressed', light ? 'true' : 'false');
+    }
+    btn.addEventListener('click', function(){
+      var r = document.documentElement;
+      var light = r.getAttribute('data-theme') === 'light';
+      if (light) { r.removeAttribute('data-theme'); } else { r.setAttribute('data-theme', 'light'); }
+      try { localStorage.setItem('pc-theme', light ? 'dark' : 'light'); } catch (e) {}
+      sync();
+    });
+    sync();
   })();
 </script>
 </body>

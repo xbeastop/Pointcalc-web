@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+<script>document.documentElement.classList.add('js');try{if(localStorage.getItem('pc-theme')==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}</script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>PointCalc Features — AI Tournament Toolkit</title>
-<meta name="theme-color" content="#0a0a0f">
+<meta name="theme-color" content="#08080b">
 <meta name="description" content="AI screenshot extraction, points tables, top fraggers (MVP), warhead, slot lists, team posters and certificates — for BGMI, PUBG & Free Fire organizers.">
 <link rel="canonical" href="https://pointcalc.in/features/">
 <meta property="og:type" content="website">
@@ -38,39 +39,55 @@
 <link rel="alternate" hreflang="x-default" href="https://pointcalc.in/features/">
 </head>
 <body>
+<a class="skip-link" href="#pc-main">Skip to content</a>
 
 <!-- NAV -->
 <nav class="nav" id="nav">
   <div class="wrap nav-inner">
     <a class="brand" lang="en" href="../index.html"><img src="https://pointcalc.in/icon.png" alt="PointCalc" />PointCalc</a>
     <div class="nav-links">
-      <a href="../features/index.html" style="color:var(--ink)">Features</a><a href="../designs/index.html">Designs</a><a href="../guide/index.html">Guide</a><a href="../index.html#pricing">Pricing</a><a href="../faq/index.html">FAQ</a>
-    </div>
+      <a class="on" href="../features/index.html">Features</a><a href="../designs/index.html">Designs</a><a href="../guide/index.html">Guide</a><a href="../index.html#pricing">Pricing</a><a href="../faq/index.html">FAQ</a>
     <a class="btn btn-acid nav-cta" href="../index.html#download">Download</a>
+    </div>
     <div class="lang" id="langSwitch">
         <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-label="Language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18"/></svg><span>EN</span><svg class="lang-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
         <div class="lang-menu" role="menu"><a class="ln on" href="../features/index.html" lang="en" hreflang="en"><span class="ln-native">English</span><span class="ln-code">EN</span></a><a class="ln" href="../ar/features/index.html" lang="ar" hreflang="ar" dir="rtl"><span class="ln-native">العربية</span><span class="ln-code">AR</span></a><a class="ln" href="../tr/features/index.html" lang="tr" hreflang="tr"><span class="ln-native">Türkçe</span><span class="ln-code">TR</span></a></div>
       </div>
-    <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle light/dark theme"><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></button>
+    <button class="nav-burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </nav>
+<span id="pc-main" tabindex="-1"></span>
 
 <!-- PAGE HERO -->
-<section class="page-hero">
-  <div class="glow"></div>
+<section class="page-hero fhero">
+  <div class="fhero-bg" aria-hidden="true"></div>
   <div class="wrap">
     <span class="kicker">Features</span>
     <h1>Everything you need to <span class="em">run a tournament.</span></h1>
     <p>Built for BGMI, PUBG Mobile and Free Fire organizers. Every section below is a feature you can use today — no spreadsheet, no Photoshop, no copy-pasting from screenshots.</p>
+    <nav class="fhero-pills" aria-label="Jump to feature">
+      <a href="#ai">AI extraction</a>
+      <a href="#tables">Point tables</a>
+      <a href="#stats">Warhead &amp; fraggers</a>
+      <a href="#broadcast">Slot lists &amp; posters</a>
+      <a href="#more">Everything else</a>
+    </nav>
+    <div class="fhero-stats">
+      <span><b>190+</b> templates</span>
+      <span><b>3</b> games</span>
+      <span><b>100K<span class="s">+</span></b> downloads</span>
+      <span><b>4.9<span class="s">★</span></b> App Store</span>
+    </div>
   </div>
 </section>
 
 <!-- ROW 1 — AI -->
 <section>
   <div class="wrap">
-    <div class="frow">
+    <div class="frow" id="ai">
       <div>
-        <span class="tag">★ AI Powered</span>
+        <span class="tag">AI Powered</span>
         <h2>Upload a screenshot. Get a finished table.</h2>
         <p>PointCalc's AI reads BGMI, PUBG Mobile and Free Fire lobby and result screens directly. Placements and kills are extracted automatically — and from that, PointCalc generates your full point table, top fraggers, MVPs and warhead stats. Review, edit, publish — all inside the app.</p>
         <ul class="checklist">
@@ -82,15 +99,17 @@
         </ul>
       </div>
       <div class="fmedia">
-        <div class="shot-deck">
-          <img src="https://pointcalc.in/in_game_2.JPG" alt="Free Fire result screenshot — AI extraction input" />
-          <img src="https://pointcalc.in/in_game_1.jpg" alt="BGMI result screenshot — AI extraction input" />
+        <div class="fcompose">
+          <div class="fchip c1"><span class="ok">✓</span> 25 teams parsed</div>
+          <div class="fchip c2"><span class="ok">✓</span> 96 kills extracted</div>
+          <div class="out"><img src="../designs/templates/premium/tables/table_snax_blue_february.webp" alt="Generated PointCalc points table" /></div>
+          <div class="in"><span class="ilabel">Input · result screen</span><img src="../in_game_2.JPG" alt="Free Fire result screenshot" /></div>
         </div>
       </div>
     </div>
 
     <!-- ROW 2 — Point tables -->
-    <div class="frow rev">
+    <div class="frow rev" id="tables">
       <div>
         <span class="tag">Point Tables</span>
         <h2>Live standings, published in seconds.</h2>
@@ -103,34 +122,87 @@
         </ul>
       </div>
       <div class="fmedia">
-        <div class="glow2"></div>
-        <img class="single" src="https://pointcalc.in/poster1.webp" alt="Sample PointCalc points table design" />
+        <div class="fdeck">
+          <div class="pc l"><img src="../designs/templates/premium/tables/table_snax_jan_2026.webp" alt="Ice points table design" /></div>
+          <div class="pc r"><img src="../designs/templates/premium/tables/table_jordan_november.webp" alt="Red points table design" /></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROW 3 — Warhead & fraggers -->
+    <div class="frow" id="stats">
+      <div>
+        <span class="tag">Stat Cards</span>
+        <h2>Warhead boards &amp; top fraggers.</h2>
+        <p>The kill leaderboards your audience screenshots. Warhead ranks teams by total kills; top fraggers ranks players into creator-grade MVP cards — all built straight from your match data, no extra uploads. Switch the character art between BGMI and Free Fire.</p>
+        <ul class="checklist">
+          <li><span class="ck">✓</span><span>Warhead — team kill leaderboard on a broadcast podium</span></li>
+          <li><span class="ck">✓</span><span>Top fraggers — your highest-killing players, ranked</span></li>
+          <li><span class="ck">✓</span><span>Auto-generated from the same match — zero extra work</span></li>
+          <li><span class="ck">✓</span><span>Game-specific character art and themes</span></li>
+        </ul>
+      </div>
+      <div class="fmedia">
+        <div class="fdeck">
+          <div class="pc l"><img src="../designs/templates/premium/warheads/warhead_jordan_november.webp" alt="Warhead leaderboard design" /></div>
+          <div class="pc r"><img src="../designs/templates/premium/fraggers/fraggers_snax_jan_2026.webp" alt="Top fraggers design" /></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROW 4 — Slot lists & posters -->
+    <div class="frow rev" id="broadcast">
+      <div>
+        <span class="tag">Broadcast</span>
+        <h2>Slot lists, posters &amp; certificates.</h2>
+        <p>Everything around the matches, too. Add teams, players and logos in-app and PointCalc lays out a broadcast-ready slot list automatically — plus a poster for every squad and winner certificates for your top finishers, all in your colors.</p>
+        <ul class="checklist">
+          <li><span class="ck">✓</span><span>Auto-laid-out slot lists from your team roster</span></li>
+          <li><span class="ck">✓</span><span>A team poster for every squad in the event</span></li>
+          <li><span class="ck">✓</span><span>Winner certificates with names &amp; event branding</span></li>
+          <li><span class="ck">✓</span><span>Free and premium templates for each</span></li>
+        </ul>
+      </div>
+      <div class="fmedia">
+        <div class="fdeck">
+          <div class="pc l"><img src="../designs/templates/premium/slotlist/slotlist_jordan_november.webp" alt="Slot list design" /></div>
+          <div class="pc r"><img src="../designs/templates/premium/teamPoster/poster_jordan_november.webp" alt="Team poster design" /></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- GRID — everything else -->
-<section class="pad">
+<section class="pad" id="more">
   <div class="wrap">
     <div class="section-head reveal">
       <span class="kicker">More features</span>
       <h2>Everything else organizers ask for</h2>
       <p style="margin-top:18px"><a class="btn btn-ghost" href="../guide/index.html">See the full step-by-step guide →</a></p>
     </div>
-    <div class="feat-grid">
-      <div class="feat third reveal"><span class="tag">Stat cards</span><h3>Warhead — top teams</h3><p>The team leaderboard by total kills, built into a broadcast-grade podium straight from your match data — no extra screenshots.</p></div>
-      <div class="feat third reveal"><span class="tag">MVP</span><h3>Top fraggers</h3><p>Your highest-killing players, ranked into creator-grade stat cards. Switch the character art between BGMI and Free Fire.</p></div>
-      <div class="feat third reveal"><span class="tag">Broadcast</span><h3>Slot lists</h3><p>Create a tournament, add teams, players and logos in-app — PointCalc lays out a broadcast-ready slot list automatically.</p></div>
-      <div class="feat third reveal"><span class="tag">No Photoshop</span><h3>Team posters &amp; certificates</h3><p>Free and premium templates — a poster for every squad and winner certificates for your top finishers, generated in your colours.</p></div>
-      <div class="feat third reveal"><span class="tag">Editing</span><h3>Edit any match, anytime</h3><p>Open a past match to fix a placement, kills or a single player's finishes — or remove a match's points. Standings recalculate instantly.</p></div>
-      <div class="feat third reveal"><span class="tag">Sharing</span><h3>Share a tournament</h3><p>Export a tournament as a file and hand it to a co-host, so the work can be split on long event days — they pick up exactly where you left off.</p></div>
-      <div class="feat third reveal"><span class="tag">Registration</span><h3>Team Cards</h3><p>Skip the Google Form. Players fill their team and roster in the app and send you a file — open it in PointCalc and import it straight into any slot.</p></div>
+    <div class="feat-grid fbento">
+      <div class="feat spotlight reveal">
+        <div class="sp-copy">
+          <span class="tag">Editing</span>
+          <h3>Edit any match, anytime</h3>
+          <p>Open a past match to fix a placement, kills or a single player's finishes — or remove a match's points entirely. Standings recalculate instantly across daily, overall and season tables.</p>
+        </div>
+        <div class="sp-media" aria-hidden="true">
+          <div class="strip">
+            <img src="../designs/templates/premium/tables/table_snax_blue_february.webp" alt="" loading="lazy" />
+            <img src="../designs/templates/premium/warheads/warhead_snax_jan_2026.webp" alt="" loading="lazy" />
+          </div>
+        </div>
+      </div>
+      <div class="feat miniwide a-heat reveal"><span class="tag">Sharing</span><h3>Share a tournament</h3><p>Export a tournament as a file and hand it to a co-host, so the work can be split on long event days — they pick up exactly where you left off.</p></div>
+      <div class="feat miniwide a-blue reveal"><span class="tag">Registration</span><h3>Team Cards</h3><p>Skip the Google Form. Players fill their team and roster in the app and send you a file — open it in PointCalc and import it straight into any slot.</p></div>
       <div class="feat third reveal"><span class="tag">Seasons</span><h3>Weekly &amp; monthly stats</h3><p>Merge several tournaments into one set of season standings with points combined across events — then flatten it into a standalone, fully editable table.</p></div>
-      <div class="feat third reveal"><span class="tag">Safety</span><h3>Backup &amp; restore</h3><p>Never lose an event. Automatic Google Drive backup on Android, and shareable backup files on iOS to move everything to a new phone.</p></div>
+      <div class="feat third a-gold reveal"><span class="tag">Safety</span><h3>Backup &amp; restore</h3><p>Never lose an event. Automatic Google Drive backup on Android, and shareable backup files on iOS to move everything to a new phone.</p></div>
       <div class="feat third reveal"><span class="tag">Import</span><h3>Your data &amp; designs</h3><p>Build a tournament from an Excel/CSV template, and import your own custom background designs to publish in your exact brand.</p></div>
-      <div class="feat third reveal"><span class="tag">Scoring</span><h3>Full scoring control</h3><p>Save custom point presets, apply per-match multipliers for finals, and add bonus or penalty points with a reason.</p></div>
-      <div class="feat third reveal"><span class="tag">Support</span><h3>Priority support</h3><p>Real humans, fast responses — repeatedly called world-class in Play Store reviews. Premium tiers get priority.</p></div>
+      <div class="feat third a-heat reveal"><span class="tag">Scoring</span><h3>Full scoring control</h3><p>Save custom point presets, apply per-match multipliers for finals, and add bonus or penalty points with a reason.</p></div>
+      <div class="feat third reveal"><span class="tag">Sharing</span><h3>One-tap export</h3><p>Every design exports as a clean, high-resolution image ready to post to Instagram, WhatsApp or your community server in seconds.</p></div>
+      <div class="feat third a-blue reveal"><span class="tag">Support</span><h3>Priority support</h3><p>Real humans, fast responses — repeatedly called world-class in Play Store reviews. Premium tiers get priority.</p></div>
     </div>
   </div>
 </section>
@@ -180,7 +252,7 @@
 <script>
   const nav = document.getElementById('nav');
   addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 12));
-  document.getElementById('burger').addEventListener('click', () => nav.classList.toggle('open'));
+  document.getElementById('burger').addEventListener('click', function () { var open = nav.classList.toggle('open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); });
   const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.12 });
   document.querySelectorAll('.reveal').forEach((el, i) => { el.style.transitionDelay = (Math.min(i % 4, 3) * 60) + 'ms'; io.observe(el); });
 </script>
@@ -192,6 +264,26 @@
     lb.addEventListener('click',function(e){e.stopPropagation();var o=ls.classList.toggle('open');lb.setAttribute('aria-expanded',o?'true':'false');});
     document.addEventListener('click',function(e){if(!ls.contains(e.target)){ls.classList.remove('open');lb.setAttribute('aria-expanded','false');}});
     document.addEventListener('keydown',function(e){if(e.key==='Escape'){ls.classList.remove('open');lb.setAttribute('aria-expanded','false');}});
+  })();
+</script>
+<script>
+  // theme toggle (dark default / light)
+  (function(){
+    var btn = document.getElementById('themeBtn'); if (!btn) return;
+    var meta = document.querySelector('meta[name="theme-color"]');
+    function sync(){
+      var light = document.documentElement.getAttribute('data-theme') === 'light';
+      if (meta) meta.setAttribute('content', light ? '#faf6f5' : '#08080b');
+      btn.setAttribute('aria-pressed', light ? 'true' : 'false');
+    }
+    btn.addEventListener('click', function(){
+      var r = document.documentElement;
+      var light = r.getAttribute('data-theme') === 'light';
+      if (light) { r.removeAttribute('data-theme'); } else { r.setAttribute('data-theme', 'light'); }
+      try { localStorage.setItem('pc-theme', light ? 'dark' : 'light'); } catch (e) {}
+      sync();
+    });
+    sync();
   })();
 </script>
 </body>

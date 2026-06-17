@@ -6,7 +6,8 @@
   },
   "assets": [
     ["src=\"templates-data.js\"", "src=\"https://pointcalc.in/designs/templates-data.js\""],
-    ["const ALL = (window.TEMPLATES || []).slice();", "const ALL = (window.TEMPLATES || []).slice().map(function(t){return Object.assign({},t,{s:'https://pointcalc.in/designs/'+t.s});});"]
+    ["const ALL = (window.TEMPLATES || []).slice();", "const ALL = (window.TEMPLATES || []).slice().map(function(t){return Object.assign({},t,{s:'https://pointcalc.in/designs/'+t.s});});"],
+    ["(big ? '' : ' style=\"aspect-ratio:' + ar + '\"')", "' style=\"aspect-ratio:' + ar + '\"'"]
   ],
   "pairs": [
     { "en": "Designs", "ar": "التصاميم", "tr": "Tasarımlar" },
@@ -32,7 +33,7 @@
     { "en": "'free '", "ar": "''", "tr": "''" },
     { "en": "Premium — <a href=\"' + APP_DL", "ar": "Premium — <a href=\"' + APP_DL", "tr": "<span lang=\"en\">Premium</span> — <a href=\"' + APP_DL" },
     { "en": "unlock in the app", "ar": "افتحه في التطبيق", "tr": "uygulamada aç" },
-    { "en": "Free — included in PointCalc", "ar": "مجاني — مضمّن في PointCalc", "tr": "Ücretsiz — <span lang=\"en\">PointCalc</span>'e dahil" },
+    { "en": "Free — included in PointCalc", "ar": "مجاني — مضمّن في PointCalc", "tr": "Ücretsiz — <span lang=\"en\">PointCalc</span> içinde" },
     { "en": " template'", "ar": " قالب'", "tr": " şablon'" },
     { "en": " template\" />", "ar": " قالب\" />", "tr": " şablon\" />" },
     { "en": "aria-label=\"Close\"", "ar": "aria-label=\"إغلاق\"", "tr": "aria-label=\"Kapat\"" },

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+<script>document.documentElement.classList.add('js');try{if(localStorage.getItem('pc-theme')==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}</script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>PointCalc — AI Point Table Maker for BGMI, PUBG & Free Fire</title>
-<meta name="theme-color" content="#0a0a0f">
+<meta name="theme-color" content="#08080b">
 <meta name="description" content="AI tournament toolkit for BGMI, PUBG & Free Fire. Drop screenshots — get the points table, warhead, top fraggers, slot list and certificates in seconds.">
 <link rel="canonical" href="https://pointcalc.in/">
 <meta property="og:type" content="website">
@@ -43,8 +44,8 @@
   },
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.5",
-    "ratingCount": "559",
+    "ratingValue": "4.4",
+    "ratingCount": "553",
     "bestRating": "5"
   },
   "author": {
@@ -119,6 +120,7 @@
 <link rel="alternate" hreflang="x-default" href="https://pointcalc.in/">
 </head>
 <body>
+<a class="skip-link" href="#pc-main">Skip to content</a>
 
 <!-- ============ NAV ============ -->
 <nav class="nav" id="nav">
@@ -126,18 +128,21 @@
     <a class="brand" lang="en" href="#top"><img src="https://pointcalc.in/icon.png" alt="PointCalc" />PointCalc</a>
     <div class="nav-links">
       <a href="#how">How it works</a><a href="features/index.html">Features</a><a href="designs/index.html">Designs</a><a href="guide/index.html">Guide</a><a href="#pricing">Pricing</a><a href="faq/index.html">FAQ</a>
-    </div>
     <a class="btn btn-acid nav-cta" href="#download">Download</a>
+    </div>
     <div class="lang" id="langSwitch">
         <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-label="Language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18"/></svg><span>EN</span><svg class="lang-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
         <div class="lang-menu" role="menu"><a class="ln on" href="index.html" lang="en" hreflang="en"><span class="ln-native">English</span><span class="ln-code">EN</span></a><a class="ln" href="ar/index.html" lang="ar" hreflang="ar" dir="rtl"><span class="ln-native">العربية</span><span class="ln-code">AR</span></a><a class="ln" href="tr/index.html" lang="tr" hreflang="tr"><span class="ln-native">Türkçe</span><span class="ln-code">TR</span></a></div>
       </div>
-    <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle light/dark theme"><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></button>
+    <button class="nav-burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </nav>
+<span id="pc-main" tabindex="-1"></span>
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"></div>
   <div class="wrap hero-grid">
     <div class="hero-copy">
       <span class="badge reveal"><span class="dot"></span>New · AI Screenshot Extraction</span>
@@ -152,16 +157,16 @@
       <div class="hero-stats reveal">
         <div class="st"><b>4.9<span class="star">★</span></b><span>App Store</span></div>
         <div class="st"><b>4.4<span class="star">★</span></b><span>Google Play</span></div>
-        <div class="st"><b>100K+</b><span>Downloads</span></div>
-        <div class="st"><b>559+</b><span>Reviews</span></div>
+        <div class="st"><b>150K+</b><span>Downloads</span></div>
+        <div class="st"><b>550+</b><span>Reviews</span></div>
       </div>
     </div>
 
     <div class="hero-visual reveal">
       <div class="glow"></div>
-      <div class="poster p1"><img src="https://pointcalc.in/poster1.webp" alt="Point table design" /></div>
-      <div class="poster p2"><img src="https://pointcalc.in/poster2.webp" alt="Warhead design" /></div>
-      <div class="poster p3"><img src="https://pointcalc.in/poster3.webp" alt="Slot list design" /></div>
+      <div class="poster p1"><img src="designs/templates/premium/warheads/warhead_snax_jan_2026.webp" alt="Warhead design" /></div>
+      <div class="poster p2"><img src="designs/templates/premium/tables/table_snax_blue_february.webp" alt="Points table design" /></div>
+      <div class="poster p3"><img src="designs/templates/premium/fraggers/fraggers_snax_jan_2026.webp" alt="Top fraggers design" /></div>
       <div class="hero-chip c1"><span class="dot" style="width:6px;height:6px;border-radius:50%;background:var(--acid);display:inline-block"></span>AI reading screens…</div>
       <div class="hero-chip c2">✓ Kit generated · 0:03</div>
     </div>
@@ -266,30 +271,47 @@
 <!-- ============ STATS BAND ============ -->
 <section class="band">
   <div class="wrap">
-    <div class="st reveal"><b>100K+</b><span>Downloads</span></div>
+    <div class="st reveal"><b>150K+</b><span>Downloads</span></div>
     <div class="st reveal"><b>4.9★</b><span>App Store rating</span></div>
     <div class="st reveal"><b>4.4★</b><span>Play Store rating</span></div>
-    <div class="st reveal"><b>559+</b><span>Total reviews</span></div>
+    <div class="st reveal"><b>550+</b><span>Total reviews</span></div>
   </div>
 </section>
 
-<!-- ============ DESIGNS ============ -->
-<section class="pad" id="designs">
+<!-- ============ DESIGNS / TEMPLATE VAULT ============ -->
+<section class="pad vault" id="designs">
   <div class="wrap">
-    <div class="section-head reveal">
-      <span class="kicker">Designs</span>
-      <h2>Templates that look broadcast-ready</h2>
-      <p>Stop spending hours in Photoshop. Pick a template, drop in your branding, ship.</p>
+    <div class="section-head center reveal" style="margin-bottom:0;">
+      <span class="kicker center">The template vault</span>
+      <h2 class="sr-only">Templates that look broadcast-ready</h2>
     </div>
-    <div class="gallery">
-      <div class="g reveal"><img src="https://pointcalc.in/poster1.webp" alt="Point table layout 1" /><span class="lbl">Points Table</span></div>
-      <div class="g reveal"><img src="https://pointcalc.in/poster2.webp" alt="Point table layout 2" /><span class="lbl">Warhead</span></div>
-      <div class="g reveal"><img src="https://pointcalc.in/poster3.webp" alt="Point table layout 3" /><span class="lbl">Top Fraggers</span></div>
-      <div class="g reveal"><img src="https://pointcalc.in/poster4.webp" alt="Slot list layout" /><span class="lbl">Slot List</span></div>
+  </div>
+  <div class="vault-big reveal" aria-hidden="true"><span class="fill">190+</span> designs</div>
+  <div class="vault-rows">
+    <div class="vault-mqrow">
+      <div class="vault-track">
+        <div class="vshot"><span class="vtag prem">Premium</span><img src="designs/templates/premium/tables/table_jordan_november.webp" alt="Points table template" loading="lazy" /></div>
+        <div class="vshot"><span class="vtag prem">Premium</span><img src="designs/templates/premium/warheads/warhead_snax_jan_2026.webp" alt="Warhead template" loading="lazy" /></div>
+        <div class="vshot"><span class="vtag">Free</span><img src="designs/templates/free/tables/table_free_sep_2025.webp" alt="Free points table template" loading="lazy" /></div>
+        <div class="vshot"><span class="vtag prem">Premium</span><img src="designs/templates/premium/fraggers/fraggers_snax_jan_2026.webp" alt="Top fraggers template" loading="lazy" /></div>
+        <div class="vshot"><span class="vtag prem">Premium</span><img src="designs/templates/premium/slotlist/slotlist_jordan_november.webp" alt="Slot list template" loading="lazy" /></div>
+        <div class="vshot"><span class="vtag prem">Premium</span><img src="designs/templates/premium/certificate/certificate_snax_jan_2026.webp" alt="Certificate template" loading="lazy" /></div>
+      </div>
     </div>
-    <div class="designs-more reveal">
-      <a class="btn btn-acid" href="designs/index.html">Browse all 190+ templates →</a>
+    <div class="vault-mqrow rev">
+      <div class="vault-track">
+        <div class="vshot"><span class="vtag prem">Premium</span><img src="designs/templates/premium/teamPoster/poster_jordan_november.webp" alt="Team poster template" loading="lazy" /></div>
+        <div class="vshot"><span class="vtag prem">Premium</span><img src="designs/templates/premium/tables/table_snax_blue_february.webp" alt="Blue points table template" loading="lazy" /></div>
+        <div class="vshot"><span class="vtag prem">Premium</span><img src="designs/templates/premium/warheads/warhead_jordan_november.webp" alt="Warhead template red" loading="lazy" /></div>
+        <div class="vshot"><span class="vtag prem">Premium</span><img src="designs/templates/premium/fraggers/fraggers_jordan_november.webp" alt="Top fraggers template red" loading="lazy" /></div>
+        <div class="vshot"><span class="vtag prem">Premium</span><img src="designs/templates/premium/tables/table_snax_jan_2026.webp" alt="Ice points table template" loading="lazy" /></div>
+        <div class="vshot"><span class="vtag prem">Premium</span><img src="designs/templates/premium/teamPoster/poster_snax_jan_2026.webp" alt="Ice team poster template" loading="lazy" /></div>
+      </div>
     </div>
+  </div>
+  <div class="designs-more reveal">
+    <a class="btn btn-acid" href="designs/index.html">Browse all 190+ templates →</a>
+    <p class="vault-note">Free packs included · Premium drops monthly</p>
   </div>
 </section>
 
@@ -383,7 +405,7 @@
       <p>I started PointCalc in September 2021. I was a PUBG player running scrims with friends, and the worst part of tournament day was never the matches — it was the after-math. Hours of manual point calculations, then hours more in Photoshop putting the result graphics together.</p>
       <div class="more" id="founderMore">
         <p>I was a BCA student who only knew C at the time. I watched a 14-hour Android tutorial, started building the day after, and had a working prototype inside a week. That's when it clicked: instead of one-off builds for each org, ship one app that any organizer can customize.</p>
-        <p>These days I'm an Android developer at Wrench Solutions in Kochi by day, and PointCalc is still my side project — now at 100K+ downloads, with AI screenshot extraction and an iOS build.</p>
+        <p>These days I'm an Android developer at Wrench Solutions in Kochi by day, and PointCalc is still my side project — now at 150K+ downloads, with AI screenshot extraction and an iOS build.</p>
       </div>
       <button class="toggle" id="founderToggle">Read more +</button>
       <div class="socials">
@@ -427,7 +449,7 @@
   <div class="wrap">
     <div class="cta-card reveal">
       <h2>Run your next<br />tournament with PointCalc</h2>
-      <p>Free to download on iOS and Android. Join 100K+ organizers, scrim hosts and content creators.</p>
+      <p>Free to download on iOS and Android. Join 150K+ organizers, scrim hosts and content creators.</p>
       <div class="store-badges">
         <a href="https://apps.apple.com/in/app/pointcalc-custom-pt-maker/id6747952141"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1752019200" alt="Download on the App Store" /></a>
         <a href="https://play.google.com/store/apps/details?id=com.pointcalc.global"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" /></a>
@@ -470,9 +492,7 @@
   addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 12));
 
   // mobile nav toggle
-  document.getElementById('burger').addEventListener('click', () => {
-    nav.classList.toggle('open');
-  });
+  document.getElementById('burger').addEventListener('click', function () { var open = nav.classList.toggle('open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); });
 
   // pricing toggle
   const PRICES = {
@@ -507,6 +527,9 @@
   const strip = document.getElementById('strip');
   strip.innerHTML += strip.innerHTML;
 
+  // template vault: duplicate tracks for seamless loop
+  document.querySelectorAll('.vault-track').forEach(t => { t.innerHTML += t.innerHTML; });
+
   // reveal on scroll
   const io = new IntersectionObserver((entries) => {
     entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
@@ -515,6 +538,58 @@
     el.style.transitionDelay = (Math.min(i % 4, 3) * 60) + 'ms';
     io.observe(el);
   });
+
+  // ---- robust in-page anchor handling for shared section links ----
+  // Fixes: sticky-nav overlap, layout shift from marquee/vault duplication
+  // after the browser's initial jump, and .reveal hiding the linked target.
+  var NAV_OFFSET = 92;
+  function revealAround(el) {
+    document.querySelectorAll('.reveal').forEach(function (r) {
+      if (r === el || el.contains(r) || r.contains(el)) {
+        r.style.transitionDelay = '0ms';
+        r.classList.add('in');
+        io.unobserve(r);
+      }
+    });
+  }
+  function scrollToHash(hash, smooth) {
+    if (!hash || hash === '#') return false;
+    var el;
+    try { el = document.querySelector(hash); } catch (e) { return false; }
+    if (!el) return false;
+    revealAround(el);
+    var go = function () {
+      var y = el.getBoundingClientRect().top + window.pageYOffset - NAV_OFFSET;
+      window.scrollTo({ top: Math.max(0, y), behavior: smooth ? 'smooth' : 'auto' });
+    };
+    // wait two frames so duplicated marquee/vault tracks + fonts settle first
+    requestAnimationFrame(function () { requestAnimationFrame(go); });
+    return true;
+  }
+  // landing directly on a shared link: re-correct after full load
+  if (location.hash) {
+    scrollToHash(location.hash, false);
+    window.addEventListener('load', function () {
+      setTimeout(function () { scrollToHash(location.hash, false); }, 80);
+    });
+  }
+  // same-page anchor clicks (covers "#id" and "thispage.html#id")
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a[href]'); if (!a) return;
+    var href = a.getAttribute('href'); if (!href) return;
+    var hash = '';
+    if (href.charAt(0) === '#') hash = href;
+    else {
+      var u; try { u = new URL(href, location.href); } catch (_) { return; }
+      if (u.pathname === location.pathname && u.search === location.search && u.hash) hash = u.hash;
+    }
+    if (!hash || !document.querySelector(hash)) return;
+    if (scrollToHash(hash, true)) {
+      e.preventDefault();
+      history.pushState(null, '', hash);
+    }
+  });
+  window.addEventListener('hashchange', function () { scrollToHash(location.hash, true); });
 </script>
 <script>
   // language switcher dropdown
@@ -524,6 +599,26 @@
     lb.addEventListener('click',function(e){e.stopPropagation();var o=ls.classList.toggle('open');lb.setAttribute('aria-expanded',o?'true':'false');});
     document.addEventListener('click',function(e){if(!ls.contains(e.target)){ls.classList.remove('open');lb.setAttribute('aria-expanded','false');}});
     document.addEventListener('keydown',function(e){if(e.key==='Escape'){ls.classList.remove('open');lb.setAttribute('aria-expanded','false');}});
+  })();
+</script>
+<script>
+  // theme toggle (dark default / light)
+  (function(){
+    var btn = document.getElementById('themeBtn'); if (!btn) return;
+    var meta = document.querySelector('meta[name="theme-color"]');
+    function sync(){
+      var light = document.documentElement.getAttribute('data-theme') === 'light';
+      if (meta) meta.setAttribute('content', light ? '#faf6f5' : '#08080b');
+      btn.setAttribute('aria-pressed', light ? 'true' : 'false');
+    }
+    btn.addEventListener('click', function(){
+      var r = document.documentElement;
+      var light = r.getAttribute('data-theme') === 'light';
+      if (light) { r.removeAttribute('data-theme'); } else { r.setAttribute('data-theme', 'light'); }
+      try { localStorage.setItem('pc-theme', light ? 'dark' : 'light'); } catch (e) {}
+      sync();
+    });
+    sync();
   })();
 </script>
 </body>

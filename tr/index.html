@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="tr" dir="ltr">
 <head>
+<script>document.documentElement.classList.add('js');try{if(localStorage.getItem('pc-theme')==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}</script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>PointCalc — BGMI, PUBG ve Free Fire için Yapay Zekâ Puan Tablosu Aracı</title>
-<meta name="theme-color" content="#0a0a0f">
+<meta name="theme-color" content="#08080b">
 <meta name="description" content="BGMI, PUBG ve Free Fire için yapay zekâ turnuva araç seti. Ekran görüntülerini bırak — puan tablosunu, Warhead'i, en iyi fragçıları, slot listesini ve sertifikaları saniyeler içinde al.">
 <link rel="canonical" href="https://pointcalc.in/">
 <meta property="og:type" content="website">
@@ -43,8 +44,8 @@
   },
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.5",
-    "ratingCount": "559",
+    "ratingValue": "4.4",
+    "ratingCount": "553",
     "bestRating": "5"
   },
   "author": {
@@ -119,6 +120,7 @@
 <link rel="alternate" hreflang="x-default" href="https://pointcalc.in/">
 </head>
 <body>
+<a class="skip-link" href="#pc-main">İçeriğe atla</a>
 
 <!-- ============ NAV ============ -->
 <nav class="nav" id="nav">
@@ -126,15 +128,17 @@
     <a class="brand" lang="en" href="#top"><img src="https://pointcalc.in/icon.png" alt="PointCalc" />PointCalc</a>
     <div class="nav-links">
       <a href="#how">Nasıl çalışır</a><a href="features/index.html">Özellikler</a><a href="designs/index.html">Tasarımlar</a><a href="guide/index.html">Rehber</a><a href="#pricing">Fiyatlar</a><a href="faq/index.html">SSS</a>
-    </div>
     <a class="btn btn-acid nav-cta" href="#download">İndir</a>
+    </div>
     <div class="lang" id="langSwitch">
         <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-label="Language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18"/></svg><span>TR</span><svg class="lang-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
         <div class="lang-menu" role="menu"><a class="ln" href="../index.html" lang="en" hreflang="en"><span class="ln-native">English</span><span class="ln-code">EN</span></a><a class="ln" href="../ar/index.html" lang="ar" hreflang="ar" dir="rtl"><span class="ln-native">العربية</span><span class="ln-code">AR</span></a><a class="ln on" href="../tr/index.html" lang="tr" hreflang="tr"><span class="ln-native">Türkçe</span><span class="ln-code">TR</span></a></div>
       </div>
-    <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="theme-btn" id="themeBtn" aria-label="Açık/koyu tema değiştir"><svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></button>
+    <button class="nav-burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </nav>
+<span id="pc-main" tabindex="-1"></span>
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
@@ -152,8 +156,8 @@
       <div class="hero-stats reveal">
         <div class="st"><b>4.9<span class="star">★</span></b><span>App Store</span></div>
         <div class="st"><b>4.4<span class="star">★</span></b><span>Google Play</span></div>
-        <div class="st"><b>100K+</b><span>İndirme</span></div>
-        <div class="st"><b>559+</b><span>Yorum</span></div>
+        <div class="st"><b>150K+</b><span>İndirme</span></div>
+        <div class="st"><b>550+</b><span>Yorum</span></div>
       </div>
     </div>
 
@@ -266,10 +270,10 @@
 <!-- ============ STATS BAND ============ -->
 <section class="band">
   <div class="wrap">
-    <div class="st reveal"><b>100K+</b><span>İndirme</span></div>
+    <div class="st reveal"><b>150K+</b><span>İndirme</span></div>
     <div class="st reveal"><b>4.9★</b><span>App Store puanı</span></div>
     <div class="st reveal"><b>4.4★</b><span>Play Store puanı</span></div>
-    <div class="st reveal"><b>559+</b><span>Toplam yorum</span></div>
+    <div class="st reveal"><b>550+</b><span>Toplam yorum</span></div>
   </div>
 </section>
 
@@ -383,7 +387,7 @@
       <p>PointCalc'i Eylül 2021'de başlattım. Arkadaşlarımla scrim yapan bir PUBG oyuncusuydum ve turnuva gününün en kötü kısmı asla maçlar değildi — sonrasıydı. Saatlerce manuel puan hesaplama, ardından sonuç grafiklerini bir araya getirmek için saatlerce Photoshop.</p>
       <div class="more" id="founderMore">
         <p>O zamanlar yalnızca C bilen bir BCA öğrencisiydim. 14 saatlik bir Android eğitimi izledim, ertesi gün geliştirmeye başladım ve bir hafta içinde çalışan bir prototipim oldu. İşte o an anladım: her organizasyon için tek seferlik yapımlar yerine, herhangi bir organizatörün özelleştirebileceği tek bir uygulama yayınla.</p>
-        <p>Bugünlerde gündüzleri Kochi'deki Wrench Solutions'ta Android geliştiricisiyim ve PointCalc hâlâ yan projem — şimdi 100B+ indirme, yapay zekâ ile ekran okuma ve bir iOS sürümüyle.</p>
+        <p>Bugünlerde gündüzleri Kochi'deki Wrench Solutions'ta Android geliştiricisiyim ve PointCalc hâlâ yan projem — şimdi 150B+ indirme, yapay zekâ ile ekran okuma ve bir iOS sürümüyle.</p>
       </div>
       <button class="toggle" id="founderToggle">Daha fazla oku +</button>
       <div class="socials">
@@ -427,7 +431,7 @@
   <div class="wrap">
     <div class="cta-card reveal">
       <h2>Bir sonraki turnuvanı<br /><span lang="en">PointCalc</span> ile yönet</h2>
-      <p>iOS ve Android'de indirmesi ücretsiz. 100B+ organizatör, scrim sunucusu ve içerik üreticisine katıl.</p>
+      <p>iOS ve Android'de indirmesi ücretsiz. 150B+ organizatör, scrim sunucusu ve içerik üreticisine katıl.</p>
       <div class="store-badges">
         <a href="https://apps.apple.com/in/app/pointcalc-custom-pt-maker/id6747952141"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1752019200" alt="App Store'dan indir" /></a>
         <a href="https://play.google.com/store/apps/details?id=com.pointcalc.global"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play'den edin" /></a>
@@ -470,9 +474,7 @@
   addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 12));
 
   // mobile nav toggle
-  document.getElementById('burger').addEventListener('click', () => {
-    nav.classList.toggle('open');
-  });
+  document.getElementById('burger').addEventListener('click', function () { var open = nav.classList.toggle('open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); });
 
   // pricing toggle
   const PRICES = {
@@ -515,6 +517,58 @@
     el.style.transitionDelay = (Math.min(i % 4, 3) * 60) + 'ms';
     io.observe(el);
   });
+
+  // ---- robust in-page anchor handling for shared section links ----
+  // Fixes: sticky-nav overlap, layout shift from marquee/vault duplication
+  // after the browser's initial jump, and .reveal hiding the linked target.
+  var NAV_OFFSET = 92;
+  function revealAround(el) {
+    document.querySelectorAll('.reveal').forEach(function (r) {
+      if (r === el || el.contains(r) || r.contains(el)) {
+        r.style.transitionDelay = '0ms';
+        r.classList.add('in');
+        io.unobserve(r);
+      }
+    });
+  }
+  function scrollToHash(hash, smooth) {
+    if (!hash || hash === '#') return false;
+    var el;
+    try { el = document.querySelector(hash); } catch (e) { return false; }
+    if (!el) return false;
+    revealAround(el);
+    var go = function () {
+      var y = el.getBoundingClientRect().top + window.pageYOffset - NAV_OFFSET;
+      window.scrollTo({ top: Math.max(0, y), behavior: smooth ? 'smooth' : 'auto' });
+    };
+    // wait two frames so duplicated marquee/vault tracks + fonts settle first
+    requestAnimationFrame(function () { requestAnimationFrame(go); });
+    return true;
+  }
+  // landing directly on a shared link: re-correct after full load
+  if (location.hash) {
+    scrollToHash(location.hash, false);
+    window.addEventListener('load', function () {
+      setTimeout(function () { scrollToHash(location.hash, false); }, 80);
+    });
+  }
+  // same-page anchor clicks (covers "#id" and "thispage.html#id")
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a[href]'); if (!a) return;
+    var href = a.getAttribute('href'); if (!href) return;
+    var hash = '';
+    if (href.charAt(0) === '#') hash = href;
+    else {
+      var u; try { u = new URL(href, location.href); } catch (_) { return; }
+      if (u.pathname === location.pathname && u.search === location.search && u.hash) hash = u.hash;
+    }
+    if (!hash || !document.querySelector(hash)) return;
+    if (scrollToHash(hash, true)) {
+      e.preventDefault();
+      history.pushState(null, '', hash);
+    }
+  });
+  window.addEventListener('hashchange', function () { scrollToHash(location.hash, true); });
 </script>
 <script>
   // language switcher dropdown
@@ -524,6 +578,26 @@
     lb.addEventListener('click',function(e){e.stopPropagation();var o=ls.classList.toggle('open');lb.setAttribute('aria-expanded',o?'true':'false');});
     document.addEventListener('click',function(e){if(!ls.contains(e.target)){ls.classList.remove('open');lb.setAttribute('aria-expanded','false');}});
     document.addEventListener('keydown',function(e){if(e.key==='Escape'){ls.classList.remove('open');lb.setAttribute('aria-expanded','false');}});
+  })();
+</script>
+<script>
+  // theme toggle (dark default / light)
+  (function(){
+    var btn = document.getElementById('themeBtn'); if (!btn) return;
+    var meta = document.querySelector('meta[name="theme-color"]');
+    function sync(){
+      var light = document.documentElement.getAttribute('data-theme') === 'light';
+      if (meta) meta.setAttribute('content', light ? '#faf6f5' : '#08080b');
+      btn.setAttribute('aria-pressed', light ? 'true' : 'false');
+    }
+    btn.addEventListener('click', function(){
+      var r = document.documentElement;
+      var light = r.getAttribute('data-theme') === 'light';
+      if (light) { r.removeAttribute('data-theme'); } else { r.setAttribute('data-theme', 'light'); }
+      try { localStorage.setItem('pc-theme', light ? 'dark' : 'light'); } catch (e) {}
+      sync();
+    });
+    sync();
   })();
 </script>
 </body>
