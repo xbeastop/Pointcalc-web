@@ -109,6 +109,9 @@
     <loc>https://pointcalc.in/delete-account/</loc>
   </url>
   <url>
+    <loc>https://pointcalc.in/terms/</loc>
+  </url>
+  <url>
     <loc>https://pointcalc.in/privacy/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://pointcalc.in/privacy/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/privacy/"/>
