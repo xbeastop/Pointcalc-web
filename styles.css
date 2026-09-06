@@ -1157,3 +1157,38 @@ html[data-theme="light"] .theme-btn .ic-moon { display: block; }
   .lang-btn .lang-caret { display: none; }
   .theme-btn { width: 36px; height: 36px; }
 }
+
+/* ---------- PointCalc Studio (homepage) ---------- */
+.badge { transition: border-color .15s, color .15s; }
+a.badge:hover { border-color: var(--acid); }
+.studio-card {
+  display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 4vw, 56px); align-items: center;
+  margin-top: 48px; padding: clamp(28px, 4vw, 52px); border-radius: 28px;
+  border: 1px solid color-mix(in srgb, var(--acid) 36%, transparent);
+  background: linear-gradient(150deg, color-mix(in srgb, var(--acid) 14%, transparent), transparent 48%), var(--panel);
+  position: relative; overflow: hidden;
+}
+.studio-brand { display: flex; align-items: center; gap: 14px; margin-bottom: 26px; }
+.studio-brand img { width: 46px; height: 46px; border-radius: 12px; border: 1px solid var(--line-2); }
+.studio-brand b { display: block; font-family: var(--display); font-size: 1.35rem; text-transform: uppercase; letter-spacing: 0.02em; line-height: 1; }
+.studio-brand span { font-family: var(--mono); font-size: 0.64rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--acid); }
+.studio-card .checklist { margin-top: 0; gap: 14px; }
+.studio-card .checklist li > span:last-child { display: block; }
+.studio-cta { margin-top: 30px; display: flex; flex-direction: column; gap: 14px; }
+.studio-note { font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.04em; color: var(--ink-3); }
+.studio-note a { color: var(--acid); border-bottom: 1px solid color-mix(in srgb, var(--acid) 45%, transparent); padding-bottom: 2px; }
+.studio-media { position: relative; }
+.studio-shot {
+  border-radius: 16px; overflow: hidden; background: #0a0910;
+  border: 1px solid color-mix(in srgb, var(--acid) 28%, var(--line-2));
+  box-shadow: 0 44px 90px -30px rgba(0,0,0,0.9), 0 0 60px -22px var(--acid-dim);
+}
+.studio-shot img { width: 100%; display: block; }
+html[data-theme="light"] .studio-shot { box-shadow: 0 24px 48px -24px rgba(64,28,32,0.30); }
+@media (max-width: 940px) {
+  .studio-card { grid-template-columns: 1fr; }
+  .studio-media { margin-top: 8px; }
+}
+@media (max-width: 560px) {
+  .studio-card { padding: 22px 18px; border-radius: 20px; }
+}

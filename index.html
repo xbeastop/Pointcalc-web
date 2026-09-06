@@ -58,6 +58,19 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "PointCalc Studio",
+  "operatingSystem": "IOS, ANDROID",
+  "applicationCategory": "DesignApplication",
+  "description": "Companion app to PointCalc for designers and org admins. Open your own artwork, place the points table, names and logos, and publish the design as a link that imports into PointCalc in one tap.",
+  "url": "https://pointcalc.in/#studio",
+  "image": "https://pointcalc.in/studio-icon.png",
+  "author": { "@type": "Person", "name": "Amal Manoj", "alternateName": "xbeastop" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "Organization",
   "name": "PointCalc",
   "url": "https://pointcalc.in/",
@@ -127,7 +140,7 @@
   <div class="wrap nav-inner">
     <a class="brand" lang="en" href="#top"><img src="https://pointcalc.in/icon.png" alt="PointCalc" />PointCalc</a>
     <div class="nav-links">
-      <a href="#how">How it works</a><a href="features/index.html">Features</a><a href="designs/index.html">Designs</a><a href="guide/index.html">Guide</a><a href="#pricing">Pricing</a><a href="faq/index.html">FAQ</a>
+      <a href="#how">How it works</a><a href="features/index.html">Features</a><a href="#studio">Studio</a><a href="designs/index.html">Designs</a><a href="guide/index.html">Guide</a><a href="#pricing">Pricing</a><a href="faq/index.html">FAQ</a>
     <a class="btn btn-acid nav-cta" href="#download">Download</a>
     </div>
     <div class="lang" id="langSwitch">
@@ -145,7 +158,7 @@
   <div class="hero-bg" aria-hidden="true"></div>
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <span class="badge reveal"><span class="dot"></span>New · AI Screenshot Extraction</span>
+      <a class="badge reveal" href="#studio"><span class="dot"></span>New · PointCalc Studio is here →</a>
       <h1 class="reveal">Drop screens.<br /><span class="em">Get the</span><br /><span class="stroke">whole kit.</span></h1>
       <p class="hero-sub reveal">The AI tournament toolkit for BGMI, PUBG Mobile &amp; Free Fire organizers. Upload your lobby and result screens — placements and kills are read automatically, then PointCalc builds the points table, warhead, top fraggers, slot list, posters and certificates for you.</p>
       <div class="hero-actions reveal">
@@ -264,6 +277,40 @@
       <div class="feat third a-heat reveal"><span class="tag">Stat cards</span><h3>Top fraggers &amp; warhead</h3><p>Auto-ranked from match data — the MVP of every lobby, surfaced as creator-grade stat cards in your colors.</p></div>
       <div class="feat third reveal"><span class="tag">Broadcast</span><h3>Slot list &amp; team posters</h3><p>Add your teams, players and logos — PointCalc turns it into a broadcast-grade slot list and posters for every squad.</p></div>
       <div class="feat third a-gold reveal"><span class="tag">No Photoshop</span><h3>Winner certificates</h3><p>Free + premium certificate templates. Custom rules, placement and kill multipliers — generated, not designed by hand.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POINTCALC STUDIO ============ -->
+<section class="pad studio" id="studio" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">New · PointCalc Studio</span>
+      <h2>Your own design,<br /><span class="em">on every</span> result.</h2>
+      <p>You already have a look for your org. Studio lets you use it. Open your poster or background in the app, drag the table, team names and logos to where you want them, and tap Share. You get a link. Send it to whoever posts your results, they open it in PointCalc, and from then on every table they publish comes out in your design.</p>
+    </div>
+    <div class="studio-card reveal">
+      <div class="studio-copy">
+        <div class="studio-brand">
+          <img src="studio-icon.png" alt="" width="46" height="46" />
+          <div><b>PointCalc Studio</b><span>Available on Android and iOS</span></div>
+        </div>
+        <ul class="checklist">
+          <li><span class="ck">+</span><span>It covers the whole kit: points table, warhead, top fraggers, slot list, team poster and certificate. Each one starts from your own image.</span></li>
+          <li><span class="ck">+</span><span>Your fonts come along. Drop in a TTF or OTF file and it ships inside the design, so the table looks the same on your admin's phone as it does on yours.</span></li>
+          <li><span class="ck">+</span><span>Nobody has to pass files around. The link is the design. Your admins import it once and it stays in their PointCalc.</span></li>
+          <li><span class="ck">+</span><span>Pay for a design once and its link stays live for good. If you publish a lot, Studio Pro lets you share as many designs as you want while the plan runs.</span></li>
+        </ul>
+        <div class="studio-cta">
+          <div class="store-badges">
+            <a href="https://apps.apple.com/in/app/pointcalc-studio/id"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1757030400" alt="Download PointCalc Studio on the App Store" /></a>
+            <a href="https://play.google.com/store/apps/details?id=com.pointcalc.studio"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get PointCalc Studio on Google Play" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="studio-media">
+        <div class="studio-shot"><img src="studio-editor.webp" alt="PointCalc Studio editor with a points table being positioned on a custom background" loading="lazy" /></div>
+      </div>
     </div>
   </div>
 </section>
@@ -405,7 +452,7 @@
       <p>I started PointCalc in September 2021. I was a PUBG player running scrims with friends, and the worst part of tournament day was never the matches — it was the after-math. Hours of manual point calculations, then hours more in Photoshop putting the result graphics together.</p>
       <div class="more" id="founderMore">
         <p>I was a BCA student who only knew C at the time. I watched a 14-hour Android tutorial, started building the day after, and had a working prototype inside a week. That's when it clicked: instead of one-off builds for each org, ship one app that any organizer can customize.</p>
-        <p>These days I'm an Android developer at Wrench Solutions in Kochi by day, and PointCalc is still my side project — now at 150K+ downloads, with AI screenshot extraction and an iOS build.</p>
+        <p>These days I'm an Android developer at Wrench Solutions in Kochi by day, and PointCalc is still my side project — now at 150K+ downloads, with AI screenshot extraction, an iOS build and PointCalc Studio for the designers in the community.</p>
       </div>
       <button class="toggle" id="founderToggle">Read more +</button>
       <div class="socials">
@@ -437,8 +484,16 @@
         <div class="faq-a"><p>Yes — the app is free to download and the core features work without a subscription. Premium templates and AI screenshot extraction are available on optional paid tiers, starting at ₹29/week for Premium and ₹150/week for Premium + AI.</p></div>
       </div>
       <div class="faq-item">
+        <button class="faq-q">What is PointCalc Studio?<span class="ic">+</span></button>
+        <div class="faq-a"><p>Studio is a second app for people who make the designs. You open your own artwork, place the table, text and logos, and share it as a link. Whoever opens that link in PointCalc gets your design and can post results with it. If you only run tournaments and use the built-in templates, you don't need Studio.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How is Studio priced?<span class="ic">+</span></button>
+        <div class="faq-a"><p>You can pay for a single design, and that link stays live for good. Or you can take Studio Pro and publish as many designs as you like while the plan is active. Links you published on the plan stop working if it ends. Designs you paid for outright keep working.</p></div>
+      </div>
+      <div class="faq-item">
         <button class="faq-q">Can I customize designs with my own branding?<span class="ic">+</span></button>
-        <div class="faq-a"><p>Yes. You can adjust colors, swap the background image and add as many custom logos as you need. For an entirely custom design, reach out on WhatsApp or Instagram and we'll build it for you.</p></div>
+        <div class="faq-a"><p>Yes. You can adjust colors, swap the background image and add as many custom logos as you need. For an entirely custom design, build it yourself in PointCalc Studio, or reach out on WhatsApp or Instagram and we'll build it for you.</p></div>
       </div>
     </div>
   </div>
@@ -468,11 +523,11 @@
       </div>
       <div class="foot-col">
         <h4>Product</h4>
-        <ul><li><a href="features/index.html">Features</a></li><li><a href="designs/index.html">Designs</a></li><li><a href="guide/index.html">Guide</a></li><li><a href="#pricing">Pricing</a></li><li><a href="faq/index.html">FAQ</a></li></ul>
+        <ul><li><a href="features/index.html">Features</a></li><li><a href="#studio">Studio</a></li><li><a href="designs/index.html">Designs</a></li><li><a href="guide/index.html">Guide</a></li><li><a href="#pricing">Pricing</a></li><li><a href="faq/index.html">FAQ</a></li></ul>
       </div>
       <div class="foot-col">
         <h4>Download</h4>
-        <ul><li><a href="https://apps.apple.com/in/app/pointcalc-custom-pt-maker/id6747952141">App Store</a></li><li><a href="https://play.google.com/store/apps/details?id=com.pointcalc.global">Google Play</a></li></ul>
+        <ul><li><a href="https://apps.apple.com/in/app/pointcalc-custom-pt-maker/id6747952141">App Store</a></li><li><a href="https://play.google.com/store/apps/details?id=com.pointcalc.global">Google Play</a></li><li><a href="https://apps.apple.com/in/app/pointcalc-studio/id">Studio for iOS</a></li><li><a href="https://play.google.com/store/apps/details?id=com.pointcalc.studio">Studio for Android</a></li></ul>
       </div>
       <div class="foot-col">
         <h4>Connect</h4>
