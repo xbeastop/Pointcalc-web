@@ -1,127 +1,1243 @@
 {
-  "meta": {
-    "en": { "title": "PointCalc — AI Point Table Maker for BGMI, PUBG & Free Fire", "desc": "AI tournament toolkit for BGMI, PUBG & Free Fire. Drop screenshots — get the points table, warhead, top fraggers, slot list and certificates in seconds." },
-    "ar": { "title": "PointCalc — صانع جدول نقاط بالذكاء الاصطناعي لـ BGMI و PUBG و Free Fire", "desc": "حقيبة أدوات بطولات بالذكاء الاصطناعي لـ BGMI و PUBG و Free Fire. أسقِط اللقطات — واحصل على جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات والشهادات في ثوانٍ." },
-    "tr": { "title": "PointCalc — BGMI, PUBG ve Free Fire için Yapay Zekâ Puan Tablosu Aracı", "desc": "BGMI, PUBG ve Free Fire için yapay zekâ turnuva araç seti. Ekran görüntülerini bırak — puan tablosunu, Warhead'i, en iyi fragçıları, slot listesini ve sertifikaları saniyeler içinde al." }
+ "meta": {
+  "en": {
+   "title": "PointCalc — AI Point Table Maker for BGMI, PUBG & Free Fire",
+   "desc": "AI tournament toolkit for BGMI, PUBG & Free Fire. Drop screenshots — get the points table, warhead, top fraggers, slot list and certificates in seconds."
   },
-  "pairs": [
-    { "en": "New · AI Screenshot Extraction", "ar": "جديد · استخراج البيانات من اللقطات بالذكاء الاصطناعي", "tr": "Yeni · Yapay Zekâ ile Ekran Okuma" },
-    { "en": "Drop screens.<br /><span class=\"em\">Get the</span><br /><span class=\"stroke\">whole kit.</span>", "ar": "أسقِط اللقطات.<br /><span class=\"em\">واحصل على</span><br /><span class=\"stroke\">الحقيبة كاملة.</span>", "tr": "Ekranları bırak.<br /><span class=\"em\">Tüm seti</span><br /><span class=\"stroke\">anında al.</span>" },
-    { "en": "The AI tournament toolkit for BGMI, PUBG Mobile &amp; Free Fire organizers. Upload your lobby and result screens — placements and kills are read automatically, then PointCalc builds the points table, warhead, top fraggers, slot list, posters and certificates for you.", "ar": "حقيبة أدوات البطولات بالذكاء الاصطناعي لمنظّمي BGMI و PUBG Mobile و Free Fire. ارفع لقطات اللوبي والنتائج — تُقرأ المراكز والقتلات تلقائيًا، ثم يُنشئ PointCalc جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات والبوسترات والشهادات نيابةً عنك.", "tr": "BGMI, PUBG Mobile ve Free Fire organizatörleri için yapay zekâ turnuva araç seti. Lobi ve sonuç ekranlarını yükle — sıralamalar ve killer otomatik okunur, ardından PointCalc senin için puan tablosunu, Warhead'i, en iyi fragçıları, slot listesini, posterleri ve sertifikaları oluşturur." },
-    { "en": "Download on the App Store", "ar": "حمّله من App Store", "tr": "App Store'dan indir" },
-    { "en": "Get it on Google Play", "ar": "احصل عليه من Google Play", "tr": "Google Play'den edin" },
-    { "en": "Point table design", "ar": "تصميم جدول النقاط", "tr": "Puan tablosu tasarımı" },
-    { "en": "Warhead design", "ar": "تصميم أقوى الفرق", "tr": "Warhead tasarımı" },
-    { "en": "Slot list design", "ar": "تصميم قائمة الخانات", "tr": "Slot listesi tasarımı" },
-    { "en": "AI reading screens…", "ar": "الذكاء الاصطناعي يقرأ اللقطات…", "tr": "Yapay zekâ ekranları okuyor…" },
-    { "en": "✓ Kit generated · 0:03", "ar": "✓ تم إنشاء الحقيبة · 0:03", "tr": "✓ Set oluşturuldu · 0:03" },
-    { "en": "App Store rating", "ar": "تقييم App Store", "tr": "App Store puanı" },
-    { "en": "Play Store rating", "ar": "تقييم Play Store", "tr": "Play Store puanı" },
-    { "en": "Total reviews", "ar": "إجمالي التقييمات", "tr": "Toplam yorum" },
-    { "en": "Downloads", "ar": "تنزيلات", "tr": "İndirme" },
-    { "en": "Reviews", "ar": "تقييمات", "tr": "Yorum" },
-    { "en": "Supported games", "ar": "الألعاب المدعومة", "tr": "Desteklenen oyunlar" },
-    { "en": "Points Table", "ar": "جدول النقاط", "tr": "Puan Tablosu" },
-    { "en": "Top Fraggers", "ar": "أبرز اللاعبين", "tr": "En İyi Fragçılar" },
-    { "en": "Slot List", "ar": "قائمة الخانات", "tr": "Slot Listesi" },
-    { "en": "Certificates", "ar": "الشهادات", "tr": "Sertifikalar" },
-    { "en": "Warhead", "ar": "أقوى الفرق", "tr": "Warhead" },
-    { "en": "How it works", "ar": "كيف يعمل", "tr": "Nasıl çalışır" },
-    { "en": "Three taps to a published kit", "ar": "ثلاث نقرات إلى حقيبة جاهزة للنشر", "tr": "Yayına hazır bir sete üç dokunuş" },
-    { "en": "No spreadsheets. No copy-pasting from screenshots. No Photoshop. PointCalc handles the whole chain — from raw screens to a finished, broadcast-grade tournament kit.", "ar": "بلا جداول بيانات. بلا نسخ ولصق من اللقطات. بلا فوتوشوب. يتولّى PointCalc السلسلة كاملة — من اللقطات الخام إلى حقيبة بطولة جاهزة بجودة البث.", "tr": "Elektronik tablo yok. Ekran görüntülerinden kopyala-yapıştır yok. Photoshop yok. PointCalc tüm zinciri üstlenir — ham ekranlardan yayın kalitesinde bitmiş bir turnuva setine." },
-    { "en": "Step 01", "ar": "الخطوة 01", "tr": "Adım 01" },
-    { "en": "Step 02", "ar": "الخطوة 02", "tr": "Adım 02" },
-    { "en": "Step 03", "ar": "الخطوة 03", "tr": "Adım 03" },
-    { "en": "Upload your screens", "ar": "ارفع لقطاتك", "tr": "Ekranlarını yükle" },
-    { "en": "Drop your lobby and result screenshots from BGMI, PUBG Mobile or Free Fire. That's the only input PointCalc needs — multi-game support out of the box.", "ar": "أسقِط لقطات اللوبي والنتائج من BGMI أو PUBG Mobile أو Free Fire. هذا هو المُدخل الوحيد الذي يحتاجه PointCalc — دعم لعدة ألعاب جاهز فورًا.", "tr": "BGMI, PUBG Mobile veya Free Fire'dan lobi ve sonuç ekran görüntülerini bırak. PointCalc'in ihtiyaç duyduğu tek girdi budur — kutudan çıkar çıkmaz çoklu oyun desteği." },
-    { "en": "AI extracts the data", "ar": "الذكاء الاصطناعي يستخرج البيانات", "tr": "Yapay zekâ verileri çıkarır" },
-    { "en": "Placements and kills are read straight off the screens. PointCalc derives the full picture — points table, warhead and top fraggers. Edit any value if you need to.", "ar": "تُقرأ المراكز والقتلات مباشرةً من اللقطات. يستخلص PointCalc الصورة كاملة — جدول النقاط وأقوى الفرق وأبرز اللاعبين. عدّل أي قيمة عند الحاجة.", "tr": "Sıralamalar ve killer doğrudan ekranlardan okunur. PointCalc tüm tabloyu çıkarır — puan tablosu, Warhead ve en iyi fragçılar. Gerekirse herhangi bir değeri düzenle." },
-    { "en": "Publish the design", "ar": "انشُر التصميم", "tr": "Tasarımı yayınla" },
-    { "en": "Pick a template, drop in your brand, export. Points table, warhead, top fragger, slot list, team posters and certificates — all built in.", "ar": "اختر قالبًا، أضِف هويتك، صدّر. جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات وبوسترات الفرق والشهادات — كلها مدمجة.", "tr": "Bir şablon seç, markanı ekle, dışa aktar. Puan tablosu, Warhead, en iyi fragçı, slot listesi, takım posterleri ve sertifikalar — hepsi yerleşik." },
-    { "en": "Want the full walkthrough? <a href=\"guide/index.html\">Read the step-by-step guide →</a>", "ar": "هل تريد الشرح الكامل؟ <a href=\"guide/index.html\">اقرأ الدليل خطوة بخطوة →</a>", "tr": "Tüm adımları öğrenmek ister misin? <a href=\"guide/index.html\">Adım adım rehberi oku →</a>" },
-    { "en": "Features", "ar": "المزايا", "tr": "Özellikler" },
-    { "en": "Your all-in-one tournament toolkit", "ar": "حقيبة أدواتك المتكاملة للبطولات", "tr": "Hepsi bir arada turnuva araç setin" },
-    { "en": "Everything you need to run a scrim, league or championship — without bouncing between five different apps.", "ar": "كل ما تحتاجه لإدارة سكريم أو دوري أو بطولة — دون التنقّل بين خمسة تطبيقات مختلفة.", "tr": "Bir scrim, lig veya şampiyona yürütmek için ihtiyacın olan her şey — beş farklı uygulama arasında gezinmeden." },
-    { "en": "Flagship", "ar": "الميزة الأبرز", "tr": "Amiral gemisi" },
-    { "en": "AI screenshot extraction", "ar": "استخراج البيانات من اللقطات بالذكاء الاصطناعي", "tr": "Yapay zekâ ile ekran görüntüsü okuma" },
-    { "en": "Drop BGMI, PUBG Mobile or Free Fire lobby and result screens. Placements and kills are read automatically — points table, warhead, top fraggers, slot list, posters and certificates all generate from the same uploads.", "ar": "أسقِط لقطات اللوبي والنتائج من BGMI أو PUBG Mobile أو Free Fire. تُقرأ المراكز والقتلات تلقائيًا — يُنشأ جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات والبوسترات والشهادات من الملفات نفسها.", "tr": "BGMI, PUBG Mobile veya Free Fire lobi ve sonuç ekranlarını bırak. Sıralamalar ve killer otomatik okunur — puan tablosu, Warhead, en iyi fragçılar, slot listesi, posterler ve sertifikalar aynı yüklemelerden üretilir." },
-    { "en": "In-game result screen", "ar": "لقطة نتائج داخل اللعبة", "tr": "Oyun içi sonuç ekranı" },
-    { "en": "In-game lobby screen", "ar": "لقطة لوبي داخل اللعبة", "tr": "Oyun içi lobi ekranı" },
-    { "en": "Live", "ar": "مباشر", "tr": "Canlı" },
-    { "en": "Daily points tables", "ar": "جداول نقاط يومية", "tr": "Günlük puan tabloları" },
-    { "en": "Live standings after every match. Publish a fresh points table and warhead leaderboard without breaking format.", "ar": "ترتيب مباشر بعد كل مباراة. انشُر جدول نقاط جديدًا ولوحة صدارة لأقوى الفرق دون كسر التنسيق.", "tr": "Her maçtan sonra canlı sıralama. Biçimi bozmadan yeni bir puan tablosu ve Warhead lider tablosu yayınla." },
-    { "en": "Stat cards", "ar": "بطاقات إحصائية", "tr": "İstatistik kartları" },
-    { "en": "Top fraggers &amp; warhead", "ar": "أبرز اللاعبين وأقوى الفرق", "tr": "En iyi fragçılar ve Warhead" },
-    { "en": "Auto-ranked from match data — the MVP of every lobby, surfaced as creator-grade stat cards in your colors.", "ar": "ترتيب تلقائي من بيانات المباراة — أفضل لاعب في كل لوبي، يظهر كبطاقات إحصائية بجودة المحترفين وبألوانك.", "tr": "Maç verilerinden otomatik sıralama — her lobinin MVP'si, kendi renklerinde üretici kalitesinde istatistik kartları olarak sunulur." },
-    { "en": "Broadcast", "ar": "بثّ", "tr": "Yayın" },
-    { "en": "Slot list &amp; team posters", "ar": "قائمة الخانات وبوسترات الفرق", "tr": "Slot listesi ve takım posterleri" },
-    { "en": "Add your teams, players and logos — PointCalc turns it into a broadcast-grade slot list and posters for every squad.", "ar": "أضِف فرقك ولاعبيك وشعاراتك — يحوّلها PointCalc إلى قائمة خانات بجودة البث وبوسترات لكل فريق.", "tr": "Takımlarını, oyuncularını ve logolarını ekle — PointCalc bunu yayın kalitesinde bir slot listesine ve her takım için posterlere dönüştürür." },
-    { "en": "No Photoshop", "ar": "بلا فوتوشوب", "tr": "Photoshop yok" },
-    { "en": "Winner certificates", "ar": "شهادات الفائزين", "tr": "Kazanan sertifikaları" },
-    { "en": "Free + premium certificate templates. Custom rules, placement and kill multipliers — generated, not designed by hand.", "ar": "قوالب شهادات مجانية ومدفوعة. قواعد مخصّصة ومضاعِفات للمراكز والقتلات — تُولَّد آليًا لا تُصمَّم يدويًا.", "tr": "Ücretsiz + premium sertifika şablonları. Özel kurallar, sıralama ve kill çarpanları — elle tasarlanmaz, üretilir." },
-    { "en": "Designs", "ar": "التصاميم", "tr": "Tasarımlar" },
-    { "en": "Templates that look broadcast-ready", "ar": "قوالب تبدو جاهزة للبثّ", "tr": "Yayına hazır görünen şablonlar" },
-    { "en": "Stop spending hours in Photoshop. Pick a template, drop in your branding, ship.", "ar": "توقّف عن قضاء الساعات في فوتوشوب. اختر قالبًا، أضِف هويتك، وانشُر.", "tr": "Photoshop'ta saatler harcamayı bırak. Bir şablon seç, markanı ekle, yayınla." },
-    { "en": "Point table layout 1", "ar": "تخطيط جدول النقاط 1", "tr": "Puan tablosu düzeni 1" },
-    { "en": "Point table layout 2", "ar": "تخطيط جدول النقاط 2", "tr": "Puan tablosu düzeni 2" },
-    { "en": "Point table layout 3", "ar": "تخطيط جدول النقاط 3", "tr": "Puan tablosu düzeni 3" },
-    { "en": "Slot list layout", "ar": "تخطيط قائمة الخانات", "tr": "Slot listesi düzeni" },
-    { "en": "Browse all 190+ templates →", "ar": "تصفّح أكثر من 190 قالبًا →", "tr": "190+ şablonun tümüne göz at →" },
-    { "en": "Pricing", "ar": "الأسعار", "tr": "Fiyatlar" },
-    { "en": "Start free. Upgrade when you scale.", "ar": "ابدأ مجانًا. ارتقِ عندما تتوسّع.", "tr": "Ücretsiz başla. Büyüdükçe yükselt." },
-    { "en": "PointCalc is free forever. Unlock premium designs or add AI screenshot extraction whenever you're ready.", "ar": "PointCalc مجاني للأبد. افتح التصاميم المدفوعة أو أضِف استخراج اللقطات بالذكاء الاصطناعي متى كنت مستعدًا.", "tr": "PointCalc sonsuza dek ücretsiz. Hazır olduğunda premium tasarımların kilidini aç veya yapay zekâ ile ekran okumayı ekle." },
-    { "en": "Weekly", "ar": "أسبوعي", "tr": "Haftalık" },
-    { "en": "Monthly", "ar": "شهري", "tr": "Aylık" },
-    { "en": "Quarterly", "ar": "ربع سنوي", "tr": "Üç Aylık" },
-    { "en": "Yearly", "ar": "سنوي", "tr": "Yıllık" },
-    { "en": "<span class=\"per\" data-per=\"\">/month</span>", "ar": "<span class=\"per\" data-per=\"\">/شهر</span>", "tr": "<span class=\"per\" data-per=\"\">/ay</span>" },
-    { "en": "['/week', '/month', '/quarter', '/year']", "ar": "['/أسبوع', '/شهر', '/ربع', '/سنة']", "tr": "['/hafta', '/ay', '/çeyrek', '/yıl']" },
-    { "en": "Unlimited points tables, warhead &amp; posters", "ar": "جداول نقاط وأقوى الفرق وبوسترات بلا حدود", "tr": "Sınırsız puan tablosu, Warhead ve poster" },
-    { "en": "Premium design templates", "ar": "قوالب التصميم المدفوعة", "tr": "Premium tasarım şablonları" },
-    { "en": "Slot list, top fraggers &amp; certificates", "ar": "قائمة الخانات وأبرز اللاعبين والشهادات", "tr": "Slot listesi, en iyi fragçılar ve sertifikalar" },
-    { "en": "Manual data entry", "ar": "إدخال البيانات يدويًا", "tr": "Manuel veri girişi" },
-    { "en": "Priority customer support", "ar": "دعم عملاء ذو أولوية", "tr": "Öncelikli müşteri desteği" },
-    { "en": "<span class=\"pname\">Premium</span>", "ar": "<span class=\"pname\">Premium</span>", "tr": "<span class=\"pname\" lang=\"en\">Premium</span>" },
-    { "en": "<span class=\"pname\">Premium + AI</span>", "ar": "<span class=\"pname\">Premium + AI</span>", "tr": "<span class=\"pname\" lang=\"en\">Premium + AI</span>" },
-    { "en": "alt=\"\" />PUBG Mobile</span>", "ar": "alt=\"\" />PUBG Mobile</span>", "tr": "alt=\"\" /><span lang=\"en\">PUBG Mobile</span></span>" },
-    { "en": "alt=\"\" />Free Fire</span>", "ar": "alt=\"\" />Free Fire</span>", "tr": "alt=\"\" /><span lang=\"en\">Free Fire</span></span>" },
-    { "en": "Get Premium", "ar": "احصل على Premium", "tr": "<span lang=\"en\">Premium</span> Al" },
-    { "en": "AI Powered", "ar": "مدعوم بالذكاء الاصطناعي", "tr": "Yapay Zekâ Destekli" },
-    { "en": "Everything in Premium", "ar": "كل ما في Premium", "tr": "Premium'daki her şey" },
-    { "en": "<b>AI screenshot extraction</b> — auto-parse BGMI, PUBG, FF results", "ar": "<b>استخراج اللقطات بالذكاء الاصطناعي</b> — تحليل تلقائي لنتائج BGMI و PUBG و FF", "tr": "<b>Yapay zekâ ile ekran okuma</b> — BGMI, PUBG, FF sonuçlarını otomatik ayrıştır" },
-    { "en": "Auto-generated points table, warhead &amp; top fraggers", "ar": "جدول نقاط وأقوى الفرق وأبرز اللاعبين مُولّدة تلقائيًا", "tr": "Otomatik üretilen puan tablosu, Warhead ve en iyi fragçılar" },
-    { "en": "Bulk match processing", "ar": "معالجة مباريات بالجملة", "tr": "Toplu maç işleme" },
-    { "en": "Earliest access to new AI features", "ar": "وصول مبكر لميزات الذكاء الاصطناعي الجديدة", "tr": "Yeni yapay zekâ özelliklerine en erken erişim" },
-    { "en": "Get Premium + AI", "ar": "احصل على Premium + AI", "tr": "<span lang=\"en\">Premium + AI</span> Al" },
-    { "en": "Free tier with core features. Pricing shown in INR; converted at checkout.", "ar": "باقة مجانية بالميزات الأساسية. الأسعار معروضة بالروبية الهندية (INR)؛ تُحوَّل عند الدفع.", "tr": "Temel özelliklerle ücretsiz katman. Fiyatlar INR cinsinden gösterilir; ödemede dönüştürülür." },
-    { "en": "Trusted by organizers", "ar": "موثوق من المنظّمين", "tr": "Organizatörlerin güvendiği" },
-    { "en": "What organizers are saying", "ar": "ماذا يقول المنظّمون", "tr": "Organizatörler ne diyor" },
-    { "en": "Real installs, real ratings, real testimonials from the Play Store and App Store.", "ar": "تنزيلات حقيقية وتقييمات حقيقية وشهادات حقيقية من Play Store و App Store.", "tr": "Play Store ve App Store'dan gerçek indirmeler, gerçek puanlar, gerçek yorumlar." },
-    { "en": "“Absolutely one of the best apps I've used. The UI is clean, smooth, and very professional. Customer support is fast, helpful and truly world-class.”", "ar": "«بلا شك أحد أفضل التطبيقات التي استخدمتها. الواجهة نظيفة وسلسة واحترافية جدًا. دعم العملاء سريع ومفيد وعالمي المستوى حقًا.»", "tr": "“Kesinlikle kullandığım en iyi uygulamalardan biri. Arayüz temiz, akıcı ve çok profesyonel. Müşteri desteği hızlı, yardımcı ve gerçekten dünya standartlarında.”" },
-    { "en": "“User friendly and also the best support for importing designs. Everything I need to run my scrims is in one place — saves me hours after every match day.”", "ar": "«سهل الاستخدام وأيضًا أفضل دعم لاستيراد التصاميم. كل ما أحتاجه لإدارة السكريمات في مكان واحد — يوفّر عليّ ساعات بعد كل يوم مباريات.»", "tr": "“Kullanıcı dostu ve tasarımları içe aktarmak için de en iyi destek. Scrim'lerimi yürütmek için ihtiyacım olan her şey tek bir yerde — her maç gününden sonra bana saatler kazandırıyor.”" },
-    { "en": "“Very useful app for tournament or scrims conducting teams. Quick to learn, results look professional. Highly recommended for any community running events.”", "ar": "«تطبيق مفيد جدًا للفرق التي تنظّم البطولات أو السكريمات. سريع التعلّم والنتائج تبدو احترافية. أنصح به بشدّة لأي مجتمع يقيم فعاليات.»", "tr": "“Turnuva veya scrim düzenleyen takımlar için çok faydalı bir uygulama. Öğrenmesi kolay, sonuçlar profesyonel görünüyor. Etkinlik düzenleyen her topluluğa şiddetle tavsiye edilir.”" },
-    { "en": "Google Play review", "ar": "تقييم على Google Play", "tr": "Google Play yorumu" },
-    { "en": "Amal Manoj (xbeastop), founder of PointCalc", "ar": "أمل مانوج (xbeastop)، مؤسّس PointCalc", "tr": "Amal Manoj (xbeastop), PointCalc'in kurucusu" },
-    { "en": "Made in Kerala 🇮🇳", "ar": "صُنع في كيرالا 🇮🇳", "tr": "Kerala'da yapıldı 🇮🇳" },
-    { "en": "Built by an indie dev", "ar": "من تطوير مطوّر مستقل", "tr": "Bağımsız bir geliştirici tarafından" },
-    { "en": "Meet xbeastop", "ar": "تعرّف على xbeastop", "tr": "xbeastop ile tanış" },
-    { "en": "One developer, building the toolkit India's esports community actually needed.", "ar": "مطوّر واحد يبني حقيبة الأدوات التي احتاجها فعلاً مجتمع الرياضات الإلكترونية في الهند.", "tr": "Hindistan'ın espor topluluğunun gerçekten ihtiyaç duyduğu araç setini geliştiren tek bir geliştirici." },
-    { "en": "I started PointCalc in September 2021. I was a PUBG player running scrims with friends, and the worst part of tournament day was never the matches — it was the after-math. Hours of manual point calculations, then hours more in Photoshop putting the result graphics together.", "ar": "بدأت PointCalc في سبتمبر 2021. كنت لاعب PUBG أنظّم سكريمات مع الأصدقاء، وأسوأ جزء في يوم البطولة لم يكن المباريات قط — بل ما بعدها. ساعات من حساب النقاط يدويًا، ثم ساعات أخرى في فوتوشوب لتجميع رسوميات النتائج.", "tr": "PointCalc'i Eylül 2021'de başlattım. Arkadaşlarımla scrim yapan bir PUBG oyuncusuydum ve turnuva gününün en kötü kısmı asla maçlar değildi — sonrasıydı. Saatlerce manuel puan hesaplama, ardından sonuç grafiklerini bir araya getirmek için saatlerce Photoshop." },
-    { "en": "I was a BCA student who only knew C at the time. I watched a 14-hour Android tutorial, started building the day after, and had a working prototype inside a week. That's when it clicked: instead of one-off builds for each org, ship one app that any organizer can customize.", "ar": "كنت طالب BCA لا أعرف سوى لغة C آنذاك. شاهدت درسًا عن أندرويد مدّته 14 ساعة، وبدأت البناء في اليوم التالي، وكان لديّ نموذج عملي خلال أسبوع. حينها اتّضحت الفكرة: بدلًا من بناء نسخة لكل منظّمة، أطلق تطبيقًا واحدًا يستطيع أي منظّم تخصيصه.", "tr": "O zamanlar yalnızca C bilen bir BCA öğrencisiydim. 14 saatlik bir Android eğitimi izledim, ertesi gün geliştirmeye başladım ve bir hafta içinde çalışan bir prototipim oldu. İşte o an anladım: her organizasyon için tek seferlik yapımlar yerine, herhangi bir organizatörün özelleştirebileceği tek bir uygulama yayınla." },
-    { "en": "These days I'm an Android developer at Wrench Solutions in Kochi by day, and PointCalc is still my side project — now at 150K+ downloads, with AI screenshot extraction and an iOS build.", "ar": "هذه الأيام أعمل مطوّر أندرويد في Wrench Solutions بكوتشي نهارًا، وما زال PointCalc مشروعي الجانبي — الآن بأكثر من 150 ألف تنزيل، مع استخراج اللقطات بالذكاء الاصطناعي ونسخة iOS.", "tr": "Bugünlerde gündüzleri Kochi'deki Wrench Solutions'ta Android geliştiricisiyim ve PointCalc hâlâ yan projem — şimdi 150B+ indirme, yapay zekâ ile ekran okuma ve bir iOS sürümüyle." },
-    { "en": "Read more +", "ar": "اقرأ المزيد +", "tr": "Daha fazla oku +" },
-    { "en": "Show less −", "ar": "إظهار أقل −", "tr": "Daha az göster −" },
-    { "en": "Common questions", "ar": "أسئلة شائعة", "tr": "Sık sorulan sorular" },
-    { "en": "FAQ", "ar": "الأسئلة الشائعة", "tr": "SSS" },
-    { "en": "What games does PointCalc support?", "ar": "ما الألعاب التي يدعمها PointCalc؟", "tr": "PointCalc hangi oyunları destekler?" },
-    { "en": "PointCalc supports BGMI, PUBG Mobile and Free Fire — the three biggest battle royale titles in the tournament community. You upload lobby and result screens; PointCalc generates the points table, warhead, top fraggers, slot list, team posters and certificates from that data.", "ar": "يدعم PointCalc لعبة BGMI و PUBG Mobile و Free Fire — أكبر ثلاثة عناوين باتل رويال في مجتمع البطولات. ترفع لقطات اللوبي والنتائج؛ ويُنشئ PointCalc جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات وبوسترات الفرق والشهادات من تلك البيانات.", "tr": "PointCalc, BGMI, PUBG Mobile ve Free Fire'ı destekler — turnuva topluluğundaki en büyük üç battle royale oyunu. Lobi ve sonuç ekranlarını yüklersin; PointCalc bu verilerden puan tablosunu, Warhead'i, en iyi fragçıları, slot listesini, takım posterlerini ve sertifikaları oluşturur." },
-    { "en": "How does the AI screenshot extraction work?", "ar": "كيف يعمل استخراج البيانات من اللقطات بالذكاء الاصطناعي؟", "tr": "Yapay zekâ ile ekran görüntüsü okuma nasıl çalışır?" },
-    { "en": "Upload your lobby and result screens from a match. PointCalc's AI reads the placements, kills and player stats directly off the images and populates everything automatically. You can review and edit any value before publishing — accuracy holds up across most result-screen layouts.", "ar": "ارفع لقطات اللوبي والنتائج من مباراة. يقرأ الذكاء الاصطناعي في PointCalc المراكز والقتلات وإحصاءات اللاعبين مباشرةً من الصور ويملأ كل شيء تلقائيًا. يمكنك مراجعة أي قيمة وتعديلها قبل النشر — وتبقى الدقة عالية عبر معظم تخطيطات شاشات النتائج.", "tr": "Bir maçtan lobi ve sonuç ekranlarını yükle. PointCalc'in yapay zekâsı sıralamaları, killeri ve oyuncu istatistiklerini doğrudan görüntülerden okur ve her şeyi otomatik doldurur. Yayınlamadan önce herhangi bir değeri inceleyip düzenleyebilirsin — doğruluk çoğu sonuç ekranı düzeninde korunur." },
-    { "en": "Is PointCalc free?", "ar": "هل PointCalc مجاني؟", "tr": "PointCalc ücretsiz mi?" },
-    { "en": "Yes — the app is free to download and the core features work without a subscription. Premium templates and AI screenshot extraction are available on optional paid tiers, starting at ₹29/week for Premium and ₹150/week for Premium + AI.", "ar": "نعم — التطبيق مجاني للتنزيل وتعمل الميزات الأساسية دون اشتراك. تتوفّر القوالب المدفوعة واستخراج اللقطات بالذكاء الاصطناعي ضمن باقات مدفوعة اختيارية، تبدأ من ₹29 أسبوعيًا لـ Premium و ₹150 أسبوعيًا لـ Premium + AI.", "tr": "Evet — uygulama indirmesi ücretsizdir ve temel özellikler abonelik olmadan çalışır. Premium şablonlar ve yapay zekâ ile ekran okuma, Premium için haftalık ₹29 ve Premium + AI için haftalık ₹150'den başlayan isteğe bağlı ücretli katmanlarda mevcuttur." },
-    { "en": "Can I customize designs with my own branding?", "ar": "هل يمكنني تخصيص التصاميم بهويتي الخاصة؟", "tr": "Tasarımları kendi markamla özelleştirebilir miyim?" },
-    { "en": "Yes. You can adjust colors, swap the background image and add as many custom logos as you need. For an entirely custom design, reach out on WhatsApp or Instagram and we'll build it for you.", "ar": "نعم. يمكنك ضبط الألوان وتبديل صورة الخلفية وإضافة أي عدد تريده من الشعارات المخصّصة. وللحصول على تصميم مخصّص بالكامل، تواصل عبر WhatsApp أو Instagram وسنصمّمه لك.", "tr": "Evet. Renkleri ayarlayabilir, arka plan görüntüsünü değiştirebilir ve ihtiyacın kadar özel logo ekleyebilirsin. Tamamen özel bir tasarım için WhatsApp veya Instagram'dan bize ulaş, senin için yapalım." },
-    { "en": "Run your next<br />tournament with PointCalc", "ar": "أدِر بطولتك القادمة<br />مع PointCalc", "tr": "Bir sonraki turnuvanı<br /><span lang=\"en\">PointCalc</span> ile yönet" },
-    { "en": "Free to download on iOS and Android. Join 150K+ organizers, scrim hosts and content creators.", "ar": "مجاني للتنزيل على iOS و Android. انضم إلى أكثر من 150 ألف منظّم ومستضيف سكريم وصانع محتوى.", "tr": "iOS ve Android'de indirmesi ücretsiz. 150B+ organizatör, scrim sunucusu ve içerik üreticisine katıl." }
-  ]
+  "ar": {
+   "title": "PointCalc: صانع جداول النقاط بالذكاء الاصطناعي لـ BGMI و PUBG و Free Fire",
+   "desc": "حقيبة أدوات بطولات بالذكاء الاصطناعي لـ BGMI و PUBG و Free Fire. ارفع اللقطات واحصل على جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات والشهادات. ويمكن للفرق التسجيل من رابط واحد."
+  },
+  "tr": {
+   "title": "PointCalc: BGMI, PUBG ve Free Fire için Yapay Zekâ Puan Tablosu Aracı",
+   "desc": "BGMI, PUBG ve Free Fire için yapay zekâ turnuva araç seti. Ekran görüntülerini yükle, puan tablosunu, Warhead'i, en iyi fragçıları, slot listesini ve sertifikaları al. Takımlar tek bir bağlantıdan kaydolabilir."
+  }
+ },
+ "pairs": [
+  {
+   "en": "New · AI Screenshot Extraction",
+   "ar": "جديد · استخراج البيانات من اللقطات بالذكاء الاصطناعي",
+   "tr": "Yeni · Yapay Zekâ ile Ekran Okuma"
+  },
+  {
+   "en": "Drop screens.<br /><span class=\"em\">Get the</span><br /><span class=\"stroke\">whole kit.</span>",
+   "ar": "أسقِط اللقطات.<br /><span class=\"em\">واحصل على</span><br /><span class=\"stroke\">الحقيبة كاملة.</span>",
+   "tr": "Ekranları bırak.<br /><span class=\"em\">Tüm seti</span><br /><span class=\"stroke\">anında al.</span>"
+  },
+  {
+   "en": "The AI tournament toolkit for BGMI, PUBG Mobile &amp; Free Fire organizers. Upload your lobby and result screens — placements and kills are read automatically, then PointCalc builds the points table, warhead, top fraggers, slot list, posters and certificates for you.",
+   "ar": "حقيبة أدوات البطولات بالذكاء الاصطناعي لمنظّمي BGMI و PUBG Mobile و Free Fire. ارفع لقطات اللوبي والنتائج، تُقرأ المراكز والقتلات تلقائيًا، ثم يُنشئ PointCalc جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات والبوسترات والشهادات نيابةً عنك.",
+   "tr": "BGMI, PUBG Mobile ve Free Fire organizatörleri için yapay zekâ turnuva araç seti. Lobi ve sonuç ekranlarını yükle, sıralamalar ve killer otomatik okunur, ardından PointCalc senin için puan tablosunu, Warhead'i, en iyi fragçıları, slot listesini, posterleri ve sertifikaları oluşturur."
+  },
+  {
+   "en": "Download on the App Store",
+   "ar": "حمّله من App Store",
+   "tr": "App Store'dan indir"
+  },
+  {
+   "en": "Get it on Google Play",
+   "ar": "احصل عليه من Google Play",
+   "tr": "Google Play'den edin"
+  },
+  {
+   "en": "Point table design",
+   "ar": "تصميم جدول النقاط",
+   "tr": "Puan tablosu tasarımı"
+  },
+  {
+   "en": "Warhead design",
+   "ar": "تصميم أقوى الفرق",
+   "tr": "Warhead tasarımı"
+  },
+  {
+   "en": "Slot list design",
+   "ar": "تصميم قائمة الخانات",
+   "tr": "Slot listesi tasarımı"
+  },
+  {
+   "en": "AI reading screens…",
+   "ar": "الذكاء الاصطناعي يقرأ اللقطات…",
+   "tr": "Yapay zekâ ekranları okuyor…"
+  },
+  {
+   "en": "✓ Kit generated · 0:03",
+   "ar": "✓ تم إنشاء الحقيبة · 0:03",
+   "tr": "✓ Set oluşturuldu · 0:03"
+  },
+  {
+   "en": "App Store rating",
+   "ar": "تقييم App Store",
+   "tr": "App Store puanı"
+  },
+  {
+   "en": "Play Store rating",
+   "ar": "تقييم Play Store",
+   "tr": "Play Store puanı"
+  },
+  {
+   "en": "Total reviews",
+   "ar": "إجمالي التقييمات",
+   "tr": "Toplam yorum"
+  },
+  {
+   "en": "Downloads",
+   "ar": "تنزيلات",
+   "tr": "İndirme"
+  },
+  {
+   "en": "Reviews",
+   "ar": "تقييمات",
+   "tr": "Yorum"
+  },
+  {
+   "en": "Supported games",
+   "ar": "الألعاب المدعومة",
+   "tr": "Desteklenen oyunlar"
+  },
+  {
+   "en": "Points Table",
+   "ar": "جدول النقاط",
+   "tr": "Puan Tablosu"
+  },
+  {
+   "en": "Top Fraggers",
+   "ar": "أبرز اللاعبين",
+   "tr": "En İyi Fragçılar"
+  },
+  {
+   "en": "Slot List",
+   "ar": "قائمة الخانات",
+   "tr": "Slot Listesi"
+  },
+  {
+   "en": "Certificates",
+   "ar": "الشهادات",
+   "tr": "Sertifikalar"
+  },
+  {
+   "en": "Warhead",
+   "ar": "أقوى الفرق",
+   "tr": "Warhead"
+  },
+  {
+   "en": "How it works",
+   "ar": "كيف يعمل",
+   "tr": "Nasıl çalışır"
+  },
+  {
+   "en": "Three taps to a published kit",
+   "ar": "ثلاث نقرات إلى حقيبة جاهزة للنشر",
+   "tr": "Yayına hazır bir sete üç dokunuş"
+  },
+  {
+   "en": "No spreadsheets. No copy-pasting from screenshots. No Photoshop. PointCalc handles the whole chain — from raw screens to a finished, broadcast-grade tournament kit.",
+   "ar": "بلا جداول بيانات. بلا نسخ ولصق من اللقطات. بلا فوتوشوب. يتولّى PointCalc السلسلة كاملة، من اللقطات الخام إلى حقيبة بطولة جاهزة بجودة البث.",
+   "tr": "Elektronik tablo yok. Ekran görüntülerinden kopyala-yapıştır yok. Photoshop yok. PointCalc tüm zinciri üstlenir, ham ekranlardan yayın kalitesinde bitmiş bir turnuva setine."
+  },
+  {
+   "en": "Step 01",
+   "ar": "الخطوة 01",
+   "tr": "Adım 01"
+  },
+  {
+   "en": "Step 02",
+   "ar": "الخطوة 02",
+   "tr": "Adım 02"
+  },
+  {
+   "en": "Step 03",
+   "ar": "الخطوة 03",
+   "tr": "Adım 03"
+  },
+  {
+   "en": "Upload your screens",
+   "ar": "ارفع لقطاتك",
+   "tr": "Ekranlarını yükle"
+  },
+  {
+   "en": "Drop your lobby and result screenshots from BGMI, PUBG Mobile or Free Fire. That's the only input PointCalc needs — multi-game support out of the box.",
+   "ar": "أسقِط لقطات اللوبي والنتائج من BGMI أو PUBG Mobile أو Free Fire. هذا هو المُدخل الوحيد الذي يحتاجه PointCalc، دعم لعدة ألعاب جاهز فورًا.",
+   "tr": "BGMI, PUBG Mobile veya Free Fire'dan lobi ve sonuç ekran görüntülerini bırak. PointCalc'in ihtiyaç duyduğu tek girdi budur, kutudan çıkar çıkmaz çoklu oyun desteği."
+  },
+  {
+   "en": "AI extracts the data",
+   "ar": "الذكاء الاصطناعي يستخرج البيانات",
+   "tr": "Yapay zekâ verileri çıkarır"
+  },
+  {
+   "en": "Placements and kills are read straight off the screens. PointCalc derives the full picture — points table, warhead and top fraggers. Edit any value if you need to.",
+   "ar": "تُقرأ المراكز والقتلات مباشرةً من اللقطات. يستخلص PointCalc الصورة كاملة، جدول النقاط وأقوى الفرق وأبرز اللاعبين. عدّل أي قيمة عند الحاجة.",
+   "tr": "Sıralamalar ve killer doğrudan ekranlardan okunur. PointCalc tüm tabloyu çıkarır, puan tablosu, Warhead ve en iyi fragçılar. Gerekirse herhangi bir değeri düzenle."
+  },
+  {
+   "en": "Publish the design",
+   "ar": "انشُر التصميم",
+   "tr": "Tasarımı yayınla"
+  },
+  {
+   "en": "Pick a template, drop in your brand, export. Points table, warhead, top fragger, slot list, team posters and certificates — all built in.",
+   "ar": "اختر قالبًا، أضِف هويتك، صدّر. جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات وبوسترات الفرق والشهادات، كلها مدمجة.",
+   "tr": "Bir şablon seç, markanı ekle, dışa aktar. Puan tablosu, Warhead, en iyi fragçı, slot listesi, takım posterleri ve sertifikalar, hepsi yerleşik."
+  },
+  {
+   "en": "Want the full walkthrough? <a href=\"guide/index.html\">Read the step-by-step guide →</a>",
+   "ar": "هل تريد الشرح الكامل؟ <a href=\"guide/index.html\">اقرأ الدليل خطوة بخطوة →</a>",
+   "tr": "Tüm adımları öğrenmek ister misin? <a href=\"guide/index.html\">Adım adım rehberi oku →</a>"
+  },
+  {
+   "en": "Features",
+   "ar": "المزايا",
+   "tr": "Özellikler"
+  },
+  {
+   "en": "What PointCalc makes for you",
+   "ar": "ما يصنعه PointCalc لك",
+   "tr": "PointCalc'in senin için hazırladıkları"
+  },
+  {
+   "en": "Everything you need to run a scrim, league or championship — without bouncing between five different apps.",
+   "ar": "كل ما تحتاجه لإدارة سكريم أو دوري أو بطولة، دون التنقّل بين خمسة تطبيقات مختلفة.",
+   "tr": "Bir scrim, lig veya şampiyona yürütmek için ihtiyacın olan her şey, beş farklı uygulama arasında gezinmeden."
+  },
+  {
+   "en": "Flagship",
+   "ar": "الميزة الأبرز",
+   "tr": "Amiral gemisi"
+  },
+  {
+   "en": "AI screenshot extraction",
+   "ar": "استخراج البيانات من اللقطات بالذكاء الاصطناعي",
+   "tr": "Yapay zekâ ile ekran görüntüsü okuma"
+  },
+  {
+   "en": "Drop BGMI, PUBG Mobile or Free Fire lobby and result screens. Placements and kills are read automatically — points table, warhead, top fraggers, slot list, posters and certificates all generate from the same uploads.",
+   "ar": "أسقِط لقطات اللوبي والنتائج من BGMI أو PUBG Mobile أو Free Fire. تُقرأ المراكز والقتلات تلقائيًا، يُنشأ جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات والبوسترات والشهادات من الملفات نفسها.",
+   "tr": "BGMI, PUBG Mobile veya Free Fire lobi ve sonuç ekranlarını bırak. Sıralamalar ve killer otomatik okunur, puan tablosu, Warhead, en iyi fragçılar, slot listesi, posterler ve sertifikalar aynı yüklemelerden üretilir."
+  },
+  {
+   "en": "In-game result screen",
+   "ar": "لقطة نتائج داخل اللعبة",
+   "tr": "Oyun içi sonuç ekranı"
+  },
+  {
+   "en": "In-game lobby screen",
+   "ar": "لقطة لوبي داخل اللعبة",
+   "tr": "Oyun içi lobi ekranı"
+  },
+  {
+   "en": "Live",
+   "ar": "مباشر",
+   "tr": "Canlı"
+  },
+  {
+   "en": "Daily points tables",
+   "ar": "جداول نقاط يومية",
+   "tr": "Günlük puan tabloları"
+  },
+  {
+   "en": "Live standings after every match. Publish a fresh points table and warhead leaderboard without breaking format.",
+   "ar": "ترتيب مباشر بعد كل مباراة. انشُر جدول نقاط جديدًا ولوحة صدارة لأقوى الفرق دون كسر التنسيق.",
+   "tr": "Her maçtan sonra canlı sıralama. Biçimi bozmadan yeni bir puan tablosu ve Warhead lider tablosu yayınla."
+  },
+  {
+   "en": "Stat cards",
+   "ar": "بطاقات إحصائية",
+   "tr": "İstatistik kartları"
+  },
+  {
+   "en": "Top fraggers &amp; warhead",
+   "ar": "أبرز اللاعبين وأقوى الفرق",
+   "tr": "En iyi fragçılar ve Warhead"
+  },
+  {
+   "en": "Auto-ranked from match data — the MVP of every lobby, surfaced as creator-grade stat cards in your colors.",
+   "ar": "ترتيب تلقائي من بيانات المباراة، أفضل لاعب في كل لوبي، يظهر كبطاقات إحصائية بجودة المحترفين وبألوانك.",
+   "tr": "Maç verilerinden otomatik sıralama, her lobinin MVP'si, kendi renklerinde üretici kalitesinde istatistik kartları olarak sunulur."
+  },
+  {
+   "en": "Broadcast",
+   "ar": "بثّ",
+   "tr": "Yayın"
+  },
+  {
+   "en": "Slot list &amp; team posters",
+   "ar": "قائمة الخانات وبوسترات الفرق",
+   "tr": "Slot listesi ve takım posterleri"
+  },
+  {
+   "en": "Add your teams, players and logos — PointCalc turns it into a broadcast-grade slot list and posters for every squad.",
+   "ar": "أضِف فرقك ولاعبيك وشعاراتك، يحوّلها PointCalc إلى قائمة خانات بجودة البث وبوسترات لكل فريق.",
+   "tr": "Takımlarını, oyuncularını ve logolarını ekle, PointCalc bunu yayın kalitesinde bir slot listesine ve her takım için posterlere dönüştürür."
+  },
+  {
+   "en": "No Photoshop",
+   "ar": "بلا فوتوشوب",
+   "tr": "Photoshop yok"
+  },
+  {
+   "en": "Winner certificates",
+   "ar": "شهادات الفائزين",
+   "tr": "Kazanan sertifikaları"
+  },
+  {
+   "en": "Free + premium certificate templates. Custom rules, placement and kill multipliers — generated, not designed by hand.",
+   "ar": "قوالب شهادات مجانية ومدفوعة. قواعد مخصّصة ومضاعِفات للمراكز والقتلات، تُولَّد آليًا لا تُصمَّم يدويًا.",
+   "tr": "Ücretsiz + premium sertifika şablonları. Özel kurallar, sıralama ve kill çarpanları, elle tasarlanmaz, üretilir."
+  },
+  {
+   "en": "Designs",
+   "ar": "التصاميم",
+   "tr": "Tasarımlar"
+  },
+  {
+   "en": "190+ templates to start from",
+   "ar": "أكثر من 190 قالبًا لتبدأ منها",
+   "tr": "Başlamak için 190+ şablon"
+  },
+  {
+   "en": "Stop spending hours in Photoshop. Pick a template, drop in your branding, ship.",
+   "ar": "توقّف عن قضاء الساعات في فوتوشوب. اختر قالبًا، أضِف هويتك، وانشُر.",
+   "tr": "Photoshop'ta saatler harcamayı bırak. Bir şablon seç, markanı ekle, yayınla."
+  },
+  {
+   "en": "Point table layout 1",
+   "ar": "تخطيط جدول النقاط 1",
+   "tr": "Puan tablosu düzeni 1"
+  },
+  {
+   "en": "Point table layout 2",
+   "ar": "تخطيط جدول النقاط 2",
+   "tr": "Puan tablosu düzeni 2"
+  },
+  {
+   "en": "Point table layout 3",
+   "ar": "تخطيط جدول النقاط 3",
+   "tr": "Puan tablosu düzeni 3"
+  },
+  {
+   "en": "Slot list layout",
+   "ar": "تخطيط قائمة الخانات",
+   "tr": "Slot listesi düzeni"
+  },
+  {
+   "en": "Browse all 190+ templates →",
+   "ar": "تصفّح أكثر من 190 قالبًا →",
+   "tr": "190+ şablonun tümüne göz at →"
+  },
+  {
+   "en": "Pricing",
+   "ar": "الأسعار",
+   "tr": "Fiyatlar"
+  },
+  {
+   "en": "Start free. Pay when you need more.",
+   "ar": "ابدأ مجانًا، وادفع عندما تحتاج المزيد.",
+   "tr": "Ücretsiz başla. Daha fazlası gerekince öde."
+  },
+  {
+   "en": "PointCalc is free forever. Unlock premium designs or add AI screenshot extraction whenever you're ready.",
+   "ar": "PointCalc مجاني للأبد. افتح التصاميم المدفوعة أو أضِف استخراج اللقطات بالذكاء الاصطناعي متى كنت مستعدًا.",
+   "tr": "PointCalc sonsuza dek ücretsiz. Hazır olduğunda premium tasarımların kilidini aç veya yapay zekâ ile ekran okumayı ekle."
+  },
+  {
+   "en": "Weekly",
+   "ar": "أسبوعي",
+   "tr": "Haftalık"
+  },
+  {
+   "en": "Monthly",
+   "ar": "شهري",
+   "tr": "Aylık"
+  },
+  {
+   "en": "Quarterly",
+   "ar": "ربع سنوي",
+   "tr": "Üç Aylık"
+  },
+  {
+   "en": "Yearly",
+   "ar": "سنوي",
+   "tr": "Yıllık"
+  },
+  {
+   "en": "<span class=\"per\" data-per=\"\">/month</span>",
+   "ar": "<span class=\"per\" data-per=\"\">/شهر</span>",
+   "tr": "<span class=\"per\" data-per=\"\">/ay</span>"
+  },
+  {
+   "en": "['/week', '/month', '/quarter', '/year']",
+   "ar": "['/أسبوع', '/شهر', '/ربع', '/سنة']",
+   "tr": "['/hafta', '/ay', '/çeyrek', '/yıl']"
+  },
+  {
+   "en": "Unlimited points tables, warhead &amp; posters",
+   "ar": "جداول نقاط وأقوى الفرق وبوسترات بلا حدود",
+   "tr": "Sınırsız puan tablosu, Warhead ve poster"
+  },
+  {
+   "en": "Premium design templates",
+   "ar": "قوالب التصميم المدفوعة",
+   "tr": "Premium tasarım şablonları"
+  },
+  {
+   "en": "Slot list, top fraggers &amp; certificates",
+   "ar": "قائمة الخانات وأبرز اللاعبين والشهادات",
+   "tr": "Slot listesi, en iyi fragçılar ve sertifikalar"
+  },
+  {
+   "en": "Manual data entry",
+   "ar": "إدخال البيانات يدويًا",
+   "tr": "Manuel veri girişi"
+  },
+  {
+   "en": "Priority customer support",
+   "ar": "دعم عملاء ذو أولوية",
+   "tr": "Öncelikli müşteri desteği"
+  },
+  {
+   "en": "<span class=\"pname\">Premium</span>",
+   "ar": "<span class=\"pname\">Premium</span>",
+   "tr": "<span class=\"pname\" lang=\"en\">Premium</span>"
+  },
+  {
+   "en": "<span class=\"pname\">Premium + AI</span>",
+   "ar": "<span class=\"pname\">Premium + AI</span>",
+   "tr": "<span class=\"pname\" lang=\"en\">Premium + AI</span>"
+  },
+  {
+   "en": "alt=\"\" />PUBG Mobile</span>",
+   "ar": "alt=\"\" />PUBG Mobile</span>",
+   "tr": "alt=\"\" /><span lang=\"en\">PUBG Mobile</span></span>"
+  },
+  {
+   "en": "alt=\"\" />Free Fire</span>",
+   "ar": "alt=\"\" />Free Fire</span>",
+   "tr": "alt=\"\" /><span lang=\"en\">Free Fire</span></span>"
+  },
+  {
+   "en": "Get Premium",
+   "ar": "احصل على Premium",
+   "tr": "<span lang=\"en\">Premium</span> Al"
+  },
+  {
+   "en": "AI Powered",
+   "ar": "مدعوم بالذكاء الاصطناعي",
+   "tr": "Yapay Zekâ Destekli"
+  },
+  {
+   "en": "Everything in Premium",
+   "ar": "كل ما في Premium",
+   "tr": "Premium'daki her şey"
+  },
+  {
+   "en": "<b>AI screenshot extraction</b> — auto-parse BGMI, PUBG, FF results",
+   "ar": "<b>استخراج اللقطات بالذكاء الاصطناعي</b>، تحليل تلقائي لنتائج BGMI و PUBG و FF",
+   "tr": "<b>Yapay zekâ ile ekran okuma</b>, BGMI, PUBG, FF sonuçlarını otomatik ayrıştır"
+  },
+  {
+   "en": "Auto-generated points table, warhead &amp; top fraggers",
+   "ar": "جدول نقاط وأقوى الفرق وأبرز اللاعبين مُولّدة تلقائيًا",
+   "tr": "Otomatik üretilen puan tablosu, Warhead ve en iyi fragçılar"
+  },
+  {
+   "en": "Bulk match processing",
+   "ar": "معالجة مباريات بالجملة",
+   "tr": "Toplu maç işleme"
+  },
+  {
+   "en": "Earliest access to new AI features",
+   "ar": "وصول مبكر لميزات الذكاء الاصطناعي الجديدة",
+   "tr": "Yeni yapay zekâ özelliklerine en erken erişim"
+  },
+  {
+   "en": "Get Premium + AI",
+   "ar": "احصل على Premium + AI",
+   "tr": "<span lang=\"en\">Premium + AI</span> Al"
+  },
+  {
+   "en": "Free tier with core features. Pricing shown in INR; converted at checkout.",
+   "ar": "باقة مجانية بالميزات الأساسية. الأسعار معروضة بالروبية الهندية (INR)؛ تُحوَّل عند الدفع.",
+   "tr": "Temel özelliklerle ücretsiz katman. Fiyatlar INR cinsinden gösterilir; ödemede dönüştürülür."
+  },
+  {
+   "en": "Trusted by organizers",
+   "ar": "موثوق من المنظّمين",
+   "tr": "Organizatörlerin güvendiği"
+  },
+  {
+   "en": "Reviews from organizers",
+   "ar": "آراء المنظّمين",
+   "tr": "Organizatör yorumları"
+  },
+  {
+   "en": "Real installs, real ratings, real testimonials from the Play Store and App Store.",
+   "ar": "تنزيلات حقيقية وتقييمات حقيقية وشهادات حقيقية من Play Store و App Store.",
+   "tr": "Play Store ve App Store'dan gerçek indirmeler, gerçek puanlar, gerçek yorumlar."
+  },
+  {
+   "en": "“Absolutely one of the best apps I've used. The UI is clean, smooth, and very professional. Customer support is fast, helpful and truly world-class.”",
+   "ar": "«بلا شك أحد أفضل التطبيقات التي استخدمتها. الواجهة نظيفة وسلسة واحترافية جدًا. دعم العملاء سريع ومفيد وعالمي المستوى حقًا.»",
+   "tr": "“Kesinlikle kullandığım en iyi uygulamalardan biri. Arayüz temiz, akıcı ve çok profesyonel. Müşteri desteği hızlı, yardımcı ve gerçekten dünya standartlarında.”"
+  },
+  {
+   "en": "“User friendly and also the best support for importing designs. Everything I need to run my scrims is in one place — saves me hours after every match day.”",
+   "ar": "«سهل الاستخدام وأيضًا أفضل دعم لاستيراد التصاميم. كل ما أحتاجه لإدارة السكريمات في مكان واحد، يوفّر عليّ ساعات بعد كل يوم مباريات.»",
+   "tr": "“Kullanıcı dostu ve tasarımları içe aktarmak için de en iyi destek. Scrim'lerimi yürütmek için ihtiyacım olan her şey tek bir yerde, her maç gününden sonra bana saatler kazandırıyor.”"
+  },
+  {
+   "en": "“Very useful app for tournament or scrims conducting teams. Quick to learn, results look professional. Highly recommended for any community running events.”",
+   "ar": "«تطبيق مفيد جدًا للفرق التي تنظّم البطولات أو السكريمات. سريع التعلّم والنتائج تبدو احترافية. أنصح به بشدّة لأي مجتمع يقيم فعاليات.»",
+   "tr": "“Turnuva veya scrim düzenleyen takımlar için çok faydalı bir uygulama. Öğrenmesi kolay, sonuçlar profesyonel görünüyor. Etkinlik düzenleyen her topluluğa şiddetle tavsiye edilir.”"
+  },
+  {
+   "en": "Google Play review",
+   "ar": "تقييم على Google Play",
+   "tr": "Google Play yorumu"
+  },
+  {
+   "en": "Amal Manoj (xbeastop), founder of PointCalc",
+   "ar": "أمل مانوج (xbeastop)، مؤسّس PointCalc",
+   "tr": "Amal Manoj (xbeastop), PointCalc'in kurucusu"
+  },
+  {
+   "en": "Made in Kerala 🇮🇳",
+   "ar": "صُنع في كيرالا 🇮🇳",
+   "tr": "Kerala'da yapıldı 🇮🇳"
+  },
+  {
+   "en": "Built by an indie dev",
+   "ar": "من تطوير مطوّر مستقل",
+   "tr": "Bağımsız bir geliştirici tarafından"
+  },
+  {
+   "en": "Meet xbeastop",
+   "ar": "تعرّف على xbeastop",
+   "tr": "xbeastop ile tanış"
+  },
+  {
+   "en": "Built by one developer who used to run PUBG scrims.",
+   "ar": "يطوّره مطوّر واحد كان ينظّم سكريمات PUBG.",
+   "tr": "PUBG scrim'leri düzenlemiş tek bir geliştirici yapıyor."
+  },
+  {
+   "en": "I started PointCalc in September 2021. I was a PUBG player running scrims with friends, and the worst part of tournament day was never the matches — it was the after-math. Hours of manual point calculations, then hours more in Photoshop putting the result graphics together.",
+   "ar": "بدأت PointCalc في سبتمبر 2021. كنت لاعب PUBG أنظّم سكريمات مع الأصدقاء، وأسوأ جزء في يوم البطولة لم يكن المباريات قط، بل ما بعدها. ساعات من حساب النقاط يدويًا، ثم ساعات أخرى في فوتوشوب لتجميع رسوميات النتائج.",
+   "tr": "PointCalc'i Eylül 2021'de başlattım. Arkadaşlarımla scrim yapan bir PUBG oyuncusuydum ve turnuva gününün en kötü kısmı asla maçlar değildi, sonrasıydı. Saatlerce manuel puan hesaplama, ardından sonuç grafiklerini bir araya getirmek için saatlerce Photoshop."
+  },
+  {
+   "en": "I was a BCA student who only knew C at the time. I watched a 14-hour Android tutorial, started building the day after, and had a working prototype inside a week. Then I had a better idea: instead of building something separate for each org, make one app that any organizer can set up their own way.",
+   "ar": "كنت طالب BCA لا أعرف إلا لغة C. شاهدت درسًا عن Android مدته 14 ساعة، وبدأت البناء في اليوم التالي، وكان لديّ نموذج يعمل خلال أسبوع. ثم خطرت لي فكرة أفضل: بدل بناء شيء منفصل لكل منظّمة، أصنع تطبيقًا واحدًا يضبطه كل منظّم على طريقته.",
+   "tr": "O zamanlar sadece C bilen bir BCA öğrencisiydim. 14 saatlik bir Android eğitimi izledim, ertesi gün yazmaya başladım ve bir hafta içinde çalışan bir prototipim vardı. Sonra daha iyi bir fikir geldi: her organizasyon için ayrı bir şey yapmak yerine, her organizatörün kendi şekilde ayarlayabileceği tek bir uygulama yapmak."
+  },
+  {
+   "en": "These days I'm an Android developer at Wrench Solutions in Kochi by day, and PointCalc is still my side project — now at 150K+ downloads, with AI screenshot extraction and an iOS build.",
+   "ar": "هذه الأيام أعمل مطوّر أندرويد في Wrench Solutions بكوتشي نهارًا، وما زال PointCalc مشروعي الجانبي، الآن بأكثر من 150 ألف تنزيل، مع استخراج اللقطات بالذكاء الاصطناعي ونسخة iOS.",
+   "tr": "Bugünlerde gündüzleri Kochi'deki Wrench Solutions'ta Android geliştiricisiyim ve PointCalc hâlâ yan projem, şimdi 150B+ indirme, yapay zekâ ile ekran okuma ve bir iOS sürümüyle."
+  },
+  {
+   "en": "Read more",
+   "ar": "اقرأ المزيد",
+   "tr": "Daha fazla oku"
+  },
+  {
+   "en": "Show less",
+   "ar": "إظهار أقل",
+   "tr": "Daha az göster"
+  },
+  {
+   "en": "Common questions",
+   "ar": "أسئلة شائعة",
+   "tr": "Sık sorulan sorular"
+  },
+  {
+   "en": "FAQ",
+   "ar": "الأسئلة الشائعة",
+   "tr": "SSS"
+  },
+  {
+   "en": "What games does PointCalc support?",
+   "ar": "ما الألعاب التي يدعمها PointCalc؟",
+   "tr": "PointCalc hangi oyunları destekler?"
+  },
+  {
+   "en": "PointCalc supports BGMI, PUBG Mobile and Free Fire — the three biggest battle royale titles in the tournament community. You upload lobby and result screens; PointCalc generates the points table, warhead, top fraggers, slot list, team posters and certificates from that data.",
+   "ar": "يدعم PointCalc لعبة BGMI و PUBG Mobile و Free Fire، أكبر ثلاثة عناوين باتل رويال في مجتمع البطولات. ترفع لقطات اللوبي والنتائج؛ ويُنشئ PointCalc جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات وبوسترات الفرق والشهادات من تلك البيانات.",
+   "tr": "PointCalc, BGMI, PUBG Mobile ve Free Fire'ı destekler, turnuva topluluğundaki en büyük üç battle royale oyunu. Lobi ve sonuç ekranlarını yüklersin; PointCalc bu verilerden puan tablosunu, Warhead'i, en iyi fragçıları, slot listesini, takım posterlerini ve sertifikaları oluşturur."
+  },
+  {
+   "en": "How does the AI screenshot extraction work?",
+   "ar": "كيف يعمل استخراج البيانات من اللقطات بالذكاء الاصطناعي؟",
+   "tr": "Yapay zekâ ile ekran görüntüsü okuma nasıl çalışır?"
+  },
+  {
+   "en": "Upload your lobby and result screens from a match. PointCalc's AI reads the placements, kills and player stats directly off the images and populates everything automatically. You can review and edit any value before publishing — accuracy holds up across most result-screen layouts.",
+   "ar": "ارفع لقطات اللوبي والنتائج من مباراة. يقرأ الذكاء الاصطناعي في PointCalc المراكز والقتلات وإحصاءات اللاعبين مباشرةً من الصور ويملأ كل شيء تلقائيًا. يمكنك مراجعة أي قيمة وتعديلها قبل النشر، وتبقى الدقة عالية عبر معظم تخطيطات شاشات النتائج.",
+   "tr": "Bir maçtan lobi ve sonuç ekranlarını yükle. PointCalc'in yapay zekâsı sıralamaları, killeri ve oyuncu istatistiklerini doğrudan görüntülerden okur ve her şeyi otomatik doldurur. Yayınlamadan önce herhangi bir değeri inceleyip düzenleyebilirsin, doğruluk çoğu sonuç ekranı düzeninde korunur."
+  },
+  {
+   "en": "Is PointCalc free?",
+   "ar": "هل PointCalc مجاني؟",
+   "tr": "PointCalc ücretsiz mi?"
+  },
+  {
+   "en": "Yes — the app is free to download and the core features work without a subscription. Premium templates and AI screenshot extraction are available on optional paid tiers, starting at ₹29/week for Premium and ₹150/week for Premium + AI.",
+   "ar": "نعم، التطبيق مجاني للتنزيل وتعمل الميزات الأساسية دون اشتراك. تتوفّر القوالب المدفوعة واستخراج اللقطات بالذكاء الاصطناعي ضمن باقات مدفوعة اختيارية، تبدأ من ₹29 أسبوعيًا لـ Premium و ₹150 أسبوعيًا لـ Premium + AI.",
+   "tr": "Evet, uygulama indirmesi ücretsizdir ve temel özellikler abonelik olmadan çalışır. Premium şablonlar ve yapay zekâ ile ekran okuma, Premium için haftalık ₹29 ve Premium + AI için haftalık ₹150'den başlayan isteğe bağlı ücretli katmanlarda mevcuttur."
+  },
+  {
+   "en": "Can I customize designs with my own branding?",
+   "ar": "هل يمكنني تخصيص التصاميم بهويتي الخاصة؟",
+   "tr": "Tasarımları kendi markamla özelleştirebilir miyim?"
+  },
+  {
+   "en": "Yes. You can adjust colors, swap the background image and add as many custom logos as you need. For an entirely custom design, reach out on WhatsApp or Instagram and we'll build it for you.",
+   "ar": "نعم. يمكنك ضبط الألوان وتبديل صورة الخلفية وإضافة أي عدد تريده من الشعارات المخصّصة. وللحصول على تصميم مخصّص بالكامل، تواصل عبر WhatsApp أو Instagram وسنصمّمه لك.",
+   "tr": "Evet. Renkleri ayarlayabilir, arka plan görüntüsünü değiştirebilir ve ihtiyacın kadar özel logo ekleyebilirsin. Tamamen özel bir tasarım için WhatsApp veya Instagram'dan bize ulaş, senin için yapalım."
+  },
+  {
+   "en": "Run your next<br />tournament with PointCalc",
+   "ar": "أدِر بطولتك القادمة<br />مع PointCalc",
+   "tr": "Bir sonraki turnuvanı<br /><span lang=\"en\">PointCalc</span> ile yönet"
+  },
+  {
+   "en": "Free to download on iOS and Android, with more than 150K downloads so far.",
+   "ar": "مجاني للتنزيل على iOS وAndroid، وتجاوزت تنزيلاته 150 ألفًا حتى الآن.",
+   "tr": "iOS ve Android'de ücretsiz. Şimdiye kadar 150 binden fazla indirildi."
+  },
+  {
+   "en": "Skip to content",
+   "ar": "انتقل إلى المحتوى",
+   "tr": "İçeriğe geç"
+  },
+  {
+   "en": "New: team registration links",
+   "ar": "جديد: روابط تسجيل الفرق",
+   "tr": "Yeni: takım kayıt bağlantıları"
+  },
+  {
+   "en": "The AI tournament toolkit for BGMI, PUBG Mobile &amp; Free Fire organizers. Upload your lobby and result screens. PointCalc reads the placements and kills, then builds the points table, warhead, top fraggers, slot list, posters and certificates for you.",
+   "ar": "حقيبة أدوات البطولات بالذكاء الاصطناعي لمنظّمي BGMI و PUBG Mobile و Free Fire. ارفع لقطات اللوبي والنتائج. يقرأ PointCalc المراكز والقتلات، ثم يُنشئ لك جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات والبوسترات والشهادات.",
+   "tr": "BGMI, PUBG Mobile ve Free Fire organizatörleri için yapay zekâ turnuva araç seti. Lobi ve sonuç ekranlarını yükle. PointCalc sıralamaları ve killeri okur, sonra senin için puan tablosunu, Warhead'i, en iyi fragçıları, slot listesini, posterleri ve sertifikaları hazırlar."
+  },
+  {
+   "en": "✓ Kit ready in 3 seconds",
+   "ar": "✓ الحقيبة جاهزة في 3 ثوانٍ",
+   "tr": "✓ Set 3 saniyede hazır"
+  },
+  {
+   "en": "You don't need a spreadsheet or Photoshop, and you don't copy numbers off screenshots. Upload the screens and PointCalc makes the graphics.",
+   "ar": "لا تحتاج إلى جدول بيانات أو Photoshop، ولن تنسخ الأرقام من اللقطات. ارفع اللقطات وسيصنع PointCalc التصاميم.",
+   "tr": "Elektronik tabloya ya da Photoshop'a ihtiyacın yok, ekran görüntülerinden sayı da kopyalamazsın. Görüntüleri yükle, PointCalc tasarımları hazırlasın."
+  },
+  {
+   "en": "Add your lobby and result screenshots from BGMI, PUBG Mobile or Free Fire. That's all PointCalc needs.",
+   "ar": "أضِف لقطات اللوبي والنتائج من BGMI أو PUBG Mobile أو Free Fire. هذا كل ما يحتاجه PointCalc.",
+   "tr": "BGMI, PUBG Mobile veya Free Fire'dan lobi ve sonuç ekran görüntülerini ekle. PointCalc'in ihtiyacı olan tek şey bu."
+  },
+  {
+   "en": "PointCalc reads placements and kills straight off the screens and works out the points table, warhead and top fraggers. You can edit any value.",
+   "ar": "يقرأ PointCalc المراكز والقتلات مباشرةً من اللقطات، ويحسب جدول النقاط وأقوى الفرق وأبرز اللاعبين. ويمكنك تعديل أي قيمة.",
+   "tr": "PointCalc sıralamaları ve killeri doğrudan ekranlardan okur, puan tablosunu, Warhead'i ve en iyi fragçıları hesaplar. İstediğin değeri düzenleyebilirsin."
+  },
+  {
+   "en": "Pick a template, add your branding and export. Points table, warhead, top fraggers, slot list, team posters and certificates are all built in.",
+   "ar": "اختر قالبًا، وأضِف هويتك، ثم صدّر. جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات وبوسترات الفرق والشهادات كلها موجودة في التطبيق.",
+   "tr": "Bir şablon seç, markanı ekle ve dışa aktar. Puan tablosu, Warhead, en iyi fragçılar, slot listesi, takım posterleri ve sertifikalar hazır gelir."
+  },
+  {
+   "en": "Want the full walkthrough? <a href=\"guide/index.html\">Read the guide</a>",
+   "ar": "تريد الشرح الكامل؟ <a href=\"guide/index.html\">اقرأ الدليل</a>",
+   "tr": "Tüm adımları görmek ister misin? <a href=\"guide/index.html\">Rehberi oku</a>"
+  },
+  {
+   "en": "Read the guide",
+   "ar": "اقرأ الدليل",
+   "tr": "Rehberi oku"
+  },
+  {
+   "en": "The graphics for a scrim, league or championship, all from one app.",
+   "ar": "تصاميم السكريم أو الدوري أو البطولة، كلها من تطبيق واحد.",
+   "tr": "Scrim, lig ya da şampiyona için tüm tasarımlar, tek uygulamadan."
+  },
+  {
+   "en": "Upload BGMI, PUBG Mobile or Free Fire lobby and result screens. PointCalc reads the placements and kills, and the points table, warhead, top fraggers, slot list, posters and certificates all come from those same uploads.",
+   "ar": "ارفع لقطات اللوبي والنتائج من BGMI أو PUBG Mobile أو Free Fire. يقرأ PointCalc المراكز والقتلات، ومن هذه اللقطات نفسها يأتي جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات والبوسترات والشهادات.",
+   "tr": "BGMI, PUBG Mobile veya Free Fire lobi ve sonuç ekranlarını yükle. PointCalc sıralamaları ve killeri okur. Puan tablosu, Warhead, en iyi fragçılar, slot listesi, posterler ve sertifikalar aynı yüklemelerden çıkar."
+  },
+  {
+   "en": "Post fresh standings after every match. The points table and warhead keep the same look all season.",
+   "ar": "انشر ترتيبًا جديدًا بعد كل مباراة. يحافظ جدول النقاط وأقوى الفرق على الشكل نفسه طوال الموسم.",
+   "tr": "Her maçtan sonra güncel sıralamayı paylaş. Puan tablosu ve Warhead tüm sezon boyunca aynı görünümde kalır."
+  },
+  {
+   "en": "Ranked from your match data, so the MVP of every lobby gets a stat card in your colors.",
+   "ar": "الترتيب يأتي من بيانات مبارياتك، فيحصل أفضل لاعب في كل لوبي على بطاقة إحصائية بألوانك.",
+   "tr": "Maç verilerinden sıralanır, böylece her lobinin MVP'si senin renklerinde bir istatistik kartı alır."
+  },
+  {
+   "en": "Add your teams, players and logos once. PointCalc turns them into a slot list and a poster for every squad.",
+   "ar": "أضِف فرقك ولاعبيك وشعاراتك مرة واحدة. ويحوّلها PointCalc إلى قائمة خانات وبوستر لكل فريق.",
+   "tr": "Takımlarını, oyuncularını ve logolarını bir kez ekle. PointCalc bunlardan bir slot listesi ve her takım için bir poster hazırlar."
+  },
+  {
+   "en": "Free and premium certificate templates, filled in with each winner&#39;s placement, kills and points.",
+   "ar": "قوالب شهادات مجانية ومدفوعة، تُملأ بمركز كل فائز وقتلاته ونقاطه.",
+   "tr": "Ücretsiz ve premium sertifika şablonları. Her kazananın sıralaması, killeri ve puanı otomatik dolar."
+  },
+  {
+   "en": "Team registration",
+   "ar": "تسجيل الفرق",
+   "tr": "Takım kaydı"
+  },
+  {
+   "en": "Teams sign up<br />from one link.",
+   "ar": "تسجّل الفرق<br />من رابط واحد.",
+   "tr": "Takımlar tek bir<br />bağlantıyla kaydolur."
+  },
+  {
+   "en": "Share one link, and captains fill in their team and players from their browser, so you stop copying names out of WhatsApp. You check each team and approve it in the app.",
+   "ar": "شارك رابطًا واحدًا، ويملأ القادة بيانات فرقهم ولاعبيهم من المتصفح، فلا تحتاج بعد الآن إلى نسخ الأسماء من WhatsApp. وتراجع كل فريق وتقبله من التطبيق.",
+   "tr": "Tek bir bağlantı paylaş, kaptanlar takımlarını ve oyuncularını tarayıcıdan doldursun. Böylece isimleri WhatsApp'tan kopyalamazsın. Her takımı uygulamada kontrol edip onaylarsın."
+  },
+  {
+   "en": "Slots",
+   "ar": "الخانات",
+   "tr": "Slotlar"
+  },
+  {
+   "en": "18 of 24 filled",
+   "ar": "18 من 24 ممتلئة",
+   "tr": "24 slottan 18'i dolu"
+  },
+  {
+   "en": "Share your link",
+   "ar": "شارك رابطك",
+   "tr": "Bağlantını paylaş"
+  },
+  {
+   "en": "Pick Open registration when you create a tournament, add your WhatsApp number and match time, and publish.",
+   "ar": "اختر «تسجيل مفتوح» عند إنشاء البطولة، وأضِف رقم WhatsApp ووقت المباراة، ثم انشر.",
+   "tr": "Turnuva oluştururken Açık kayıt (Open registration) seçeneğini seç, WhatsApp numaranı ve maç saatini ekle, sonra yayınla."
+  },
+  {
+   "en": "Captains sign up",
+   "ar": "القادة يسجّلون",
+   "tr": "Kaptanlar kaydolur"
+  },
+  {
+   "en": "They open the link in any browser. They don't need the app or an account.",
+   "ar": "يفتحون الرابط في أي متصفح. لا يحتاجون إلى التطبيق ولا إلى حساب.",
+   "tr": "Bağlantıyı herhangi bir tarayıcıda açarlar. Uygulamaya ya da hesaba gerek yok."
+  },
+  {
+   "en": "You approve",
+   "ar": "أنت توافق",
+   "tr": "Sen onaylarsın"
+  },
+  {
+   "en": "You get an alert for each new team. Check their proof, then approve, or reject with a reason they can fix.",
+   "ar": "يصلك تنبيه مع كل فريق جديد. راجع الإثبات، ثم وافق على الفريق، أو ارفضه مع سبب يستطيعون إصلاحه.",
+   "tr": "Her yeni takım için bildirim alırsın. Kanıtlarına bak, sonra onayla ya da düzeltebilecekleri bir nedenle reddet."
+  },
+  {
+   "en": "Make groups",
+   "ar": "كوّن المجموعات",
+   "tr": "Grupları oluştur"
+  },
+  {
+   "en": "Approved teams fill the slots in order. Split them into groups, and each group becomes a tournament ready for points.",
+   "ar": "تملأ الفرق المقبولة الخانات بالترتيب. قسّمها إلى مجموعات، فتصبح كل مجموعة بطولة جاهزة لحساب النقاط.",
+   "tr": "Onaylanan takımlar slotları sırayla doldurur. Onları gruplara böl, her grup puanlamaya hazır bir turnuva olur."
+  },
+  {
+   "en": "Also included",
+   "ar": "ويشمل أيضًا",
+   "tr": "Bunlar da var"
+  },
+  {
+   "en": "<span class=\"ck\" aria-hidden=\"true\"></span>Entry tasks, like a follow on Instagram, an in-game ID or a payment screenshot",
+   "ar": "<span class=\"ck\" aria-hidden=\"true\"></span>مهام الدخول، مثل المتابعة على Instagram أو معرّف داخل اللعبة أو لقطة الدفع",
+   "tr": "<span class=\"ck\" aria-hidden=\"true\"></span>Instagram takibi, oyun içi ID veya ödeme ekran görüntüsü gibi katılım görevleri"
+  },
+  {
+   "en": "<span class=\"ck\" aria-hidden=\"true\"></span>Drag teams between slots, or add a team yourself",
+   "ar": "<span class=\"ck\" aria-hidden=\"true\"></span>اسحب الفرق بين الخانات، أو أضِف فريقًا بنفسك",
+   "tr": "<span class=\"ck\" aria-hidden=\"true\"></span>Takımları slotlar arasında sürükle ya da kendin takım ekle"
+  },
+  {
+   "en": "<span class=\"ck\" aria-hidden=\"true\"></span>Message every captain on WhatsApp with their slot already filled in",
+   "ar": "<span class=\"ck\" aria-hidden=\"true\"></span>راسل كل قائد على WhatsApp، ورقم خانته مكتوب في الرسالة",
+   "tr": "<span class=\"ck\" aria-hidden=\"true\"></span>Her kaptana, slotu önceden yazılmış bir WhatsApp mesajı gönder"
+  },
+  {
+   "en": "<span class=\"ck\" aria-hidden=\"true\"></span>Your logo, prize pool, rules and colors on the page",
+   "ar": "<span class=\"ck\" aria-hidden=\"true\"></span>شعارك ومجموع الجوائز والقوانين وألوانك على الصفحة",
+   "tr": "<span class=\"ck\" aria-hidden=\"true\"></span>Sayfada senin logon, ödül havuzun, kuralların ve renklerin"
+  },
+  {
+   "en": "<span class=\"ck\" aria-hidden=\"true\"></span>Pause sign-ups, post an update or export the team list",
+   "ar": "<span class=\"ck\" aria-hidden=\"true\"></span>أوقف التسجيل مؤقتًا، أو انشر تحديثًا، أو صدّر قائمة الفرق",
+   "tr": "<span class=\"ck\" aria-hidden=\"true\"></span>Kayıtları duraklat, duyuru paylaş ya da takım listesini dışa aktar"
+  },
+  {
+   "en": "Watch the 5-minute guide",
+   "ar": "شاهد الدليل في 5 دقائق",
+   "tr": "5 dakikalık rehberi izle"
+  },
+  {
+   "en": "Registration comes with Premium for up to 50 teams per event. The Organiser Pack, Premium + AI and AI Team raise that to 1000 teams and add team logos and screenshot proof.",
+   "ar": "يأتي التسجيل مع Premium لما يصل إلى 50 فريقًا في كل فعالية. وترفع حزمة المنظِّم و Premium + AI و AI Team الحد إلى 1000 فريق، وتضيف شعارات الفرق والإثبات بلقطة الشاشة.",
+   "tr": "Kayıt, Premium ile etkinlik başına 50 takıma kadar gelir. Organizatör Paketi, Premium + AI ve AI Team bu sınırı 1000 takıma çıkarır, takım logosu ve ekran görüntüsü kanıtı da ekler."
+  },
+  {
+   "en": "Your own design,<br />on every result.",
+   "ar": "تصميمك الخاص،<br />على كل نتيجة.",
+   "tr": "Her sonuçta<br />kendi tasarımın."
+  },
+  {
+   "en": "You already have a look for your org. Studio lets you use it. Open your poster or background in the app, place the table, team names and logos where you want them, and share it as a link. Whoever posts your results opens that link in PointCalc, and every table they publish comes out in your design.",
+   "ar": "لمنظّمتك شكل خاص بها بالفعل، و Studio يتيح لك استخدامه. افتح البوستر أو الخلفية في التطبيق، وضع الجدول وأسماء الفرق والشعارات حيث تريد، ثم شاركه كرابط. من ينشر نتائجك يفتح هذا الرابط في PointCalc، وكل جدول ينشره يخرج بتصميمك.",
+   "tr": "Organizasyonunun zaten bir görünümü var. Studio onu kullanmanı sağlar. Posterini veya arka planını uygulamada aç, tabloyu, takım adlarını ve logoları istediğin yere koy ve bağlantı olarak paylaş. Sonuçlarını paylaşan kişi bu bağlantıyı PointCalc'te açar ve yayınladığı her tablo senin tasarımınla çıkar."
+  },
+  {
+   "en": "Android and iPhone",
+   "ar": "Android و iPhone",
+   "tr": "<span lang=\"en\">Android</span> ve <span lang=\"en\">iPhone</span>"
+  },
+  {
+   "en": "Open your artwork",
+   "ar": "افتح تصميمك الفني",
+   "tr": "Görselini aç"
+  },
+  {
+   "en": "Start from your own poster or background, as a JPG, PNG or WebP.",
+   "ar": "ابدأ من البوستر أو الخلفية الخاصة بك، بصيغة JPG أو PNG أو WebP.",
+   "tr": "Kendi posterinden veya arka planından başla: JPG, PNG ya da WebP."
+  },
+  {
+   "en": "Place the pieces",
+   "ar": "ضع العناصر",
+   "tr": "Parçaları yerleştir"
+  },
+  {
+   "en": "AI detect finds the table rows on your image. Drag names, logos and numbers into place, then snap and align them.",
+   "ar": "تجد ميزة AI detect صفوف الجدول في صورتك. اسحب الأسماء والشعارات والأرقام إلى أماكنها، ثم ثبّتها وحاذِها.",
+   "tr": "AI detect, görselindeki tablo satırlarını bulur. Adları, logoları ve sayıları yerine sürükle, sonra yerine oturt ve hizala."
+  },
+  {
+   "en": "Share the link",
+   "ar": "شارك الرابط",
+   "tr": "Bağlantıyı paylaş"
+  },
+  {
+   "en": "Your admins open it in PointCalc once. From then on, the design is in their app.",
+   "ar": "يفتحه المشرفون عندك في PointCalc مرة واحدة. ومن بعدها يبقى التصميم في تطبيقهم.",
+   "tr": "Adminlerin onu PointCalc'te bir kez açar. Ondan sonra tasarım onların uygulamasında olur."
+  },
+  {
+   "en": "Tap to import in PointCalc",
+   "ar": "اضغط للاستيراد في PointCalc",
+   "tr": "PointCalc'te içe aktarmak için dokun"
+  },
+  {
+   "en": "All six designs",
+   "ar": "التصاميم الستة كلها",
+   "tr": "Altı tasarımın hepsi"
+  },
+  {
+   "en": "<b>All six designs</b>Points table, warhead, fraggers, slot list, team poster and certificate.",
+   "ar": "<b>التصاميم الستة كلها</b>جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات وبوستر الفريق والشهادة.",
+   "tr": "<b>Altı tasarımın hepsi</b>Puan tablosu, Warhead, fragçılar, slot listesi, takım posteri ve sertifika."
+  },
+  {
+   "en": "Your fonts",
+   "ar": "خطوطك",
+   "tr": "Kendi fontların"
+  },
+  {
+   "en": "<b>Your fonts</b>About 25 are built in, or add your own TTF or OTF file. It travels with the design.",
+   "ar": "<b>خطوطك</b>نحو 25 خطًا مدمجًا، أو أضِف ملف TTF أو OTF خاصًا بك. وينتقل الخط مع التصميم.",
+   "tr": "<b>Kendi fontların</b>Yaklaşık 25 font hazır gelir ya da kendi TTF veya OTF dosyanı ekle. Font, tasarımla birlikte gider."
+  },
+  {
+   "en": "Colors from your art",
+   "ar": "ألوان من تصميمك",
+   "tr": "Görselinden renkler"
+  },
+  {
+   "en": "<b>Colors from your art</b>Pick any color straight from your image.",
+   "ar": "<b>ألوان من تصميمك</b>اختر أي لون مباشرةً من صورتك.",
+   "tr": "<b>Görselinden renkler</b>Herhangi bir rengi doğrudan görselinden seç."
+  },
+  {
+   "en": "Check before you publish",
+   "ar": "راجع قبل النشر",
+   "tr": "Yayınlamadan önce kontrol et"
+  },
+  {
+   "en": "<b>Check before you publish</b>Preview with sample data or one of your own tournaments.",
+   "ar": "<b>راجع قبل النشر</b>اعرض معاينة ببيانات تجريبية أو بإحدى بطولاتك.",
+   "tr": "<b>Yayınlamadan önce kontrol et</b>Örnek verilerle ya da kendi turnuvalarından biriyle önizle."
+  },
+  {
+   "en": "Same link after edits",
+   "ar": "الرابط نفسه بعد التعديل",
+   "tr": "Düzenlemeden sonra aynı bağlantı"
+  },
+  {
+   "en": "<b>Same link after edits</b>Fix a mistake later. People who imported it get the update when they open the link again.",
+   "ar": "<b>الرابط نفسه بعد التعديل</b>صحّح أي خطأ لاحقًا. ومن استورد التصميم يحصل على التحديث عندما يفتح الرابط مرة أخرى.",
+   "tr": "<b>Düzenlemeden sonra aynı bağlantı</b>Bir hatayı sonra düzelt. İçe aktaranlar bağlantıyı tekrar açınca güncellemeyi alır."
+  },
+  {
+   "en": "Pay per design or monthly",
+   "ar": "ادفع لكل تصميم أو شهريًا",
+   "tr": "Tasarım başına ya da aylık öde"
+  },
+  {
+   "en": "<b>Pay per design or monthly</b>Buy a design once and its link never expires. Studio Pro lets you publish as many as you like; links made on the plan stop working if it ends.",
+   "ar": "<b>ادفع لكل تصميم أو شهريًا</b>اشترِ التصميم مرة واحدة ولن ينتهي رابطه أبدًا. مع Studio Pro تنشر ما تشاء من التصاميم، لكن الروابط التي تُنشأ ضمن الاشتراك تتوقف إذا انتهى.",
+   "tr": "<b>Tasarım başına ya da aylık öde</b>Bir tasarımı bir kez satın al, bağlantısının süresi hiç dolmaz. Studio Pro ile istediğin kadar tasarım yayınlarsın. Plan biterse, plan sırasında oluşturulan bağlantılar çalışmaz."
+  },
+  {
+   "en": "The template vault",
+   "ar": "مكتبة القوالب",
+   "tr": "Şablon arşivi"
+  },
+  {
+   "en": "Free",
+   "ar": "مجاني",
+   "tr": "Ücretsiz"
+  },
+  {
+   "en": "Browse all 190+ templates",
+   "ar": "تصفّح أكثر من 190 قالبًا",
+   "tr": "190+ şablonun tümüne göz at"
+  },
+  {
+   "en": "Some packs are free. New premium designs come out every month.",
+   "ar": "بعض الحزم مجانية، وتصدر تصاميم مدفوعة جديدة كل شهر.",
+   "tr": "Bazı paketler ücretsiz. Her ay yeni premium tasarımlar çıkıyor."
+  },
+  {
+   "en": "PointCalc is free to use. Upgrade for premium designs, bigger sign-ups, or AI that reads your screenshots.",
+   "ar": "استخدام PointCalc مجاني. اشترك للحصول على التصاميم المدفوعة، أو تسجيل عدد أكبر من الفرق، أو ذكاء اصطناعي يقرأ لقطاتك.",
+   "tr": "PointCalc'i kullanmak ücretsiz. Premium tasarımlar, daha fazla takım kaydı ya da ekran görüntülerini okuyan yapay zekâ için planını yükselt."
+  },
+  {
+   "en": "<span class=\"ck\" aria-hidden=\"true\"></span>Unlimited points tables, warheads and posters",
+   "ar": "<span class=\"ck\" aria-hidden=\"true\"></span>جداول نقاط وأقوى الفرق وبوسترات بلا حدود",
+   "tr": "<span class=\"ck\" aria-hidden=\"true\"></span>Sınırsız puan tablosu, Warhead ve poster"
+  },
+  {
+   "en": "<span class=\"ck\" aria-hidden=\"true\"></span>Slot list, top fraggers and certificates",
+   "ar": "<span class=\"ck\" aria-hidden=\"true\"></span>قائمة الخانات وأبرز اللاعبين والشهادات",
+   "tr": "<span class=\"ck\" aria-hidden=\"true\"></span>Slot listesi, en iyi fragçılar ve sertifikalar"
+  },
+  {
+   "en": "<span class=\"ck\" aria-hidden=\"true\"></span>Team registration for up to 50 teams per event",
+   "ar": "<span class=\"ck\" aria-hidden=\"true\"></span>تسجيل الفرق حتى 50 فريقًا لكل فعالية",
+   "tr": "<span class=\"ck\" aria-hidden=\"true\"></span>Etkinlik başına 50 takıma kadar takım kaydı"
+  },
+  {
+   "en": "<span class=\"ck\" aria-hidden=\"true\"></span>No ads",
+   "ar": "<span class=\"ck\" aria-hidden=\"true\"></span>بلا إعلانات",
+   "tr": "<span class=\"ck\" aria-hidden=\"true\"></span>Reklam yok"
+  },
+  {
+   "en": "Organiser Pack",
+   "ar": "حزمة المنظِّم",
+   "tr": "Organizatör Paketi"
+  },
+  {
+   "en": "<span class=\"ck\" aria-hidden=\"true\"></span>Up to 1000 teams per event",
+   "ar": "<span class=\"ck\" aria-hidden=\"true\"></span>حتى 1000 فريق لكل فعالية",
+   "tr": "<span class=\"ck\" aria-hidden=\"true\"></span>Etkinlik başına 1000 takıma kadar"
+  },
+  {
+   "en": "<span class=\"ck\" aria-hidden=\"true\"></span>Team logos on the sign-up form",
+   "ar": "<span class=\"ck\" aria-hidden=\"true\"></span>شعارات الفرق في نموذج التسجيل",
+   "tr": "<span class=\"ck\" aria-hidden=\"true\"></span>Kayıt formunda takım logoları"
+  },
+  {
+   "en": "<span class=\"ck\" aria-hidden=\"true\"></span>Screenshot proof for entry tasks",
+   "ar": "<span class=\"ck\" aria-hidden=\"true\"></span>إثبات بلقطة الشاشة لمهام الدخول",
+   "tr": "<span class=\"ck\" aria-hidden=\"true\"></span>Katılım görevleri için ekran görüntüsü kanıtı"
+  },
+  {
+   "en": "Get Organiser Pack",
+   "ar": "احصل على حزمة المنظِّم",
+   "tr": "Organizatör Paketi Al"
+  },
+  {
+   "en": "Our pick",
+   "ar": "اختيارنا",
+   "tr": "Önerimiz"
+  },
+  {
+   "en": "<span class=\"ck\" aria-hidden=\"true\"></span>Everything in Organiser Pack",
+   "ar": "<span class=\"ck\" aria-hidden=\"true\"></span>كل ما في حزمة المنظِّم",
+   "tr": "<span class=\"ck\" aria-hidden=\"true\"></span>Organizatör Paketi'ndeki her şey"
+  },
+  {
+   "en": "AI reads your screenshots",
+   "ar": "الذكاء الاصطناعي يقرأ لقطاتك",
+   "tr": "Ekran görüntülerini yapay zekâ okur"
+  },
+  {
+   "en": "<b>AI reads your screenshots</b> from BGMI, PUBG Mobile and Free Fire",
+   "ar": "<b>الذكاء الاصطناعي يقرأ لقطاتك</b> من BGMI و PUBG Mobile و Free Fire",
+   "tr": "BGMI, PUBG Mobile ve Free Fire <b>ekran görüntülerini yapay zekâ okur</b>"
+  },
+  {
+   "en": "<span class=\"ck\" aria-hidden=\"true\"></span>Points table, warhead and top fraggers fill in on their own",
+   "ar": "<span class=\"ck\" aria-hidden=\"true\"></span>جدول النقاط وأقوى الفرق وأبرز اللاعبين تُملأ تلقائيًا",
+   "tr": "<span class=\"ck\" aria-hidden=\"true\"></span>Puan tablosu, Warhead ve en iyi fragçılar kendiliğinden dolar"
+  },
+  {
+   "en": "<span class=\"ck\" aria-hidden=\"true\"></span>Upload a whole match at once",
+   "ar": "<span class=\"ck\" aria-hidden=\"true\"></span>ارفع مباراة كاملة دفعة واحدة",
+   "tr": "<span class=\"ck\" aria-hidden=\"true\"></span>Bütün bir maçı tek seferde yükle"
+  },
+  {
+   "en": "<span class=\"ck\" aria-hidden=\"true\"></span>First access to new AI features",
+   "ar": "<span class=\"ck\" aria-hidden=\"true\"></span>وصول مبكر لميزات الذكاء الاصطناعي الجديدة",
+   "tr": "<span class=\"ck\" aria-hidden=\"true\"></span>Yeni yapay zekâ özelliklerine ilk erişim"
+  },
+  {
+   "en": "<span data-price=\"each\">₹100</span> each when 5 people share it",
+   "ar": "<span data-price=\"each\">₹100</span> للشخص عند مشاركته بين 5 أشخاص",
+   "tr": "5 kişi paylaşınca kişi başı <span data-price=\"each\">₹100</span>"
+  },
+  {
+   "en": "<span class=\"ck\" aria-hidden=\"true\"></span>Everything in Premium + AI",
+   "ar": "<span class=\"ck\" aria-hidden=\"true\"></span>كل ما في Premium + AI",
+   "tr": "<span class=\"ck\" aria-hidden=\"true\"></span>Premium + AI'daki her şey"
+  },
+  {
+   "en": "<span class=\"ck\" aria-hidden=\"true\"></span>One account on up to 5 devices",
+   "ar": "<span class=\"ck\" aria-hidden=\"true\"></span>حساب واحد على 5 أجهزة كحد أقصى",
+   "tr": "<span class=\"ck\" aria-hidden=\"true\"></span>Tek hesap, en fazla 5 cihazda"
+  },
+  {
+   "en": "<span class=\"ck\" aria-hidden=\"true\"></span>Your whole admin team calculates with AI",
+   "ar": "<span class=\"ck\" aria-hidden=\"true\"></span>فريق المشرفين كله يحسب بالذكاء الاصطناعي",
+   "tr": "<span class=\"ck\" aria-hidden=\"true\"></span>Tüm admin ekibin yapay zekâ ile hesaplar"
+  },
+  {
+   "en": "Get AI Team",
+   "ar": "احصل على AI Team",
+   "tr": "<span lang=\"en\">AI Team</span> Al"
+  },
+  {
+   "en": "New users get a 3-day free trial on monthly and longer plans. Prices are in INR, and the store converts them at checkout.",
+   "ar": "يحصل المستخدمون الجدد على تجربة مجانية لمدة 3 أيام في الباقات الشهرية والأطول. الأسعار بالروبية الهندية (INR)، ويحوّلها المتجر عند الدفع.",
+   "tr": "Yeni kullanıcılar aylık ve daha uzun planlarda 3 günlük ücretsiz deneme alır. Fiyatlar INR cinsinden, mağaza ödeme sırasında kendi para birimine çevirir."
+  },
+  {
+   "en": "From Google Play and the App Store.",
+   "ar": "من Google Play وApp Store.",
+   "tr": "Google Play ve App Store'dan."
+  },
+  {
+   "en": "I started PointCalc in September 2021. I was a PUBG player running scrims with friends, and the worst part of tournament day came after the matches: hours of working out points by hand, then more hours in Photoshop making the result graphics.",
+   "ar": "بدأت PointCalc في سبتمبر 2021. كنت لاعب PUBG أنظّم سكريمات مع أصدقائي، وأسوأ جزء في يوم البطولة كان بعد انتهاء المباريات: ساعات من حساب النقاط يدويًا، ثم ساعات أخرى في Photoshop لصنع تصاميم النتائج.",
+   "tr": "PointCalc'e Eylül 2021'de başladım. Arkadaşlarımla scrim düzenleyen bir PUBG oyuncusuydum ve turnuva gününün en kötü kısmı maçlardan sonra gelirdi: saatlerce elle puan hesabı, sonra sonuç görselleri için Photoshop'ta saatler daha."
+  },
+  {
+   "en": "These days I'm an Android developer at Wrench Solutions in Kochi by day, and PointCalc is still my side project. It's at 150K+ downloads now, with AI screenshot extraction, an iOS build, team registration links and PointCalc Studio for the designers in the community.",
+   "ar": "أعمل اليوم مطوّر Android في Wrench Solutions في كوتشي نهارًا، وما زال PointCalc مشروعي الجانبي. وصل الآن إلى أكثر من 150 ألف تنزيل، مع استخراج البيانات من اللقطات بالذكاء الاصطناعي، ونسخة iOS، وروابط تسجيل الفرق، و PointCalc Studio للمصمّمين في المجتمع.",
+   "tr": "Bugünlerde gündüzleri Kochi'deki Wrench Solutions'ta Android geliştiricisiyim ve PointCalc hâlâ yan projem. Şu an 150B+ indirmesi var. Yapay zekâ ile ekran okuma, iOS sürümü, takım kayıt bağlantıları ve topluluktaki tasarımcılar için PointCalc Studio da var."
+  },
+  {
+   "en": "PointCalc supports BGMI, PUBG Mobile and Free Fire. Upload lobby and result screens, and PointCalc builds the points table, warhead, top fraggers, slot list, team posters and certificates from them.",
+   "ar": "يدعم PointCalc ألعاب BGMI و PUBG Mobile و Free Fire. ارفع لقطات اللوبي والنتائج، ويُنشئ منها PointCalc جدول النقاط وأقوى الفرق وأبرز اللاعبين وقائمة الخانات وبوسترات الفرق والشهادات.",
+   "tr": "PointCalc, BGMI, PUBG Mobile ve Free Fire'ı destekler. Lobi ve sonuç ekranlarını yükle, PointCalc bunlardan puan tablosunu, Warhead'i, en iyi fragçıları, slot listesini, takım posterlerini ve sertifikaları hazırlar."
+  },
+  {
+   "en": "Upload your lobby and result screens from a match. PointCalc's AI reads the placements, kills and player stats off the images and fills everything in. You can check and edit any value before you publish.",
+   "ar": "ارفع لقطات اللوبي والنتائج من مباراة. يقرأ الذكاء الاصطناعي في PointCalc المراكز والقتلات وإحصاءات اللاعبين من الصور ويملأ كل شيء. ويمكنك مراجعة أي قيمة وتعديلها قبل النشر.",
+   "tr": "Bir maçın lobi ve sonuç ekranlarını yükle. PointCalc'in yapay zekâsı sıralamaları, killeri ve oyuncu istatistiklerini görüntülerden okur ve her şeyi doldurur. Yayınlamadan önce istediğin değeri kontrol edip düzenleyebilirsin."
+  },
+  {
+   "en": "Yes. The app is free to download, and the core features work without a subscription. Paid plans start at ₹30 a week for Premium and ₹150 a week for Premium + AI.",
+   "ar": "نعم. تنزيل التطبيق مجاني، والميزات الأساسية تعمل دون اشتراك. تبدأ الباقات المدفوعة من ₹30 أسبوعيًا لـ Premium و ₹150 أسبوعيًا لـ Premium + AI.",
+   "tr": "Evet. Uygulamayı indirmek ücretsiz ve temel özellikler abonelik olmadan çalışır. Ücretli planlar Premium için haftalık ₹30, Premium + AI için haftalık ₹150'den başlar."
+  },
+  {
+   "en": "Can teams sign up on their own?<span class=\"ic\">+</span>",
+   "ar": "هل يمكن للفرق التسجيل بأنفسها؟<span class=\"ic\">+</span>",
+   "tr": "Takımlar kendileri kaydolabilir mi?<span class=\"ic\">+</span>"
+  },
+  {
+   "en": "Yes. Pick Open registration when you create a tournament and share the link. Captains fill in their team and players in their browser, without the app or an account. You approve each team in PointCalc, and approved teams fill your slots.",
+   "ar": "نعم. اختر «تسجيل مفتوح» عند إنشاء البطولة وشارك الرابط. يملأ القادة بيانات فريقهم ولاعبيهم من المتصفح، دون التطبيق ودون حساب. وأنت توافق على كل فريق في PointCalc، والفرق المقبولة تملأ خاناتك.",
+   "tr": "Evet. Turnuva oluştururken Açık kayıt (Open registration) seçeneğini seç ve bağlantıyı paylaş. Kaptanlar takımlarını ve oyuncularını uygulama ya da hesap olmadan tarayıcıda doldurur. Her takımı PointCalc'te sen onaylarsın, onaylanan takımlar slotlarını doldurur."
+  },
+  {
+   "en": "What is PointCalc Studio?<span class=\"ic\">+</span>",
+   "ar": "ما هو PointCalc Studio؟<span class=\"ic\">+</span>",
+   "tr": "PointCalc Studio nedir?<span class=\"ic\">+</span>"
+  },
+  {
+   "en": "Studio is a second app for people who make the designs. You open your own artwork, place the table, text and logos, and share it as a link. Whoever opens that link in PointCalc gets your design and can post results with it. If you only run tournaments and use the built-in templates, you don't need Studio.",
+   "ar": "Studio تطبيق ثانٍ لمن يصنعون التصاميم. تفتح تصميمك الفني، وتضع الجدول والنصوص والشعارات، ثم تشاركه كرابط. ومن يفتح هذا الرابط في PointCalc يحصل على تصميمك ويستطيع نشر النتائج به. وإذا كنت تدير البطولات فقط وتستخدم القوالب الجاهزة، فلا تحتاج إلى Studio.",
+   "tr": "Studio, tasarım yapanlar için ikinci bir uygulama. Kendi görselini açar, tabloyu, yazıları ve logoları yerleştirir ve bağlantı olarak paylaşırsın. Bu bağlantıyı PointCalc'te açan herkes tasarımını alır ve sonuçları onunla paylaşabilir. Sadece turnuva düzenliyor ve hazır şablonları kullanıyorsan Studio'ya ihtiyacın yok."
+  },
+  {
+   "en": "How is Studio priced?<span class=\"ic\">+</span>",
+   "ar": "كم سعر Studio؟<span class=\"ic\">+</span>",
+   "tr": "Studio'nun fiyatı nasıl?<span class=\"ic\">+</span>"
+  },
+  {
+   "en": "You can pay for a single design, and that link stays live for good. Or you can take Studio Pro and publish as many designs as you like while the plan is active. Links you published on the plan stop working if it ends. Designs you paid for outright keep working.",
+   "ar": "يمكنك الدفع مقابل تصميم واحد، ويبقى رابطه يعمل دائمًا. أو تشترك في Studio Pro وتنشر ما تشاء من التصاميم ما دام الاشتراك فعّالًا. الروابط التي نشرتها ضمن الاشتراك تتوقف إذا انتهى، أما التصاميم التي دفعت ثمنها مباشرةً فتبقى تعمل.",
+   "tr": "Tek bir tasarım için ödeme yapabilirsin, o bağlantı süresiz açık kalır. Ya da Studio Pro alıp plan aktifken istediğin kadar tasarım yayınlayabilirsin. Plan biterse, plan sırasında yayınladığın bağlantılar çalışmaz. Tek seferde satın aldığın tasarımlar çalışmaya devam eder."
+  },
+  {
+   "en": "Yes. You can adjust colors, swap the background image and add as many custom logos as you need. For an entirely custom design, build it yourself in PointCalc Studio, or message us on WhatsApp or Instagram and we'll build it for you.",
+   "ar": "نعم. يمكنك ضبط الألوان وتبديل صورة الخلفية وإضافة ما تحتاجه من الشعارات. ولتصميم مخصّص بالكامل، اصنعه بنفسك في PointCalc Studio، أو تواصل معنا عبر WhatsApp أو Instagram وسنصمّمه لك.",
+   "tr": "Evet. Renkleri ayarlayabilir, arka plan görüntüsünü değiştirebilir ve ihtiyacın kadar özel logo ekleyebilirsin. Tamamen özel bir tasarım için onu PointCalc Studio'da kendin yap ya da WhatsApp veya Instagram'dan bize ulaş, senin için yapalım."
+  },
+  {
+   "en": "Studio for iOS",
+   "ar": "Studio لـ iOS",
+   "tr": "iOS için Studio"
+  },
+  {
+   "en": "Studio for Android",
+   "ar": "Studio لـ Android",
+   "tr": "Android için Studio"
+  },
+  {
+   "en": "Terms",
+   "ar": "الشروط",
+   "tr": "Koşullar"
+  },
+  {
+   "en": "Slot list with 18 of 24 slots filled",
+   "ar": "قائمة الخانات: 18 من 24 خانة ممتلئة",
+   "tr": "Slot listesi: 24 slotun 18'i dolu"
+  },
+  {
+   "en": "A tournament sign-up page open in a phone browser, with the team form below the event details",
+   "ar": "صفحة تسجيل بطولة مفتوحة في متصفح الهاتف، ونموذج الفريق أسفل تفاصيل الحدث",
+   "tr": "Telefon tarayıcısında açık bir turnuva kayıt sayfası, etkinlik bilgilerinin altında takım formu"
+  },
+  {
+   "en": "PointCalc Studio editor with a points table being positioned on a custom background",
+   "ar": "محرر PointCalc Studio وجدول نقاط يُوضع على خلفية مخصصة",
+   "tr": "Özel bir arka plan üzerine puan tablosu yerleştirilen PointCalc Studio düzenleyicisi"
+  },
+  {
+   "en": "'Show less'",
+   "ar": "'إظهار أقل'",
+   "tr": "'Daha az göster'"
+  },
+  {
+   "en": "'Read more'",
+   "ar": "'اقرأ المزيد'",
+   "tr": "'Daha fazla oku'"
+  },
+  {
+   "en": "<span class=\"fill\">190+</span> designs",
+   "ar": "<span class=\"fill\">190+</span> تصميم",
+   "tr": "<span class=\"fill\">190+</span> tasarım"
+  },
+  {
+   "en": "You already have a look for your org. Open your poster in Studio, place the table, names and logos on it, and share it as a link. Your admins open the link in PointCalc, and every result they post comes out in your design.",
+   "ar": "لمنظّمتك شكل خاص بها بالفعل. افتح البوستر في Studio، وضع عليه الجدول والأسماء والشعارات، ثم شاركه كرابط. يفتح المشرفون عندك الرابط في PointCalc، فتخرج كل نتيجة ينشرونها بتصميمك.",
+   "tr": "Organizasyonunun zaten bir tarzı var. Posterini Studio'da aç, tabloyu, isimleri ve logoları üzerine yerleştir ve bağlantı olarak paylaş. Adminlerin bağlantıyı PointCalc'te açar ve paylaştıkları her sonuç senin tasarımınla çıkar."
+  },
+  {
+   "en": "Tap Detect layout",
+   "ar": "اضغط «اكتشاف التخطيط»",
+   "tr": "Düzeni algıla'ya dokun"
+  },
+  {
+   "en": "Studio finds the table rows or logo boxes on your image and puts everything in place. Drag anything you want to move.",
+   "ar": "يجد Studio صفوف الجدول أو مربعات الشعارات في صورتك ويضع كل شيء في مكانه. اسحب أي عنصر تريد تحريكه.",
+   "tr": "Studio görselindeki tablo satırlarını ya da logo kutularını bulur ve her şeyi yerine koyar. Taşımak istediğin her şeyi sürükle."
+  },
+  {
+   "en": "Free to download. You pay when you publish a design.",
+   "ar": "التنزيل مجاني. تدفع عندما تنشر تصميمًا.",
+   "tr": "İndirmesi ücretsiz. Bir tasarımı yayınladığında ödersin."
+  },
+  {
+   "en": "Just opened",
+   "ar": "بعد الفتح مباشرة",
+   "tr": "Yeni açıldı"
+  },
+  {
+   "en": "After Detect layout",
+   "ar": "بعد «اكتشاف التخطيط»",
+   "tr": "Düzeni algıladıktan sonra"
+  },
+  {
+   "en": "A Free Fire poster just opened in PointCalc Studio, with the team slots not yet placed",
+   "ar": "بوستر Free Fire فُتح للتو في PointCalc Studio، وخانات الفرق لم توضع بعد",
+   "tr": "PointCalc Studio'da yeni açılmış bir Free Fire posteri, takım slotları henüz yerleştirilmemiş"
+  },
+  {
+   "en": "The same poster after Detect layout, with 12 team slots placed on the boxes in the art",
+   "ar": "البوستر نفسه بعد «اكتشاف التخطيط»، و12 خانة للفرق موضوعة على المربعات في التصميم",
+   "tr": "Aynı poster, düzen algılandıktan sonra: 12 takım slotu görseldeki kutulara yerleşmiş"
+  },
+  {
+   "en": "Your fonts and colors",
+   "ar": "خطوطك وألوانك",
+   "tr": "Kendi fontların ve renklerin"
+  },
+  {
+   "en": "<b>Your fonts and colors</b>About 25 fonts are built in, or add your own TTF or OTF. Pick colors straight from your image.",
+   "ar": "<b>خطوطك وألوانك</b>نحو 25 خطًا مدمجًا، أو أضِف خط TTF أو OTF خاصًا بك. واختر الألوان مباشرةً من صورتك.",
+   "tr": "<b>Kendi fontların ve renklerin</b>Yaklaşık 25 font hazır gelir ya da kendi TTF veya OTF fontunu ekle. Renkleri doğrudan görselinden seç."
+  },
+  {
+   "en": "What it costs",
+   "ar": "كم يكلّف",
+   "tr": "Fiyatı ne kadar"
+  },
+  {
+   "en": "One design",
+   "ar": "تصميم واحد",
+   "tr": "Bir tasarım"
+  },
+  {
+   "en": "Certificate design",
+   "ar": "تصميم شهادة",
+   "tr": "Sertifika tasarımı"
+  },
+  {
+   "en": "Table with a top-team block",
+   "ar": "جدول مع قسم لأفضل الفرق",
+   "tr": "En iyi takım bloklu tablo"
+  },
+  {
+   "en": "Your own font, per design",
+   "ar": "خطك الخاص، لكل تصميم",
+   "tr": "Kendi fontun, tasarım başına"
+  },
+  {
+   "en": "As many designs as you like",
+   "ar": "تصاميم بلا حدود",
+   "tr": "İstediğin kadar tasarım"
+  },
+  {
+   "en": "₹499 a month",
+   "ar": "₹499 شهريًا",
+   "tr": "Aylık ₹499"
+  },
+  {
+   "en": "If you buy a design, its link never stops working. Links you make on Studio Pro stop working when the plan ends. These are Google Play prices.",
+   "ar": "إذا اشتريت تصميمًا فلن يتوقف رابطه أبدًا. أما الروابط التي تصنعها على Studio Pro فتتوقف عند انتهاء الاشتراك. هذه أسعار Google Play.",
+   "tr": "Bir tasarımı satın alırsan bağlantısı hiç durmaz. Studio Pro ile yaptığın bağlantılar plan bitince çalışmaz. Fiyatlar Google Play'e aittir."
+  },
+  {
+   "en": "Studio is free to download, and you pay when you publish. One design costs ₹79 (₹200 for a certificate or a table with a top-team block), and you pay for it only once. Studio Pro is ₹499 a month for as many designs as you like, but the links you make on it stop working when the plan ends.",
+   "ar": "تنزيل Studio مجاني، وتدفع عندما تنشر. التصميم الواحد بـ ₹79 (و₹200 للشهادة أو للجدول مع قسم لأفضل الفرق)، وتدفع ثمنه مرة واحدة فقط. أما Studio Pro فبـ ₹499 شهريًا لتصاميم بلا حدود، لكن الروابط التي تصنعها عليه تتوقف عند انتهاء الاشتراك.",
+   "tr": "Studio'yu indirmek ücretsiz, yayınladığında ödersin. Bir tasarım ₹79 (sertifika ya da en iyi takım bloklu tablo için ₹200) ve ücretini yalnızca bir kez ödersin. Studio Pro aylık ₹499 ile istediğin kadar tasarım sunar, ama onunla yaptığın bağlantılar plan bitince çalışmaz."
+  }
+ ]
 }

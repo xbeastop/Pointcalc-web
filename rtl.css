@@ -31,7 +31,7 @@ html[dir="rtl"] .nav-links { margin-left: 0; margin-right: auto; }
 html[dir="rtl"] .nav-cta { margin-left: 0; margin-right: 8px; }
 html[dir="rtl"] .nav-burger { margin-left: 0; margin-right: 8px; }
 
-/* ---- kicker / tag accent lines flip automatically via flex, fine ---- */
+/* ---- tag accent lines flip automatically via flex ---- */
 
 /* ---- steps connector arrows point the other way ---- */
 html[dir="rtl"] .steps .flow { transform: translate(50%, -50%) scaleX(-1); }
@@ -40,7 +40,6 @@ html[dir="rtl"] .steps .flow.f2 { left: auto; right: calc(66.666% - 3.5px); }
 html[dir="rtl"] .tut-spine .arrow { transform: scaleX(-1); }
 
 /* ---- step accent bar grows from the right ---- */
-html[dir="rtl"] .step .bar { left: auto; right: 0; }
 
 /* ---- faq ---- */
 html[dir="rtl"] .faq-q { text-align: right; }
@@ -69,5 +68,4 @@ html[dir="rtl"] .lang-menu { inset-inline-end: 0; }
 /* numbers, prices, latin brand tokens stay LTR inside RTL text */
 html[dir="rtl"] .pprice,
 html[dir="rtl"] .hero-stats .st b,
-html[dir="rtl"] .band .st b,
 html[dir="rtl"] .stat-value { direction: ltr; unicode-bidi: isolate; }

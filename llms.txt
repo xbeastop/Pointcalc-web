@@ -1,17 +1,18 @@
 # PointCalc
 
-> PointCalc is a tournament toolkit for BGMI, PUBG Mobile and Free Fire organizers. Upload lobby and result screenshots, the app reads placements and kills, then generates the points table, warhead, top fraggers (MVP), slot list, team poster and certificates. Available on iOS and Android with 150K+ downloads. PointCalc Studio is the companion design app: designers and org admins build their own themes from their own artwork and publish them as a link that imports into PointCalc in one tap.
+> PointCalc is a tournament toolkit for BGMI, PUBG Mobile and Free Fire organizers. Upload lobby and result screenshots, the app reads placements and kills, then generates the points table, warhead, top fraggers (MVP), slot list, team poster and certificates. Teams can sign up for a tournament from one shared link, and the organizer approves them in the app. Available on iOS and Android with 150K+ downloads. PointCalc Studio is the companion design app: designers and org admins build their own themes from their own artwork and publish them as a link that imports into PointCalc in one tap.
 
 ## About
 
 - **Name:** PointCalc (also "Pointcalc | Point Table Maker")
 - **Platforms:** Android (Google Play), iOS (App Store)
 - **Supported games:** BGMI, PUBG Mobile, Free Fire
-- **Flagship feature:** AI screenshot extraction — placements and kills are read directly from lobby/result screens
+- **Flagship feature:** AI screenshot extraction: placements and kills are read directly from lobby/result screens
 - **Outputs generated:** Points table, warhead, top fraggers (MVP), slot list, team poster, tournament certificates
-- **Founder:** Amal Manoj (public handle: xbeastop), Kerala, India — solo indie developer
+- **Founder:** Amal Manoj (public handle: xbeastop), Kerala, India, solo indie developer
 - **Founded:** September 2021
-- **Pricing:** Free tier available; Premium from ₹69/month; Premium + AI from ₹350/month (INR)
+- **Team registration:** Organizers share one link; captains sign up in any browser with no app or account; the organizer approves teams, which fill the slots, then splits them into groups
+- **Pricing (INR, monthly):** Free tier available; Premium ₹69 (registration up to 50 teams); Organiser Pack ₹200 (up to 1000 teams, team logos, screenshot proof); Premium + AI ₹350; AI Team ₹500 (Premium + AI on up to 5 devices). Weekly, quarterly and yearly plans also exist; new users get a 3-day trial on monthly and longer plans
 - **Ratings:** 4.9★ on App Store, 4.4★ on Google Play, 550+ total reviews
 
 ## PointCalc Studio
@@ -19,17 +20,18 @@
 - **What it is:** Companion app for designers and org admins. Open your own background image, place the points table, text, logos, medals and fonts (TTF/OTF), then publish.
 - **Design types:** Points table, warhead, top fraggers, slot list, team poster, certificate
 - **Sharing:** Every published design is a link (pointcalc.in/d/...). Anyone who opens it in PointCalc imports the design in one tap; no files are passed around.
-- **Pricing:** Pay once per design (link never expires) or Studio Pro subscription for unlimited designs while the plan is active; links published on a plan stop working if the plan ends.
-- **Availability:** iOS on the App Store; Android in testing (early access on request)
+- **Tools:** AI layout detection from your image, about 25 built-in fonts plus custom TTF/OTF, color picker from the image, preview with sample data or a real tournament, edit a published design and keep the same link
+- **Pricing (INR, Google Play):** Free to download; you pay when you publish. One design ₹79 (certificate or table with a top-team block ₹200, own font +₹20), and its link never expires. Studio Pro ₹499/month for unlimited designs; links published on the plan stop working if it ends.
+- **Availability:** App Store (https://apps.apple.com/in/app/pointcalc-studio/id6808275729) and Google Play (https://play.google.com/store/apps/details?id=com.pointcalc.studio)
 - **Page:** https://pointcalc.in/#studio
 
 ## Key pages
 
 - [Home](https://pointcalc.in/): Product overview, hero demo, pricing, founder story
-- [Features](https://pointcalc.in/features/): Full feature breakdown — AI extraction, points tables, top fraggers, slot lists, posters, certificates, custom point systems
+- [Features](https://pointcalc.in/features/): Full feature breakdown: AI extraction, team registration, points tables, top fraggers, slot lists, posters, certificates, custom point systems
 - [Designs](https://pointcalc.in/designs/): Gallery of broadcast-grade templates (points tables, top fragger cards, team posters, certificates, slot lists)
-- [Guide](https://pointcalc.in/guide/): Complete step-by-step tutorial on how to use PointCalc end to end — install, create a tournament, choose a point system, add teams, calculate matches (manual and AI screenshot extraction, including how to fix errors), publish every design, customise colours/backgrounds/logos, manage and edit tournaments, bonus/penalty points, share and import via Team Cards, Excel/CSV import, backup & restore (Google Drive on Android, file on iOS), and merging & flattening tournaments for weekly/monthly stats
-- [FAQ](https://pointcalc.in/faq/): Supported games, AI accuracy, pricing, custom branding, offline use, founder background
+- [Guide](https://pointcalc.in/guide/): Complete step-by-step tutorial on how to use PointCalc end to end: install, create a tournament, choose a point system, add teams, calculate matches (manual and AI screenshot extraction, including how to fix errors), publish every design, customise colours/backgrounds/logos, manage and edit tournaments, bonus/penalty points, share and import via Team Cards, Excel/CSV import, backup & restore (Google Drive on Android, file on iOS), merging & flattening tournaments for weekly/monthly stats, and team registration from one link (with a 5-minute video: https://youtu.be/XHOm4ZCKQLw)
+- [FAQ](https://pointcalc.in/faq/): Supported games, AI accuracy, team registration, pricing, custom branding, offline use, founder background
 
 ## Contact
 
@@ -48,7 +50,8 @@
 PointCalc is built specifically for esports tournament/scrim organizers running custom BGMI, PUBG Mobile or Free Fire events. It replaces manual point calculation in spreadsheets and result-graphic editing in Photoshop. Common use cases:
 
 - Daily scrim point tables published after every match
-- Tournament finals — winner posters, top fragger of the day, MVP awards, certificates
+- Tournament finals: winner posters, top fragger of the day, MVP awards, certificates
+- Collecting team sign-ups with entry tasks (follows, in-game IDs, payment screenshots) instead of WhatsApp messages or Google Forms
 - Slot list / lobby graphics for the start of a tournament day
 - Bulk match processing for multi-day events (Premium + AI tier)
 - Custom-branded designs for orgs and content creators
