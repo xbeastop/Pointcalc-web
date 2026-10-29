@@ -22,7 +22,7 @@ html[dir="rtl"] h1,
 html[dir="rtl"] h2,
 html[dir="rtl"] h3 { line-height: 1.15; font-weight: 700; }
 html[dir="rtl"] .hero h1 { line-height: 1.12; }
-html[dir="rtl"] .step h3,
+html[dir="rtl"] .hf-text h3,
 html[dir="rtl"] .feat h3,
 html[dir="rtl"] .faq-q { font-weight: 700; }
 
@@ -33,10 +33,7 @@ html[dir="rtl"] .nav-burger { margin-left: 0; margin-right: 8px; }
 
 /* ---- tag accent lines flip automatically via flex ---- */
 
-/* ---- steps connector arrows point the other way ---- */
-html[dir="rtl"] .steps .flow { transform: translate(50%, -50%) scaleX(-1); }
-html[dir="rtl"] .steps .flow.f1 { left: auto; right: calc(33.333% + 3.5px); }
-html[dir="rtl"] .steps .flow.f2 { left: auto; right: calc(66.666% - 3.5px); }
+/* ---- guide connector arrows point the other way ---- */
 html[dir="rtl"] .tut-spine .arrow { transform: scaleX(-1); }
 
 /* ---- step accent bar grows from the right ---- */
