@@ -61,62 +61,64 @@
 </nav>
 <span id="pc-main" tabindex="-1"></span>
 
-<!-- PAGE HERO -->
-<section class="page-hero">
-  <div class="glow"></div>
-  <div class="wrap">
+<!-- PAGE HERO — wall of designs -->
+<section class="page-hero dhero">
+  <div class="dhero-wall" aria-hidden="true">
+    <div class="dwall-row"><div class="dwall-track"><img src="../../designs/templates/premium/tables/table_snax_summer.webp" alt="" loading="lazy" /><img src="../../designs/templates/premium/warheads/warhead_jordan_december.webp" alt="" loading="lazy" /><img src="../../designs/templates/premium/fraggers/fraggers_snax_october.webp" alt="" loading="lazy" /><img src="../../designs/templates/premium/tables/inAppPremiumTableHalloweenSnax.webp" alt="" loading="lazy" /><img src="../../designs/templates/premium/slotlist/slotlist_snax_january.webp" alt="" loading="lazy" /><img src="../../designs/templates/premium/teamPoster/poster_blaze_feb_2026.webp" alt="" loading="lazy" /><img src="../../designs/templates/premium/tables/table_snax_jan_2026.webp" alt="" loading="lazy" /><img src="../../designs/templates/premium/warheads/warhead_snax_yellow_august.webp" alt="" loading="lazy" /></div></div>
+    <div class="dwall-row rev"><div class="dwall-track"><img src="../../designs/templates/premium/tables/table_jordan_november.webp" alt="" loading="lazy" /><img src="../../designs/templates/premium/fraggers/fraggers_cap_summer.webp" alt="" loading="lazy" /><img src="../../designs/templates/premium/warheads/inAppPremiumWarheadHalloweenSnax.webp" alt="" loading="lazy" /><img src="../../designs/templates/premium/tables/table_snax_blue_february.webp" alt="" loading="lazy" /><img src="../../designs/templates/premium/certificate/certificate_snax_summer.webp" alt="" loading="lazy" /><img src="../../designs/templates/free/tables/table_free_sep_2025.webp" alt="" loading="lazy" /><img src="../../designs/templates/premium/teamPoster/poster_snax_october.webp" alt="" loading="lazy" /><img src="../../designs/templates/premium/warheads/warhead_snax_january.webp" alt="" loading="lazy" /></div></div>
+    <div class="dwall-row"><div class="dwall-track"><img src="../../designs/templates/premium/slotlist/slotlist_jordan_december.webp" alt="" loading="lazy" /><img src="../../designs/templates/premium/tables/table_snax_yellow_august.webp" alt="" loading="lazy" /><img src="../../designs/templates/premium/warheads/warhead_blaze_feb_2026.webp" alt="" loading="lazy" /><img src="../../designs/templates/premium/fraggers/fraggers_snax_jan_2026.webp" alt="" loading="lazy" /><img src="../../designs/templates/premium/tables/table_cap_summer.webp" alt="" loading="lazy" /><img src="../../designs/templates/premium/teamPoster/poster_jordan_november.webp" alt="" loading="lazy" /><img src="../../designs/templates/premium/warheads/warhead_snax_october.webp" alt="" loading="lazy" /><img src="../../designs/templates/premium/tables/table_snax_january.webp" alt="" loading="lazy" /></div></div>
+  </div>
+  <div class="dhero-veil" aria-hidden="true"></div>
+  <div class="wrap dhero-content">
     <h1>قوالب لكل يوم مباريات.</h1>
     <p>كل قالب مدمج في PointCalc: جداول نقاط وبوسترات فرق وبطاقات أبرز اللاعبين ولوحات أقوى الفرق وقوائم خانات وشهادات. اختر واحدًا، وأضِف هويتك وبيانات مباراتك، ثم انشره. المكتبة الكاملة أدناه.</p>
-    <span class="eff">أكثر من 190 قالبًا لـ BGMI وPUBG Mobile وFree Fire</span>
+    <div class="dhero-stats">
+      <span><b id="statTotal">190+</b> تصميم</span><i>/</i><span><b id="statFree">47</b> مجاني</span><i>/</i><span><b>3</b> ألعاب</span>
+    </div>
   </div>
 </section>
 
-<!-- SPOTLIGHT -->
-<section class="pad spotlight" id="spotlight" style="padding-top:clamp(28px,4vw,44px);padding-bottom:0">
+<!-- THEME SETS -->
+<section class="pad spotlight" id="spotlight" aria-labelledby="spotTitle" style="padding-top:clamp(28px,4vw,44px);padding-bottom:0">
   <div class="wrap">
     <div class="spot-head">
-      <span class="spot-kick">مجموعات ثيمات مدفوعة</span>
-      <span class="spot-sub">كل التصاميم في المجموعة متناسقة. انقر على مجموعة لتراها كلها.</span>
+      <h2 class="spot-title" id="spotTitle">مجموعات ثيمات مدفوعة<span class="scount" id="spotN"></span></h2>
+      <p class="spot-sub">كل التصاميم في المجموعة متناسقة. افتح مجموعة لترى كل تصاميمها.</p>
+      <span class="shelf-nav spot-nav"><button class="snav" type="button" data-dir="-1" aria-label="مرّر مجموعات الثيمات للأمام"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button><button class="snav" type="button" data-dir="1" aria-label="مرّر مجموعات الثيمات للخلف"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button></span>
     </div>
     <div class="spot-row" id="spotRow"></div>
   </div>
 </section>
 
-<!-- FILTER BAR -->
-<section class="pad" style="padding-top:0;padding-bottom:0">
-  <div class="wrap">
-    <div class="tfilter">
-      <div class="tier-toggle" id="tierToggle">
-        <button class="on" data-tier="all">الكل</button>
-        <button data-tier="0">مجاني</button>
-        <button data-tier="1">Premium</button>
-      </div>
-      <div class="chips" id="chips">
-        <button class="chip on" data-cat="all">الكل</button>
-        <button class="chip" data-cat="tables">جدول النقاط</button>
-        <button class="chip" data-cat="warheads">أقوى الفرق</button>
-        <button class="chip" data-cat="fraggers">أبرز اللاعبين</button>
-        <button class="chip" data-cat="slotlist">قائمة الخانات</button>
-        <button class="chip" data-cat="teamPoster">بوستر الفريق</button>
-        <button class="chip" data-cat="certificate">الشهادات</button>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- GALLERY -->
-<section class="pad" style="padding-top:clamp(20px,3vw,32px)">
+<section class="pad" id="browse" aria-labelledby="browseTitle" style="padding-top:clamp(20px,3vw,32px)">
   <div class="wrap">
-    <p class="tcount" id="tcount"></p>
+    <h2 class="sr-only" id="browseTitle">تصفّح التصاميم حسب النوع</h2>
+    <div class="tfilter">
+      <div class="chips" id="chips" role="group" aria-label="نوع التصميم">
+        <button class="chip on" type="button" data-cat="all" aria-pressed="true">كل الأنواع</button>
+        <button class="chip" type="button" data-cat="slotlist" aria-pressed="false">قائمة الخانات</button>
+        <button class="chip" type="button" data-cat="teamPoster" aria-pressed="false">بوستر الفريق</button>
+        <button class="chip" type="button" data-cat="tables" aria-pressed="false">جدول النقاط</button>
+        <button class="chip" type="button" data-cat="warheads" aria-pressed="false">أقوى الفرق</button>
+        <button class="chip" type="button" data-cat="fraggers" aria-pressed="false">أبرز اللاعبين</button>
+        <button class="chip" type="button" data-cat="certificate" aria-pressed="false">الشهادات</button>
+      </div>
+      <button class="free-switch" id="freeOnly" type="button" role="switch" aria-checked="false"><span class="sw" aria-hidden="true"></span>المجانية فقط</button>
+    </div>
+    <p class="tcount" id="tcount" aria-live="polite"></p>
     <div id="shelves"></div>
     <div class="tgrid" id="grid" hidden></div>
-    <p id="empty">لا توجد قوالب تطابق هذا الفلتر.</p>
+    <div class="tempty" id="noMatch" hidden>
+      <p id="noMatchMsg">لا توجد تصاميم تطابق هذا الفلتر.</p>
+      <button class="btn btn-ghost" type="button" id="noMatchBtn">اعرض كل التصاميم</button>
+    </div>
 
     <!-- CUSTOM DESIGN CTA -->
     <div class="custom-cta reveal">
       <div class="ct">
         <h3>تريد تصميمك الخاص؟</h3>
-        <p>يمكنك تغيير الألوان وتبديل الخلفية وإضافة ما تشاء من الشعارات داخل التطبيق. ولتصميم مخصّص بالكامل، اصنعه في PointCalc Studio أو راسلنا وسنصمّمه لمنظّمتك.</p>
+        <p>يمكنك تغيير الألوان وتبديل الخلفية وإضافة ما تشاء من الشعارات داخل التطبيق. ولتصميم مخصّص بالكامل، اصنعه في <a href="../index.html#studio">PointCalc Studio</a> أو راسلنا وسنصمّمه لمنظّمتك.</p>
       </div>
       <div style="display:flex;gap:12px;flex-wrap:wrap">
         <a class="btn btn-acid" href="https://wa.me/917907642676">راسلنا على WhatsApp</a>
@@ -141,14 +143,16 @@
 </section>
 
 <!-- LIGHTBOX -->
-<div class="lb" id="lb" aria-hidden="true" role="dialog" aria-modal="true">
-  <button class="lb-close" id="lbClose" aria-label="إغلاق">×</button>
-  <button class="lb-btn lb-prev" id="lbPrev" aria-label="السابق">‹</button>
-  <button class="lb-btn lb-next" id="lbNext" aria-label="التالي">›</button>
+<div class="lb" id="lb" aria-hidden="true" role="dialog" aria-modal="true" aria-label="معاينة التصميم">
+  <button class="lb-close" id="lbClose" type="button" aria-label="إغلاق المعاينة"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  <button class="lb-btn lb-prev" id="lbPrev" type="button" aria-label="التصميم السابق"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+  <button class="lb-btn lb-next" id="lbNext" type="button" aria-label="التصميم التالي"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
   <div class="lb-stage">
     <img class="lb-img" id="lbImg" alt="" />
-    <div class="lb-meta" id="lbMeta"></div>
-    <span class="lb-counter" id="lbCounter"></span>
+    <div class="lb-bar">
+      <div class="lb-info"><span class="lb-meta-in" id="lbMeta"></span><span class="lb-counter" id="lbCounter"></span></div>
+      <a class="btn btn-acid lb-get" id="lbGet" href="../index.html#download">احصل على هذا التصميم</a>
+    </div>
     <div class="lb-strip" id="lbStrip"></div>
   </div>
 </div>
@@ -181,25 +185,58 @@
   </div>
 </footer>
 
-<script src="https://pointcalc.in/designs/templates-data.js"></script>
+<script src="../../designs/templates-data.js"></script>
 <script>
   const nav = document.getElementById('nav');
   addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 12));
   document.getElementById('burger').addEventListener('click', function () { var open = nav.classList.toggle('open'); this.setAttribute('aria-expanded', open ? 'true' : 'false'); });
 
-  const APP_DL = '../index.html#download';
-  const GEM = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 3h12l3.5 6L12 22 2.5 9 6 3Zm.7 2L4.7 8.4h4.1L9.9 5H6.7Zm5.3 0-1.1 3.4h3.2L13 5h-1Zm3.3 0-1.1 3.4h4.1L16.3 5H15.3ZM4.9 10.4 11 19.2v-8.8H4.9Zm8.1 0v8.8l6.1-8.8H13Z"/></svg>';
-  const CATLABEL = { tables:'جدول النقاط', warheads:'أقوى الفرق', fraggers:'أبرز اللاعبين', slotlist:'قائمة الخانات', teamPoster:'بوستر الفريق', certificate:'الشهادات' };
-  const CATORDER = ['tables','warheads','fraggers','slotlist','teamPoster','certificate'];
+  const BASE = '../../designs/';           // where templates/ lives, relative to this page
+  const RTL = document.documentElement.dir === 'rtl';
+  // "Get this design" goes straight to the store for the visitor's phone
+  const UA = navigator.userAgent;
+  const STORE = /android/i.test(UA) ? 'https://play.google.com/store/apps/details?id=com.pointcalc.global'
+    : /iphone|ipad|ipod/i.test(UA) ? 'https://apps.apple.com/in/app/pointcalc-custom-pt-maker/id6747952141'
+    : '../index.html#download';
+  const PRICING = '../index.html#pricing';
+  const GEM = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3h12l3.5 6L12 22 2.5 9 6 3Zm.7 2L4.7 8.4h4.1L9.9 5H6.7Zm5.3 0-1.1 3.4h3.2L13 5h-1Zm3.3 0-1.1 3.4h4.1L16.3 5H15.3ZM4.9 10.4 11 19.2v-8.8H4.9Zm8.1 0v8.8l6.1-8.8H13Z"/></svg>';
+  const ICON_L = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>';
+  const ICON_R = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>';
+  const L = {
+    cat: {"slotlist":"قائمة الخانات","teamPoster":"بوستر الفريق","tables":"جدول النقاط","warheads":"أقوى الفرق","fraggers":"أبرز اللاعبين","certificate":"الشهادات"},
+    when: {"slotlist":"قبل المباراة","teamPoster":"قبل المباراة","tables":"بعد كل مباراة","warheads":"بعد كل مباراة","fraggers":"بعد كل مباراة","certificate":"بعد النهائي"},
+    sets: n => n + ' مجموعة',
+    setCount: n => n + (n > 2 && n < 11 ? ' تصاميم' : ' تصميمًا') + '، كلها <span class="qprem">' + GEM + 'Premium</span>',
+    openSet: 'افتح المجموعة',
+    countAll: (n, c, free) => 'عرض <b>' + n + '</b> من التصاميم ' + (free ? 'المجانية ' : '') + 'في <b>' + c + '</b> أنواع',
+    countCat: (n, cat, free) => 'عرض <b>' + n + '</b> من تصاميم ' + cat + (free ? ' المجانية' : ''),
+    noMatch: 'لا توجد تصاميم تطابق هذا الفلتر.',
+    noFree: cat => 'لا توجد تصاميم مجانية من ' + cat + ' حاليًا.',
+    showAll: 'اعرض كل التصاميم',
+    loadFail: 'لم تُحمَّل التصاميم. تحقّق من اتصالك وحاول مرة أخرى.',
+    reload: 'أعد تحميل الصفحة',
+    viewAll: n => 'عرض الكل ' + n,
+    viewAllLabel: (n, cat) => 'اعرض كل تصاميم ' + cat + ' (' + n + ')',
+    scrollBack: cat => 'مرّر ' + cat + ' للخلف',
+    scrollFwd: cat => 'مرّر ' + cat + ' للأمام',
+    alt: (t, cat) => 'تصميم ' + cat + (t.th ? ' من مجموعة ' + t.th : ' مجاني'),
+    tagFree: 'مجاني',
+    set: name => 'مجموعة ' + name,
+    premium: 'Premium', prices: 'اطّلع على الأسعار', free: 'مجاني',
+    counter: (i, n) => i + ' من ' + n,
+    showDesign: i => 'اعرض التصميم ' + i
+  };
+  const CATLABEL = L.cat;
+  // shelves follow a match day: what you post before, after every match, and after the final
+  const CATORDER = ['slotlist','teamPoster','tables','warheads','fraggers','certificate'];
+  const DECK = ['tables','warheads','fraggers'];   // front cards of a theme-set deck
   const SHELF_LIMIT = 12;
 
-  const ALL = (window.TEMPLATES || []).slice().map(function(t){return Object.assign({},t,{s:'https://pointcalc.in/designs/'+t.s});});
+  const ALL = (window.TEMPLATES || []).map(t => Object.assign({}, t, { s: BASE + t.s }));
   // ===================================================================
-  //  FEATURED — "Quick Look" premium theme decks
-  //  TO CHANGE WHAT'S FEATURED: edit FEATURED_THEMES below (left → right).
-  //  Use theme keys exactly as printed in the browser console on load
-  //  ("available premium theme keys"). Leave the array empty -> [] to
-  //  auto-pick the 6 most complete premium themes.
+  //  FEATURED — theme sets shown first, left to right. Every other
+  //  premium theme with 5+ designs follows them in the same row.
+  //  Theme keys are the file names without category words, e.g. 'snax summer'.
   // ===================================================================
   const FEATURED_THEMES = ['blaze feb 2026', 'snax summer', 'cap summer', 'lava rock', 'halloween snax', 'winter 2023'];
 
@@ -227,15 +264,16 @@
   ALL.forEach(t => {
     if (t.t !== 1) return;
     const k = themeKey(t.s); if (!k) return;
-    (THEMES[k] = THEMES[k] || { key: k, label: prettyTheme(k), items: [] }).items.push(t);
+    t.th = prettyTheme(k);
+    (THEMES[k] = THEMES[k] || { key: k, label: t.th, items: [] }).items.push(t);
   });
   Object.values(THEMES).forEach(g => g.items.sort((a, b) => CATORDER.indexOf(a.c) - CATORDER.indexOf(b.c)));
-  console.log('PointCalc — available premium theme keys:', Object.keys(THEMES).sort());
 
   function featuredThemes() {
-    let keys = FEATURED_THEMES.filter(k => THEMES[k] && THEMES[k].items.length);
-    if (!keys.length) keys = Object.values(THEMES).sort((a, b) => b.items.length - a.items.length).slice(0, 6).map(g => g.key);
-    return keys.slice(0, 6).map(k => THEMES[k]);
+    const keys = FEATURED_THEMES.filter(k => THEMES[k] && THEMES[k].items.length);
+    Object.values(THEMES).filter(g => g.items.length >= 5 && !keys.includes(g.key))
+      .sort((a, b) => b.items.length - a.items.length).forEach(g => keys.push(g.key));
+    return keys.map(k => THEMES[k]);
   }
   const FEATURED_LIST = featuredThemes();
 
@@ -243,15 +281,24 @@
   const shelvesEl = document.getElementById('shelves');
   const spotlightEl = document.getElementById('spotlight');
   const spotRow = document.getElementById('spotRow');
-  const empty = document.getElementById('empty');
+  const browseEl = document.getElementById('browse');
+  const filterEl = browseEl.querySelector('.tfilter');
+  const noMatch = document.getElementById('noMatch');
+  const noMatchMsg = document.getElementById('noMatchMsg');
+  const noMatchBtn = document.getElementById('noMatchBtn');
   const tcount = document.getElementById('tcount');
   const chips = document.getElementById('chips');
-  const tierToggle = document.getElementById('tierToggle');
+  const freeBtn = document.getElementById('freeOnly');
 
-  let curTier = 'all';   // 'all' | 0 | 1
+  let curFree = false;
   let curCat = 'all';
 
-  // interleave premium + free so the "All" preview surfaces both (premium leads)
+  if (ALL.length) {
+    document.getElementById('statTotal').textContent = ALL.length;
+    document.getElementById('statFree').textContent = ALL.filter(t => t.t === 0).length;
+  }
+
+  // interleave premium + free so the full list surfaces both (premium leads)
   function mixTiers(list) {
     const prem = list.filter(t => t.t === 1);
     const free = list.filter(t => t.t === 0);
@@ -263,35 +310,43 @@
     return out;
   }
 
-  function cardHTML(t, big) {
+  function altText(t) { return L.alt(t, CATLABEL[t.c]); }
+
+  function cardHTML(t) {
     const ar = (t.w && t.h) ? (t.w + ' / ' + t.h) : '4 / 5';
-    return (t.t === 1 ? '<span class="tbadge">' + GEM + 'Premium</span>' : '') +
-      '<img loading="lazy" decoding="async"' + ' style="aspect-ratio:' + ar + '"' +
-      ' src="' + t.s + '" alt="' + CATLABEL[t.c] + ' قالب" />' +
-      '<span class="tag">' + CATLABEL[t.c] + '</span>';
+    return (t.t === 1 ? '<span class="tbadge" title="Premium">' + GEM + '<span class="sr-only">Premium</span></span>' : '') +
+      '<img loading="lazy" decoding="async" style="aspect-ratio:' + ar + '" src="' + t.s + '" alt="' + altText(t) + '" />' +
+      '<span class="tag" aria-hidden="true">' + (t.th || L.tagFree) + '</span>';
+  }
+
+  function deckPics(g) {
+    const pics = DECK.map(c => g.items.find(t => t.c === c)).filter(Boolean);
+    g.items.forEach(t => { if (pics.length < 3 && !pics.includes(t)) pics.push(t); });
+    return pics.slice(0, 3);
   }
 
   function buildSpotlight() {
     spotRow._themes = FEATURED_LIST;
     spotRow.innerHTML = FEATURED_LIST.map((g, gi) => {
-      const pics = g.items.slice(0, 3);
-      const layers = pics.map((t, i) =>
+      const layers = deckPics(g).map((t, i) =>
         '<span class="qpc b' + i + '"><img loading="lazy" decoding="async" src="' + t.s + '" alt="" /></span>'
       ).join('');
-      return '<div class="qcard" role="button" tabindex="0" data-g="' + gi + '">' +
-        '<span class="qdeck">' + layers + '</span>' +
-        '<span class="qmeta"><h4>' + g.label + '</h4><p>' + g.items.length + ' تصميمًا، كلها Premium</p></span>' +
-      '</div>';
+      return '<button class="qcard" type="button" data-g="' + gi + '">' +
+        '<span class="qdeck" aria-hidden="true">' + layers + '<span class="qglow"></span></span>' +
+        '<span class="qmeta"><span class="qname" lang="en">' + g.label + '</span><span class="qcount">' + L.setCount(g.items.length) + '</span></span>' +
+        '<span class="qopen" aria-hidden="true">' + L.openSet + '</span>' +
+      '</button>';
     }).join('');
+    document.getElementById('spotN').textContent = L.sets(FEATURED_LIST.length);
   }
 
   function renderShelves() {
     shelvesEl.innerHTML = '';
     let cats = 0, total = 0;
     CATORDER.forEach(cat => {
-      const base = ALL.filter(t => (curTier === 'all' || t.t === curTier) && t.c === cat);
+      const base = ALL.filter(t => (!curFree || t.t === 0) && t.c === cat);
       if (!base.length) return;
-      const list = curTier === 'all' ? mixTiers(base) : base;
+      const list = curFree ? base : mixTiers(base);
       cats++; total += list.length;
       const shelf = document.createElement('div');
       shelf.className = 'shelf';
@@ -299,90 +354,119 @@
       row.className = 'shelf-row';
       row._list = list;
       row.innerHTML = list.slice(0, SHELF_LIMIT).map((t, i) =>
-        '<button class="shelf-card" type="button" data-i="' + i + '">' + cardHTML(t, true) + '</button>'
+        '<button class="shelf-card" type="button" data-i="' + i + '">' + cardHTML(t) + '</button>'
       ).join('');
+      // the ‹ button scrolls left: "back" in LTR, "forward" in RTL
+      const left = RTL ? L.scrollFwd(CATLABEL[cat]) : L.scrollBack(CATLABEL[cat]);
+      const right = RTL ? L.scrollBack(CATLABEL[cat]) : L.scrollFwd(CATLABEL[cat]);
       const head = document.createElement('div');
       head.className = 'shelf-head';
       head.innerHTML =
-        '<h3>' + CATLABEL[cat] + '<span class="scount">' + list.length + '</span></h3>' +
-        '<button class="shelf-viewall" data-cat="' + cat + '">عرض الكل ' + list.length + '</button>';
+        '<h3>' + CATLABEL[cat] + '</h3>' +
+        '<span class="shelf-when">' + L.when[cat] + '</span>' +
+        '<span class="hl" aria-hidden="true"></span>' +
+        '<span class="shelf-nav"><button class="snav" type="button" data-dir="-1" aria-label="' + left + '">' + ICON_L + '</button><button class="snav" type="button" data-dir="1" aria-label="' + right + '">' + ICON_R + '</button></span>' +
+        '<button class="shelf-viewall" type="button" data-cat="' + cat + '" aria-label="' + L.viewAllLabel(list.length, CATLABEL[cat]) + '">' + L.viewAll(list.length) + '</button>';
       shelf.appendChild(head);
-      shelf.appendChild(row);
+      const clip = document.createElement('div');
+      clip.className = 'shelf-clip';
+      clip.appendChild(row);
+      shelf.appendChild(clip);
       shelvesEl.appendChild(shelf);
     });
     return { cats, total };
   }
 
   function renderGrid() {
-    const base = ALL.filter(t => (curTier === 'all' || t.t === curTier) && t.c === curCat);
-    const list = curTier === 'all' ? mixTiers(base) : base;
+    const base = ALL.filter(t => (!curFree || t.t === 0) && t.c === curCat);
+    const list = curFree ? base : mixTiers(base);
     grid._list = list;
     grid.innerHTML = list.map((t, i) =>
-      '<button class="tcard" type="button" data-i="' + i + '">' + cardHTML(t, false) + '</button>'
+      '<button class="tcard" type="button" data-i="' + i + '">' + cardHTML(t) + '</button>'
     ).join('');
     return list;
   }
 
   function render() {
-    const tierWord = curTier === 'all' ? '' : (curTier === 1 ? '' : '');
-    spotlightEl.hidden = !(curCat === 'all' && curTier !== 0);
-
+    if (!ALL.length) {
+      spotlightEl.hidden = true; filterEl.hidden = true; tcount.textContent = '';
+      noMatchMsg.textContent = L.loadFail;
+      noMatchBtn.textContent = L.reload;
+      noMatch.hidden = false;
+      return;
+    }
+    spotlightEl.hidden = !(curCat === 'all' && !curFree);
+    let count;
     if (curCat === 'all') {
       grid.hidden = true;
       grid.innerHTML = '';
-      shelvesEl.style.display = '';
+      shelvesEl.hidden = false;
       const { cats, total } = renderShelves();
-      empty.style.display = total ? 'none' : 'block';
-      tcount.innerHTML = 'تصفّح <b>' + total + '</b> ' + tierWord + 'قالب عبر <b>' + cats + '</b> فئة';
+      count = total;
+      tcount.innerHTML = L.countAll(total, cats, curFree);
     } else {
-      shelvesEl.style.display = 'none';
+      shelvesEl.hidden = true;
       shelvesEl.innerHTML = '';
       grid.hidden = false;
-      const list = renderGrid();
-      empty.style.display = list.length ? 'none' : 'block';
-      tcount.innerHTML = 'عرض <b>' + list.length + '</b> ' + tierWord + CATLABEL[curCat] + ' قالب';
+      count = renderGrid().length;
+      tcount.innerHTML = L.countCat(count, CATLABEL[curCat], curFree);
     }
+    noMatchMsg.textContent = curFree && curCat !== 'all' ? L.noFree(CATLABEL[curCat]) : L.noMatch;
+    noMatchBtn.textContent = L.showAll;
+    noMatch.hidden = count > 0;
+  }
+
+  // after a filter change, bring the results to the top if the visitor was already scrolled into them
+  function toResults() {
+    const top = browseEl.getBoundingClientRect().top + scrollY - 72;
+    if (scrollY > top) scrollTo(0, top);
+  }
+  function setCat(cat) {
+    curCat = cat;
+    chips.querySelectorAll('.chip').forEach(c => { const on = c.dataset.cat === cat; c.classList.toggle('on', on); c.setAttribute('aria-pressed', on ? 'true' : 'false'); });
+    render(); toResults();
+    // on phones the filter row scrolls sideways: keep the chosen chip in view
+    const active = chips.querySelector('.chip.on');
+    if (active && filterEl.scrollWidth > filterEl.clientWidth) {
+      const f = filterEl.getBoundingClientRect(), c = active.getBoundingClientRect();
+      filterEl.scrollBy({ left: (c.left + c.width / 2) - (f.left + f.width / 2), behavior: 'smooth' });
+    }
+  }
+  function setFree(on) {
+    curFree = on;
+    freeBtn.setAttribute('aria-checked', on ? 'true' : 'false');
+    render(); toResults();
   }
 
   chips.addEventListener('click', e => {
-    const b = e.target.closest('.chip'); if (!b) return;
-    chips.querySelectorAll('.chip').forEach(c => c.classList.toggle('on', c === b));
-    curCat = b.dataset.cat;
-    render();
+    const b = e.target.closest('.chip'); if (b) setCat(b.dataset.cat);
   });
-  tierToggle.addEventListener('click', e => {
-    const b = e.target.closest('button'); if (!b) return;
-    tierToggle.querySelectorAll('button').forEach(x => { x.classList.remove('on'); x.classList.remove('prem'); });
-    b.classList.add('on');
-    const v = b.dataset.tier;
-    curTier = v === 'all' ? 'all' : Number(v);
-    if (curTier === 1) b.classList.add('prem');
-    render();
+  freeBtn.addEventListener('click', () => setFree(!curFree));
+  noMatchBtn.addEventListener('click', () => {
+    if (!ALL.length) { location.reload(); return; }
+    curFree = false; freeBtn.setAttribute('aria-checked', 'false'); setCat('all');
   });
 
-  // shelf interactions: view-all + card clicks
+  // shelf interactions: arrows, view-all, card clicks
   shelvesEl.addEventListener('click', e => {
-    const va = e.target.closest('.shelf-viewall');
-    if (va) {
-      const cat = va.dataset.cat;
-      chips.querySelectorAll('.chip').forEach(c => c.classList.toggle('on', c.dataset.cat === cat));
-      curCat = cat; render();
+    const sn = e.target.closest('.snav');
+    if (sn) {
+      const r = sn.closest('.shelf').querySelector('.shelf-row');
+      r.scrollBy({ left: Number(sn.dataset.dir) * r.clientWidth * 0.8, behavior: 'smooth' });
       return;
     }
+    const va = e.target.closest('.shelf-viewall');
+    if (va) { setCat(va.dataset.cat); return; }
     const card = e.target.closest('.shelf-card');
     if (card) { openLb(card.closest('.shelf-row')._list, Number(card.dataset.i)); }
   });
-  function openTheme(gi) {
-    const g = spotRow._themes[gi]; if (!g) return;
-    openLb(g.items, 0);
-  }
+  spotlightEl.querySelector('.spot-nav').addEventListener('click', e => {
+    const sn = e.target.closest('.snav'); if (!sn) return;
+    spotRow.scrollBy({ left: Number(sn.dataset.dir) * spotRow.clientWidth * 0.8, behavior: 'smooth' });
+  });
   spotRow.addEventListener('click', e => {
     const card = e.target.closest('.qcard'); if (!card) return;
-    openTheme(Number(card.dataset.g));
-  });
-  spotRow.addEventListener('keydown', e => {
-    const card = e.target.closest('.qcard'); if (!card) return;
-    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openTheme(Number(card.dataset.g)); }
+    const g = spotRow._themes[Number(card.dataset.g)]; if (g) openLb(g.items, 0, g.label);
   });
   grid.addEventListener('click', e => {
     const card = e.target.closest('.tcard'); if (!card) return;
@@ -395,12 +479,14 @@
   const lbMeta = document.getElementById('lbMeta');
   const lbCounter = document.getElementById('lbCounter');
   const lbStrip = document.getElementById('lbStrip');
+  document.getElementById('lbGet').href = STORE;
   let view = [];
   let lbIndex = -1;
+  let lbSet = '';
 
   function buildStrip() {
     lbStrip.innerHTML = view.map((t, i) =>
-      '<button class="lb-thumb" type="button" data-i="' + i + '"><img loading="lazy" src="' + t.s + '" alt="" /></button>'
+      '<button class="lb-thumb" type="button" data-i="' + i + '" aria-label="' + L.showDesign(i + 1) + '"><img loading="lazy" src="' + t.s + '" alt="" /></button>'
     ).join('');
   }
   function syncStrip() {
@@ -415,22 +501,32 @@
     lbIndex = i;
     const t = view[i];
     lbImg.src = t.s;
-    lbImg.alt = CATLABEL[t.c] + ' قالب';
+    lbImg.alt = altText(t);
+    const theme = lbSet ? L.set(lbSet) : t.th;
     lbMeta.innerHTML =
+      (theme ? '<span class="lb-theme">' + theme + '</span>' : '') +
       '<span class="lb-tag">' + CATLABEL[t.c] + '</span>' +
       (t.t === 1
-        ? '<span class="lb-prem">' + GEM + 'Premium: <a href="' + APP_DL + '">افتحه في التطبيق</a></span>'
-        : '<span class="lb-free">مجاني في PointCalc</span>');
-    lbCounter.textContent = (i + 1) + ' / ' + view.length;
+        ? '<span class="lb-prem">' + GEM + L.premium + ' <a href="' + PRICING + '">' + L.prices + '</a></span>'
+        : '<span class="lb-free">' + L.free + '</span>');
+    lbCounter.textContent = L.counter(i + 1, view.length);
     syncStrip();
   }
-  function openLb(list, i) {
+  // everything behind the open lightbox is inert, so Tab stays inside it
+  function setInert(on) {
+    Array.from(document.body.children).forEach(el => { if (el !== lb && el.tagName !== 'SCRIPT') el.inert = on; });
+  }
+  function openLb(list, i, set) {
+    lbSet = set || '';
     view = list; buildStrip(); showAt(i);
     lb._ret = document.activeElement;
-    lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false'); document.body.style.overflow = 'hidden';
+    lb.classList.add('open'); lb.setAttribute('aria-hidden', 'false'); setInert(true); document.body.style.overflow = 'hidden';
     document.getElementById('lbClose').focus();
   }
-  function closeLb() { lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); document.body.style.overflow = ''; lbImg.removeAttribute('src'); if (lb._ret && lb._ret.focus) lb._ret.focus(); }
+  function closeLb() {
+    lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); setInert(false); document.body.style.overflow = ''; lbImg.removeAttribute('src');
+    if (lb._ret && lb._ret.focus) lb._ret.focus();
+  }
 
   lbStrip.addEventListener('click', e => {
     const th = e.target.closest('.lb-thumb'); if (!th) return;
@@ -456,6 +552,7 @@
 
   buildSpotlight();
   render();
+  document.querySelectorAll('.dwall-track').forEach(t => { t.innerHTML += t.innerHTML; });
 
   const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.12 });
   document.querySelectorAll('.reveal').forEach((el, i) => { el.style.transitionDelay = (Math.min(i % 4, 3) * 60) + 'ms'; io.observe(el); });
