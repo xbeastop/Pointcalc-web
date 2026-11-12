@@ -7,7 +7,8 @@
       "links": { "features": "Features", "designs": "Designs", "guide": "Guide", "pricing": "Pricing", "faq": "FAQ", "appstore": "App Store", "googleplay": "Google Play", "instagram": "Instagram", "email": "Email", "privacy": "Privacy" },
       "rights": "© 2026 PointCalc. All rights reserved.",
       "builtby": "Built by"
-    }
+    },
+    "aria": { "language": "Language", "theme": "Toggle light/dark theme", "menu": "Menu" }
   },
   "ar": {
     "nav": { "how": "كيف يعمل", "features": "المزايا", "designs": "التصاميم", "guide": "الدليل", "pricing": "الأسعار", "faq": "الأسئلة الشائعة", "download": "تحميل" },
@@ -17,7 +18,8 @@
       "links": { "features": "المزايا", "designs": "التصاميم", "guide": "الدليل", "pricing": "الأسعار", "faq": "الأسئلة الشائعة", "appstore": "App Store", "googleplay": "Google Play", "instagram": "Instagram", "email": "البريد الإلكتروني", "privacy": "الخصوصية" },
       "rights": "© 2026 PointCalc. جميع الحقوق محفوظة.",
       "builtby": "بُني بواسطة"
-    }
+    },
+    "aria": { "language": "اللغة", "theme": "التبديل بين الوضع الفاتح والداكن", "menu": "القائمة" }
   },
   "tr": {
     "nav": { "how": "Nasıl çalışır", "features": "Özellikler", "designs": "Tasarımlar", "guide": "Rehber", "pricing": "Fiyatlar", "faq": "SSS", "download": "İndir" },
@@ -27,6 +29,7 @@
       "links": { "features": "Özellikler", "designs": "Tasarımlar", "guide": "Rehber", "pricing": "Fiyatlar", "faq": "SSS", "appstore": "App Store", "googleplay": "Google Play", "instagram": "Instagram", "email": "E-posta", "privacy": "Gizlilik" },
       "rights": "© 2026 PointCalc. Tüm hakları saklıdır.",
       "builtby": "Yapımcı:"
-    }
+    },
+    "aria": { "language": "Dil", "theme": "Açık/koyu temayı değiştir", "menu": "Menü" }
   }
 }

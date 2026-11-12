@@ -13,7 +13,7 @@
 - **Founded:** September 2021
 - **Team registration:** Organizers share one link; captains sign up in any browser with no app or account; the organizer approves teams, which fill the slots, then splits them into groups
 - **Pricing (INR, monthly):** Free tier available; Premium ₹69 (registration up to 50 teams); Organiser Pack ₹200 (up to 1000 teams, team logos, screenshot proof); Premium + AI ₹350; AI Team ₹500 (Premium + AI on up to 5 devices). Weekly, quarterly and yearly plans also exist; new users get a 3-day trial on monthly and longer plans
-- **Ratings:** 4.9★ on App Store, 4.4★ on Google Play, 550+ total reviews
+- **Ratings:** 4.9★ on App Store, 4.8★ on Google Play, 600+ total reviews
 
 ## PointCalc Studio
 

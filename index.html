@@ -44,8 +44,8 @@
   },
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.4",
-    "ratingCount": "553",
+    "ratingValue": "4.8",
+    "ratingCount": "626",
     "bestRating": "5"
   },
   "author": {
@@ -129,7 +129,7 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 <link rel="alternate" hreflang="en" href="https://pointcalc.in/">
 <link rel="alternate" hreflang="ar" href="https://pointcalc.in/ar/">
@@ -162,8 +162,7 @@
   <div class="hero-bg" aria-hidden="true"></div>
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <a class="badge reveal" href="#registration">New: team registration links</a>
-      <h1 class="reveal">Drop screens.<br /><span class="em">Get the</span><br /><span class="stroke">whole kit.</span></h1>
+      <h1 class="reveal">Drop screens.<br />Get the<br /><span class="em">whole kit.</span></h1>
       <p class="hero-sub reveal">The AI tournament toolkit for BGMI, PUBG Mobile &amp; Free Fire organizers. Upload your lobby and result screens. PointCalc reads the placements and kills, then builds the points table, warhead, top fraggers, slot list, posters and certificates for you.</p>
       <div class="hero-actions reveal">
         <div class="store-badges">
@@ -173,17 +172,20 @@
       </div>
       <div class="hero-stats reveal">
         <div class="st"><b>4.9<span class="star">★</span></b><span>App Store</span></div>
-        <div class="st"><b>4.4<span class="star">★</span></b><span>Google Play</span></div>
+        <div class="st"><b>4.8<span class="star">★</span></b><span>Google Play</span></div>
         <div class="st"><b>150K+</b><span>Downloads</span></div>
-        <div class="st"><b>550+</b><span>Reviews</span></div>
+        <div class="st"><b>600+</b><span>Reviews</span></div>
       </div>
     </div>
 
-    <div class="hero-visual reveal">
-      <div class="glow"></div>
-      <div class="poster p1"><img src="designs/templates/premium/warheads/warhead_snax_jan_2026.webp" alt="Warhead design" /></div>
-      <div class="poster p2"><img src="designs/templates/premium/tables/table_snax_blue_february.webp" alt="Points table design" /></div>
-      <div class="poster p3"><img src="designs/templates/premium/fraggers/fraggers_snax_jan_2026.webp" alt="Top fraggers design" /></div>
+    <div class="hero-visual">
+      <figure class="shot s1"><img src="img/home/in-game-1.webp" alt="A BGMI / PUBG Mobile result screen" /><figcaption>BGMI / PUBG</figcaption></figure>
+      <figure class="shot s2"><img src="img/home/in-game-2.webp" alt="A Free Fire result screen" /><figcaption>Free Fire</figcaption></figure>
+      <p class="hv-cap c1">Your screenshots</p>
+      <div class="poster p1"><img src="img/home/warhead-snax-blue-rock-may.webp" alt="Warhead design" /></div>
+      <div class="poster p2"><img fetchpriority="high" src="img/home/table-snax-blue-rock-may.webp" alt="Points table design" /></div>
+      <div class="poster p3"><img src="img/home/fraggers-snax-blue-rock-may.webp" alt="Top fraggers design" /></div>
+      <p class="hv-cap c2">What PointCalc makes from them</p>
     </div>
   </div>
 </section>
@@ -197,7 +199,7 @@
     </div>
     <ol class="how-flow reveal">
       <li class="hf-step hf-1">
-        <figure class="hf-shot"><img src="tutorial-assets/raw/62-ai-initial.jpeg" width="588" height="1280" loading="lazy" alt="Upload your screenshots" /></figure>
+        <figure class="hf-shot"><img decoding="async" src="img/home/tutorial-62-ai-initial.webp" width="588" height="1280" loading="lazy" alt="Upload your screenshots" /></figure>
         <div class="hf-text">
           <span class="hf-num" aria-hidden="true">1</span>
           <h3>Upload your screens</h3>
@@ -205,7 +207,7 @@
         </div>
       </li>
       <li class="hf-step hf-2">
-        <figure class="hf-shot"><img src="tutorial-assets/raw/51.jpeg" width="1206" height="2622" loading="lazy" alt="Let PointCalc read them" /></figure>
+        <figure class="hf-shot"><img decoding="async" src="img/home/tutorial-51.webp" width="1206" height="2622" loading="lazy" alt="Let PointCalc read them" /></figure>
         <div class="hf-text">
           <span class="hf-num" aria-hidden="true">2</span>
           <h3>AI extracts the data</h3>
@@ -213,7 +215,7 @@
         </div>
       </li>
       <li class="hf-step hf-3">
-        <figure class="hf-shot"><img src="tutorial-assets/raw/27.jpeg" width="1206" height="2622" loading="lazy" alt="Points table" /></figure>
+        <figure class="hf-shot"><img decoding="async" src="img/home/tutorial-27.webp" width="1206" height="2622" loading="lazy" alt="Points table" /></figure>
         <div class="hf-text">
           <span class="hf-num" aria-hidden="true">3</span>
           <h3>Publish the design</h3>
@@ -225,60 +227,114 @@
   </div>
 </section>
 
-<!-- ============ FEATURES ============ -->
-<section class="pad" id="features" style="padding-top:0">
+<!-- ============ DESIGNS / TEMPLATE VAULT ============ -->
+<section class="pad vault" id="designs">
   <div class="wrap">
-    <div class="section-head reveal">
-      <h2>What PointCalc makes for you</h2>
-      <p>The graphics for a scrim, league or championship, all from one app.</p>
+    <div class="section-head center reveal" style="margin-bottom:0;">
+      <h2 class="sr-only">190+ templates to start from</h2>
     </div>
-    <div class="feat-grid">
-      <div class="feat big reveal">
-        <div class="copy">
+  </div>
+  <div class="vault-big reveal" aria-hidden="true"><span class="fill">190+</span> designs</div>
+  <div class="vault-rows">
+    <div class="vault-mqrow">
+      <div class="vault-track">
+        <div class="vshot"><span class="vtag prem">Premium</span><img decoding="async" src="img/home/poster-freefire-snax-blue-rock-may.webp" alt="Team poster template" loading="lazy" /></div>
+        <div class="vshot"><span class="vtag prem">Premium</span><img decoding="async" src="img/home/warhead-snax-sep-2025.webp" alt="Warhead template" loading="lazy" /></div>
+        <div class="vshot"><span class="vtag">Free</span><img decoding="async" src="img/home/free-table-free-sep-2025.webp" alt="Free points table template" loading="lazy" /></div>
+        <div class="vshot"><span class="vtag prem">Premium</span><img decoding="async" src="img/home/poster-snax-february-2025.webp" alt="Team poster template" loading="lazy" /></div>
+        <div class="vshot"><span class="vtag prem">Premium</span><img decoding="async" src="img/home/fraggers-blaze-feb-2026.webp" alt="Top fraggers template" loading="lazy" /></div>
+        <div class="vshot"><span class="vtag prem">Premium</span><img decoding="async" src="img/home/table-snax-october.webp" alt="Points table template" loading="lazy" /></div>
+      </div>
+    </div>
+    <div class="vault-mqrow rev">
+      <div class="vault-track">
+        <div class="vshot"><span class="vtag prem">Premium</span><img decoding="async" src="img/home/slotlist-freefire-snax-blue-rock-may.webp" alt="Slot list template" loading="lazy" /></div>
+        <div class="vshot"><span class="vtag prem">Premium</span><img decoding="async" src="img/home/certificate-snax-ff-jan-2026.webp" alt="Certificate template" loading="lazy" /></div>
+        <div class="vshot"><span class="vtag prem">Premium</span><img decoding="async" src="img/home/warhead-jordan-november.webp" alt="Warhead template red" loading="lazy" /></div>
+        <div class="vshot"><span class="vtag prem">Premium</span><img decoding="async" src="img/home/table-snax-february-2025.webp" alt="Points table template" loading="lazy" /></div>
+        <div class="vshot"><span class="vtag prem">Premium</span><img decoding="async" src="img/home/poster-blaze-feb-2026.webp" alt="Team poster template" loading="lazy" /></div>
+        <div class="vshot"><span class="vtag prem">Premium</span><img decoding="async" src="img/home/fraggers-snax-sep-2025.webp" alt="Top fraggers template" loading="lazy" /></div>
+      </div>
+    </div>
+  </div>
+  <div class="designs-more reveal">
+    <a class="btn btn-acid" href="designs/index.html">Browse all 190+ templates</a>
+    <p class="vault-note">Some packs are free. New premium designs come out every month.</p>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="pad" id="features">
+  <div class="wrap">
+    <div class="kit-top reveal">
+      <div class="section-head">
+        <h2>What PointCalc makes for you</h2>
+        <p>The graphics for a scrim, league or championship, all from one app.</p>
+      </div>
+      <div class="kit-source">
+        <div class="ks-shots"><img decoding="async" src="img/home/in-game-1.webp" alt="In-game lobby screen" loading="lazy" /><img decoding="async" src="img/home/in-game-2.webp" alt="In-game result screen" loading="lazy" /></div>
+        <div>
           <h3>AI screenshot extraction</h3>
           <p>Upload BGMI, PUBG Mobile or Free Fire lobby and result screens. PointCalc reads the placements and kills, and the points table, warhead, top fraggers, slot list, posters and certificates all come from those same uploads.</p>
         </div>
-        <div class="feat-shots">
-          <img src="https://pointcalc.in/in_game_2.JPG" alt="In-game result screen" />
-          <img src="https://pointcalc.in/in_game_1.jpg" alt="In-game lobby screen" />
-        </div>
       </div>
-      <div class="feat small a-blue reveal"><h3>Daily points tables</h3><p>Post fresh standings after every match. The points table and warhead keep the same look all season.</p>
-        <div class="ministand" aria-hidden="true">
-          <div class="ms-row lead"><span class="ms-rank">1</span><span class="ms-team" style="width:96%"></span><span class="ms-pts">128</span></div>
-          <div class="ms-row"><span class="ms-rank">2</span><span class="ms-team" style="width:82%"></span><span class="ms-pts">114</span></div>
-          <div class="ms-row"><span class="ms-rank">3</span><span class="ms-team" style="width:68%"></span><span class="ms-pts">97</span></div>
-          <div class="ms-row"><span class="ms-rank">4</span><span class="ms-team" style="width:54%"></span><span class="ms-pts">83</span></div>
-        </div>
+    </div>
+    <div class="kit-shelf">
+      <figure class="ki ki-2">
+        <div class="ki-art"><img decoding="async" src="img/home/slotlist-jordan-november.webp" alt="Slot list design" loading="lazy" /><img decoding="async" src="img/home/poster-jordan-november.webp" alt="Team poster design" loading="lazy" /></div>
+        <figcaption><span class="ki-when">Before the lobby</span><h3>Slot list &amp; team posters</h3><p>Add your teams, players and logos once. PointCalc turns them into a slot list and a poster for every squad.</p></figcaption>
+      </figure>
+      <figure class="ki ki-big">
+        <div class="ki-art"><img decoding="async" src="img/home/table-blaze-feb-2026.webp" alt="A points table made in PointCalc" loading="lazy" /></div>
+        <figcaption><span class="ki-when">After every match</span><h3>Daily points tables</h3><p>Post fresh standings after every match. The points table and warhead keep the same look all season.</p></figcaption>
+      </figure>
+      <figure class="ki ki-2">
+        <div class="ki-art"><img decoding="async" src="img/home/warhead-snax-ff-jan-2026.webp" alt="Warhead design" loading="lazy" /><img decoding="async" src="img/home/fraggers-snax-ff-jan-2026.webp" alt="Top fraggers design" loading="lazy" /></div>
+        <figcaption><span class="ki-when ki-same" aria-hidden="true">&#8203;</span><h3>Top fraggers &amp; warhead</h3><p>Ranked from your match data, so the MVP of every lobby gets a stat card in your colors.</p></figcaption>
+      </figure>
+      <figure class="ki">
+        <div class="ki-art"><img decoding="async" src="img/home/certificate-snax-october.webp" alt="Winner certificate design" loading="lazy" /></div>
+        <figcaption><span class="ki-when">Final day</span><h3>Winner certificates</h3><p>Free and premium certificate templates, filled in with each winner&#39;s placement, kills and points.</p></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOUNDER ============ -->
+<section class="founder pad" id="founder">
+  <div class="wrap founder-grid">
+    <div class="founder-img reveal">
+      <img decoding="async" loading="lazy" src="img/home/profile.webp" alt="Amal Manoj (xbeastop), founder of PointCalc" />
+    </div>
+    <div class="reveal">
+      <h2>Meet xbeastop</h2>
+      <p class="lead">Built by one developer who used to run PUBG scrims.</p>
+      <p>I started PointCalc in September 2021. I was a PUBG player running scrims with friends, and the worst part of tournament day came after the matches: hours of working out points by hand, then more hours in Photoshop making the result graphics.</p>
+      <div class="more" id="founderMore">
+        <p>I was a BCA student who only knew C at the time. I watched a 14-hour Android tutorial, started building the day after, and had a working prototype inside a week. Then I had a better idea: instead of building something separate for each org, make one app that any organizer can set up their own way.</p>
+        <p>These days I'm an Android developer at Wrench Solutions in Kochi by day, and PointCalc is still my side project. It now has AI screenshot extraction, an iOS build, team registration links and PointCalc Studio for the designers in the community.</p>
       </div>
-      <div class="feat third a-heat reveal"><h3>Top fraggers &amp; warhead</h3><p>Ranked from your match data, so the MVP of every lobby gets a stat card in your colors.</p></div>
-      <div class="feat third reveal"><h3>Slot list &amp; team posters</h3><p>Add your teams, players and logos once. PointCalc turns them into a slot list and a poster for every squad.</p></div>
-      <div class="feat third a-gold reveal"><h3>Winner certificates</h3><p>Free and premium certificate templates, filled in with each winner&#39;s placement, kills and points.</p></div>
+      <button class="toggle" id="founderToggle">Read more</button>
+      <div class="socials">
+        <a class="btn btn-ghost" href="https://www.instagram.com/xbeastop/">Instagram</a>
+        <a class="btn btn-ghost" href="https://wa.me/917907642676">WhatsApp</a>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ============ TEAM REGISTRATION ============ -->
-<section class="pad" id="registration" style="padding-top:0">
+<section class="pad" id="registration">
   <div class="wrap">
     <div class="section-head reveal">
       <h2>Teams sign up<br />from one link.</h2>
       <p>Share one link, and captains fill in their team and players from their browser, so you stop copying names out of WhatsApp. You check each team and approve it in the app.</p>
     </div>
-    <div class="reg-stage">
-      <figure class="reg-phone reveal">
-        <img src="registration/captain-page.webp" alt="A tournament sign-up page open in a phone browser, with the team form below the event details" width="720" height="1360" loading="lazy" />
-      </figure>
-      <div class="reg-board reveal" role="img" aria-label="Slot list with 18 of 24 slots filled">
-        <div class="reg-board-head"><b>Slots</b><span>18 of 24 filled</span></div>
-        <ol class="slots" aria-hidden="true"><li class="slot taken" style="--i:0"><b>1</b><span>RV</span></li><li class="slot taken" style="--i:1"><b>2</b><span>FRY</span></li><li class="slot taken" style="--i:2"><b>3</b><span>GLX</span></li><li class="slot taken" style="--i:3"><b>4</b><span>PX</span></li><li class="slot taken" style="--i:4"><b>5</b><span>KRK</span></li><li class="slot taken" style="--i:5"><b>6</b><span>NOX</span></li><li class="slot taken" style="--i:6"><b>7</b><span>ZEN</span></li><li class="slot taken" style="--i:7"><b>8</b><span>GG</span></li><li class="slot taken" style="--i:8"><b>9</b><span>AXE</span></li><li class="slot taken" style="--i:9"><b>10</b><span>VXT</span></li><li class="slot taken" style="--i:10"><b>11</b><span>ORB</span></li><li class="slot taken" style="--i:11"><b>12</b><span>SKY</span></li><li class="slot taken" style="--i:12"><b>13</b><span>BLZ</span></li><li class="slot taken" style="--i:13"><b>14</b><span>KNG</span></li><li class="slot taken" style="--i:14"><b>15</b><span>ACE</span></li><li class="slot taken" style="--i:15"><b>16</b><span>FNX</span></li><li class="slot taken" style="--i:16"><b>17</b><span>WLF</span></li><li class="slot taken" style="--i:17"><b>18</b><span>TTN</span></li><li class="slot"><b>19</b></li><li class="slot"><b>20</b></li><li class="slot"><b>21</b></li><li class="slot"><b>22</b></li><li class="slot"><b>23</b></li><li class="slot"><b>24</b></li></ol>
-      </div>
-    </div>
     <ol class="reg-flow">
-      <li class="reveal"><h3>Share your link</h3><p>Pick Open registration when you create a tournament, add your WhatsApp number and match time, and publish.</p></li>
-      <li class="reveal"><h3>Captains sign up</h3><p>They open the link in any browser. They don't need the app or an account.</p></li>
-      <li class="reveal"><h3>You approve</h3><p>You get an alert for each new team. Check their proof, then approve, or reject with a reason they can fix.</p></li>
-      <li class="reveal"><h3>Make groups</h3><p>Approved teams fill the slots in order. Split them into groups, and each group becomes a tournament ready for points.</p></li>
+      <li class="reveal"><img decoding="async" class="reg-shot" src="img/home/registration-setup.webp" alt="The Open registration screen in PointCalc" width="720" height="1360" loading="lazy" /><h3>Share your link</h3><p>Pick Open registration when you create a tournament, add your WhatsApp number and match time, and publish.</p></li>
+      <li class="reveal"><img decoding="async" class="reg-shot" src="img/home/registration-captain-page.webp" alt="The sign-up page a captain sees in the browser" width="720" height="1360" loading="lazy" /><h3>Captains sign up</h3><p>They open the link in any browser. They don't need the app or an account.</p></li>
+      <li class="reveal"><img decoding="async" class="reg-shot" src="img/home/registration-pending.webp" alt="Pending teams waiting for approval in PointCalc" width="720" height="1360" loading="lazy" /><h3>You approve</h3><p>You get an alert for each new team. Check their proof, then approve, or reject with a reason they can fix.</p></li>
+      <li class="reveal"><img decoding="async" class="reg-shot" src="img/home/registration-message.webp" alt="Groups with a message ready for every captain" width="720" height="1360" loading="lazy" /><h3>Make groups</h3><p>Approved teams fill the slots in order. Split them into groups, and each group becomes a tournament ready for points.</p></li>
     </ol>
     <div class="reg-extra reveal">
       <div>
@@ -301,37 +357,46 @@
 </section>
 
 <!-- ============ POINTCALC STUDIO ============ -->
-<section class="pad studio" id="studio" style="padding-top:0">
+<section class="pad studio" id="studio">
   <div class="wrap">
-    <div class="section-head reveal">
-      <div class="studio-lockup"><img src="studio-icon.png" alt="" width="52" height="52" /><span>PointCalc Studio</span></div>
-      <h2>Your own design,<br />on every result.</h2>
-      <p>You already have a look for your org. Open your poster in Studio, place the table, names and logos on it, and share it as a link. Your admins open the link in PointCalc, and every result they post comes out in your design.</p>
-    </div>
-    <div class="studio-card reveal">
-      <div class="studio-copy">
-        <ol class="studio-steps">
-          <li><b>Open your artwork</b><span>Start from your own poster or background, as a JPG, PNG or WebP.</span></li>
-          <li><b>Tap Detect layout</b><span>Studio finds the table rows or logo boxes on your image and puts everything in place. Drag anything you want to move.</span></li>
-          <li><b>Share the link</b><span>Your admins open it in PointCalc once. From then on, the design is in their app.</span></li>
-        </ol>
-        <div class="link-card" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-          <div><span class="lc-url">pointcalc.in/d/night-owls-table</span><span class="lc-sub">Tap to import in PointCalc</span></div>
-        </div>
-        <div class="studio-cta">
-          <div class="store-badges">
-            <a href="https://apps.apple.com/in/app/pointcalc-studio/id6808275729"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1757030400" alt="Download PointCalc Studio on the App Store" /></a>
-            <a href="https://play.google.com/store/apps/details?id=com.pointcalc.studio"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get PointCalc Studio on Google Play" /></a>
+    <div class="studio-head reveal">
+      <div class="section-head">
+        <div class="studio-lockup"><img decoding="async" loading="lazy" src="img/home/studio-icon.webp" alt="" width="52" height="52" /><span>PointCalc Studio</span></div>
+        <h2>Your own design,<br />on every result.</h2>
+        <p>You already have a look for your org. Studio puts the table, names and logos on your own artwork, and every result your admins post comes out in that design.</p>
+      </div>
+      <div class="studio-get">
+        <div class="store-badges">
+            <a href="https://apps.apple.com/in/app/pointcalc-studio/id6808275729"><img decoding="async" loading="lazy" src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1757030400" alt="Download PointCalc Studio on the App Store" /></a>
+            <a href="https://play.google.com/store/apps/details?id=com.pointcalc.studio"><img decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get PointCalc Studio on Google Play" /></a>
           </div>
-          <p class="studio-note">Free to download. You pay when you publish a design.</p>
+        <p class="studio-note">Free to download. You pay when you publish a design.</p>
+      </div>
+    </div>
+    <div class="studio-flow">
+      <div class="sf-side sf-studio">
+        <p class="sf-where">In Studio</p>
+        <div class="sf-body">
+          <div class="sf-compare">
+            <img decoding="async" class="sf-a" src="img/home/studio-editor-before.webp" alt="A Free Fire poster just opened in PointCalc Studio, with the team slots not yet placed" width="640" height="1300" loading="lazy" />
+            <img decoding="async" class="sf-b" src="img/home/studio-editor-detected.webp" alt="The same poster after Detect layout, with 12 team slots placed on the boxes in the art" width="640" height="1300" loading="lazy" />
+            <span class="sf-layer sf-la" aria-hidden="true"><span class="sf-tag">Just opened</span></span>
+            <span class="sf-layer sf-lb" aria-hidden="true"><span class="sf-tag">After Detect layout</span></span>
+            <span class="sf-handle" aria-hidden="true"></span>
+            <input type="range" min="0" max="100" value="50" aria-label="Drag to compare the poster before and after Detect layout" />
+          </div>
+          <ol class="sf-steps">
+            <li><b>Open your artwork</b><span>Start from your own poster or background, as a JPG, PNG or WebP.</span></li>
+            <li><b>Tap Detect layout</b><span>Studio finds the table rows or logo boxes on your image and puts everything in place. Drag anything you want to move.</span></li>
+          </ol>
         </div>
       </div>
-      <div class="studio-media">
-        <div class="studio-pair">
-          <figure class="studio-phone"><img src="studio/editor-before.webp" alt="A Free Fire poster just opened in PointCalc Studio, with the team slots not yet placed" width="640" height="1300" loading="lazy" /><figcaption>Just opened</figcaption></figure>
-          <figure class="studio-phone"><img src="studio/editor-detected.webp" alt="The same poster after Detect layout, with 12 team slots placed on the boxes in the art" width="640" height="1300" loading="lazy" /><figcaption>After Detect layout</figcaption></figure>
-        </div>
+      <div class="sf-side sf-app">
+        <p class="sf-where">In PointCalc</p>
+        <figure class="sf-result"><img decoding="async" src="img/home/poster-blaze-feb-2026.webp" alt="The same artwork as a finished team poster in PointCalc" width="960" height="1200" loading="lazy" /></figure>
+        <ol class="sf-steps">
+          <li><b>Share the link</b><span>Your admins open it in PointCalc once. From then on, the design is in their app.</span></li>
+        </ol>
       </div>
     </div>
     <div class="studio-more">
@@ -356,44 +421,9 @@
   </div>
 </section>
 
-<!-- ============ DESIGNS / TEMPLATE VAULT ============ -->
-<section class="pad vault" id="designs">
-  <div class="wrap">
-    <div class="section-head center reveal" style="margin-bottom:0;">
-      <h2 class="sr-only">190+ templates to start from</h2>
-    </div>
-  </div>
-  <div class="vault-big reveal" aria-hidden="true"><span class="fill">190+</span> designs</div>
-  <div class="vault-rows">
-    <div class="vault-mqrow">
-      <div class="vault-track">
-        <div class="vshot"><span class="vtag prem">Premium</span><img src="designs/templates/premium/tables/table_jordan_november.webp" alt="Points table template" loading="lazy" /></div>
-        <div class="vshot"><span class="vtag prem">Premium</span><img src="designs/templates/premium/warheads/warhead_snax_jan_2026.webp" alt="Warhead template" loading="lazy" /></div>
-        <div class="vshot"><span class="vtag">Free</span><img src="designs/templates/free/tables/table_free_sep_2025.webp" alt="Free points table template" loading="lazy" /></div>
-        <div class="vshot"><span class="vtag prem">Premium</span><img src="designs/templates/premium/fraggers/fraggers_snax_jan_2026.webp" alt="Top fraggers template" loading="lazy" /></div>
-        <div class="vshot"><span class="vtag prem">Premium</span><img src="designs/templates/premium/slotlist/slotlist_jordan_november.webp" alt="Slot list template" loading="lazy" /></div>
-        <div class="vshot"><span class="vtag prem">Premium</span><img src="designs/templates/premium/certificate/certificate_snax_jan_2026.webp" alt="Certificate template" loading="lazy" /></div>
-      </div>
-    </div>
-    <div class="vault-mqrow rev">
-      <div class="vault-track">
-        <div class="vshot"><span class="vtag prem">Premium</span><img src="designs/templates/premium/teamPoster/poster_jordan_november.webp" alt="Team poster template" loading="lazy" /></div>
-        <div class="vshot"><span class="vtag prem">Premium</span><img src="designs/templates/premium/tables/table_snax_blue_february.webp" alt="Blue points table template" loading="lazy" /></div>
-        <div class="vshot"><span class="vtag prem">Premium</span><img src="designs/templates/premium/warheads/warhead_jordan_november.webp" alt="Warhead template red" loading="lazy" /></div>
-        <div class="vshot"><span class="vtag prem">Premium</span><img src="designs/templates/premium/fraggers/fraggers_jordan_november.webp" alt="Top fraggers template red" loading="lazy" /></div>
-        <div class="vshot"><span class="vtag prem">Premium</span><img src="designs/templates/premium/tables/table_snax_jan_2026.webp" alt="Ice points table template" loading="lazy" /></div>
-        <div class="vshot"><span class="vtag prem">Premium</span><img src="designs/templates/premium/teamPoster/poster_snax_jan_2026.webp" alt="Ice team poster template" loading="lazy" /></div>
-      </div>
-    </div>
-  </div>
-  <div class="designs-more reveal">
-    <a class="btn btn-acid" href="designs/index.html">Browse all 190+ templates</a>
-    <p class="vault-note">Some packs are free. New premium designs come out every month.</p>
-  </div>
-</section>
 
 <!-- ============ PRICING ============ -->
-<section class="pad" id="pricing" style="padding-top:0">
+<section class="pad" id="pricing">
   <div class="wrap">
     <div class="section-head center reveal">
       <h2>Start free. Pay when you need more.</h2>
@@ -405,10 +435,15 @@
         <button data-i="3">Yearly</button>
       </div>
     </div>
-    <div class="price-grid">
-      <div class="plan reveal">
-        <span class="pname">Premium</span>
-        <div class="pprice"><span data-price="premium">₹69</span> <span class="per" data-per="">/month</span></div>
+    <div class="ladder">
+      <div class="rung">
+        <div class="r-name"><span class="pname">Free</span></div>
+        <p class="r-free">Free to download. The core features work without a subscription, and some design packs are free.</p>
+        <div class="r-price"><div class="pprice">₹0</div></div>
+        <a class="btn btn-ghost" href="#download">Download</a>
+      </div>
+      <div class="rung">
+        <div class="r-name"><span class="pname">Premium</span></div>
         <ul>
           <li><span class="ck" aria-hidden="true"></span>Unlimited points tables, warheads and posters</li>
           <li><span class="ck" aria-hidden="true"></span>Premium design templates</li>
@@ -416,23 +451,22 @@
           <li><span class="ck" aria-hidden="true"></span>Team registration for up to 50 teams per event</li>
           <li><span class="ck" aria-hidden="true"></span>No ads</li>
         </ul>
+        <div class="r-price"><div class="pprice"><span data-price="premium">₹69</span> <span class="per" data-per="">/month</span></div></div>
         <a class="btn btn-ghost" href="#download">Get Premium</a>
       </div>
-      <div class="plan reveal">
-        <span class="pname">Organiser Pack</span>
-        <div class="pprice"><span data-price="org">₹200</span> <span class="per" data-per="">/month</span></div>
+      <div class="rung">
+        <div class="r-name"><span class="pname">Organiser Pack</span></div>
         <ul>
           <li><span class="ck" aria-hidden="true"></span>Everything in Premium</li>
           <li><span class="ck" aria-hidden="true"></span>Up to 1000 teams per event</li>
           <li><span class="ck" aria-hidden="true"></span>Team logos on the sign-up form</li>
           <li><span class="ck" aria-hidden="true"></span>Screenshot proof for entry tasks</li>
         </ul>
+        <div class="r-price"><div class="pprice"><span data-price="org">₹200</span> <span class="per" data-per="">/month</span></div></div>
         <a class="btn btn-ghost" href="#download">Get Organiser Pack</a>
       </div>
-      <div class="plan feature reveal">
-        <span class="ribbon">Our pick</span>
-        <span class="pname">Premium + AI</span>
-        <div class="pprice"><span data-price="ai">₹350</span> <span class="per" data-per="">/month</span></div>
+      <div class="rung feature">
+        <div class="r-name"><span class="pname">Premium + AI</span><span class="ribbon">Our pick</span></div>
         <ul>
           <li><span class="ck" aria-hidden="true"></span>Everything in Organiser Pack</li>
           <li><span class="ck" aria-hidden="true"></span><span><b>AI reads your screenshots</b> from BGMI, PUBG Mobile and Free Fire</span></li>
@@ -440,17 +474,17 @@
           <li><span class="ck" aria-hidden="true"></span>Upload a whole match at once</li>
           <li><span class="ck" aria-hidden="true"></span>First access to new AI features</li>
         </ul>
+        <div class="r-price"><div class="pprice"><span data-price="ai">₹350</span> <span class="per" data-per="">/month</span></div></div>
         <a class="btn btn-acid" href="#download">Get Premium + AI</a>
       </div>
-      <div class="plan reveal">
-        <span class="pname">AI Team</span>
-        <div class="pprice"><span data-price="team">₹500</span> <span class="per" data-per="">/month</span></div>
-        <p class="pshare"><span data-price="each">₹100</span> each when 5 people share it</p>
+      <div class="rung">
+        <div class="r-name"><span class="pname">AI Team</span></div>
         <ul>
           <li><span class="ck" aria-hidden="true"></span>Everything in Premium + AI</li>
           <li><span class="ck" aria-hidden="true"></span>One account on up to 5 devices</li>
           <li><span class="ck" aria-hidden="true"></span>Your whole admin team calculates with AI</li>
         </ul>
+        <div class="r-price"><div class="pprice"><span data-price="team">₹500</span> <span class="per" data-per="">/month</span></div><p class="pshare"><span data-price="each">₹100</span> each when 5 people share it</p></div>
         <a class="btn btn-ghost" href="#download">Get AI Team</a>
       </div>
     </div>
@@ -459,7 +493,7 @@
 </section>
 
 <!-- ============ TESTIMONIALS ============ -->
-<section class="pad" id="reviews" style="padding-top:0">
+<section class="pad" id="reviews">
   <div class="wrap">
     <div class="section-head reveal">
       <h2>Reviews from organizers</h2>
@@ -485,28 +519,6 @@
   </div>
 </section>
 
-<!-- ============ FOUNDER ============ -->
-<section class="founder pad" id="founder">
-  <div class="wrap founder-grid">
-    <div class="founder-img reveal">
-      <img src="https://pointcalc.in/profile.JPG" alt="Amal Manoj (xbeastop), founder of PointCalc" />
-    </div>
-    <div class="reveal">
-      <h2>Meet xbeastop</h2>
-      <p class="lead">Built by one developer who used to run PUBG scrims.</p>
-      <p>I started PointCalc in September 2021. I was a PUBG player running scrims with friends, and the worst part of tournament day came after the matches: hours of working out points by hand, then more hours in Photoshop making the result graphics.</p>
-      <div class="more" id="founderMore">
-        <p>I was a BCA student who only knew C at the time. I watched a 14-hour Android tutorial, started building the day after, and had a working prototype inside a week. Then I had a better idea: instead of building something separate for each org, make one app that any organizer can set up their own way.</p>
-        <p>These days I'm an Android developer at Wrench Solutions in Kochi by day, and PointCalc is still my side project. It's at 150K+ downloads now, with AI screenshot extraction, an iOS build, team registration links and PointCalc Studio for the designers in the community.</p>
-      </div>
-      <button class="toggle" id="founderToggle">Read more</button>
-      <div class="socials">
-        <a class="btn btn-ghost" href="https://www.instagram.com/xbeastop/">Instagram</a>
-        <a class="btn btn-ghost" href="https://wa.me/917907642676">WhatsApp</a>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ============ FAQ ============ -->
 <section class="pad" id="faq">
@@ -548,15 +560,16 @@
 </section>
 
 <!-- ============ FINAL CTA ============ -->
-<section class="pad cta" id="download">
+<section class="pad cta cta-kit" id="download">
   <div class="wrap">
     <div class="cta-card reveal">
       <h2>Run your next<br />tournament with PointCalc</h2>
       <p>Free to download on iOS and Android, with more than 150K downloads so far.</p>
       <div class="store-badges">
-        <a href="https://apps.apple.com/in/app/pointcalc-custom-pt-maker/id6747952141"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1752019200" alt="Download on the App Store" /></a>
-        <a href="https://play.google.com/store/apps/details?id=com.pointcalc.global"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" /></a>
+        <a href="https://apps.apple.com/in/app/pointcalc-custom-pt-maker/id6747952141"><img decoding="async" loading="lazy" src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1752019200" alt="Download on the App Store" /></a>
+        <a href="https://play.google.com/store/apps/details?id=com.pointcalc.global"><img decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" /></a>
       </div>
+      <div class="cta-wall" aria-hidden="true"><img decoding="async" src="img/home/poster-snax-blue-rock-may.webp" alt="" loading="lazy" /><img decoding="async" src="img/home/warhead-snax-blue-rock-may.webp" alt="" loading="lazy" /><img decoding="async" src="img/home/poster-freefire-snax-blue-rock-may.webp" alt="" loading="lazy" /><img decoding="async" src="img/home/table-snax-blue-rock-may.webp" alt="" loading="lazy" /><img decoding="async" src="img/home/slotlist-freefire-snax-blue-rock-may.webp" alt="" loading="lazy" /><img decoding="async" src="img/home/fraggers-snax-blue-rock-may.webp" alt="" loading="lazy" /><img decoding="async" src="img/home/certificate-snax-blue-rock-may.webp" alt="" loading="lazy" /></div>
     </div>
   </div>
 </section>
@@ -566,7 +579,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-col">
-        <div class="foot-brand" lang="en"><img src="https://pointcalc.in/icon.png" alt="" />PointCalc</div>
+        <div class="foot-brand" lang="en"><img decoding="async" loading="lazy" src="https://pointcalc.in/icon.png" alt="" />PointCalc</div>
         <p>Tournament graphics from your match screenshots, for BGMI, PUBG Mobile and Free Fire. Made in India by xbeastop.</p>
       </div>
       <div class="foot-col">
@@ -722,5 +735,6 @@
     sync();
   })();
 </script>
+<script>document.querySelectorAll('.sf-compare').forEach(function(c){var r=c.querySelector('input');function s(){c.style.setProperty('--pos',r.value+'%');}r.addEventListener('input',s);s();});</script>
 </body>
 </html>

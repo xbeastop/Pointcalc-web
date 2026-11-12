@@ -22,6 +22,8 @@ html[dir="rtl"] h1,
 html[dir="rtl"] h2,
 html[dir="rtl"] h3 { line-height: 1.15; font-weight: 700; }
 html[dir="rtl"] .hero h1 { line-height: 1.12; }
+/* Cairo is much wider than Anton: keep the hero headline on its three lines */
+html[dir="rtl"] .hero h1 { font-size: clamp(2.5rem, 5.4vw, 5rem); }
 html[dir="rtl"] .hf-text h3,
 html[dir="rtl"] .feat h3,
 html[dir="rtl"] .faq-q { font-weight: 700; }

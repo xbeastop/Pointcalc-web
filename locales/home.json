@@ -20,9 +20,19 @@
    "tr": "Yeni · Yapay Zekâ ile Ekran Okuma"
   },
   {
-   "en": "Drop screens.<br /><span class=\"em\">Get the</span><br /><span class=\"stroke\">whole kit.</span>",
-   "ar": "أسقِط اللقطات.<br /><span class=\"em\">واحصل على</span><br /><span class=\"stroke\">الحقيبة كاملة.</span>",
-   "tr": "Ekranları bırak.<br /><span class=\"em\">Tüm seti</span><br /><span class=\"stroke\">anında al.</span>"
+   "en": "Drop screens.<br />Get the<br /><span class=\"em\">whole kit.</span>",
+   "ar": "أسقِط اللقطات.<br />واحصل على<br /><span class=\"em\">الحقيبة كاملة.</span>",
+   "tr": "Ekranları bırak.<br />Tüm seti<br /><span class=\"em\">anında al.</span>"
+  },
+  {
+   "en": "Your screenshot",
+   "ar": "لقطة شاشتك",
+   "tr": "Ekran görüntün"
+  },
+  {
+   "en": "What PointCalc makes from it",
+   "ar": "ما يصنعه PointCalc منها",
+   "tr": "PointCalc'in bundan yaptıkları"
   },
   {
    "en": "The AI tournament toolkit for BGMI, PUBG Mobile &amp; Free Fire organizers. Upload your lobby and result screens — placements and kills are read automatically, then PointCalc builds the points table, warhead, top fraggers, slot list, posters and certificates for you.",
@@ -1238,6 +1248,191 @@
    "en": "Studio is free to download, and you pay when you publish. One design costs ₹79 (₹200 for a certificate or a table with a top-team block), and you pay for it only once. Studio Pro is ₹499 a month for as many designs as you like, but the links you make on it stop working when the plan ends.",
    "ar": "تنزيل Studio مجاني، وتدفع عندما تنشر. التصميم الواحد بـ ₹79 (و₹200 للشهادة أو للجدول مع قسم لأفضل الفرق)، وتدفع ثمنه مرة واحدة فقط. أما Studio Pro فبـ ₹499 شهريًا لتصاميم بلا حدود، لكن الروابط التي تصنعها عليه تتوقف عند انتهاء الاشتراك.",
    "tr": "Studio'yu indirmek ücretsiz, yayınladığında ödersin. Bir tasarım ₹79 (sertifika ya da en iyi takım bloklu tablo için ₹200) ve ücretini yalnızca bir kez ödersin. Studio Pro aylık ₹499 ile istediğin kadar tasarım sunar, ama onunla yaptığın bağlantılar plan bitince çalışmaz."
+  },
+  {
+   "en": "BGMI / PUBG",
+   "ar": "BGMI / PUBG",
+   "tr": "BGMI / PUBG"
+  },
+  {
+   "en": "Your screenshots",
+   "ar": "لقطات شاشتك",
+   "tr": "Ekran görüntülerin"
+  },
+  {
+   "en": "What PointCalc makes from them",
+   "ar": "ما يصنعه PointCalc منها",
+   "tr": "PointCalc'in bunlardan yaptıkları"
+  },
+  {
+   "en": "Before the lobby",
+   "ar": "قبل اللوبي",
+   "tr": "Lobiden önce"
+  },
+  {
+   "en": "After every match",
+   "ar": "بعد كل مباراة",
+   "tr": "Her maçtan sonra"
+  },
+  {
+   "en": "Final day",
+   "ar": "اليوم الأخير",
+   "tr": "Final günü"
+  },
+  {
+   "en": "These days I'm an Android developer at Wrench Solutions in Kochi by day, and PointCalc is still my side project. It now has AI screenshot extraction, an iOS build, team registration links and PointCalc Studio for the designers in the community.",
+   "ar": "هذه الأيام أعمل مطوّر أندرويد في Wrench Solutions بكوتشي نهارًا، وما زال PointCalc مشروعي الجانبي. أصبح فيه الآن استخراج اللقطات بالذكاء الاصطناعي، ونسخة iOS، وروابط تسجيل الفرق، و PointCalc Studio للمصمّمين في المجتمع.",
+   "tr": "Bugünlerde gündüzleri Kochi'deki Wrench Solutions'ta Android geliştiricisiyim ve PointCalc hâlâ yan projem. Artık yapay zekâ ile ekran okuma, bir iOS sürümü, takım kayıt bağlantıları ve topluluktaki tasarımcılar için PointCalc Studio var."
+  },
+  {
+   "en": "You already have a look for your org. Studio puts the table, names and logos on your own artwork, and every result your admins post comes out in that design.",
+   "ar": "لمنظّمتك شكل خاص بها بالفعل. يضع Studio الجدول والأسماء والشعارات على تصميمك الفني، فتخرج كل نتيجة ينشرها المشرفون عندك بذلك التصميم.",
+   "tr": "Organizasyonunun zaten bir tarzı var. Studio tabloyu, isimleri ve logoları kendi görselinin üzerine yerleştirir; adminlerinin paylaştığı her sonuç o tasarımla çıkar."
+  },
+  {
+   "en": "In Studio",
+   "ar": "في Studio",
+   "tr": "Studio'da"
+  },
+  {
+   "en": "In PointCalc",
+   "ar": "في PointCalc",
+   "tr": "PointCalc'te"
+  },
+  {
+   "en": "Free to download. The core features work without a subscription, and some design packs are free.",
+   "ar": "التنزيل مجاني. الميزات الأساسية تعمل دون اشتراك، وبعض حزم التصاميم مجانية.",
+   "tr": "İndirmesi ücretsiz. Temel özellikler abonelik olmadan çalışır ve bazı tasarım paketleri ücretsizdir."
+  },
+  {
+   "en": "A BGMI / PUBG Mobile result screen",
+   "ar": "شاشة نتائج من BGMI / PUBG Mobile",
+   "tr": "BGMI / PUBG Mobile sonuç ekranı"
+  },
+  {
+   "en": "A Free Fire result screen",
+   "ar": "شاشة نتائج من Free Fire",
+   "tr": "Free Fire sonuç ekranı"
+  },
+  {
+   "en": "Points table design",
+   "ar": "تصميم جدول النقاط",
+   "tr": "Puan tablosu tasarımı"
+  },
+  {
+   "en": "Top fraggers design",
+   "ar": "تصميم أبرز اللاعبين",
+   "tr": "En iyi fragçılar tasarımı"
+  },
+  {
+   "en": "Upload your screenshots",
+   "ar": "ارفع لقطات الشاشة",
+   "tr": "Ekran görüntülerini yükle"
+  },
+  {
+   "en": "Let PointCalc read them",
+   "ar": "دع PointCalc يقرأها",
+   "tr": "PointCalc okusun"
+  },
+  {
+   "en": "Points table",
+   "ar": "جدول النقاط",
+   "tr": "Puan tablosu"
+  },
+  {
+   "en": "Team poster template",
+   "ar": "قالب بوستر الفريق",
+   "tr": "Takım posteri şablonu"
+  },
+  {
+   "en": "Warhead template",
+   "ar": "قالب أقوى الفرق",
+   "tr": "Warhead şablonu"
+  },
+  {
+   "en": "Free points table template",
+   "ar": "قالب جدول نقاط مجاني",
+   "tr": "Ücretsiz puan tablosu şablonu"
+  },
+  {
+   "en": "Top fraggers template",
+   "ar": "قالب أبرز اللاعبين",
+   "tr": "En iyi fragçılar şablonu"
+  },
+  {
+   "en": "Points table template",
+   "ar": "قالب جدول النقاط",
+   "tr": "Puan tablosu şablonu"
+  },
+  {
+   "en": "Slot list template",
+   "ar": "قالب قائمة الخانات",
+   "tr": "Slot listesi şablonu"
+  },
+  {
+   "en": "Certificate template",
+   "ar": "قالب شهادة",
+   "tr": "Sertifika şablonu"
+  },
+  {
+   "en": "Warhead template red",
+   "ar": "قالب أقوى الفرق باللون الأحمر",
+   "tr": "Kırmızı Warhead şablonu"
+  },
+  {
+   "en": "Team poster design",
+   "ar": "تصميم بوستر الفريق",
+   "tr": "Takım posteri tasarımı"
+  },
+  {
+   "en": "A points table made in PointCalc",
+   "ar": "جدول نقاط مصنوع في PointCalc",
+   "tr": "PointCalc'te yapılmış bir puan tablosu"
+  },
+  {
+   "en": "Winner certificate design",
+   "ar": "تصميم شهادة الفائز",
+   "tr": "Kazanan sertifikası tasarımı"
+  },
+  {
+   "en": "The Open registration screen in PointCalc",
+   "ar": "شاشة «تسجيل مفتوح» في PointCalc",
+   "tr": "PointCalc'teki Açık kayıt ekranı"
+  },
+  {
+   "en": "The sign-up page a captain sees in the browser",
+   "ar": "صفحة التسجيل التي يراها القائد في المتصفح",
+   "tr": "Kaptanın tarayıcıda gördüğü kayıt sayfası"
+  },
+  {
+   "en": "Pending teams waiting for approval in PointCalc",
+   "ar": "فرق بانتظار الموافقة في PointCalc",
+   "tr": "PointCalc'te onay bekleyen takımlar"
+  },
+  {
+   "en": "Groups with a message ready for every captain",
+   "ar": "مجموعات مع رسالة جاهزة لكل قائد",
+   "tr": "Her kaptan için hazır mesajlı gruplar"
+  },
+  {
+   "en": "Download PointCalc Studio on the App Store",
+   "ar": "نزّل PointCalc Studio من App Store",
+   "tr": "PointCalc Studio'yu App Store'dan indir"
+  },
+  {
+   "en": "Get PointCalc Studio on Google Play",
+   "ar": "احصل على PointCalc Studio من Google Play",
+   "tr": "PointCalc Studio'yu Google Play'den edin"
+  },
+  {
+   "en": "Drag to compare the poster before and after Detect layout",
+   "ar": "اسحب للمقارنة بين البوستر قبل «اكتشاف التخطيط» وبعده",
+   "tr": "Düzeni algılamadan önceki ve sonraki posteri karşılaştırmak için sürükle"
+  },
+  {
+   "en": "The same artwork as a finished team poster in PointCalc",
+   "ar": "التصميم الفني نفسه كبوستر فريق جاهز في PointCalc",
+   "tr": "Aynı görsel, PointCalc'te bitmiş bir takım posteri olarak"
   }
  ]
 }
