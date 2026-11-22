@@ -66,7 +66,7 @@
   <div class="wrap">
     <h1>Privacy <span class="em">Policy.</span></h1>
     <p>How PointCalc and PointCalc Studio collect, use, share and protect information.</p>
-    <span class="eff">Effective 24 May 2026. Last updated 16 October 2026.</span>
+    <span class="eff">Effective 24 May 2026. Last updated 22 November 2026.</span>
   </div>
 </section>
 
@@ -143,7 +143,7 @@
       <h3>2.5 Information you provide when you contact us</h3>
       <p>If you contact us by email, Instagram or WhatsApp, we receive and retain the contents of your message and any contact information you provide, so that we can respond and follow up.</p>
       <h3>2.6 Information collected on the Website</h3>
-      <p>The Website is a static site served by Cloudflare. It does not set tracking cookies, does not run web analytics on visitors and does not embed third-party trackers. Cloudflare may generate and briefly keep standard server-access logs for security and abuse prevention; we do not access or process those logs. Event sign-up pages are covered in Section 2.8.</p>
+      <p>The Website is a static site served by Cloudflare. It does not set tracking cookies, does not run web analytics on visitors and does not embed third-party trackers. Cloudflare may generate and briefly keep standard server-access logs for security and abuse prevention; we do not access or process those logs. Event sign-up pages are covered in Sections 2.8 and 2.10.</p>
       <h3>2.7 Account, registrations and published designs</h3>
       <p>Neither App requires an account to create tournaments or author designs. You are asked to sign in only for the features that involve our servers: online registrations in PointCalc, and publishing a design from PointCalc Studio. One account works in both Apps. If you sign in, the following is processed on our servers:</p>
       <ul>
@@ -170,6 +170,18 @@
       <p>To stop automated sign-ups, the form uses <strong>Cloudflare Turnstile</strong>, which checks your browser and IP address. We also use your IP address for a short time to limit repeated requests, and we do not store it with your registration.</p>
       <h3>2.9 Match results entered on a PC</h3>
       <p>An organiser can open a short-lived link to type match results on a computer. The link carries the team and player names for that match and the results typed in, such as placements and kills. We clear the results once the organiser's phone receives them. The link expires after two hours, and we delete it within two days after that, or within eight days if the results were never collected. We keep a hashed copy of the computer's IP address for up to two days to limit repeated requests.</p>
+      <h3>2.10 Notifications for team captains</h3>
+      <p>Notifications are off until you turn them on. As a captain, you can turn them on from your team page on join.pointcalc.in, or from My tournaments at <a href="https://join.pointcalc.in/my">join.pointcalc.in/my</a>. For each phone or browser that turns them on, we keep:</p>
+      <ul>
+        <li>A hashed copy of a random key that the page makes for your phone. The key itself stays in your browser.</li>
+        <li>Your browser's push address and its encryption keys. Your browser maker's push service (Google, Apple, Mozilla or Microsoft) issues them.</li>
+        <li>Your phone's time zone, so a notification shows times in your local time.</li>
+        <li>For each team your phone follows: the team name, the event name and start time, the team's sign-up status, and a copy of your team link, encrypted so that only your phone's key can open it.</li>
+      </ul>
+      <p>We also keep the messages the organiser sends to teams: approvals and rejections with any reason, the group link, room ID, password and match, time changes, and short notes. You can see them as history on join.pointcalc.in/my.</p>
+      <p>Each notification is encrypted for your browser before it leaves our server. The push service sees only the address and the time it was sent, and cannot read the message.</p>
+      <p>In Safari, and on iPhone and iPad, the page also sets a cookie named <code>__Host-pc_phone_key</code> on join.pointcalc.in. It holds your phone key, so the page can still find your teams if Safari clears its saved data. It lasts up to 400 days, and our servers do not read it.</p>
+      <p>Supabase stores this data in Mumbai, India, like the rest of the registration data. Once an event is deleted, a daily clean-up removes its notification data when 30 days have passed since the event's start or its last message, whichever is later. If the organiser still opens the event's groups in the App, we keep it until 15 days after the last time they did. If the organiser deletes their account, we delete it at once. We delete the record of a phone that follows no team after 180 days without a visit, and we delete a push address and its keys when the push service tells us it no longer works. You can remove an event on join.pointcalc.in/my at any time, which deletes your phone's link to it straight away, or turn notifications off in your browser.</p>
 
       <p>We do not collect: precise GPS location, contacts, SMS or call logs, photos other than those you explicitly import into the App, microphone audio, biometric data, or data from other applications on your device.</p>
 
@@ -192,9 +204,10 @@
         <li><strong>Google LLC (Drive and Sign-In).</strong> If you enable Google Drive backup, Google receives and processes the information described in Section 2.3, subject to the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
         <li><strong>Google LLC (AdMob).</strong> Shows ads in the free version of PointCalc, as described in Section 2.2. See <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from apps that use its services</a>.</li>
         <li><strong>Apple Inc. and Google LLC (App Stores).</strong> The Apple App Store and Google Play distribute the Apps and process all subscription transactions under their own terms and privacy policies.</li>
-        <li><strong>Supabase, Inc.</strong> Hosts the accounts and database described in Sections 2.7 to 2.9, subject to the <a href="https://supabase.com/privacy">Supabase Privacy Policy</a>.</li>
+        <li><strong>Supabase, Inc.</strong> Hosts the accounts and database described in Sections 2.7 to 2.10, subject to the <a href="https://supabase.com/privacy">Supabase Privacy Policy</a>.</li>
         <li><strong>Cloudflare, Inc.</strong> Serves the Website and event pages, stores the images used by registrations and published designs, and runs the Turnstile check on sign-up forms, subject to the <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a>.</li>
         <li><strong>RevenueCat, Inc.</strong> Tracks subscription and purchase entitlements attached to your account, subject to the <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a>.</li>
+        <li><strong>Browser push services.</strong> If you turn on notifications, your browser maker's push service (Google, Apple, Mozilla or Microsoft) delivers them. It sees the push address and the time, but cannot read the message (Section 2.10).</li>
         <li><strong>Event organisers.</strong> When you sign up a team, the organiser of that event receives the details described in Section 2.8.</li>
         <li><strong>People who open an event link.</strong> An event's public page shows its details, the organiser name and WhatsApp number the organiser chose to add, and the names, tags and logos of up to 10 approved teams.</li>
         <li><strong>People you share a design link with.</strong> A design you publish from PointCalc Studio, including the preview image and your designer name, is visible to anyone who holds its link.</li>
@@ -228,6 +241,7 @@
         <li><strong>Event statistics.</strong> We keep the numbers described in Section 2.7 after an event is deleted. If you delete your account, they are no longer linked to you.</li>
         <li><strong>AI scan counts.</strong> We keep daily counts as usage history and delete store order numbers 30 days after their last use. If you delete your account, the counts are no longer linked to you.</li>
         <li><strong>PC match entry.</strong> Deleted as described in Section 2.9.</li>
+        <li><strong>Notifications.</strong> Deleted as described in Section 2.10.</li>
         <li><strong>Published designs.</strong> A design published from PointCalc Studio is retained indefinitely, because people who imported it depend on the link continuing to work. Deleting your account unlinks the design from you and removes your library, but leaves the design and the designer name frozen on it at publish time in place.</li>
       </ul>
 
@@ -241,6 +255,7 @@
         <li><strong>Manage Google Drive backup.</strong> Disable backup from within the App at any time. Delete the backup files from your Google Drive. Revoke the App's access to your Google Account at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
         <li><strong>Delete your account.</strong> Delete the account you sign in with in PointCalc and PointCalc Studio, and the data described in Section 2.7, from inside the PointCalc app or by writing to us. The steps and the full list of what is and is not removed are on the <a href="../delete-account/index.html">Delete your account</a> page.</li>
         <li><strong>Manage a team sign-up.</strong> Edit or withdraw your team with the private team link you got after signing up. You can also ask the organiser, or write to us, to have your team's details removed.</li>
+        <li><strong>Turn off notifications.</strong> Remove an event on <a href="https://join.pointcalc.in/my">join.pointcalc.in/my</a>, or turn notifications off in your browser.</li>
         <li><strong>Reset device identifiers.</strong> Reset your advertising identifier from your operating system settings on iOS or Android.</li>
         <li><strong>Limit diagnostic collection.</strong> The App does not currently provide an in-app toggle to disable Firebase Analytics or Crashlytics; collection ceases when you uninstall the App.</li>
       </ul>

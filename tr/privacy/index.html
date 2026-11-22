@@ -66,7 +66,7 @@
   <div class="wrap">
     <h1>Gizlilik <span class="em">Politikası.</span></h1>
     <p>PointCalc ve PointCalc Studio bilgileri nasıl toplar, kullanır, paylaşır ve korur.</p>
-    <span class="eff">24 Mayıs 2026 tarihinde yürürlükte. Son güncelleme 16 Ekim 2026</span>
+    <span class="eff">24 Mayıs 2026 tarihinde yürürlükte. Son güncelleme 22 Kasım 2026</span>
   </div>
 </section>
 
@@ -143,7 +143,7 @@
       <h3>2.5 Bizimle iletişime geçtiğinizde sağladığınız bilgiler</h3>
       <p>Bizimle e-posta, Instagram veya WhatsApp yoluyla iletişime geçerseniz, yanıt verebilmemiz ve takip edebilmemiz için mesajınızın içeriğini ve sağladığınız iletişim bilgilerini alır ve saklarız.</p>
       <h3>2.6 Web Sitesinde toplanan bilgiler</h3>
-      <p>Web Sitesi, Cloudflare tarafından sunulan statik bir sitedir. İzleme çerezleri ayarlamaz, ziyaretçiler üzerinde web analizi çalıştırmaz ve üçüncü taraf izleyiciler yerleştirmez. Cloudflare, güvenlik ve kötüye kullanımı önleme amacıyla standart sunucu erişim günlükleri oluşturabilir ve bunları kısa süreliğine saklayabilir; bu günlüklere erişmez veya işlemeyiz. Etkinlik kayıt sayfaları Bölüm 2.8'de açıklanır.</p>
+      <p>Web Sitesi, Cloudflare tarafından sunulan statik bir sitedir. İzleme çerezleri ayarlamaz, ziyaretçiler üzerinde web analizi çalıştırmaz ve üçüncü taraf izleyiciler yerleştirmez. Cloudflare, güvenlik ve kötüye kullanımı önleme amacıyla standart sunucu erişim günlükleri oluşturabilir ve bunları kısa süreliğine saklayabilir; bu günlüklere erişmez veya işlemeyiz. Etkinlik kayıt sayfaları Bölüm 2.8 ve 2.10'da açıklanır.</p>
       <h3>2.7 Hesap, kayıtlar ve yayınlanan tasarımlar</h3>
       <p>Uygulamaların hiçbiri turnuva oluşturmak veya tasarım hazırlamak için hesap gerektirmez. Yalnızca sunucularımızı içeren özellikler için oturum açmanız istenir: PointCalc'teki çevrim içi kayıtlar ve PointCalc Studio'dan bir tasarım yayınlama. Tek bir hesap her iki Uygulamada da çalışır. Oturum açarsanız, sunucularımızda şunlar işlenir:</p>
       <ul>
@@ -170,6 +170,18 @@
       <p>Otomatik kayıtları önlemek için form, tarayıcınızı ve IP adresinizi kontrol eden <strong>Cloudflare Turnstile</strong>'ı kullanır. Tekrarlanan istekleri sınırlamak için IP adresinizi kısa bir süre de kullanırız ve onu kaydınızla birlikte saklamayız.</p>
       <h3>2.9 Bilgisayarda girilen maç sonuçları</h3>
       <p>Bir organizatör, maç sonuçlarını bilgisayarda yazmak için kısa ömürlü bir bağlantı açabilir. Bağlantı o maçın takım ve oyuncu adlarını ve girilen sonuçları (sıralama ve kill sayıları gibi) taşır. Sonuçları, organizatörün telefonu aldığı anda sileriz. Bağlantının süresi iki saat sonra dolar ve bağlantıyı bundan sonraki iki gün içinde, sonuçlar hiç alınmadıysa sekiz gün içinde sileriz. Tekrarlanan istekleri sınırlamak için bilgisayarın IP adresinin karma bir kopyasını en fazla iki gün saklarız.</p>
+      <h3>2.10 Takım kaptanları için bildirimler</h3>
+      <p>Bildirimler siz açana kadar kapalıdır. Kaptan olarak bildirimleri join.pointcalc.in üzerindeki takım sayfanızdan veya <a href="https://join.pointcalc.in/my">join.pointcalc.in/my</a> adresinden açabilirsiniz. Bildirimleri açan her telefon veya tarayıcı için şunları saklarız:</p>
+      <ul>
+        <li>Sayfanın telefonunuz için oluşturduğu rastgele bir anahtarın karma kopyası. Anahtarın kendisi tarayıcınızda kalır.</li>
+        <li>Tarayıcınızın bildirim adresi ve şifreleme anahtarları. Bunları tarayıcınızın üreticisinin anlık bildirim hizmeti (Google, Apple, Mozilla veya Microsoft) verir.</li>
+        <li>Bildirimlerdeki saatlerin yerel saatinizle gösterilmesi için telefonunuzun saat dilimi.</li>
+        <li>Telefonunuzun takip ettiği her takım için: takım adı, etkinlik adı ve başlangıç saati, takımın kayıt durumu ve takım bağlantınızın yalnızca telefonunuzun anahtarıyla açılabilecek şekilde şifrelenmiş bir kopyası.</li>
+      </ul>
+      <p>Organizatörün takımlara gönderdiği mesajları da saklarız: varsa gerekçesiyle birlikte onaylar ve retler, grup bağlantısı, oda kimliği, şifresi ve maçı, saat değişiklikleri ve kısa notlar. Bunları join.pointcalc.in/my adresinde geçmiş olarak görebilirsiniz.</p>
+      <p>Her bildirim, sunucumuzdan çıkmadan önce tarayıcınız için şifrelenir. Anlık bildirim hizmeti yalnızca adresi ve gönderilme zamanını görür, mesajı okuyamaz.</p>
+      <p>Safari'de ve iPhone ile iPad'de sayfa ayrıca join.pointcalc.in üzerinde <code>__Host-pc_phone_key</code> adlı bir çerez ayarlar. Bu çerez telefon anahtarınızı tutar; böylece Safari sayfanın kayıtlı verilerini silse bile sayfa takımlarınızı yine bulabilir. En fazla 400 gün kalır ve sunucularımız onu okumaz.</p>
+      <p>Supabase bu verileri, diğer kayıt verileri gibi Hindistan'ın Mumbai kentinde saklar. Bir etkinlik silindikten sonra günlük temizlik, etkinliğin başlangıcından veya son mesajından (hangisi daha geçse) 30 gün geçtiğinde etkinliğin bildirim verilerini kaldırır. Organizatör etkinliğin gruplarını Uygulamada açmaya devam ederse, verileri son açtığı andan 15 gün sonrasına kadar saklarız. Organizatör hesabını silerse verileri hemen sileriz. Hiçbir takımı takip etmeyen bir telefonun kaydını 180 gün boyunca ziyaret olmazsa sileriz; anlık bildirim hizmeti bir adresin artık çalışmadığını bildirdiğinde de o adresi ve anahtarlarını sileriz. İstediğiniz zaman join.pointcalc.in/my adresinden bir etkinliği kaldırabilir (telefonunuzun o etkinlikle bağlantısı hemen silinir) veya bildirimleri tarayıcınızdan kapatabilirsiniz.</p>
 
       <p>Şunları toplamayız: kesin GPS konumu, kişiler, SMS veya arama kayıtları, Uygulamaya açıkça aktardıklarınız dışındaki fotoğraflar, mikrofon sesi, biyometrik veriler veya cihazınızdaki diğer uygulamalardan gelen veriler.</p>
 
@@ -192,9 +204,10 @@
         <li><strong>Google LLC (Drive ve Oturum Açma).</strong> Google Drive yedeklemesini etkinleştirirseniz, Google, <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>'na tabi olarak Bölüm 2.3'te açıklanan bilgileri alır ve işler.</li>
         <li><strong>Google LLC (AdMob).</strong> Bölüm 2.2'de açıklandığı şekilde PointCalc'in ücretsiz sürümünde reklam gösterir. Bkz. <a href="https://policies.google.com/technologies/partner-sites">Google'ın, hizmetlerini kullanan uygulamalardan gelen bilgileri nasıl kullandığı</a>.</li>
         <li><strong>Apple Inc. ve Google LLC (Uygulama Mağazaları).</strong> Apple App Store ve Google Play, Uygulamaları dağıtır ve tüm abonelik işlemlerini kendi koşulları ve gizlilik politikaları kapsamında işler.</li>
-        <li><strong>Supabase, Inc.</strong> <a href="https://supabase.com/privacy">Supabase Gizlilik Politikası</a>'na tabi olarak Bölüm 2.7 ile 2.9 arasında açıklanan hesapları ve veritabanını barındırır.</li>
+        <li><strong>Supabase, Inc.</strong> <a href="https://supabase.com/privacy">Supabase Gizlilik Politikası</a>'na tabi olarak Bölüm 2.7 ile 2.10 arasında açıklanan hesapları ve veritabanını barındırır.</li>
         <li><strong>Cloudflare, Inc.</strong> <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Gizlilik Politikası</a>'na tabi olarak Web Sitesini ve etkinlik sayfalarını sunar, kayıtların ve yayınlanan tasarımların kullandığı görüntüleri saklar ve kayıt formlarında Turnstile kontrolünü çalıştırır.</li>
         <li><strong>RevenueCat, Inc.</strong> <a href="https://www.revenuecat.com/privacy">RevenueCat Gizlilik Politikası</a>'na tabi olarak hesabınıza bağlı abonelik ve satın alma haklarını takip eder.</li>
+        <li><strong>Tarayıcıların anlık bildirim hizmetleri.</strong> Bildirimleri açarsanız, tarayıcınızın üreticisinin anlık bildirim hizmeti (Google, Apple, Mozilla veya Microsoft) bunları size ulaştırır. Bu hizmet adresi ve gönderilme zamanını görür, ancak mesajı okuyamaz (Bölüm 2.10).</li>
         <li><strong>Etkinlik organizatörleri.</strong> Bir takımı kaydettiğinizde, o etkinliğin organizatörü Bölüm 2.8'de açıklanan bilgileri alır.</li>
         <li><strong>Etkinlik bağlantısını açan kişiler.</strong> Bir etkinliğin herkese açık sayfası; etkinliğin ayrıntılarını, organizatörün eklemeyi seçtiği organizatör adını ve WhatsApp numarasını ve onaylanan en fazla 10 takımın adını, etiketini ve logosunu gösterir.</li>
         <li><strong>Tasarım bağlantısını paylaştığınız kişiler.</strong> PointCalc Studio'dan yayınladığınız bir tasarım, önizleme görüntüsü ve tasarımcı adınız dahil, bağlantısına sahip olan herkes tarafından görülebilir.</li>
@@ -228,6 +241,7 @@
         <li><strong>Etkinlik istatistikleri.</strong> Bölüm 2.7'de açıklanan sayıları etkinlik silindikten sonra da saklarız. Hesabınızı silerseniz bu sayılar artık sizinle ilişkilendirilmez.</li>
         <li><strong>Yapay zekâ tarama sayıları.</strong> Günlük sayıları kullanım geçmişi olarak saklarız ve mağaza sipariş numaralarını son kullanımlarından 30 gün sonra sileriz. Hesabınızı silerseniz bu sayılar artık sizinle ilişkilendirilmez.</li>
         <li><strong>Bilgisayarda maç sonucu girişi.</strong> Bölüm 2.9'da açıklandığı şekilde silinir.</li>
+        <li><strong>Bildirimler.</strong> Bölüm 2.10'da açıklandığı şekilde silinir.</li>
         <li><strong>Yayınlanan tasarımlar.</strong> PointCalc Studio'dan yayınlanan bir tasarım süresiz olarak saklanır, çünkü onu içe aktaran kişiler bağlantının çalışmaya devam etmesine bağımlıdır. Hesabınızı silmek tasarımın sizinle olan bağını kaldırır ve kitaplığınızı siler, ancak tasarımı ve yayınlandığı andaki hâliyle üzerinde sabitlenen tasarımcı adını yerinde bırakır.</li>
       </ul>
 
@@ -241,6 +255,7 @@
         <li><strong>Google Drive yedeklemesini yönet.</strong> Yedeklemeyi istediğiniz zaman Uygulama içinden devre dışı bırakın. Yedek dosyalarını Google Drive'ınızdan silin. Uygulamanın Google Hesabınıza erişimini <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> adresinden iptal edin.</li>
         <li><strong>Hesabınızı silin.</strong> PointCalc ve PointCalc Studio'da oturum açtığınız hesabı ve Bölüm 2.7'de açıklanan verileri, PointCalc uygulaması içinden veya bize yazarak silin. Adımlar ve nelerin kaldırılıp nelerin kaldırılmadığına dair tam liste <a href="../../delete-account/index.html">Hesabınızı silin</a> sayfasındadır.</li>
         <li><strong>Takım kaydını yönet.</strong> Kaydolduktan sonra aldığınız özel takım bağlantısıyla takımınızı düzenleyin veya geri çekin. Takımınızın bilgilerinin kaldırılmasını organizatörden de isteyebilir veya bize yazabilirsiniz.</li>
+        <li><strong>Bildirimleri kapat.</strong> <a href="https://join.pointcalc.in/my">join.pointcalc.in/my</a> adresinden bir etkinliği kaldırın veya bildirimleri tarayıcınızdan kapatın.</li>
         <li><strong>Cihaz tanımlayıcılarını sıfırla.</strong> Reklam tanımlayıcınızı iOS veya Android'deki işletim sistemi ayarlarınızdan sıfırlayın.</li>
         <li><strong>Tanılama toplamayı sınırla.</strong> Uygulama şu anda Firebase Analytics veya Crashlytics'i devre dışı bırakmak için uygulama içi bir geçiş sunmaz; Uygulamayı kaldırdığınızda toplama durur.</li>
       </ul>
